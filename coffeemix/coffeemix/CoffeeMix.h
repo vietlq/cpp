@@ -9,19 +9,34 @@
 #ifndef coffeemix_CoffeeMix_h
 #define coffeemix_CoffeeMix_h
 
+/**
+ Create & use types with custom fields at compile time in 6 easy steps
+ */
+
 namespace coffeemix
 {
+    ////////////////////////////////////////////////////////////////
+    // STEP 1 - Declare char fields' lengths
+    ////////////////////////////////////////////////////////////////
+    
+    // Address char fields' lengths
     static const size_t ZIP_CODE_LEN        = 6;
     static const size_t STREET_LEN          = 32;
     static const size_t ROAD_LEN            = 32;
     static const size_t DISTRICT_LEN        = 32;
     
+    // Contact char fields' lengths
     static const size_t MOBILE_LEN          = 16;
     static const size_t HOME_PHONE_LEN      = 32;
     static const size_t HOME_EMAIL_LEN      = 32;
     static const size_t OFFICE_PHONE_LEN    = 32;
     static const size_t OFFICE_EMAIL_LEN    = 32;
     
+    ////////////////////////////////////////////////////////////////
+    // STEP 2 - Declare & define bit fields
+    ////////////////////////////////////////////////////////////////
+    
+    // Address bit fields
     enum AddressBF
     {
         Unit            = 1,
@@ -34,6 +49,7 @@ namespace coffeemix
         // Reserved     = 128
     };
     
+    // Contact bit fields
     enum ContactBF
     {
         Mobile          = 1,
@@ -45,6 +61,10 @@ namespace coffeemix
         // Reserved     = 64
         // Reserved     = 128
     };
+    
+    ////////////////////////////////////////////////////////////////
+    // STEP 3 - Define conditional templates for each fields
+    ////////////////////////////////////////////////////////////////
     
     // For Unit
     template<int BitField, bool B = ((BitField & AddressBF::Unit) != 0)>
@@ -166,6 +186,10 @@ namespace coffeemix
     template<int BitField>
     struct MixInOfficeEmail<BitField, false> {};
     
+    ////////////////////////////////////////////////////////////////
+    // STEP 4 - Define aggregate template for each type
+    ////////////////////////////////////////////////////////////////
+    
     // Address Struct
     template<int AddressBits>
     struct AddressTypeT: MixInUnit<AddressBits>,
@@ -183,6 +207,10 @@ namespace coffeemix
     {
     };
     
+    ////////////////////////////////////////////////////////////////
+    // STEP 5 - Define aggregate value of chosen fields via bit fields
+    ////////////////////////////////////////////////////////////////
+    
     // Specify the fields we want to have for Address
     const static int AddressFields = AddressBF::Unit
         bitor AddressBF::Level
@@ -196,6 +224,10 @@ namespace coffeemix
         bitor ContactBF::HomePhone
         bitor ContactBF::OfficeEmail
     ;
+    
+    ////////////////////////////////////////////////////////////////
+    // STEP 6 - Typedef for template specializations with chosen fields
+    ////////////////////////////////////////////////////////////////
     
     // Address Struct Specialization
     typedef AddressTypeT<AddressFields> AddressType;
