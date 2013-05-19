@@ -10,7 +10,7 @@
 #define coffeemix_CoffeeMix_h
 
 /**
- Create & use types with custom fields at compile time in 7 easy steps
+ Create & use types with custom fields at compile time in 6 easy steps
  */
 
 #include <ostream>
@@ -65,6 +65,16 @@ namespace coffeemix
     };
     
     ////////////////////////////////////////////////////////////////
+    // NOTE - Define super class with No-OP toStream method
+    ////////////////////////////////////////////////////////////////
+    struct EmptyToStream
+    {
+        void toStream(std::ostream & ostr) const
+        {
+        }   
+    };
+    
+    ////////////////////////////////////////////////////////////////
     // STEP 3 - Define conditional templates for each fields & std::ostream
     ////////////////////////////////////////////////////////////////
     
@@ -81,12 +91,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInUnit<BitField, false>
-    {
-        void toStream(std::ostream & ostr) const
-        {
-        }
-    };
+    struct MixInUnit<BitField, false> : EmptyToStream {};
     
     // For Level
     template<int BitField, bool B = ((BitField & AddressBF::Level) != 0)>
@@ -101,12 +106,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInLevel<BitField, false>
-    {
-        void toStream(std::ostream & ostr) const
-        {
-        }
-    };
+    struct MixInLevel<BitField, false> : EmptyToStream {};
     
     // For ZipCode
     template<int BitField, bool B = ((BitField & AddressBF::ZipCode) != 0)>
@@ -121,12 +121,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInZipCode<BitField, false>
-    {
-        void toStream(std::ostream & ostr) const
-        {
-        }
-    };
+    struct MixInZipCode<BitField, false> : EmptyToStream {};
     
     // For Block
     template<int BitField, bool B = ((BitField & AddressBF::Block) != 0)>
@@ -141,12 +136,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInBlock<BitField, false>
-    {
-        void toStream(std::ostream & ostr) const
-        {
-        }
-    };
+    struct MixInBlock<BitField, false> : EmptyToStream {};
     
     // For Street
     template<int BitField, bool B = ((BitField & AddressBF::Street) != 0)>
@@ -161,12 +151,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInStreet<BitField, false>
-    {
-        void toStream(std::ostream & ostr) const
-        {
-        }
-    };
+    struct MixInStreet<BitField, false> : EmptyToStream {};
     
     // For Road
     template<int BitField, bool B = ((BitField & AddressBF::Road) != 0)>
@@ -181,12 +166,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInRoad<BitField, false>
-    {
-        void toStream(std::ostream & ostr) const
-        {
-        }
-    };
+    struct MixInRoad<BitField, false> : EmptyToStream {};
     
     // For District
     template<int BitField, bool B = ((BitField & AddressBF::District) != 0)>
@@ -201,12 +181,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInDistrict<BitField, false>
-    {
-        void toStream(std::ostream & ostr) const
-        {
-        }
-    };
+    struct MixInDistrict<BitField, false> : EmptyToStream {};
     
     // For Mobile
     template<int BitField, bool B = ((BitField & ContactBF::Mobile) != 0)>
@@ -221,12 +196,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInMobile<BitField, false>
-    {
-        void toStream(std::ostream & ostr) const
-        {
-        }
-    };
+    struct MixInMobile<BitField, false> : EmptyToStream {};
     
     // For HomePhone
     template<int BitField, bool B = ((BitField & ContactBF::HomePhone) != 0)>
@@ -241,12 +211,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInHomePhone<BitField, false>
-    {
-        void toStream(std::ostream & ostr) const
-        {
-        }
-    };
+    struct MixInHomePhone<BitField, false> : EmptyToStream {};
     
     // For HomeEmail
     template<int BitField, bool B = ((BitField & ContactBF::HomeEmail) != 0)>
@@ -261,12 +226,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInHomeEmail<BitField, false>
-    {
-        void toStream(std::ostream & ostr) const
-        {
-        }
-    };
+    struct MixInHomeEmail<BitField, false> : EmptyToStream {};
     
     // For OfficePhone
     template<int BitField, bool B = ((BitField & ContactBF::OfficePhone) != 0)>
@@ -281,12 +241,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInOfficePhone<BitField, false>
-    {
-        void toStream(std::ostream & ostr) const
-        {
-        }
-    };
+    struct MixInOfficePhone<BitField, false> : EmptyToStream {};
     
     // For OfficeEmail
     template<int BitField, bool B = ((BitField & ContactBF::OfficeEmail) != 0)>
@@ -301,12 +256,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInOfficeEmail<BitField, false>
-    {
-        void toStream(std::ostream & ostr) const
-        {
-        }
-    };
+    struct MixInOfficeEmail<BitField, false> : EmptyToStream {};
     
     ////////////////////////////////////////////////////////////////
     // STEP 4 - Define aggregate template for each type
@@ -348,7 +298,7 @@ namespace coffeemix
     };
     
     ////////////////////////////////////////////////////////////////
-    // STEP 5 - Define common output stream handler
+    // NOTE - Define common output stream handler
     ////////////////////////////////////////////////////////////////
     
     template<typename TypeWithToStream>
@@ -359,7 +309,7 @@ namespace coffeemix
     }
     
     ////////////////////////////////////////////////////////////////
-    // STEP 6 - Define aggregate value of chosen fields via bit fields
+    // STEP 5 - Define aggregate value of chosen fields via bit fields
     ////////////////////////////////////////////////////////////////
     
     // Specify the fields we want to have for Address
@@ -377,7 +327,7 @@ namespace coffeemix
     ;
     
     ////////////////////////////////////////////////////////////////
-    // STEP 7 - Typedef for template specializations with chosen fields
+    // STEP 6 - Typedef for template specializations with chosen fields
     ////////////////////////////////////////////////////////////////
     
     // Address Struct Specialization
