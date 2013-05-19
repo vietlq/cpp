@@ -26,8 +26,8 @@ int main(int argc, const char * argv[])
     myAddress.Unit = 123;
     myAddress.Level = 9;
     myAddress.Block = 32;
-    memcpy(myAddress.ZipCode, zip, strlen(zip));
-    memcpy(myAddress.District, district, strlen(district));
+    memcpy(myAddress.ZipCode, zip, strlen(zip) + 1);
+    memcpy(myAddress.District, district, strlen(district) + 1);
     // And dumping to the default output stream
     std::cout << "-- sizeof(myAddress) = " << sizeof(myAddress) << std::endl;
     std::cout << myAddress << std::endl << std::endl;
@@ -37,9 +37,9 @@ int main(int argc, const char * argv[])
     const char homePhone[] = "+6566778899";
     const char officeEmail[] = "viet@simpleit.us";
     // Assigning the fields for ContactType
-    memcpy(myContacts.Mobile, mobile, strlen(mobile));
-    memcpy(myContacts.HomePhone, homePhone, strlen(homePhone));
-    memcpy(myContacts.OfficeEmail, officeEmail, strlen(officeEmail));
+    memcpy(myContacts.Mobile, mobile, strlen(mobile) + 1);
+    memcpy(myContacts.HomePhone, homePhone, strlen(homePhone) + 1);
+    memcpy(myContacts.OfficeEmail, officeEmail, strlen(officeEmail) + 1);
     // And dumping to the default output stream
     std::cout << "-- sizeof(myContacts) = " << sizeof(myContacts) << std::endl;
     std::cout << myContacts << std::endl;
