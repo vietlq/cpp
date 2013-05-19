@@ -19,9 +19,6 @@ int main(int argc, const char * argv[])
     AddressType myAddress;
     ContactType myContacts;
     
-    std::cout << "sizeof(myAddress) = " << sizeof(myAddress) << std::endl;
-    std::cout << "sizeof(myContacts) = " << sizeof(myContacts) << std::endl << std::endl;
-    
     // Test values for AddressType fields
     const char zip[] = "230045";
     const char district[] = "Financial District";
@@ -32,6 +29,7 @@ int main(int argc, const char * argv[])
     memcpy(myAddress.ZipCode, zip, strlen(zip));
     memcpy(myAddress.District, district, strlen(district));
     // And dumping to the default output stream
+    std::cout << "-- sizeof(myAddress) = " << sizeof(myAddress) << std::endl;
     std::cout << myAddress << std::endl << std::endl;
     
     // Test values for ContactType fields
@@ -40,10 +38,11 @@ int main(int argc, const char * argv[])
     const char officeEmail[] = "viet@simpleit.us";
     // Assigning the fields for ContactType
     memcpy(myContacts.Mobile, mobile, strlen(mobile));
-    memcpy(myContacts.HomePhone, zip, strlen(homePhone));
-    memcpy(myContacts.OfficeEmail, zip, strlen(officeEmail));
+    memcpy(myContacts.HomePhone, homePhone, strlen(homePhone));
+    memcpy(myContacts.OfficeEmail, officeEmail, strlen(officeEmail));
     // And dumping to the default output stream
-    std::cout << myContacts << std::endl << std::endl;
+    std::cout << "-- sizeof(myContacts) = " << sizeof(myContacts) << std::endl;
+    std::cout << myContacts << std::endl;
     
     return 0;
 }
