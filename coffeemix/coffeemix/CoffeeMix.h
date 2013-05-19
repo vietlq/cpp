@@ -13,6 +13,8 @@
  Create & use types with custom fields at compile time in 6 easy steps
  */
 
+#include <ostream>
+
 namespace coffeemix
 {
     ////////////////////////////////////////////////////////////////
@@ -63,7 +65,7 @@ namespace coffeemix
     };
     
     ////////////////////////////////////////////////////////////////
-    // STEP 3 - Define conditional templates for each fields
+    // STEP 3 - Define conditional templates for each fields & std::ostream
     ////////////////////////////////////////////////////////////////
     
     // For Unit
@@ -71,120 +73,324 @@ namespace coffeemix
     struct MixInUnit
     {
         int Unit;
+        
+        void toStream(std::ostream & ostr) const
+        {
+            ostr << "Unit = [" << Unit << "]; ";
+        }
     };
     
     template<int BitField>
-    struct MixInUnit<BitField, false> {};
+    struct MixInUnit<BitField, false>
+    {
+        void toStream(std::ostream & ostr) const
+        {
+        }
+    };
+    
+    template<int BitField, bool B>
+    std::ostream & operator<<(std::ostream & ostr, const MixInUnit<BitField, B> & field)
+    {
+        field.toStream(ostr);
+        return ostr;
+    }
     
     // For Level
     template<int BitField, bool B = ((BitField & AddressBF::Level) != 0)>
     struct MixInLevel
     {
         int Level;
+        
+        void toStream(std::ostream & ostr) const
+        {
+            ostr << "Level = [" << Level << "]; ";
+        }
     };
     
     template<int BitField>
-    struct MixInLevel<BitField, false> {};
+    struct MixInLevel<BitField, false>
+    {
+        void toStream(std::ostream & ostr) const
+        {
+        }
+    };
+    
+    template<int BitField, bool B>
+    std::ostream & operator<<(std::ostream & ostr, const MixInLevel<BitField, B> & field)
+    {
+        field.toStream(ostr);
+        return ostr;
+    }
     
     // For ZipCode
     template<int BitField, bool B = ((BitField & AddressBF::ZipCode) != 0)>
     struct MixInZipCode
     {
         char ZipCode[ZIP_CODE_LEN];
+        
+        void toStream(std::ostream & ostr) const
+        {
+            ostr << "ZipCode = [" << ZipCode << "]; ";
+        }
     };
     
     template<int BitField>
-    struct MixInZipCode<BitField, false> {};
+    struct MixInZipCode<BitField, false>
+    {
+        void toStream(std::ostream & ostr) const
+        {
+        }
+    };
+    
+    template<int BitField, bool B>
+    std::ostream & operator<<(std::ostream & ostr, const MixInZipCode<BitField, B> & field)
+    {
+        field.toStream(ostr);
+        return ostr;
+    }
     
     // For Block
     template<int BitField, bool B = ((BitField & AddressBF::Block) != 0)>
     struct MixInBlock
     {
         int Block;
+        
+        void toStream(std::ostream & ostr) const
+        {
+            ostr << "Block = [" << Block << "]; ";
+        }
     };
     
     template<int BitField>
-    struct MixInBlock<BitField, false> {};
+    struct MixInBlock<BitField, false>
+    {
+        void toStream(std::ostream & ostr) const
+        {
+        }
+    };
+    
+    template<int BitField, bool B>
+    std::ostream & operator<<(std::ostream & ostr, const MixInBlock<BitField, B> & field)
+    {
+        field.toStream(ostr);
+        return ostr;
+    }
     
     // For Street
     template<int BitField, bool B = ((BitField & AddressBF::Street) != 0)>
     struct MixInStreet
     {
         char Street[STREET_LEN];
+        
+        void toStream(std::ostream & ostr) const
+        {
+            ostr << "Street = [" << Street << "]; ";
+        }
     };
     
     template<int BitField>
-    struct MixInStreet<BitField, false> {};
+    struct MixInStreet<BitField, false>
+    {
+        void toStream(std::ostream & ostr) const
+        {
+        }
+    };
+    
+    template<int BitField, bool B>
+    std::ostream & operator<<(std::ostream & ostr, const MixInStreet<BitField, B> & field)
+    {
+        field.toStream(ostr);
+        return ostr;
+    }
     
     // For Road
     template<int BitField, bool B = ((BitField & AddressBF::Road) != 0)>
     struct MixInRoad
     {
         char Road[ROAD_LEN];
+        
+        void toStream(std::ostream & ostr) const
+        {
+            ostr << "Road = [" << Road << "]; ";
+        }
     };
     
     template<int BitField>
-    struct MixInRoad<BitField, false> {};
+    struct MixInRoad<BitField, false>
+    {
+        void toStream(std::ostream & ostr) const
+        {
+        }
+    };
+    
+    template<int BitField, bool B>
+    std::ostream & operator<<(std::ostream & ostr, const MixInRoad<BitField, B> & field)
+    {
+        field.toStream(ostr);
+        return ostr;
+    }
     
     // For District
     template<int BitField, bool B = ((BitField & AddressBF::District) != 0)>
     struct MixInDistrict
     {
         char District[DISTRICT_LEN];
+        
+        void toStream(std::ostream & ostr) const
+        {
+            ostr << "District = [" << District << "]; ";
+        }
     };
     
     template<int BitField>
-    struct MixInDistrict<BitField, false> {};
+    struct MixInDistrict<BitField, false>
+    {
+        void toStream(std::ostream & ostr) const
+        {
+        }
+    };
+    
+    template<int BitField, bool B>
+    std::ostream & operator<<(std::ostream & ostr, const MixInDistrict<BitField, B> & field)
+    {
+        field.toStream(ostr);
+        return ostr;
+    }
     
     // For Mobile
     template<int BitField, bool B = ((BitField & ContactBF::Mobile) != 0)>
     struct MixInMobile
     {
         char Mobile[MOBILE_LEN];
+        
+        void toStream(std::ostream & ostr) const
+        {
+            ostr << "Mobile = [" << Mobile << "]; ";
+        }
     };
     
     template<int BitField>
-    struct MixInMobile<BitField, false> {};
+    struct MixInMobile<BitField, false>
+    {
+        void toStream(std::ostream & ostr) const
+        {
+        }
+    };
+    
+    template<int BitField, bool B>
+    std::ostream & operator<<(std::ostream & ostr, const MixInMobile<BitField, B> & field)
+    {
+        field.toStream(ostr);
+        return ostr;
+    }
     
     // For HomePhone
     template<int BitField, bool B = ((BitField & ContactBF::HomePhone) != 0)>
     struct MixInHomePhone
     {
         char HomePhone[HOME_PHONE_LEN];
+        
+        void toStream(std::ostream & ostr) const
+        {
+            ostr << "HomePhone = [" << HomePhone << "]; ";
+        }
     };
     
     template<int BitField>
-    struct MixInHomePhone<BitField, false> {};
+    struct MixInHomePhone<BitField, false>
+    {
+        void toStream(std::ostream & ostr) const
+        {
+        }
+    };
+    
+    template<int BitField, bool B>
+    std::ostream & operator<<(std::ostream & ostr, const MixInHomePhone<BitField, B> & field)
+    {
+        field.toStream(ostr);
+        return ostr;
+    }
     
     // For HomeEmail
     template<int BitField, bool B = ((BitField & ContactBF::HomeEmail) != 0)>
     struct MixInHomeEmail
     {
         char HomeEmail[HOME_EMAIL_LEN];
+        
+        void toStream(std::ostream & ostr) const
+        {
+            ostr << "HomeEmail = [" << HomeEmail << "]; ";
+        }
     };
     
     template<int BitField>
-    struct MixInHomeEmail<BitField, false> {};
+    struct MixInHomeEmail<BitField, false>
+    {
+        void toStream(std::ostream & ostr) const
+        {
+        }
+    };
+    
+    template<int BitField, bool B>
+    std::ostream & operator<<(std::ostream & ostr, const MixInHomeEmail<BitField, B> & field)
+    {
+        field.toStream(ostr);
+        return ostr;
+    }
     
     // For OfficePhone
     template<int BitField, bool B = ((BitField & ContactBF::OfficePhone) != 0)>
     struct MixInOfficePhone
     {
         char OfficePhone[OFFICE_PHONE_LEN];
+        
+        void toStream(std::ostream & ostr) const
+        {
+            ostr << "OfficePhone = [" << OfficePhone << "]; ";
+        }
     };
     
     template<int BitField>
-    struct MixInOfficePhone<BitField, false> {};
+    struct MixInOfficePhone<BitField, false>
+    {
+        void toStream(std::ostream & ostr) const
+        {
+        }
+    };
+    
+    template<int BitField, bool B>
+    std::ostream & operator<<(std::ostream & ostr, const MixInOfficePhone<BitField, B> & field)
+    {
+        field.toStream(ostr);
+        return ostr;
+    }
     
     // For OfficeEmail
     template<int BitField, bool B = ((BitField & ContactBF::OfficeEmail) != 0)>
     struct MixInOfficeEmail
     {
         char OfficeEmail[OFFICE_EMAIL_LEN];
+        
+        void toStream(std::ostream & ostr) const
+        {
+            ostr << "OfficeEmail = [" << OfficeEmail << "]; ";
+        }
     };
     
     template<int BitField>
-    struct MixInOfficeEmail<BitField, false> {};
+    struct MixInOfficeEmail<BitField, false>
+    {
+        void toStream(std::ostream & ostr) const
+        {
+        }
+    };
+    
+    template<int BitField, bool B>
+    std::ostream & operator<<(std::ostream & ostr, const MixInOfficeEmail<BitField, B> & field)
+    {
+        field.toStream(ostr);
+        return ostr;
+    }
     
     ////////////////////////////////////////////////////////////////
     // STEP 4 - Define aggregate template for each type
@@ -197,7 +403,24 @@ namespace coffeemix
         MixInBlock<AddressBits>, MixInStreet<AddressBits>,
         MixInRoad<AddressBits>, MixInDistrict<AddressBits>
     {
+        void toStream(std::ostream & ostr) const
+        {
+            MixInUnit<AddressBits>::toStream(ostr);
+            MixInLevel<AddressBits>::toStream(ostr);
+            MixInZipCode<AddressBits>::toStream(ostr);
+            MixInBlock<AddressBits>::toStream(ostr);
+            MixInStreet<AddressBits>::toStream(ostr);
+            MixInRoad<AddressBits>::toStream(ostr);
+            MixInDistrict<AddressBits>::toStream(ostr);
+        }
     };
+    
+    template<int AddressBits>
+    std::ostream & operator<<(std::ostream & ostr, const AddressTypeT<AddressBits> & field)
+    {
+        field.toStream(ostr);
+        return ostr;
+    }
     
     // Contact Struct
     template<int ContactBits>
@@ -205,7 +428,22 @@ namespace coffeemix
     MixInHomePhone<ContactBits>, MixInHomeEmail<ContactBits>,
     MixInOfficePhone<ContactBits>, MixInOfficeEmail<ContactBits>
     {
+        void toStream(std::ostream & ostr) const
+        {
+            MixInMobile<ContactBits>::toStream(ostr);
+            MixInHomePhone<ContactBits>::toStream(ostr);
+            MixInHomeEmail<ContactBits>::toStream(ostr);
+            MixInOfficePhone<ContactBits>::toStream(ostr);
+            MixInOfficeEmail<ContactBits>::toStream(ostr);
+        }
     };
+    
+    template<int ContactBits>
+    std::ostream & operator<<(std::ostream & ostr, const ContactTypeT<ContactBits> & field)
+    {
+        field.toStream(ostr);
+        return ostr;
+    }
     
     ////////////////////////////////////////////////////////////////
     // STEP 5 - Define aggregate value of chosen fields via bit fields
