@@ -29,9 +29,9 @@ namespace coffeemix
     
     // Contact char fields' lengths
     static const size_t MOBILE_LEN          = 16;
-    static const size_t HOME_PHONE_LEN      = 32;
+    static const size_t HOME_PHONE_LEN      = 16;
     static const size_t HOME_EMAIL_LEN      = 32;
-    static const size_t OFFICE_PHONE_LEN    = 32;
+    static const size_t OFFICE_PHONE_LEN    = 16;
     static const size_t OFFICE_EMAIL_LEN    = 32;
     
     ////////////////////////////////////////////////////////////////
