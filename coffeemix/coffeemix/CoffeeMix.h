@@ -11,15 +11,6 @@
 
 namespace coffeemix
 {
-    template<bool B, class T = void>
-    struct enable_if {};
-    
-    template<class T>
-    struct enable_if<true, T>
-    {
-        typedef T type;
-    };
-    
     static const size_t ZIP_CODE_LEN        = 6;
     static const size_t STREET_LEN          = 32;
     static const size_t ROAD_LEN            = 32;
@@ -56,7 +47,7 @@ namespace coffeemix
     };
     
     // For Unit
-    template<int BitField, bool B = (BitField & AddressBF::Unit)>
+    template<int BitField, bool B = ((BitField & AddressBF::Unit) != 0)>
     struct MixInUnit
     {
         int Unit;
@@ -66,7 +57,7 @@ namespace coffeemix
     struct MixInUnit<BitField, false> {};
     
     // For Level
-    template<int BitField, bool B = (BitField & AddressBF::Level)>
+    template<int BitField, bool B = ((BitField & AddressBF::Level) != 0)>
     struct MixInLevel
     {
         int Level;
@@ -76,7 +67,7 @@ namespace coffeemix
     struct MixInLevel<BitField, false> {};
     
     // For ZipCode
-    template<int BitField, bool B = (BitField & AddressBF::ZipCode)>
+    template<int BitField, bool B = ((BitField & AddressBF::ZipCode) != 0)>
     struct MixInZipCode
     {
         char ZipCode[ZIP_CODE_LEN];
@@ -86,7 +77,7 @@ namespace coffeemix
     struct MixInZipCode<BitField, false> {};
     
     // For Block
-    template<int BitField, bool B = (BitField & AddressBF::Block)>
+    template<int BitField, bool B = ((BitField & AddressBF::Block) != 0)>
     struct MixInBlock
     {
         int Block;
@@ -96,7 +87,7 @@ namespace coffeemix
     struct MixInBlock<BitField, false> {};
     
     // For Street
-    template<int BitField, bool B = (BitField & AddressBF::Street)>
+    template<int BitField, bool B = ((BitField & AddressBF::Street) != 0)>
     struct MixInStreet
     {
         char Street[STREET_LEN];
@@ -106,7 +97,7 @@ namespace coffeemix
     struct MixInStreet<BitField, false> {};
     
     // For Road
-    template<int BitField, bool B = (BitField & AddressBF::Road)>
+    template<int BitField, bool B = ((BitField & AddressBF::Road) != 0)>
     struct MixInRoad
     {
         char Road[ROAD_LEN];
@@ -116,7 +107,7 @@ namespace coffeemix
     struct MixInRoad<BitField, false> {};
     
     // For District
-    template<int BitField, bool B = (BitField & AddressBF::District)>
+    template<int BitField, bool B = ((BitField & AddressBF::District) != 0)>
     struct MixInDistrict
     {
         char District[DISTRICT_LEN];
@@ -126,7 +117,7 @@ namespace coffeemix
     struct MixInDistrict<BitField, false> {};
     
     // For Mobile
-    template<int BitField, bool B = (BitField & ContactBF::Mobile)>
+    template<int BitField, bool B = ((BitField & ContactBF::Mobile) != 0)>
     struct MixInMobile
     {
         char Mobile[MOBILE_LEN];
@@ -136,7 +127,7 @@ namespace coffeemix
     struct MixInMobile<BitField, false> {};
     
     // For HomePhone
-    template<int BitField, bool B = (BitField & ContactBF::HomePhone)>
+    template<int BitField, bool B = ((BitField & ContactBF::HomePhone) != 0)>
     struct MixInHomePhone
     {
         char HomePhone[HOME_PHONE_LEN];
@@ -146,7 +137,7 @@ namespace coffeemix
     struct MixInHomePhone<BitField, false> {};
     
     // For HomeEmail
-    template<int BitField, bool B = (BitField & ContactBF::HomeEmail)>
+    template<int BitField, bool B = ((BitField & ContactBF::HomeEmail) != 0)>
     struct MixInHomeEmail
     {
         char HomeEmail[HOME_EMAIL_LEN];
@@ -156,7 +147,7 @@ namespace coffeemix
     struct MixInHomeEmail<BitField, false> {};
     
     // For OfficePhone
-    template<int BitField, bool B = (BitField & ContactBF::OfficePhone)>
+    template<int BitField, bool B = ((BitField & ContactBF::OfficePhone) != 0)>
     struct MixInOfficePhone
     {
         char OfficePhone[OFFICE_PHONE_LEN];
@@ -166,7 +157,7 @@ namespace coffeemix
     struct MixInOfficePhone<BitField, false> {};
     
     // For OfficeEmail
-    template<int BitField, bool B = (BitField & ContactBF::OfficeEmail)>
+    template<int BitField, bool B = ((BitField & ContactBF::OfficeEmail) != 0)>
     struct MixInOfficeEmail
     {
         char OfficeEmail[OFFICE_EMAIL_LEN];
