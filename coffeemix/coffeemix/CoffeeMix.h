@@ -20,10 +20,16 @@ namespace coffeemix
         typedef T type;
     };
     
-    static const size_t ZIPCODE_LEN     = 6;
-    static const size_t STREET_LEN      = 32;
-    static const size_t ROAD_LEN        = 32;
-    static const size_t DISTRICT_LEN    = 32;
+    static const size_t ZIP_CODE_LEN        = 6;
+    static const size_t STREET_LEN          = 32;
+    static const size_t ROAD_LEN            = 32;
+    static const size_t DISTRICT_LEN        = 32;
+    
+    static const size_t MOBILE_LEN          = 16;
+    static const size_t HOME_PHONE_LEN      = 32;
+    static const size_t HOME_EMAIL_LEN      = 32;
+    static const size_t OFFICE_PHONE_LEN    = 32;
+    static const size_t OFFICE_EMAIL_LEN    = 32;
     
     enum AddressBF
     {
@@ -48,6 +54,163 @@ namespace coffeemix
         // Reserved     = 64
         // Reserved     = 128
     };
+    
+    // For Unit
+    template<int BitField, bool B = (BitField & AddressBF::Unit)>
+    struct MixInUnit
+    {
+        int Unit;
+    };
+    
+    template<int BitField>
+    struct MixInUnit<BitField, false> {};
+    
+    // For Level
+    template<int BitField, bool B = (BitField & AddressBF::Level)>
+    struct MixInLevel
+    {
+        int Level;
+    };
+    
+    template<int BitField>
+    struct MixInLevel<BitField, false> {};
+    
+    // For ZipCode
+    template<int BitField, bool B = (BitField & AddressBF::ZipCode)>
+    struct MixInZipCode
+    {
+        char ZipCode[ZIP_CODE_LEN];
+    };
+    
+    template<int BitField>
+    struct MixInZipCode<BitField, false> {};
+    
+    // For Block
+    template<int BitField, bool B = (BitField & AddressBF::Block)>
+    struct MixInBlock
+    {
+        int Block;
+    };
+    
+    template<int BitField>
+    struct MixInBlock<BitField, false> {};
+    
+    // For Street
+    template<int BitField, bool B = (BitField & AddressBF::Street)>
+    struct MixInStreet
+    {
+        char Street[STREET_LEN];
+    };
+    
+    template<int BitField>
+    struct MixInStreet<BitField, false> {};
+    
+    // For Road
+    template<int BitField, bool B = (BitField & AddressBF::Road)>
+    struct MixInRoad
+    {
+        char Road[ROAD_LEN];
+    };
+    
+    template<int BitField>
+    struct MixInRoad<BitField, false> {};
+    
+    // For District
+    template<int BitField, bool B = (BitField & AddressBF::District)>
+    struct MixInDistrict
+    {
+        char District[DISTRICT_LEN];
+    };
+    
+    template<int BitField>
+    struct MixInDistrict<BitField, false> {};
+    
+    // For Mobile
+    template<int BitField, bool B = (BitField & ContactBF::Mobile)>
+    struct MixInMobile
+    {
+        char Mobile[MOBILE_LEN];
+    };
+    
+    template<int BitField>
+    struct MixInMobile<BitField, false> {};
+    
+    // For HomePhone
+    template<int BitField, bool B = (BitField & ContactBF::HomePhone)>
+    struct MixInHomePhone
+    {
+        char HomePhone[HOME_PHONE_LEN];
+    };
+    
+    template<int BitField>
+    struct MixInHomePhone<BitField, false> {};
+    
+    // For HomeEmail
+    template<int BitField, bool B = (BitField & ContactBF::HomeEmail)>
+    struct MixInHomeEmail
+    {
+        char HomeEmail[HOME_EMAIL_LEN];
+    };
+    
+    template<int BitField>
+    struct MixInHomeEmail<BitField, false> {};
+    
+    // For OfficePhone
+    template<int BitField, bool B = (BitField & ContactBF::OfficePhone)>
+    struct MixInOfficePhone
+    {
+        char OfficePhone[OFFICE_PHONE_LEN];
+    };
+    
+    template<int BitField>
+    struct MixInOfficePhone<BitField, false> {};
+    
+    // For OfficeEmail
+    template<int BitField, bool B = (BitField & ContactBF::OfficeEmail)>
+    struct MixInOfficeEmail
+    {
+        char OfficeEmail[OFFICE_EMAIL_LEN];
+    };
+    
+    template<int BitField>
+    struct MixInOfficeEmail<BitField, false> {};
+    
+    // Address Struct
+    template<int AddressBits>
+    struct AddressTypeT: MixInUnit<AddressBits>,
+        MixInLevel<AddressBits>, MixInZipCode<AddressBits>,
+        MixInBlock<AddressBits>, MixInStreet<AddressBits>,
+        MixInRoad<AddressBits>, MixInDistrict<AddressBits>
+    {
+    };
+    
+    // Contact Struct
+    template<int ContactBits>
+    struct ContactTypeT: MixInMobile<ContactBits>,
+    MixInHomePhone<ContactBits>, MixInHomeEmail<ContactBits>,
+    MixInOfficePhone<ContactBits>, MixInOfficeEmail<ContactBits>
+    {
+    };
+    
+    // Specify the fields we want to have for Address
+    const static int AddressFields = AddressBF::Unit
+        bitor AddressBF::Level
+        bitor AddressBF::Block
+        bitor AddressBF::ZipCode
+        bitor AddressBF::District
+    ;
+    
+    // Specify the fields we want to have for Contact
+    const static int ContactFields = ContactBF::Mobile
+        bitor ContactBF::HomePhone
+        bitor ContactBF::OfficeEmail
+    ;
+    
+    // Address Struct Specialization
+    typedef AddressTypeT<AddressFields> AddressType;
+    
+    // Contact Struct Specialization
+    typedef ContactTypeT<ContactFields> ContactType;
 }
 
 #endif

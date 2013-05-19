@@ -9,11 +9,19 @@
 #include <iostream>
 #include "CoffeeMix.h"
 
+using coffeemix::AddressType;
+using coffeemix::ContactType;
+
 int main(int argc, const char * argv[])
 {
-
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    std::cout << "CoffeeMix C++ Project!\n";
+    
+    AddressType myAddress;
+    ContactType myContacts;
+    
+    //std::cout << "sizeof(myAddress) = " << sizeof(myAddress) << std::endl;
+    //std::cout << "sizeof(myContacts) = " << sizeof(myContacts) << std::endl;
+    
     return 0;
 }
 
