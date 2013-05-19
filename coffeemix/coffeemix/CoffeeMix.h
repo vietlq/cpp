@@ -10,7 +10,7 @@
 #define coffeemix_CoffeeMix_h
 
 /**
- Create & use types with custom fields at compile time in 6 easy steps
+ Create & use types with custom fields at compile time in 7 easy steps
  */
 
 #include <ostream>
@@ -88,13 +88,6 @@ namespace coffeemix
         }
     };
     
-    template<int BitField, bool B>
-    std::ostream & operator<<(std::ostream & ostr, const MixInUnit<BitField, B> & field)
-    {
-        field.toStream(ostr);
-        return ostr;
-    }
-    
     // For Level
     template<int BitField, bool B = ((BitField & AddressBF::Level) != 0)>
     struct MixInLevel
@@ -114,13 +107,6 @@ namespace coffeemix
         {
         }
     };
-    
-    template<int BitField, bool B>
-    std::ostream & operator<<(std::ostream & ostr, const MixInLevel<BitField, B> & field)
-    {
-        field.toStream(ostr);
-        return ostr;
-    }
     
     // For ZipCode
     template<int BitField, bool B = ((BitField & AddressBF::ZipCode) != 0)>
@@ -142,13 +128,6 @@ namespace coffeemix
         }
     };
     
-    template<int BitField, bool B>
-    std::ostream & operator<<(std::ostream & ostr, const MixInZipCode<BitField, B> & field)
-    {
-        field.toStream(ostr);
-        return ostr;
-    }
-    
     // For Block
     template<int BitField, bool B = ((BitField & AddressBF::Block) != 0)>
     struct MixInBlock
@@ -168,13 +147,6 @@ namespace coffeemix
         {
         }
     };
-    
-    template<int BitField, bool B>
-    std::ostream & operator<<(std::ostream & ostr, const MixInBlock<BitField, B> & field)
-    {
-        field.toStream(ostr);
-        return ostr;
-    }
     
     // For Street
     template<int BitField, bool B = ((BitField & AddressBF::Street) != 0)>
@@ -196,13 +168,6 @@ namespace coffeemix
         }
     };
     
-    template<int BitField, bool B>
-    std::ostream & operator<<(std::ostream & ostr, const MixInStreet<BitField, B> & field)
-    {
-        field.toStream(ostr);
-        return ostr;
-    }
-    
     // For Road
     template<int BitField, bool B = ((BitField & AddressBF::Road) != 0)>
     struct MixInRoad
@@ -222,13 +187,6 @@ namespace coffeemix
         {
         }
     };
-    
-    template<int BitField, bool B>
-    std::ostream & operator<<(std::ostream & ostr, const MixInRoad<BitField, B> & field)
-    {
-        field.toStream(ostr);
-        return ostr;
-    }
     
     // For District
     template<int BitField, bool B = ((BitField & AddressBF::District) != 0)>
@@ -250,13 +208,6 @@ namespace coffeemix
         }
     };
     
-    template<int BitField, bool B>
-    std::ostream & operator<<(std::ostream & ostr, const MixInDistrict<BitField, B> & field)
-    {
-        field.toStream(ostr);
-        return ostr;
-    }
-    
     // For Mobile
     template<int BitField, bool B = ((BitField & ContactBF::Mobile) != 0)>
     struct MixInMobile
@@ -276,13 +227,6 @@ namespace coffeemix
         {
         }
     };
-    
-    template<int BitField, bool B>
-    std::ostream & operator<<(std::ostream & ostr, const MixInMobile<BitField, B> & field)
-    {
-        field.toStream(ostr);
-        return ostr;
-    }
     
     // For HomePhone
     template<int BitField, bool B = ((BitField & ContactBF::HomePhone) != 0)>
@@ -304,13 +248,6 @@ namespace coffeemix
         }
     };
     
-    template<int BitField, bool B>
-    std::ostream & operator<<(std::ostream & ostr, const MixInHomePhone<BitField, B> & field)
-    {
-        field.toStream(ostr);
-        return ostr;
-    }
-    
     // For HomeEmail
     template<int BitField, bool B = ((BitField & ContactBF::HomeEmail) != 0)>
     struct MixInHomeEmail
@@ -330,13 +267,6 @@ namespace coffeemix
         {
         }
     };
-    
-    template<int BitField, bool B>
-    std::ostream & operator<<(std::ostream & ostr, const MixInHomeEmail<BitField, B> & field)
-    {
-        field.toStream(ostr);
-        return ostr;
-    }
     
     // For OfficePhone
     template<int BitField, bool B = ((BitField & ContactBF::OfficePhone) != 0)>
@@ -358,13 +288,6 @@ namespace coffeemix
         }
     };
     
-    template<int BitField, bool B>
-    std::ostream & operator<<(std::ostream & ostr, const MixInOfficePhone<BitField, B> & field)
-    {
-        field.toStream(ostr);
-        return ostr;
-    }
-    
     // For OfficeEmail
     template<int BitField, bool B = ((BitField & ContactBF::OfficeEmail) != 0)>
     struct MixInOfficeEmail
@@ -384,13 +307,6 @@ namespace coffeemix
         {
         }
     };
-    
-    template<int BitField, bool B>
-    std::ostream & operator<<(std::ostream & ostr, const MixInOfficeEmail<BitField, B> & field)
-    {
-        field.toStream(ostr);
-        return ostr;
-    }
     
     ////////////////////////////////////////////////////////////////
     // STEP 4 - Define aggregate template for each type
@@ -415,13 +331,6 @@ namespace coffeemix
         }
     };
     
-    template<int AddressBits>
-    std::ostream & operator<<(std::ostream & ostr, const AddressTypeT<AddressBits> & field)
-    {
-        field.toStream(ostr);
-        return ostr;
-    }
-    
     // Contact Struct
     template<int ContactBits>
     struct ContactTypeT: MixInMobile<ContactBits>,
@@ -438,15 +347,19 @@ namespace coffeemix
         }
     };
     
-    template<int ContactBits>
-    std::ostream & operator<<(std::ostream & ostr, const ContactTypeT<ContactBits> & field)
+    ////////////////////////////////////////////////////////////////
+    // STEP 5 - Define common output stream handler
+    ////////////////////////////////////////////////////////////////
+    
+    template<typename TypeWithToStream>
+    std::ostream & operator<<(std::ostream & ostr, const TypeWithToStream & value)
     {
-        field.toStream(ostr);
+        value.toStream(ostr);
         return ostr;
     }
     
     ////////////////////////////////////////////////////////////////
-    // STEP 5 - Define aggregate value of chosen fields via bit fields
+    // STEP 6 - Define aggregate value of chosen fields via bit fields
     ////////////////////////////////////////////////////////////////
     
     // Specify the fields we want to have for Address
@@ -464,7 +377,7 @@ namespace coffeemix
     ;
     
     ////////////////////////////////////////////////////////////////
-    // STEP 6 - Typedef for template specializations with chosen fields
+    // STEP 7 - Typedef for template specializations with chosen fields
     ////////////////////////////////////////////////////////////////
     
     // Address Struct Specialization
