@@ -12,6 +12,24 @@
 using coffeemix::AddressType;
 using coffeemix::ContactType;
 
+struct PersonalContacts: coffeemix::AddressType, coffeemix::ContactType
+{
+    
+};
+
+struct Empty1 {};
+struct Empty2 {};
+struct Empty3 {};
+struct Empty4 {};
+struct Empty5 {};
+struct Empty6: Empty1, Empty2 {};
+struct Empty7: Empty1, Empty2, Empty3, Empty4, Empty5 {};
+struct Empty8: Empty3, Empty4, Empty5, Empty6 {};
+struct Empty9: Empty5, Empty6 {};
+struct Empty10: Empty1, Empty6 {};
+struct Empty11: private Empty1, private Empty6 {};
+struct Empty12: Empty1, Empty2, Empty6, Empty7 {};
+
 int main(int argc, const char * argv[])
 {
     std::cout << "CoffeeMix C++ Project!\n\n";
@@ -43,6 +61,26 @@ int main(int argc, const char * argv[])
     // And dumping to the default output stream
     std::cout << "-- sizeof(myContacts) = " << sizeof(myContacts) << std::endl;
     std::cout << myContacts << std::endl;
+    
+    PersonalContacts personalContacts;
+    std::cout << "-- sizeof(personalContacts) = " << sizeof(personalContacts) << std::endl;
+    
+    Empty1 oEmpty1;
+    std::cout << "-- sizeof(oEmpty1) = " << sizeof(oEmpty1) << std::endl;
+    Empty6 oEmpty6;
+    std::cout << "-- sizeof(oEmpty6) = " << sizeof(oEmpty6) << std::endl;
+    Empty7 oEmpty7;
+    std::cout << "-- sizeof(oEmpty7) = " << sizeof(oEmpty7) << std::endl;
+    Empty8 oEmpty8;
+    std::cout << "-- sizeof(oEmpty8) = " << sizeof(oEmpty8) << std::endl;
+    Empty9 oEmpty9;
+    std::cout << "-- sizeof(oEmpty9) = " << sizeof(oEmpty9) << std::endl;
+    Empty10 oEmpty10;
+    std::cout << "-- sizeof(oEmpty10) = " << sizeof(oEmpty10) << std::endl;
+    Empty11 oEmpty11;
+    std::cout << "-- sizeof(oEmpty11) = " << sizeof(oEmpty11) << std::endl;
+    Empty12 oEmpty12;
+    std::cout << "-- sizeof(oEmpty12) = " << sizeof(oEmpty12) << std::endl;
     
     return 0;
 }

@@ -71,7 +71,7 @@ namespace coffeemix
     {
         void toStream(std::ostream & ostr) const
         {
-        }   
+        }
     };
     
     ////////////////////////////////////////////////////////////////
