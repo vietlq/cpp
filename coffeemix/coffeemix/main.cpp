@@ -82,5 +82,23 @@ int main(int argc, const char * argv[])
     Empty12 oEmpty12;
     std::cout << "-- sizeof(oEmpty12) = " << sizeof(oEmpty12) << std::endl;
     
+    if(coffeemix::got_to_stream<AddressType, void(AddressType::*)(std::ostream &) const>::value)
+    {
+        std::cout << "-- coffeemix::got_to_stream Works!" << std::endl;
+    }
+    else
+    {
+        std::cout << "-- coffeemix::got_to_stream Sucks!" << std::endl;   
+    }
+    
+    if(coffeemix::has_to_stream<AddressType>::value)
+    {
+        std::cout << "-- coffeemix::has_to_stream Works!" << std::endl;
+    }
+    else
+    {
+        std::cout << "-- coffeemix::has_to_stream Sucks!" << std::endl;
+    }
+    
     return 0;
 }
