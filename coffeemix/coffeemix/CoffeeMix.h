@@ -102,7 +102,7 @@ namespace coffeemix
         typedef T type;
     };
     
-    // Will the chosen when T has the method void T::toStream(std::ostream &) const
+    // Will be chosen when T has the method void T::toStream(std::ostream &) const
     template<typename T>
     inline
     typename enable_if<T, has_to_stream<T>::value>::type *
@@ -112,7 +112,7 @@ namespace coffeemix
         return 0;
     }
     
-    // Will the chosen when T doesn't have the method void T::toStream(std::ostream &) const
+    // Will be chosen when T doesn't have the method void T::toStream(std::ostream &) const
     template<typename T>
     inline
     typename enable_if<T, !has_to_stream<T>::value>::type *
