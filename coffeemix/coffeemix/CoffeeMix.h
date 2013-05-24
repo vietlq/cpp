@@ -39,30 +39,36 @@ namespace coffeemix
     ////////////////////////////////////////////////////////////////
     
     // Address bit fields
-    enum AddressBF
+    namespace AddressBF
     {
-        Unit            = 1,
-        Level           = 2,
-        ZipCode         = 4,
-        Block           = 8,
-        Street          = 16,
-        Road            = 32,
-        District        = 64
-        // Reserved     = 128
-    };
+        enum
+        {
+            Unit            = 1,
+            Level           = 2,
+            ZipCode         = 4,
+            Block           = 8,
+            Street          = 16,
+            Road            = 32,
+            District        = 64
+            // Reserved     = 128
+        };
+    }
     
     // Contact bit fields
-    enum ContactBF
+    namespace ContactBF
     {
-        Mobile          = 1,
-        HomePhone       = 2,
-        HomeEmail       = 4,
-        // Reserved     = 8
-        OfficePhone     = 16,
-        OfficeEmail     = 32
-        // Reserved     = 64
-        // Reserved     = 128
-    };
+        enum
+        {
+            Mobile          = 1,
+            HomePhone       = 2,
+            HomeEmail       = 4,
+            // Reserved     = 8
+            OfficePhone     = 16,
+            OfficeEmail     = 32
+            // Reserved     = 64
+            // Reserved     = 128
+        };   
+    }
     
     ////////////////////////////////////////////////////////////////
     // NOTE - Use SFINAE (Substituion Failure Is Not An Error)
