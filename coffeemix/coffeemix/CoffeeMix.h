@@ -98,29 +98,33 @@ namespace coffeemix
     
     // Will the chosen when T has the method void T::toStream(std::ostream &) const
     template<typename T>
-    typename enable_if<T, has_to_stream<T>::value>::type
-    inline to_stream(const T & value, std::ostream & ostr)
+    inline
+    typename enable_if<T, has_to_stream<T>::value>::type *
+    to_stream(const T & value, std::ostream & ostr)
     {
         value.toStream(ostr);
+        return 0;
     }
     
     // Will the chosen when T doesn't have the method void T::toStream(std::ostream &) const
     template<typename T>
-    typename enable_if<T, !has_to_stream<T>::value>::type
-    inline to_stream(const T & value, std::ostream & ostr)
+    inline
+    typename enable_if<T, !has_to_stream<T>::value>::type *
+    to_stream(const T & value, std::ostream & ostr)
     {
+        return 0;
     }
     
     // http://stackoverflow.com/questions/257288/is-it-possible-to-write-a-c-template-to-check-for-a-functions-existence
-    #define HAS_MEM_FUNC(func, name)                                        \
-    template<typename T, typename Sign>                                     \
-    struct name {                                                           \
-    typedef char yes[1];                                                    \
-    typedef char no [2];                                                    \
-    template <typename U, U> struct type_check;                             \
-    template <typename _1> static yes &chk(type_check<Sign, &_1::func> *);  \
-    template <typename   > static no  &chk(...);                            \
-    static bool const value = sizeof(chk<T>(0)) == sizeof(yes);             \
+    #define HAS_MEM_FUNC(func, name)                                            \
+    template<typename T, typename Sign>                                         \
+    struct name {                                                               \
+        typedef char yes[1];                                                    \
+        typedef char no [2];                                                    \
+        template <typename U, U> struct type_check;                             \
+        template <typename _1> static yes & chk(type_check<Sign, &_1::func> *); \
+        template <typename   > static no  & chk(...);                           \
+        static bool const value = sizeof(chk<T>(0)) == sizeof(yes);             \
     }
     
     HAS_MEM_FUNC(toStream, got_to_stream);
@@ -142,7 +146,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInUnit<BitField, false> { inline void toStream(std::ostream&) const {} };
+    struct MixInUnit<BitField, false> {};
     
     // For Level
     template<int BitField, bool B = ((BitField & AddressBF::Level) != 0)>
@@ -157,7 +161,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInLevel<BitField, false> { inline void toStream(std::ostream&) const {} };
+    struct MixInLevel<BitField, false> {};
     
     // For ZipCode
     template<int BitField, bool B = ((BitField & AddressBF::ZipCode) != 0)>
@@ -172,7 +176,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInZipCode<BitField, false> { inline void toStream(std::ostream&) const {} };
+    struct MixInZipCode<BitField, false> {};
     
     // For Block
     template<int BitField, bool B = ((BitField & AddressBF::Block) != 0)>
@@ -187,7 +191,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInBlock<BitField, false> { inline void toStream(std::ostream&) const {} };
+    struct MixInBlock<BitField, false> {};
     
     // For Street
     template<int BitField, bool B = ((BitField & AddressBF::Street) != 0)>
@@ -202,7 +206,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInStreet<BitField, false> { inline void toStream(std::ostream&) const {} };
+    struct MixInStreet<BitField, false> {};
     
     // For Road
     template<int BitField, bool B = ((BitField & AddressBF::Road) != 0)>
@@ -217,7 +221,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInRoad<BitField, false> { inline void toStream(std::ostream&) const {} };
+    struct MixInRoad<BitField, false> {};
     
     // For District
     template<int BitField, bool B = ((BitField & AddressBF::District) != 0)>
@@ -232,7 +236,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInDistrict<BitField, false> { inline void toStream(std::ostream&) const {} };
+    struct MixInDistrict<BitField, false> {};
     
     // For Mobile
     template<int BitField, bool B = ((BitField & ContactBF::Mobile) != 0)>
@@ -247,7 +251,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInMobile<BitField, false> { inline void toStream(std::ostream&) const {} };
+    struct MixInMobile<BitField, false> {};
     
     // For HomePhone
     template<int BitField, bool B = ((BitField & ContactBF::HomePhone) != 0)>
@@ -262,7 +266,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInHomePhone<BitField, false> { inline void toStream(std::ostream&) const {} };
+    struct MixInHomePhone<BitField, false> {};
     
     // For HomeEmail
     template<int BitField, bool B = ((BitField & ContactBF::HomeEmail) != 0)>
@@ -277,7 +281,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInHomeEmail<BitField, false> { inline void toStream(std::ostream&) const {} };
+    struct MixInHomeEmail<BitField, false> {};
     
     // For OfficePhone
     template<int BitField, bool B = ((BitField & ContactBF::OfficePhone) != 0)>
@@ -292,7 +296,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInOfficePhone<BitField, false> { inline void toStream(std::ostream&) const {} };
+    struct MixInOfficePhone<BitField, false> {};
     
     // For OfficeEmail
     template<int BitField, bool B = ((BitField & ContactBF::OfficeEmail) != 0)>
@@ -307,7 +311,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInOfficeEmail<BitField, false> { inline void toStream(std::ostream&) const {} };
+    struct MixInOfficeEmail<BitField, false> {};
     
     ////////////////////////////////////////////////////////////////
     // STEP 4 - Define aggregate template for each type
@@ -322,13 +326,13 @@ namespace coffeemix
     {
         inline void toStream(std::ostream & ostr) const
         {
-            MixInUnit<AddressBits>::toStream(ostr);
-            MixInLevel<AddressBits>::toStream(ostr);
-            MixInZipCode<AddressBits>::toStream(ostr);
-            MixInBlock<AddressBits>::toStream(ostr);
-            MixInStreet<AddressBits>::toStream(ostr);
-            MixInRoad<AddressBits>::toStream(ostr);
-            MixInDistrict<AddressBits>::toStream(ostr);
+            to_stream(MixInUnit<AddressBits>(*this), ostr);
+            to_stream(MixInLevel<AddressBits>(*this), ostr);
+            to_stream(MixInZipCode<AddressBits>(*this), ostr);
+            to_stream(MixInBlock<AddressBits>(*this), ostr);
+            to_stream(MixInStreet<AddressBits>(*this), ostr);
+            to_stream(MixInRoad<AddressBits>(*this), ostr);
+            to_stream(MixInDistrict<AddressBits>(*this), ostr);
         }
     };
     
@@ -340,11 +344,11 @@ namespace coffeemix
     {
         inline void toStream(std::ostream & ostr) const
         {
-            MixInMobile<ContactBits>::toStream(ostr);
-            MixInHomePhone<ContactBits>::toStream(ostr);
-            MixInHomeEmail<ContactBits>::toStream(ostr);
-            MixInOfficePhone<ContactBits>::toStream(ostr);
-            MixInOfficeEmail<ContactBits>::toStream(ostr);
+            to_stream(MixInMobile<ContactBits>(*this), ostr);
+            to_stream(MixInHomePhone<ContactBits>(*this), ostr);
+            to_stream(MixInHomeEmail<ContactBits>(*this), ostr);
+            to_stream(MixInOfficePhone<ContactBits>(*this), ostr);
+            to_stream(MixInOfficeEmail<ContactBits>(*this), ostr);
         }
     };
     
