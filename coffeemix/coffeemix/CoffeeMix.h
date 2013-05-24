@@ -330,7 +330,7 @@ namespace coffeemix
         MixInBlock<AddressBits>, MixInStreet<AddressBits>,
         MixInRoad<AddressBits>, MixInDistrict<AddressBits>
     {
-        inline void toStream(std::ostream & ostr) const
+        void toStream(std::ostream & ostr) const
         {
             MixInUnit<AddressBits>::toStream(ostr);
             MixInLevel<AddressBits>::toStream(ostr);
@@ -348,7 +348,7 @@ namespace coffeemix
     MixInHomePhone<ContactBits>, MixInHomeEmail<ContactBits>,
     MixInOfficePhone<ContactBits>, MixInOfficeEmail<ContactBits>
     {
-        inline void toStream(std::ostream & ostr) const
+        void toStream(std::ostream & ostr) const
         {
             MixInMobile<ContactBits>::toStream(ostr);
             MixInHomePhone<ContactBits>::toStream(ostr);
