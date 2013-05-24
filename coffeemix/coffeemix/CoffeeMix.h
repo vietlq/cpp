@@ -106,9 +106,9 @@ namespace coffeemix
     template<typename T>
     inline
     typename enable_if<T, has_to_stream<T>::value>::type *
-    to_stream(const T & value, std::ostream & ostr)
+    to_stream(const T * pObj, std::ostream & ostr)
     {
-        value.toStream(ostr);
+        pObj->toStream(ostr);
         return 0;
     }
     
@@ -116,7 +116,7 @@ namespace coffeemix
     template<typename T>
     inline
     typename enable_if<T, !has_to_stream<T>::value>::type *
-    to_stream(const T & value, std::ostream & ostr)
+    to_stream(const T * pObj, std::ostream & ostr)
     {
         return 0;
     }
@@ -332,13 +332,13 @@ namespace coffeemix
     {
         inline void toStream(std::ostream & ostr) const
         {
-            to_stream(MixInUnit<AddressBits>(*this), ostr);
-            to_stream(MixInLevel<AddressBits>(*this), ostr);
-            to_stream(MixInZipCode<AddressBits>(*this), ostr);
-            to_stream(MixInBlock<AddressBits>(*this), ostr);
-            to_stream(MixInStreet<AddressBits>(*this), ostr);
-            to_stream(MixInRoad<AddressBits>(*this), ostr);
-            to_stream(MixInDistrict<AddressBits>(*this), ostr);
+            to_stream((MixInUnit<AddressBits> *)this, ostr);
+            to_stream((MixInLevel<AddressBits> *)this, ostr);
+            to_stream((MixInZipCode<AddressBits> *)this, ostr);
+            to_stream((MixInBlock<AddressBits> *)this, ostr);
+            to_stream((MixInStreet<AddressBits> *)this, ostr);
+            to_stream((MixInRoad<AddressBits> *)this, ostr);
+            to_stream((MixInDistrict<AddressBits> *)this, ostr);
         }
     };
     
@@ -350,11 +350,11 @@ namespace coffeemix
     {
         inline void toStream(std::ostream & ostr) const
         {
-            to_stream(MixInMobile<ContactBits>(*this), ostr);
-            to_stream(MixInHomePhone<ContactBits>(*this), ostr);
-            to_stream(MixInHomeEmail<ContactBits>(*this), ostr);
-            to_stream(MixInOfficePhone<ContactBits>(*this), ostr);
-            to_stream(MixInOfficeEmail<ContactBits>(*this), ostr);
+            to_stream((MixInMobile<ContactBits> *)this, ostr);
+            to_stream((MixInHomePhone<ContactBits> *)this, ostr);
+            to_stream((MixInHomeEmail<ContactBits> *)this, ostr);
+            to_stream((MixInOfficePhone<ContactBits> *)this, ostr);
+            to_stream((MixInOfficeEmail<ContactBits> *)this, ostr);
         }
     };
     
