@@ -67,12 +67,23 @@ namespace coffeemix
     ////////////////////////////////////////////////////////////////
     // NOTE - Define super class with No-OP toStream method
     ////////////////////////////////////////////////////////////////
-    struct EmptyToStream
+    template<typename T>
+    struct has_to_stream
     {
-        void toStream(std::ostream & ostr) const
-        {
-        }
+        typedef char yes;
+        typedef struct {char _[2];} no;
+        
+        static yes check(void(T::*toStream)(std::ostream &));
+        static no check(...);
+        
+        static const bool value = (sizeof(yes) == sizeof(check(void(T::toStream))));
     };
+    
+    template<typename T, bool B = has_to_stream<T>::value>
+    void to_stream(const T & value, std::ostream & ostr)
+    {
+        value.toStream(ostr);
+    }
     
     ////////////////////////////////////////////////////////////////
     // STEP 3 - Define conditional templates for each fields & std::ostream
@@ -91,7 +102,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInUnit<BitField, false> : EmptyToStream {};
+    struct MixInUnit<BitField, false> { void toStream(std::ostream&) const {} };
     
     // For Level
     template<int BitField, bool B = ((BitField & AddressBF::Level) != 0)>
@@ -106,7 +117,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInLevel<BitField, false> : EmptyToStream {};
+    struct MixInLevel<BitField, false> { void toStream(std::ostream&) const {} };
     
     // For ZipCode
     template<int BitField, bool B = ((BitField & AddressBF::ZipCode) != 0)>
@@ -121,7 +132,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInZipCode<BitField, false> : EmptyToStream {};
+    struct MixInZipCode<BitField, false> { void toStream(std::ostream&) const {} };
     
     // For Block
     template<int BitField, bool B = ((BitField & AddressBF::Block) != 0)>
@@ -136,7 +147,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInBlock<BitField, false> : EmptyToStream {};
+    struct MixInBlock<BitField, false> { void toStream(std::ostream&) const {} };
     
     // For Street
     template<int BitField, bool B = ((BitField & AddressBF::Street) != 0)>
@@ -151,7 +162,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInStreet<BitField, false> : EmptyToStream {};
+    struct MixInStreet<BitField, false> { void toStream(std::ostream&) const {} };
     
     // For Road
     template<int BitField, bool B = ((BitField & AddressBF::Road) != 0)>
@@ -166,7 +177,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInRoad<BitField, false> : EmptyToStream {};
+    struct MixInRoad<BitField, false> { void toStream(std::ostream&) const {} };
     
     // For District
     template<int BitField, bool B = ((BitField & AddressBF::District) != 0)>
@@ -181,7 +192,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInDistrict<BitField, false> : EmptyToStream {};
+    struct MixInDistrict<BitField, false> { void toStream(std::ostream&) const {} };
     
     // For Mobile
     template<int BitField, bool B = ((BitField & ContactBF::Mobile) != 0)>
@@ -196,7 +207,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInMobile<BitField, false> : EmptyToStream {};
+    struct MixInMobile<BitField, false> { void toStream(std::ostream&) const {} };
     
     // For HomePhone
     template<int BitField, bool B = ((BitField & ContactBF::HomePhone) != 0)>
@@ -211,7 +222,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInHomePhone<BitField, false> : EmptyToStream {};
+    struct MixInHomePhone<BitField, false> { void toStream(std::ostream&) const {} };
     
     // For HomeEmail
     template<int BitField, bool B = ((BitField & ContactBF::HomeEmail) != 0)>
@@ -226,7 +237,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInHomeEmail<BitField, false> : EmptyToStream {};
+    struct MixInHomeEmail<BitField, false> { void toStream(std::ostream&) const {} };
     
     // For OfficePhone
     template<int BitField, bool B = ((BitField & ContactBF::OfficePhone) != 0)>
@@ -241,7 +252,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInOfficePhone<BitField, false> : EmptyToStream {};
+    struct MixInOfficePhone<BitField, false> { void toStream(std::ostream&) const {} };
     
     // For OfficeEmail
     template<int BitField, bool B = ((BitField & ContactBF::OfficeEmail) != 0)>
@@ -256,7 +267,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInOfficeEmail<BitField, false> : EmptyToStream {};
+    struct MixInOfficeEmail<BitField, false> { void toStream(std::ostream&) const {} };
     
     ////////////////////////////////////////////////////////////////
     // STEP 4 - Define aggregate template for each type
