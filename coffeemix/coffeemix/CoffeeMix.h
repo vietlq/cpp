@@ -106,9 +106,9 @@ namespace coffeemix
     template<typename T>
     inline
     typename enable_if<T, has_to_stream<T>::value>::type *
-    to_stream(const T * pObj, std::ostream & ostr)
+    to_stream(const T & obj, std::ostream & ostr)
     {
-        pObj->toStream(ostr);
+        obj.toStream(ostr);
         return 0;
     }
     
@@ -116,7 +116,7 @@ namespace coffeemix
     template<typename T>
     inline
     typename enable_if<T, !has_to_stream<T>::value>::type *
-    to_stream(const T * pObj, std::ostream & ostr)
+    to_stream(const T & obj, std::ostream & ostr)
     {
         return 0;
     }
@@ -152,7 +152,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInUnit<BitField, false> {};
+    struct MixInUnit<BitField, false> { inline void toStream(std::ostream &) const {} };
     
     // For Level
     template<int BitField, bool B = ((BitField & AddressBF::Level) != 0)>
@@ -167,7 +167,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInLevel<BitField, false> {};
+    struct MixInLevel<BitField, false> { inline void toStream(std::ostream &) const {} };
     
     // For ZipCode
     template<int BitField, bool B = ((BitField & AddressBF::ZipCode) != 0)>
@@ -182,7 +182,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInZipCode<BitField, false> {};
+    struct MixInZipCode<BitField, false> { inline void toStream(std::ostream &) const {} };
     
     // For Block
     template<int BitField, bool B = ((BitField & AddressBF::Block) != 0)>
@@ -197,7 +197,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInBlock<BitField, false> {};
+    struct MixInBlock<BitField, false> { inline void toStream(std::ostream &) const {} };
     
     // For Street
     template<int BitField, bool B = ((BitField & AddressBF::Street) != 0)>
@@ -212,7 +212,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInStreet<BitField, false> {};
+    struct MixInStreet<BitField, false> { inline void toStream(std::ostream &) const {} };
     
     // For Road
     template<int BitField, bool B = ((BitField & AddressBF::Road) != 0)>
@@ -227,7 +227,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInRoad<BitField, false> {};
+    struct MixInRoad<BitField, false> { inline void toStream(std::ostream &) const {} };
     
     // For District
     template<int BitField, bool B = ((BitField & AddressBF::District) != 0)>
@@ -242,7 +242,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInDistrict<BitField, false> {};
+    struct MixInDistrict<BitField, false> { inline void toStream(std::ostream &) const {} };
     
     // For Mobile
     template<int BitField, bool B = ((BitField & ContactBF::Mobile) != 0)>
@@ -257,7 +257,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInMobile<BitField, false> {};
+    struct MixInMobile<BitField, false> { inline void toStream(std::ostream &) const {} };
     
     // For HomePhone
     template<int BitField, bool B = ((BitField & ContactBF::HomePhone) != 0)>
@@ -272,7 +272,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInHomePhone<BitField, false> {};
+    struct MixInHomePhone<BitField, false> { inline void toStream(std::ostream &) const {} };
     
     // For HomeEmail
     template<int BitField, bool B = ((BitField & ContactBF::HomeEmail) != 0)>
@@ -287,7 +287,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInHomeEmail<BitField, false> {};
+    struct MixInHomeEmail<BitField, false> { inline void toStream(std::ostream &) const {} };
     
     // For OfficePhone
     template<int BitField, bool B = ((BitField & ContactBF::OfficePhone) != 0)>
@@ -302,7 +302,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInOfficePhone<BitField, false> {};
+    struct MixInOfficePhone<BitField, false> { inline void toStream(std::ostream &) const {} };
     
     // For OfficeEmail
     template<int BitField, bool B = ((BitField & ContactBF::OfficeEmail) != 0)>
@@ -317,7 +317,7 @@ namespace coffeemix
     };
     
     template<int BitField>
-    struct MixInOfficeEmail<BitField, false> {};
+    struct MixInOfficeEmail<BitField, false> { inline void toStream(std::ostream &) const {} };
     
     ////////////////////////////////////////////////////////////////
     // STEP 4 - Define aggregate template for each type
@@ -332,13 +332,13 @@ namespace coffeemix
     {
         inline void toStream(std::ostream & ostr) const
         {
-            to_stream((MixInUnit<AddressBits> *)this, ostr);
-            to_stream((MixInLevel<AddressBits> *)this, ostr);
-            to_stream((MixInZipCode<AddressBits> *)this, ostr);
-            to_stream((MixInBlock<AddressBits> *)this, ostr);
-            to_stream((MixInStreet<AddressBits> *)this, ostr);
-            to_stream((MixInRoad<AddressBits> *)this, ostr);
-            to_stream((MixInDistrict<AddressBits> *)this, ostr);
+            MixInUnit<AddressBits>::toStream(ostr);
+            MixInLevel<AddressBits>::toStream(ostr);
+            MixInZipCode<AddressBits>::toStream(ostr);
+            MixInBlock<AddressBits>::toStream(ostr);
+            MixInStreet<AddressBits>::toStream(ostr);
+            MixInRoad<AddressBits>::toStream(ostr);
+            MixInDistrict<AddressBits>::toStream(ostr);
         }
     };
     
@@ -350,11 +350,11 @@ namespace coffeemix
     {
         inline void toStream(std::ostream & ostr) const
         {
-            to_stream((MixInMobile<ContactBits> *)this, ostr);
-            to_stream((MixInHomePhone<ContactBits> *)this, ostr);
-            to_stream((MixInHomeEmail<ContactBits> *)this, ostr);
-            to_stream((MixInOfficePhone<ContactBits> *)this, ostr);
-            to_stream((MixInOfficeEmail<ContactBits> *)this, ostr);
+            MixInMobile<ContactBits>::toStream(ostr);
+            MixInHomePhone<ContactBits>::toStream(ostr);
+            MixInHomeEmail<ContactBits>::toStream(ostr);
+            MixInOfficePhone<ContactBits>::toStream(ostr);
+            MixInOfficeEmail<ContactBits>::toStream(ostr);
         }
     };
     
