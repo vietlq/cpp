@@ -27,28 +27,28 @@ protected:
 TEST_F(TestSet, NewSetIsEmpty)
 {
 	Set set;
-	EXPECT_EQ(true, set.isEmpty());
+	EXPECT_TRUE(set.isEmpty());
 }
 
 TEST_F(TestSet, SetWithOneEleIsNotEmpty)
 {
 	Set set;
 	set.add(1);
-	EXPECT_EQ(false, set.isEmpty());
+	EXPECT_FALSE(set.isEmpty());
 }
 
 TEST_F(TestSet, SetAddOneContainsOne)
 {
 	Set set;
 	set.add(1);
-	EXPECT_EQ(true, set.contains(1));
+	EXPECT_TRUE(set.contains(1));
 }
 
 TEST_F(TestSet, SetAddOneDoesNotContainsTwo)
 {
 	Set set;
 	set.add(1);
-	EXPECT_EQ(false, set.contains(2));
+	EXPECT_FALSE(set.contains(2));
 }
 
 TEST_F(TestSet, SetWithOneEleHasSizeOfOne)
@@ -80,7 +80,7 @@ TEST_F(TestSet, SetWithOneEleRemovedOneIsEmpty)
 	set.add(1);
 	set.remove(1);
 	EXPECT_EQ(0, set.size());
-	EXPECT_EQ(true, set.isEmpty());
+	EXPECT_TRUE(set.isEmpty());
 }
 
 TEST_F(TestSet, SetWithOneEleRemovedZeroIsNotEmpty)
@@ -89,7 +89,7 @@ TEST_F(TestSet, SetWithOneEleRemovedZeroIsNotEmpty)
 	set.add(1);
 	set.remove(0);
 	EXPECT_EQ(1, set.size());
-	EXPECT_EQ(false, set.isEmpty());
+	EXPECT_FALSE(set.isEmpty());
 }
 
 TEST_F(TestSet, SetWithTwoDistinctEleRemovedOneIsNotEmpty)
@@ -98,10 +98,10 @@ TEST_F(TestSet, SetWithTwoDistinctEleRemovedOneIsNotEmpty)
 	set.add(1);
 	set.add(2);
 	EXPECT_EQ(2, set.size());
-	EXPECT_EQ(false, set.isEmpty());
+	EXPECT_FALSE(set.isEmpty());
 	set.remove(1);
 	EXPECT_EQ(1, set.size());
-	EXPECT_EQ(false, set.isEmpty());
+	EXPECT_FALSE(set.isEmpty());
 }
 
 TEST_F(TestSet, SetWithTwoEqualEleRemovedOneIsEmpty)
@@ -110,8 +110,8 @@ TEST_F(TestSet, SetWithTwoEqualEleRemovedOneIsEmpty)
 	set.add(1);
 	set.add(1);
 	EXPECT_EQ(1, set.size());
-	EXPECT_EQ(false, set.isEmpty());
+	EXPECT_FALSE(set.isEmpty());
 	set.remove(1);
 	EXPECT_EQ(0, set.size());
-	EXPECT_EQ(true, set.isEmpty());
+	EXPECT_TRUE(set.isEmpty());
 }
