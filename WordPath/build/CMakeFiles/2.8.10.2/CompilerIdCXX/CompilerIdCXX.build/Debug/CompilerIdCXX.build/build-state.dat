@@ -1,0 +1,68 @@
+TCompilerIdCXX
+v5
+r1
+cCheck dependencies
+cCompileC ./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX normal i386
+cPhaseScriptExecution "Run Script" /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+
+N/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX
+t2
+s0
+
+N/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o
+t2
+s0
+
+N/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CompilerIdCXX.LinkFileList
+c0000000051B35F2900000000000000B1
+t1370709801
+s177
+
+N/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+c0000000051B35F29000000000000002A
+t1370709801
+s42
+
+N/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp
+c0000000051B35F280000000000002E22
+t1370709800
+s11810
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies750616a99663b741^ee9323a99663b741^---0#1#0#--18"Check dependencies36"265CB120-BD49-48D2-9413-191DFA22A5D3-
+
+CCompileC ./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s392402601.143987
+e392402601.167041
+r1
+xCompileC
+x./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o
+x/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection118"Compile /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp331625a99663b741^7ac22aa99663b741^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp0000000000000000^2791"CompileC ./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o CMakeCXXCompilerId.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.hmap -I/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources/i386 -I/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources -F/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX -MMD -MT dependencies -MF /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.d --serialize-diagnostics /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.dia -c /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp -o /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o36"4DF6F263-4672-4813-9D38-0247E7627BB8-
+
+CLd /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX normal i386
+s392402601.173971
+e392402601.199606
+r1
+xLd
+x/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Link /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX809c2ca99663b741^fc1833a99663b741^---0#0#0#--716"Ld ./CompilerIdCXX normal i386    cd /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -L/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX -F/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX -filelist /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CompilerIdCXX.LinkFileList -o /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX36"B2640B29-B71B-4187-92BC-5A2FC44807AE-
+
+CPhaseScriptExecution "Run Script" /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+s392402601.208035
+e392402601.227882
+r1
+xPhaseScriptExecution
+xRun Script
+x/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+oGCC_VERSION=com.apple.compilers.llvm.clang.1_0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Run custom shell script 'Run Script'31b135a99663b741^19593aa99663b741^-47"GCC_VERSION=com.apple.compilers.llvm.clang.1_01(21%IDEActivityLogMessage2@47"GCC_VERSION=com.apple.compilers.llvm.clang.1_0-392402601#0#47#-0#-----0#0#0#--398"PhaseScriptExecution "Run Script" ./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh    cd /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX    /bin/sh -c /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh36"B85A085F-E9B1-4923-A3A0-B5257F07B824-
+
