@@ -6,7 +6,7 @@ This class passes all test cases given.
 The idea is not to implement the most efficient
 set data structure.
 The idea is to play with TDD concepts.
-I would refactor this to use BST not, an array.
+I would refactor this to use BST not an array bounded by 1024.
 */
 
 class Set
