@@ -138,6 +138,30 @@ Dictionary.cpp.s:
 	$(MAKE) -f CMakeFiles/word_path.dir/build.make CMakeFiles/word_path.dir/Dictionary.cpp.s
 .PHONY : Dictionary.cpp.s
 
+TestDictionary.o: TestDictionary.cpp.o
+.PHONY : TestDictionary.o
+
+# target to build an object file
+TestDictionary.cpp.o:
+	$(MAKE) -f CMakeFiles/word_path.dir/build.make CMakeFiles/word_path.dir/TestDictionary.cpp.o
+.PHONY : TestDictionary.cpp.o
+
+TestDictionary.i: TestDictionary.cpp.i
+.PHONY : TestDictionary.i
+
+# target to preprocess a source file
+TestDictionary.cpp.i:
+	$(MAKE) -f CMakeFiles/word_path.dir/build.make CMakeFiles/word_path.dir/TestDictionary.cpp.i
+.PHONY : TestDictionary.cpp.i
+
+TestDictionary.s: TestDictionary.cpp.s
+.PHONY : TestDictionary.s
+
+# target to generate assembly for a file
+TestDictionary.cpp.s:
+	$(MAKE) -f CMakeFiles/word_path.dir/build.make CMakeFiles/word_path.dir/TestDictionary.cpp.s
+.PHONY : TestDictionary.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -174,6 +198,9 @@ help:
 	@echo "... Dictionary.o"
 	@echo "... Dictionary.i"
 	@echo "... Dictionary.s"
+	@echo "... TestDictionary.o"
+	@echo "... TestDictionary.i"
+	@echo "... TestDictionary.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

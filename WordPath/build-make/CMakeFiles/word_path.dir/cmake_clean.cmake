@@ -1,6 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/word_path.dir/main.cpp.o"
   "CMakeFiles/word_path.dir/Dictionary.cpp.o"
+  "CMakeFiles/word_path.dir/TestDictionary.cpp.o"
   "word_path.pdb"
   "word_path"
 )

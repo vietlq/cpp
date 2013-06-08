@@ -11,4 +11,17 @@
 
 #include <iostream>
 
+class Dictionary
+{
+public:
+    Dictionary();
+    
+    ~Dictionary();
+    
+    bool empty();
+    
+private:
+    
+};
+
 #endif /* defined(__WordPath__Dictionary__) */

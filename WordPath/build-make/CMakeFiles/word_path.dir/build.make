@@ -98,16 +98,41 @@ CMakeFiles/word_path.dir/Dictionary.cpp.o.provides: CMakeFiles/word_path.dir/Dic
 
 CMakeFiles/word_path.dir/Dictionary.cpp.o.provides.build: CMakeFiles/word_path.dir/Dictionary.cpp.o
 
+CMakeFiles/word_path.dir/TestDictionary.cpp.o: CMakeFiles/word_path.dir/flags.make
+CMakeFiles/word_path.dir/TestDictionary.cpp.o: ../TestDictionary.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/vietlq/projects/viet-github-cpp/WordPath/build-make/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/word_path.dir/TestDictionary.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/word_path.dir/TestDictionary.cpp.o -c /Users/vietlq/projects/viet-github-cpp/WordPath/TestDictionary.cpp
+
+CMakeFiles/word_path.dir/TestDictionary.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/word_path.dir/TestDictionary.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/vietlq/projects/viet-github-cpp/WordPath/TestDictionary.cpp > CMakeFiles/word_path.dir/TestDictionary.cpp.i
+
+CMakeFiles/word_path.dir/TestDictionary.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/word_path.dir/TestDictionary.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/vietlq/projects/viet-github-cpp/WordPath/TestDictionary.cpp -o CMakeFiles/word_path.dir/TestDictionary.cpp.s
+
+CMakeFiles/word_path.dir/TestDictionary.cpp.o.requires:
+.PHONY : CMakeFiles/word_path.dir/TestDictionary.cpp.o.requires
+
+CMakeFiles/word_path.dir/TestDictionary.cpp.o.provides: CMakeFiles/word_path.dir/TestDictionary.cpp.o.requires
+	$(MAKE) -f CMakeFiles/word_path.dir/build.make CMakeFiles/word_path.dir/TestDictionary.cpp.o.provides.build
+.PHONY : CMakeFiles/word_path.dir/TestDictionary.cpp.o.provides
+
+CMakeFiles/word_path.dir/TestDictionary.cpp.o.provides.build: CMakeFiles/word_path.dir/TestDictionary.cpp.o
+
 # Object files for target word_path
 word_path_OBJECTS = \
 "CMakeFiles/word_path.dir/main.cpp.o" \
-"CMakeFiles/word_path.dir/Dictionary.cpp.o"
+"CMakeFiles/word_path.dir/Dictionary.cpp.o" \
+"CMakeFiles/word_path.dir/TestDictionary.cpp.o"
 
 # External object files for target word_path
 word_path_EXTERNAL_OBJECTS =
 
 word_path: CMakeFiles/word_path.dir/main.cpp.o
 word_path: CMakeFiles/word_path.dir/Dictionary.cpp.o
+word_path: CMakeFiles/word_path.dir/TestDictionary.cpp.o
 word_path: CMakeFiles/word_path.dir/build.make
 word_path: CMakeFiles/word_path.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable word_path"
@@ -119,6 +144,7 @@ CMakeFiles/word_path.dir/build: word_path
 
 CMakeFiles/word_path.dir/requires: CMakeFiles/word_path.dir/main.cpp.o.requires
 CMakeFiles/word_path.dir/requires: CMakeFiles/word_path.dir/Dictionary.cpp.o.requires
+CMakeFiles/word_path.dir/requires: CMakeFiles/word_path.dir/TestDictionary.cpp.o.requires
 .PHONY : CMakeFiles/word_path.dir/requires
 
 CMakeFiles/word_path.dir/clean:

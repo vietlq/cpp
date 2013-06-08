@@ -12,10 +12,12 @@ source_group("Headers" Dictionary.h)
 SET(SOURCE_FILES
 	main.cpp
 	Dictionary.cpp
+	TestDictionary.cpp
 )
 
 SET(HEADER_FILES
 	Dictionary.h
+	TestDictionary.h
 )
 
 add_executable(word_path ${SOURCE_FILES} ${HEADER_FILES})
