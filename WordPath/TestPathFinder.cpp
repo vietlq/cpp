@@ -201,3 +201,28 @@ TEST_F(TestPathFinder, StringsWithMoreThanOneDiffCharAreNotAdjacent)
     EXPECT_FALSE(are_adjacent("abdaa", "abcba"));
     EXPECT_FALSE(are_adjacent("abcaa", "abdba"));
 }
+
+TEST_F(TestPathFinder, PathFinderComplainsAboutMissingPairs)
+{
+    PathFinder pathFinder;
+    EXPECT_EQ(0, pathFinder.size());
+    pathFinder.add("piano");
+    pathFinder.add("violin");
+    pathFinder.add("clarinet");
+    pathFinder.add("harmonica");
+    
+    EXPECT_EQ(ERR_BOTH_WORDS_MUST_BE_INSERTED, pathFinder.path("piano", "basso"));
+    EXPECT_NE(ERR_BOTH_WORDS_MUST_BE_INSERTED, pathFinder.path("piano", "violin"));
+}
+
+TEST_F(TestPathFinder, PathFinderComplainsAboutDiffLen)
+{
+    PathFinder pathFinder;
+    EXPECT_EQ(0, pathFinder.size());
+    pathFinder.add("piano");
+    pathFinder.add("violin");
+    pathFinder.add("clarinet");
+    pathFinder.add("harmonica");
+    
+    EXPECT_EQ(ERR_BOTH_WORDS_MUST_BE_SAME_LEN, pathFinder.path("piano", "violin"));
+}

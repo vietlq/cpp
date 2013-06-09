@@ -26,6 +26,9 @@ struct proxy_iterator_comp
     }
 };
 
+const char ERR_BOTH_WORDS_MUST_BE_INSERTED[] = "ERR_BOTH_WORDS_MUST_BE_INSERTED";
+const char ERR_BOTH_WORDS_MUST_BE_SAME_LEN[] = "ERR_BOTH_WORDS_MUST_BE_SAME_LEN";
+
 class PathFinder
 {
 public:
@@ -42,6 +45,8 @@ public:
     void remove(const std::string & word);
     
     bool contains(const std::string & word) const;
+    
+    std::string path(const std::string & start, const std::string & finish) const;
     
 private:
     // Node & pointer forward declaration

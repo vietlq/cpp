@@ -106,3 +106,20 @@ bool PathFinder::contains(const std::string & word) const
     node._value = newWord;
     return (_bstNodes.end() != _bstNodes.find(&node));
 }
+
+std::string PathFinder::path(const std::string & start, const std::string & finish) const
+{
+    std::string result;
+    
+    if(start.size() != finish.size())
+    {
+        return ERR_BOTH_WORDS_MUST_BE_SAME_LEN;
+    }
+    
+    if(! (contains(start) && contains(finish)))
+    {
+        return ERR_BOTH_WORDS_MUST_BE_INSERTED;
+    }
+    
+    return result;
+}
