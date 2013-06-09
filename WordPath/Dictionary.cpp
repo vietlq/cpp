@@ -20,16 +20,15 @@ Dictionary::~Dictionary()
 
 bool Dictionary::empty() const
 {
-    return _empty;
+    return _words.empty();
 }
 
 void Dictionary::add(const std::string & word)
 {
-    _empty = false;
-    ++_size;
+    _words.insert(word);
 }
 
 size_t Dictionary::size() const
 {
-    return _size;
+    return _words.size();
 }

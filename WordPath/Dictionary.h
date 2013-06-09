@@ -29,6 +29,7 @@ public:
 private:
     bool _empty;
     size_t _size;
+    std::set<std::string> _words;
 };
 
 #endif /* defined(__WordPath__Dictionary__) */
