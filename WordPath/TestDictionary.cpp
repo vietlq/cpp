@@ -140,3 +140,27 @@ TEST_F(TestDictionary, DictionaryContainsCaseInsensitiveWords_1)
     EXPECT_TRUE(dict.contains("Piano"));
     EXPECT_TRUE(dict.contains("piaNO"));
 }
+
+TEST_F(TestDictionary, DictionaryRemoveCaseInsensitiveWords_1)
+{
+    Dictionary dict;
+    EXPECT_EQ(0, dict.size());
+    dict.add("PIANO");
+    dict.add("clARinet");
+    dict.add("harmONica");
+    dict.add("vIoLin");
+    EXPECT_TRUE(dict.contains("piano"));
+    EXPECT_TRUE(dict.contains("clarinet"));
+    EXPECT_TRUE(dict.contains("harmonica"));
+    EXPECT_TRUE(dict.contains("violin"));
+    dict.remove("piano");
+    EXPECT_FALSE(dict.contains("piano"));
+    EXPECT_TRUE(dict.contains("clarinet"));
+    EXPECT_TRUE(dict.contains("harmonica"));
+    EXPECT_TRUE(dict.contains("violin"));
+    dict.remove("CLarinet");
+    EXPECT_FALSE(dict.contains("piano"));
+    EXPECT_FALSE(dict.contains("clarinet"));
+    EXPECT_TRUE(dict.contains("harmonica"));
+    EXPECT_TRUE(dict.contains("violin"));
+}

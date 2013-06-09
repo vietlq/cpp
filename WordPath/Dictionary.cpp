@@ -49,10 +49,14 @@ bool Dictionary::contains(const std::string & word) const
 
 void Dictionary::remove(const std::string & word)
 {
-    word_iterator_t it = _words.find(word);
+    std::string newWord(word);
+    
+    std::transform(newWord.begin(), newWord.end(), newWord.begin(), ::tolower);
+    
+    word_iterator_t it = _words.find(newWord);
     
     if(_words.end() != it)
     {
-        _words.erase(word);
+        _words.erase(newWord);
     }
 }
