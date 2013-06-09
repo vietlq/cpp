@@ -6,17 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/Users/vietlq/projects/viet-github-cpp/WordPath/Dictionary.cpp
-algorithm
--
-Dictionary.h
-/Users/vietlq/projects/viet-github-cpp/WordPath/Dictionary.h
+/Users/vietlq/projects/viet-github-cpp/WordPath/PathFinder.cpp
+PathFinder.h
+/Users/vietlq/projects/viet-github-cpp/WordPath/PathFinder.h
 
-/Users/vietlq/projects/viet-github-cpp/WordPath/Dictionary.h
+/Users/vietlq/projects/viet-github-cpp/WordPath/PathFinder.h
 iostream
 -
-string
--
-set
+
+/Users/vietlq/projects/viet-github-cpp/WordPath/TestPathFinder.cpp
+TestPathFinder.h
+/Users/vietlq/projects/viet-github-cpp/WordPath/TestPathFinder.h
+
+/Users/vietlq/projects/viet-github-cpp/WordPath/TestPathFinder.h
+iostream
 -
 

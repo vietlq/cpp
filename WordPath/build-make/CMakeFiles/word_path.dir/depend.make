@@ -4,6 +4,9 @@
 CMakeFiles/word_path.dir/Dictionary.cpp.o: ../Dictionary.cpp
 CMakeFiles/word_path.dir/Dictionary.cpp.o: ../Dictionary.h
 
+CMakeFiles/word_path.dir/PathFinder.cpp.o: ../PathFinder.cpp
+CMakeFiles/word_path.dir/PathFinder.cpp.o: ../PathFinder.h
+
 CMakeFiles/word_path.dir/TestDictionary.cpp.o: ../Dictionary.h
 CMakeFiles/word_path.dir/TestDictionary.cpp.o: ../TestDictionary.cpp
 CMakeFiles/word_path.dir/TestDictionary.cpp.o: ../TestDictionary.h
@@ -26,6 +29,9 @@ CMakeFiles/word_path.dir/TestDictionary.cpp.o: /usr/local/include/gtest/internal
 CMakeFiles/word_path.dir/TestDictionary.cpp.o: /usr/local/include/gtest/internal/gtest-string.h
 CMakeFiles/word_path.dir/TestDictionary.cpp.o: /usr/local/include/gtest/internal/gtest-tuple.h
 CMakeFiles/word_path.dir/TestDictionary.cpp.o: /usr/local/include/gtest/internal/gtest-type-util.h
+
+CMakeFiles/word_path.dir/TestPathFinder.cpp.o: ../TestPathFinder.cpp
+CMakeFiles/word_path.dir/TestPathFinder.cpp.o: ../TestPathFinder.h
 
 CMakeFiles/word_path.dir/main.cpp.o: ../main.cpp
 CMakeFiles/word_path.dir/main.cpp.o: /usr/local/include/gtest/gtest-death-test.h

@@ -62,7 +62,7 @@ CMAKE_BINARY_DIR = /Users/vietlq/projects/viet-github-cpp/WordPath/build-make
 CMakeFiles/word_path.dir/all:
 	$(MAKE) -f CMakeFiles/word_path.dir/build.make CMakeFiles/word_path.dir/depend
 	$(MAKE) -f CMakeFiles/word_path.dir/build.make CMakeFiles/word_path.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/vietlq/projects/viet-github-cpp/WordPath/build-make/CMakeFiles  1 2 3
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/vietlq/projects/viet-github-cpp/WordPath/build-make/CMakeFiles  1 2 3 4 5
 	@echo "Built target word_path"
 .PHONY : CMakeFiles/word_path.dir/all
 
@@ -72,7 +72,7 @@ all: CMakeFiles/word_path.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/word_path.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vietlq/projects/viet-github-cpp/WordPath/build-make/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vietlq/projects/viet-github-cpp/WordPath/build-make/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/word_path.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vietlq/projects/viet-github-cpp/WordPath/build-make/CMakeFiles 0
 .PHONY : CMakeFiles/word_path.dir/rule

@@ -121,11 +121,59 @@ CMakeFiles/word_path.dir/TestDictionary.cpp.o.provides: CMakeFiles/word_path.dir
 
 CMakeFiles/word_path.dir/TestDictionary.cpp.o.provides.build: CMakeFiles/word_path.dir/TestDictionary.cpp.o
 
+CMakeFiles/word_path.dir/PathFinder.cpp.o: CMakeFiles/word_path.dir/flags.make
+CMakeFiles/word_path.dir/PathFinder.cpp.o: ../PathFinder.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/vietlq/projects/viet-github-cpp/WordPath/build-make/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/word_path.dir/PathFinder.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/word_path.dir/PathFinder.cpp.o -c /Users/vietlq/projects/viet-github-cpp/WordPath/PathFinder.cpp
+
+CMakeFiles/word_path.dir/PathFinder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/word_path.dir/PathFinder.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/vietlq/projects/viet-github-cpp/WordPath/PathFinder.cpp > CMakeFiles/word_path.dir/PathFinder.cpp.i
+
+CMakeFiles/word_path.dir/PathFinder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/word_path.dir/PathFinder.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/vietlq/projects/viet-github-cpp/WordPath/PathFinder.cpp -o CMakeFiles/word_path.dir/PathFinder.cpp.s
+
+CMakeFiles/word_path.dir/PathFinder.cpp.o.requires:
+.PHONY : CMakeFiles/word_path.dir/PathFinder.cpp.o.requires
+
+CMakeFiles/word_path.dir/PathFinder.cpp.o.provides: CMakeFiles/word_path.dir/PathFinder.cpp.o.requires
+	$(MAKE) -f CMakeFiles/word_path.dir/build.make CMakeFiles/word_path.dir/PathFinder.cpp.o.provides.build
+.PHONY : CMakeFiles/word_path.dir/PathFinder.cpp.o.provides
+
+CMakeFiles/word_path.dir/PathFinder.cpp.o.provides.build: CMakeFiles/word_path.dir/PathFinder.cpp.o
+
+CMakeFiles/word_path.dir/TestPathFinder.cpp.o: CMakeFiles/word_path.dir/flags.make
+CMakeFiles/word_path.dir/TestPathFinder.cpp.o: ../TestPathFinder.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/vietlq/projects/viet-github-cpp/WordPath/build-make/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/word_path.dir/TestPathFinder.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/word_path.dir/TestPathFinder.cpp.o -c /Users/vietlq/projects/viet-github-cpp/WordPath/TestPathFinder.cpp
+
+CMakeFiles/word_path.dir/TestPathFinder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/word_path.dir/TestPathFinder.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/vietlq/projects/viet-github-cpp/WordPath/TestPathFinder.cpp > CMakeFiles/word_path.dir/TestPathFinder.cpp.i
+
+CMakeFiles/word_path.dir/TestPathFinder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/word_path.dir/TestPathFinder.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/vietlq/projects/viet-github-cpp/WordPath/TestPathFinder.cpp -o CMakeFiles/word_path.dir/TestPathFinder.cpp.s
+
+CMakeFiles/word_path.dir/TestPathFinder.cpp.o.requires:
+.PHONY : CMakeFiles/word_path.dir/TestPathFinder.cpp.o.requires
+
+CMakeFiles/word_path.dir/TestPathFinder.cpp.o.provides: CMakeFiles/word_path.dir/TestPathFinder.cpp.o.requires
+	$(MAKE) -f CMakeFiles/word_path.dir/build.make CMakeFiles/word_path.dir/TestPathFinder.cpp.o.provides.build
+.PHONY : CMakeFiles/word_path.dir/TestPathFinder.cpp.o.provides
+
+CMakeFiles/word_path.dir/TestPathFinder.cpp.o.provides.build: CMakeFiles/word_path.dir/TestPathFinder.cpp.o
+
 # Object files for target word_path
 word_path_OBJECTS = \
 "CMakeFiles/word_path.dir/main.cpp.o" \
 "CMakeFiles/word_path.dir/Dictionary.cpp.o" \
-"CMakeFiles/word_path.dir/TestDictionary.cpp.o"
+"CMakeFiles/word_path.dir/TestDictionary.cpp.o" \
+"CMakeFiles/word_path.dir/PathFinder.cpp.o" \
+"CMakeFiles/word_path.dir/TestPathFinder.cpp.o"
 
 # External object files for target word_path
 word_path_EXTERNAL_OBJECTS =
@@ -133,6 +181,8 @@ word_path_EXTERNAL_OBJECTS =
 word_path: CMakeFiles/word_path.dir/main.cpp.o
 word_path: CMakeFiles/word_path.dir/Dictionary.cpp.o
 word_path: CMakeFiles/word_path.dir/TestDictionary.cpp.o
+word_path: CMakeFiles/word_path.dir/PathFinder.cpp.o
+word_path: CMakeFiles/word_path.dir/TestPathFinder.cpp.o
 word_path: CMakeFiles/word_path.dir/build.make
 word_path: CMakeFiles/word_path.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable word_path"
@@ -145,6 +195,8 @@ CMakeFiles/word_path.dir/build: word_path
 CMakeFiles/word_path.dir/requires: CMakeFiles/word_path.dir/main.cpp.o.requires
 CMakeFiles/word_path.dir/requires: CMakeFiles/word_path.dir/Dictionary.cpp.o.requires
 CMakeFiles/word_path.dir/requires: CMakeFiles/word_path.dir/TestDictionary.cpp.o.requires
+CMakeFiles/word_path.dir/requires: CMakeFiles/word_path.dir/PathFinder.cpp.o.requires
+CMakeFiles/word_path.dir/requires: CMakeFiles/word_path.dir/TestPathFinder.cpp.o.requires
 .PHONY : CMakeFiles/word_path.dir/requires
 
 CMakeFiles/word_path.dir/clean:

@@ -138,6 +138,30 @@ Dictionary.cpp.s:
 	$(MAKE) -f CMakeFiles/word_path.dir/build.make CMakeFiles/word_path.dir/Dictionary.cpp.s
 .PHONY : Dictionary.cpp.s
 
+PathFinder.o: PathFinder.cpp.o
+.PHONY : PathFinder.o
+
+# target to build an object file
+PathFinder.cpp.o:
+	$(MAKE) -f CMakeFiles/word_path.dir/build.make CMakeFiles/word_path.dir/PathFinder.cpp.o
+.PHONY : PathFinder.cpp.o
+
+PathFinder.i: PathFinder.cpp.i
+.PHONY : PathFinder.i
+
+# target to preprocess a source file
+PathFinder.cpp.i:
+	$(MAKE) -f CMakeFiles/word_path.dir/build.make CMakeFiles/word_path.dir/PathFinder.cpp.i
+.PHONY : PathFinder.cpp.i
+
+PathFinder.s: PathFinder.cpp.s
+.PHONY : PathFinder.s
+
+# target to generate assembly for a file
+PathFinder.cpp.s:
+	$(MAKE) -f CMakeFiles/word_path.dir/build.make CMakeFiles/word_path.dir/PathFinder.cpp.s
+.PHONY : PathFinder.cpp.s
+
 TestDictionary.o: TestDictionary.cpp.o
 .PHONY : TestDictionary.o
 
@@ -161,6 +185,30 @@ TestDictionary.s: TestDictionary.cpp.s
 TestDictionary.cpp.s:
 	$(MAKE) -f CMakeFiles/word_path.dir/build.make CMakeFiles/word_path.dir/TestDictionary.cpp.s
 .PHONY : TestDictionary.cpp.s
+
+TestPathFinder.o: TestPathFinder.cpp.o
+.PHONY : TestPathFinder.o
+
+# target to build an object file
+TestPathFinder.cpp.o:
+	$(MAKE) -f CMakeFiles/word_path.dir/build.make CMakeFiles/word_path.dir/TestPathFinder.cpp.o
+.PHONY : TestPathFinder.cpp.o
+
+TestPathFinder.i: TestPathFinder.cpp.i
+.PHONY : TestPathFinder.i
+
+# target to preprocess a source file
+TestPathFinder.cpp.i:
+	$(MAKE) -f CMakeFiles/word_path.dir/build.make CMakeFiles/word_path.dir/TestPathFinder.cpp.i
+.PHONY : TestPathFinder.cpp.i
+
+TestPathFinder.s: TestPathFinder.cpp.s
+.PHONY : TestPathFinder.s
+
+# target to generate assembly for a file
+TestPathFinder.cpp.s:
+	$(MAKE) -f CMakeFiles/word_path.dir/build.make CMakeFiles/word_path.dir/TestPathFinder.cpp.s
+.PHONY : TestPathFinder.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -198,9 +246,15 @@ help:
 	@echo "... Dictionary.o"
 	@echo "... Dictionary.i"
 	@echo "... Dictionary.s"
+	@echo "... PathFinder.o"
+	@echo "... PathFinder.i"
+	@echo "... PathFinder.s"
 	@echo "... TestDictionary.o"
 	@echo "... TestDictionary.i"
 	@echo "... TestDictionary.s"
+	@echo "... TestPathFinder.o"
+	@echo "... TestPathFinder.i"
+	@echo "... TestPathFinder.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

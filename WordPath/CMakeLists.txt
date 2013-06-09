@@ -10,11 +10,15 @@ SET(SOURCE_FILES
 	main.cpp
 	Dictionary.cpp
 	TestDictionary.cpp
+	PathFinder.cpp
+	TestPathFinder.cpp
 )
 
 SET(HEADER_FILES
 	Dictionary.h
 	TestDictionary.h
+	PathFinder.h
+	TestPathFinder.h
 )
 
 # http://stackoverflow.com/questions/1167154/listing-header-files-in-visual-studio-c-project-generated-by-cmake
