@@ -77,9 +77,11 @@ void PathFinder::add(const std::string & word)
     
     for(bst_iterator_t it = _bstNodes.begin(); it != _bstNodes.end(); ++it)
     {
-        are_adjacent((*it)->_value, newWord);
-        pNode->_adjacent.push_back(*it);
-        (*it)->_adjacent.push_back(pNode);
+        if(are_adjacent((*it)->_value, newWord))
+        {
+            pNode->_adjacent.push_back(*it);
+            (*it)->_adjacent.push_back(pNode);   
+        }
     }
     
     _bstNodes.insert(pNode);
@@ -121,5 +123,70 @@ std::string PathFinder::path(const std::string & start, const std::string & fini
         return ERR_BOTH_WORDS_MUST_BE_INSERTED;
     }
     
+    bool found = false;
+    Node tempStartNode(start);
+    Node tempFinishNode(finish);
+    NodePtr startNode = *(_bstNodes.find(&tempStartNode));
+    NodePtr finishNode = *(_bstNodes.find(&tempFinishNode));
+    bst_t visited;
+    word_container_t tempPath;
+    word_container_t fullPath;
+    
+    visited.insert(startNode);
+    traverse_bfs(found, startNode, finishNode, visited, tempPath, fullPath);
+    
+    if(found)
+    {
+        word_iterator_t it = fullPath.begin();
+        result = (*it)->_value;
+        ++it;
+        
+        for(; it != fullPath.end(); ++it)
+        {
+            result += " > " + (*it)->_value;
+        }
+    }
+    
     return result;
+}
+
+void PathFinder::traverse_bfs(
+        bool & found,
+        const NodePtr & startNode,
+        const NodePtr & finishNode,
+        bst_t & visited,
+        word_container_t & tempPath,
+        word_container_t & fullPath)
+{
+    if(found)
+    {
+        return;
+    }
+    
+    tempPath.push_back(startNode);
+    
+    if((startNode == finishNode) || (startNode->_value == finishNode->_value))
+    {
+        found = true;
+        std::copy(tempPath.begin(), tempPath.end(), std::back_inserter(fullPath));
+        return;
+    }
+    
+    word_container_t adjacentNodes;
+    
+    for(word_iterator_t it = startNode->_adjacent.begin(); it != startNode->_adjacent.end(); ++it)
+    {
+        if(visited.end() == visited.find(*it))
+        {
+            visited.insert(*it);
+            adjacentNodes.push_back(*it);
+        }
+    }
+    
+    for(word_iterator_t it = adjacentNodes.begin(); it != adjacentNodes.end(); ++it)
+    {
+        traverse_bfs(found, *it, finishNode, visited, tempPath, fullPath);
+    }
+    
+    tempPath.pop_back();
 }

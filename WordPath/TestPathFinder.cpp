@@ -226,3 +226,48 @@ TEST_F(TestPathFinder, PathFinderComplainsAboutDiffLen)
     
     EXPECT_EQ(ERR_BOTH_WORDS_MUST_BE_SAME_LEN, pathFinder.path("piano", "violin"));
 }
+
+TEST_F(TestPathFinder, PathFinderAcceptsCorrectResult_1)
+{
+    PathFinder pathFinder;
+    EXPECT_EQ(0, pathFinder.size());
+    pathFinder.add("cat");
+    pathFinder.add("bat");
+    
+    EXPECT_EQ("cat > bat", pathFinder.path("cat", "bat"));
+}
+
+TEST_F(TestPathFinder, PathFinderAcceptsCorrectResult_2)
+{
+    PathFinder pathFinder;
+    EXPECT_EQ(0, pathFinder.size());
+    pathFinder.add("cat");
+    pathFinder.add("can");
+    pathFinder.add("man");
+    
+    EXPECT_EQ("cat > can > man", pathFinder.path("cat", "man"));
+}
+
+TEST_F(TestPathFinder, PathFinderAcceptsCorrectResult_3)
+{
+    PathFinder pathFinder;
+    EXPECT_EQ(0, pathFinder.size());
+    pathFinder.add("cat");
+    pathFinder.add("can");
+    pathFinder.add("pan");
+    pathFinder.add("man");
+    
+    EXPECT_EQ("cat > can > man", pathFinder.path("cat", "man"));
+}
+
+TEST_F(TestPathFinder, PathFinderAcceptsCorrectResult_4)
+{
+    PathFinder pathFinder;
+    EXPECT_EQ(0, pathFinder.size());
+    pathFinder.add("cat");
+    pathFinder.add("pan");
+    pathFinder.add("man");
+    pathFinder.add("dan");
+    
+    EXPECT_EQ("cat > dan > man", pathFinder.path("cat", "man"));
+}

@@ -63,7 +63,12 @@ private:
     // The Node class
     struct Node
     {
-        Node(): _adjacent(0)
+        Node()
+        {
+            
+        }
+        
+        Node(const std::string & value): _value(value)
         {
             
         }
@@ -73,7 +78,7 @@ private:
             
         }
         
-        bool operator<(const Node & rhs)
+        bool operator<(const Node & rhs) const
         {
             return (_value < rhs._value);
         }
@@ -84,7 +89,14 @@ private:
     //
     NodePtr _pRoot;
     bst_t _bstNodes;
-    std::queue<NodePtr> _queueRefWords;
+    //
+    static void traverse_bfs(
+            bool & found,
+            const NodePtr & startNode,
+            const NodePtr & finishNode,
+            bst_t & visited,
+            word_container_t & tempPath,
+            word_container_t & fullPath);
 };
 
 #endif /* defined(__WordPath__PathFinder__) */
