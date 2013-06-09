@@ -6,6 +6,7 @@
 //
 //
 
+#include <algorithm>
 #include "Dictionary.h"
 
 Dictionary::Dictionary()
@@ -25,7 +26,11 @@ bool Dictionary::empty() const
 
 void Dictionary::add(const std::string & word)
 {
-    _words.insert(word);
+    std::string newWord(word);
+    
+    std::transform(newWord.begin(), newWord.end(), newWord.begin(), ::tolower);
+    
+    _words.insert(newWord);
 }
 
 size_t Dictionary::size() const
@@ -35,7 +40,11 @@ size_t Dictionary::size() const
 
 bool Dictionary::contains(const std::string & word) const
 {
-    return (_words.end() != _words.find(word));
+    std::string newWord(word);
+    
+    std::transform(newWord.begin(), newWord.end(), newWord.begin(), ::tolower);
+    
+    return (_words.end() != _words.find(newWord));
 }
 
 void Dictionary::remove(const std::string & word)

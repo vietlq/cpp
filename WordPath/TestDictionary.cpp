@@ -129,3 +129,14 @@ TEST_F(TestDictionary, DictionaryContainsNoMatchAfterRemoving_2)
     EXPECT_TRUE(dict.contains("harmonica"));
     EXPECT_TRUE(dict.contains("violin"));
 }
+
+TEST_F(TestDictionary, DictionaryContainsCaseInsensitiveWords_1)
+{
+    Dictionary dict;
+    EXPECT_EQ(0, dict.size());
+    dict.add("piano");
+    EXPECT_TRUE(dict.contains("PIANO"));
+    EXPECT_TRUE(dict.contains("piAno"));
+    EXPECT_TRUE(dict.contains("Piano"));
+    EXPECT_TRUE(dict.contains("piaNO"));
+}
