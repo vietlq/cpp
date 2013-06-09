@@ -1,28 +1,0 @@
-TZERO_CHECK
-v5
-r1
-cCheck dependencies
-cPhaseScriptExecution "CMake Rules" /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ZERO_CHECK.build/Script-F3F2C107B47B4089BFCBC598.sh
-
-N/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ZERO_CHECK.build/Script-F3F2C107B47B4089BFCBC598.sh
-c0000000051B3CB3C00000000000000C5
-t1370737468
-s197
-
-CCheck dependencies
-r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciescdeaf5bc0264b741^3d9ef6bc0264b741^---0#1#0#--18"Check dependencies36"42C63B52-E276-4A9F-A9DD-1E0B4F602BAC-
-
-CPhaseScriptExecution "CMake Rules" /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ZERO_CHECK.build/Script-F3F2C107B47B4089BFCBC598.sh
-s392430268.964835
-e392430269.031213
-r1
-xPhaseScriptExecution
-xCMake Rules
-x/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ZERO_CHECK.build/Script-F3F2C107B47B4089BFCBC598.sh
-oecho ""
-o
-omake -f /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeScripts/ReRunCMake.make
-omake[1]: `CMakeFiles/cmake.check_cache' is up to date.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'215af7bc0264b741^54fc07bd0264b741^-155"echo ""make -f /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeScripts/ReRunCMake.makemake[1]: `CMakeFiles/cmake.check_cache' is up to date.3(21%IDEActivityLogMessage2@8"echo ""-392430269#0#8#-0#-----2@91"make -f /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeScripts/ReRunCMake.make-392430269#9#91#-0#-----2@55"make[1]: `CMakeFiles/cmake.check_cache' is up to date.-392430269#100#55#-0#-----0#0#0#--311"PhaseScriptExecution "CMake Rules" build/WordPath.build/Debug/ZERO_CHECK.build/Script-F3F2C107B47B4089BFCBC598.sh    cd /Users/vietlq/projects/viet-github-cpp/WordPath    /bin/sh -c /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ZERO_CHECK.build/Script-F3F2C107B47B4089BFCBC598.sh36"6B2368F1-A9CB-466F-A7F6-3C08D4446A50-
-

@@ -17,7 +17,7 @@
 template<typename Iterator>
 struct proxy_iterator_comp
 {
-    bool operator()(const Iterator & it1, const Iterator & it2)
+    bool operator()(const Iterator & it1, const Iterator & it2) const
     {
         return (*it1 < *it2);
     }
@@ -30,8 +30,20 @@ public:
     
     ~PathFinder();
     
+    bool empty() const;
+    
+    size_t size() const;
+    
+    void add(const std::string & word);
+    
+    void remove(const std::string & word);
+    
+    bool contains(const std::string & word) const;
+    
 private:
     // Node
+    struct Node;
+    typedef Node * NodePtr;
     struct Node
     {
         Node(): _adjacent(0)
@@ -44,10 +56,14 @@ private:
             
         }
         
+        bool operator<(const Node & rhs)
+        {
+            return (_value < rhs._value);
+        }
+        
         std::string _value;
-        std::list<Node *> _adjacent;
+        std::list<NodePtr> _adjacent;
     };
-    typedef Node * NodePtr;
     // Node Container
     typedef std::list<NodePtr> word_container_t;
     typedef word_container_t::iterator word_iterator_t;
@@ -56,6 +72,9 @@ private:
     typedef std::set<NodePtr, proxy_iterator_comp<NodePtr> > bst_t;
     typedef bst_t::iterator bst_iterator_t;
     typedef bst_t::const_iterator bst_const_iterator_t;
+    //
+    NodePtr _pNode;
+    bst_t _bstNodes;
 };
 
 #endif /* defined(__WordPath__PathFinder__) */

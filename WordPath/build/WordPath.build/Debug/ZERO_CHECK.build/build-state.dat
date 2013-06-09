@@ -1,49 +1,0 @@
-TZERO_CHECK
-v5
-r1
-cCheck dependencies
-cPhaseScriptExecution "CMake Rules" /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ZERO_CHECK.build/Script-067B656C0215414AB9C6D12C.sh
-
-N/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ZERO_CHECK.build/Script-067B656C0215414AB9C6D12C.sh
-c0000000051B3E89C00000000000000C5
-t1370744988
-s197
-
-N/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ZERO_CHECK.build/Script-F3F2C107B47B4089BFCBC598.sh
-c0000000051B3CB3C00000000000000C5
-t1370737468
-s197
-
-CCheck dependencies
-r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies2062571c2064b741^99475a1c2064b741^---0#1#0#--18"Check dependencies36"04C275A3-245A-4432-A3BE-DB2BD9414F29-
-
-CPhaseScriptExecution "CMake Rules" /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ZERO_CHECK.build/Script-067B656C0215414AB9C6D12C.sh
-s392437788.357018
-e392437788.505927
-r1
-xPhaseScriptExecution
-xCMake Rules
-x/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ZERO_CHECK.build/Script-067B656C0215414AB9C6D12C.sh
-oecho ""
-o
-omake -f /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeScripts/ReRunCMake.make
-o/usr/local/Cellar/cmake/2.8.10.2/bin/cmake -H/Users/vietlq/projects/viet-github-cpp/WordPath -B/Users/vietlq/projects/viet-github-cpp/WordPath/build
-o-- Configuring done
-o-- Generating done
-o-- Build files have been written to: /Users/vietlq/projects/viet-github-cpp/WordPath/build
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'16165c1c2064b741^fe44811c2064b741^-379"echo ""make -f /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeScripts/ReRunCMake.make/usr/local/Cellar/cmake/2.8.10.2/bin/cmake -H/Users/vietlq/projects/viet-github-cpp/WordPath -B/Users/vietlq/projects/viet-github-cpp/WordPath/build-- Configuring done-- Generating done-- Build files have been written to: /Users/vietlq/projects/viet-github-cpp/WordPath/build6(21%IDEActivityLogMessage2@8"echo ""-392437788#0#8#-0#-----2@91"make -f /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeScripts/ReRunCMake.make-392437788#9#91#-0#-----2@149"/usr/local/Cellar/cmake/2.8.10.2/bin/cmake -H/Users/vietlq/projects/viet-github-cpp/WordPath -B/Users/vietlq/projects/viet-github-cpp/WordPath/build-392437788#100#149#-0#-----2@20"-- Configuring done-392437788#249#20#-0#-----2@19"-- Generating done-392437788#269#19#-0#-----2@91"-- Build files have been written to: /Users/vietlq/projects/viet-github-cpp/WordPath/build-392437788#288#91#-0#-----0#0#0#--311"PhaseScriptExecution "CMake Rules" build/WordPath.build/Debug/ZERO_CHECK.build/Script-067B656C0215414AB9C6D12C.sh    cd /Users/vietlq/projects/viet-github-cpp/WordPath    /bin/sh -c /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ZERO_CHECK.build/Script-067B656C0215414AB9C6D12C.sh36"FB795919-964E-4400-BB99-1E750CD42308-
-
-CPhaseScriptExecution "CMake Rules" /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ZERO_CHECK.build/Script-F3F2C107B47B4089BFCBC598.sh
-s392430331.153658
-e392430331.228711
-r1
-xPhaseScriptExecution
-xCMake Rules
-x/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ZERO_CHECK.build/Script-F3F2C107B47B4089BFCBC598.sh
-oecho ""
-o
-omake -f /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeScripts/ReRunCMake.make
-omake[1]: `CMakeFiles/cmake.check_cache' is up to date.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'a8fe29fb0264b741^caf93afb0264b741^-155"echo ""make -f /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeScripts/ReRunCMake.makemake[1]: `CMakeFiles/cmake.check_cache' is up to date.3(21%IDEActivityLogMessage2@8"echo ""-392430331#0#8#-0#-----2@91"make -f /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeScripts/ReRunCMake.make-392430331#9#91#-0#-----2@55"make[1]: `CMakeFiles/cmake.check_cache' is up to date.-392430331#100#55#-0#-----0#0#0#--311"PhaseScriptExecution "CMake Rules" build/WordPath.build/Debug/ZERO_CHECK.build/Script-F3F2C107B47B4089BFCBC598.sh    cd /Users/vietlq/projects/viet-github-cpp/WordPath    /bin/sh -c /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ZERO_CHECK.build/Script-F3F2C107B47B4089BFCBC598.sh36"62FACF28-856F-47DF-8D99-03B1CEF66C88-
-

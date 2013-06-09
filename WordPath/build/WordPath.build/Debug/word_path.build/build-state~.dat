@@ -1,129 +1,0 @@
-Tword_path
-v5
-r1
-cCheck dependencies
-cCompileC build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/main.o /Users/vietlq/projects/viet-github-cpp/WordPath/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/Dictionary.o /Users/vietlq/projects/viet-github-cpp/WordPath/Dictionary.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/TestDictionary.o /Users/vietlq/projects/viet-github-cpp/WordPath/TestDictionary.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
-c00000000516CA7EB00000000000000AA
-t1366075371
-s170
-
-N/Users/vietlq/projects/viet-github-cpp/WordPath/Dictionary.cpp
-c0000000051B3CB2F000000000000032C
-t1370737455
-s812
-
-N/Users/vietlq/projects/viet-github-cpp/WordPath/TestDictionary.cpp
-c0000000051B3CA4B0000000000000C93
-t1370737227
-s3219
-
-N/Users/vietlq/projects/viet-github-cpp/WordPath/build/Debug/word_path
-t2
-s0
-
-N/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/Dictionary.o
-t2
-s0
-
-N/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/TestDictionary.o
-t2
-s0
-
-N/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/main.o
-t2
-s0
-
-N/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/word_path.LinkFileList
-c0000000051B3CB3D0000000000000178
-t1370737469
-s376
-
-N/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Script-A2909DB598DB40DCB09170EC.sh
-c0000000051B3CB3D00000000000000BE
-t1370737469
-s190
-
-N/Users/vietlq/projects/viet-github-cpp/WordPath/main.cpp
-c0000000051B35EFC00000000000000AB
-t1370709756
-s171
-i<iostream>
-i<gtest/gtest.h>
-
-N/usr/local/include/gtest/gtest.h
-c0000000051B305E60000000000014212
-t1370686950
-s82450
-
-CBuild AST from /Users/vietlq/projects/viet-github-cpp/WordPath/Dictionary.cpp
-r0
-
-CBuild AST from /Users/vietlq/projects/viet-github-cpp/WordPath/TestDictionary.cpp
-r0
-
-CBuild AST from /Users/vietlq/projects/viet-github-cpp/WordPath/main.cpp
-r0
-
-CCheck dependencies
-r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesb75f0ebd0264b741^64750fbd0264b741^---0#1#0#--18"Check dependencies36"C90926DE-87B1-4D32-ABA9-1E6D8F343203-
-
-CCompileC build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/Dictionary.o /Users/vietlq/projects/viet-github-cpp/WordPath/Dictionary.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s392430269.070209
-e392430269.552130
-r0
-xCompileC
-xbuild/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/Dictionary.o
-x/Users/vietlq/projects/viet-github-cpp/WordPath/Dictionary.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-o/Users/vietlq/projects/viet-github-cpp/WordPath/Dictionary.cpp:31:5: error: no matching function for call to 'transform'
-o    std::transform(newWord.begin(), newWord.end(), newWord.begin(), std::tolower);
-o    ^~~~~~~~~~~~~~
-o/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/c++/4.2.1/bits/stl_algo.h:925:5: note: candidate template ignored: couldn't infer template argument '_UnaryOperation'
-o    transform(_InputIterator __first, _InputIterator __last,
-o    ^
-o/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/c++/4.2.1/bits/stl_algo.h:960:5: note: candidate function template not viable: requires 5 arguments, but 4 were provided
-o    transform(_InputIterator1 __first1, _InputIterator1 __last1,
-o    ^
-o1 error generated.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/vietlq/projects/viet-github-cpp/WordPath/Dictionary.cppcf4e12bd0264b741^abb08dbd0264b741^-841"/Users/vietlq/projects/viet-github-cpp/WordPath/Dictionary.cpp:31:5: error: no matching function for call to 'transform'    std::transform(newWord.begin(), newWord.end(), newWord.begin(), std::tolower);    ^~~~~~~~~~~~~~/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/c++/4.2.1/bits/stl_algo.h:925:5: note: candidate template ignored: couldn't infer template argument '_UnaryOperation'    transform(_InputIterator __first, _InputIterator __last,    ^/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/c++/4.2.1/bits/stl_algo.h:960:5: note: candidate function template not viable: requires 5 arguments, but 4 were provided    transform(_InputIterator1 __first1, _InputIterator1 __last1,    ^1 error generated.1(36%IDEClangDiagnosticActivityLogMessage2@44"No matching function for call to 'transform'-392430269#18446744073709551615#0#2(2@78"Candidate template ignored: couldn't infer template argument '_UnaryOperation'-392430269#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@152"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/c++/4.2.1/bits/stl_algo.h0000000000000000^924#4#924#4#30238#0#14"Semantic Issue--2@81"Candidate function template not viable: requires 5 arguments, but 4 were provided-392430269#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@152"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/c++/4.2.1/bits/stl_algo.h0000000000000000^959#4#959#4#31694#0#14"Semantic Issue--2#27"com.apple.dt.IDE.diagnostic3@78"file://localhost/Users/vietlq/projects/viet-github-cpp/WordPath/Dictionary.cpp0000000000000000^30#4#30#4#353#0#14"Semantic Issue1(3@78"file://localhost/Users/vietlq/projects/viet-github-cpp/WordPath/Dictionary.cpp0000000000000000^30#4#30#18#353#5#-0#0#0#-19%DVTDocumentLocation4@78"file://localhost/Users/vietlq/projects/viet-github-cpp/WordPath/Dictionary.cpp0000000000000000^2249"CompileC build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/Dictionary.o Dictionary.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vietlq/projects/viet-github-cpp/WordPath    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions "-DCMAKE_INTDIR=\"Debug\"" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/vietlq/projects/viet-github-cpp/WordPath/build/Debug/include -I/Users/vietlq/projects/viet-github-cpp/WordPath/build -I/Users/vietlq/projects/viet-github-cpp/WordPath -I/usr/local/include -I/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/DerivedSources/x86_64 -I/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/vietlq/projects/viet-github-cpp/WordPath/build/Debug -MMD -MT dependencies -MF /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/Dictionary.d --serialize-diagnostics /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/Dictionary.dia -c /Users/vietlq/projects/viet-github-cpp/WordPath/Dictionary.cpp -o /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/Dictionary.o36"7FC0BC8C-E9A2-4900-93B4-C52E613E0F18-
-
-CCompileC build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/TestDictionary.o /Users/vietlq/projects/viet-github-cpp/WordPath/TestDictionary.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s392430269.070304
-e392430270.873296
-r1
-xCompileC
-xbuild/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/TestDictionary.o
-x/Users/vietlq/projects/viet-github-cpp/WordPath/TestDictionary.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/vietlq/projects/viet-github-cpp/WordPath/TestDictionary.cpp2b4d12bd0264b741^ee93dfbe0264b741^---0#0#0#-19%DVTDocumentLocation2@82"file://localhost/Users/vietlq/projects/viet-github-cpp/WordPath/TestDictionary.cpp0000000000000000^2273"CompileC build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/TestDictionary.o TestDictionary.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vietlq/projects/viet-github-cpp/WordPath    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions "-DCMAKE_INTDIR=\"Debug\"" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/vietlq/projects/viet-github-cpp/WordPath/build/Debug/include -I/Users/vietlq/projects/viet-github-cpp/WordPath/build -I/Users/vietlq/projects/viet-github-cpp/WordPath -I/usr/local/include -I/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/DerivedSources/x86_64 -I/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/vietlq/projects/viet-github-cpp/WordPath/build/Debug -MMD -MT dependencies -MF /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/TestDictionary.d --serialize-diagnostics /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/TestDictionary.dia -c /Users/vietlq/projects/viet-github-cpp/WordPath/TestDictionary.cpp -o /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/TestDictionary.o36"895B613D-3E98-438F-AA00-60032714F46A-
-
-CCompileC build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/main.o /Users/vietlq/projects/viet-github-cpp/WordPath/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s392430269.070172
-e392430270.674486
-r1
-xCompileC
-xbuild/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/main.o
-x/Users/vietlq/projects/viet-github-cpp/WordPath/main.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/vietlq/projects/viet-github-cpp/WordPath/main.cppb32612bd0264b741^3fabacbe0264b741^---0#0#0#-19%DVTDocumentLocation2@72"file://localhost/Users/vietlq/projects/viet-github-cpp/WordPath/main.cpp0000000000000000^2213"CompileC build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/main.o main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vietlq/projects/viet-github-cpp/WordPath    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions "-DCMAKE_INTDIR=\"Debug\"" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/vietlq/projects/viet-github-cpp/WordPath/build/Debug/include -I/Users/vietlq/projects/viet-github-cpp/WordPath/build -I/Users/vietlq/projects/viet-github-cpp/WordPath -I/usr/local/include -I/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/DerivedSources/x86_64 -I/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/vietlq/projects/viet-github-cpp/WordPath/build/Debug -MMD -MT dependencies -MF /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/main.dia -c /Users/vietlq/projects/viet-github-cpp/WordPath/main.cpp -o /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/main.o36"B0A87392-700A-4C68-985F-D681B2A34EAB-
-
-CLd /Users/vietlq/projects/viet-github-cpp/WordPath/build/Debug/word_path normal x86_64
-r0
-
-CPhaseScriptExecution "CMake PostBuild Rules" /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Script-A2909DB598DB40DCB09170EC.sh
-r0
-
