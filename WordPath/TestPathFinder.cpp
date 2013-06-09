@@ -164,3 +164,40 @@ TEST_F(TestPathFinder, PathFinderRemoveCaseInsensitiveWords_1)
     EXPECT_TRUE(pathFinder.contains("harmonica"));
     EXPECT_TRUE(pathFinder.contains("violin"));
 }
+
+TEST_F(TestPathFinder, EmptyStringsAreNotAdjacent)
+{
+    EXPECT_FALSE(are_adjacent("", ""));
+}
+
+TEST_F(TestPathFinder, EmptyStringsAndNonEmptyStringAreNotAdjacent)
+{
+    EXPECT_FALSE(are_adjacent("a", ""));
+    EXPECT_FALSE(are_adjacent("", "b"));
+}
+
+TEST_F(TestPathFinder, StringsWithDiffLenAreNotAdjacent)
+{
+    EXPECT_FALSE(are_adjacent("ab", "abc"));
+}
+
+TEST_F(TestPathFinder, EqualStringsAreNotAdjacent)
+{
+    EXPECT_FALSE(are_adjacent("abc", "abc"));
+}
+
+TEST_F(TestPathFinder, StringsWithOneDiffCharAreAdjacent)
+{
+    EXPECT_TRUE(are_adjacent("abd", "abc"));
+    EXPECT_TRUE(are_adjacent("abc", "abd"));
+    EXPECT_TRUE(are_adjacent("abdaa", "abcaa"));
+    EXPECT_TRUE(are_adjacent("abcaa", "abdaa"));
+}
+
+TEST_F(TestPathFinder, StringsWithMoreThanOneDiffCharAreNotAdjacent)
+{
+    EXPECT_FALSE(are_adjacent("abda", "abcb"));
+    EXPECT_FALSE(are_adjacent("abca", "abdb"));
+    EXPECT_FALSE(are_adjacent("abdaa", "abcba"));
+    EXPECT_FALSE(are_adjacent("abcaa", "abdba"));
+}
