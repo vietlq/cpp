@@ -265,9 +265,10 @@ TEST_F(TestPathFinder, PathFinderAcceptsCorrectResult_4)
     PathFinder pathFinder;
     EXPECT_EQ(0, pathFinder.size());
     pathFinder.add("cat");
+    pathFinder.add("pat");
     pathFinder.add("pan");
     pathFinder.add("man");
     pathFinder.add("dan");
     
-    EXPECT_EQ("cat > dan > man", pathFinder.path("cat", "man"));
+    EXPECT_EQ("cat > pat > pan > man", pathFinder.path("cat", "man"));
 }
