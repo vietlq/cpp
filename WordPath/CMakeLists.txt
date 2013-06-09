@@ -20,7 +20,6 @@ SET(HEADER_FILES
 # http://stackoverflow.com/questions/1167154/listing-header-files-in-visual-studio-c-project-generated-by-cmake
 source_group("Headers Files" FILES ${HEADER_FILES})
 
-
 add_executable(word_path ${SOURCE_FILES} ${HEADER_FILES})
 
 target_link_libraries(word_path gtest)
