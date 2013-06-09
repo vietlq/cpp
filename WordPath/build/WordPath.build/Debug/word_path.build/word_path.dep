@@ -1,4 +1,4 @@
-ffffffffffffffffffffffffffffffff cead8eb9e548824714e6967616ee1d76 ffffffffffffffffffffffffffffffff 724480 /Users/vietlq/projects/viet-github-cpp/WordPath/build/Debug/word_path
-00000000000001ef0000000000007cde 3514244965aee365fe787fe1e35d464e ffffffffffffffffffffffffffffffff 134728 /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/TestDictionary.o
-0000000051b3c25a00000000000000e8 99b53e48e76f913a6800049fcab79d58 ffffffffffffffffffffffffffffffff 28948 /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/Dictionary.o
-00000000000000000000000000007c2b 4aeab974f24b7e50fa85b0d0044fca6e ffffffffffffffffffffffffffffffff 27468 /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/main.o
+ffffffffffffffffffffffffffffffff cead8eb9e548824714e6967616ee1d76 ffffffffffffffffffffffffffffffff 0 /Users/vietlq/projects/viet-github-cpp/WordPath/build/Debug/word_path
+0000000051b3c7f800000000000008c7 3514244965aee365fe787fe1e35d464e ffffffffffffffffffffffffffffffff 0 /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/TestDictionary.o
+0000000000005b1a00000000000142b9 4aeab974f24b7e50fa85b0d0044fca6e ffffffffffffffffffffffffffffffff 0 /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/main.o
+0000000051b3c8d80000000000000298 99b53e48e76f913a6800049fcab79d58 ffffffffffffffffffffffffffffffff 0 /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/Dictionary.o

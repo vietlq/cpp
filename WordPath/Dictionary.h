@@ -26,9 +26,15 @@ public:
     
     size_t size() const;
     
+    bool contains(const std::string & word) const;
+    
+    void remove(const std::string & word);
+    
 private:
-    bool _empty;
-    size_t _size;
+    typedef std::set<std::string> word_container_t;
+    typedef word_container_t::iterator word_iterator_t;
+    typedef word_container_t::const_iterator word_const_iterator_t;
+    
     std::set<std::string> _words;
 };
 

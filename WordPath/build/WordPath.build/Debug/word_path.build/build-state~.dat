@@ -1,87 +1,0 @@
-Tword_path
-v5
-r1
-cCheck dependencies
-cCompileC build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/main.o /Users/vietlq/projects/viet-github-cpp/WordPath/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/vietlq/projects/viet-github-cpp/WordPath/build/Debug/word_path normal x86_64
-cPhaseScriptExecution "CMake PostBuild Rules" /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Script-DB19E21F6E644CF180F986E0.sh
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
-c00000000516CA7EB00000000000000AA
-t1366075371
-s170
-
-N/Users/vietlq/projects/viet-github-cpp/WordPath/build/Debug/word_path
-t2
-s0
-
-N/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/main.o
-t2
-s0
-
-N/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/word_path.LinkFileList
-c0000000051B360B50000000000000078
-t1370710197
-s120
-
-N/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Script-DB19E21F6E644CF180F986E0.sh
-c0000000051B360B500000000000000BE
-t1370710197
-s190
-
-N/Users/vietlq/projects/viet-github-cpp/WordPath/main.cpp
-c0000000051B35EFC00000000000000AB
-t1370709756
-s171
-i<iostream>
-i<gtest/gtest.h>
-
-N/usr/local/include/gtest/gtest.h
-c0000000051B305E60000000000014212
-t1370686950
-s82450
-
-CBuild AST from /Users/vietlq/projects/viet-github-cpp/WordPath/main.cpp
-r0
-
-CCheck dependencies
-r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies17a0ad359863b741^f018ae359863b741^---0#1#0#--18"Check dependencies36"719DC7EE-5EB7-45C5-9610-A04B2B319778-
-
-CCompileC build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/main.o /Users/vietlq/projects/viet-github-cpp/WordPath/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s392402997.681779
-e392402998.566472
-r1
-xCompileC
-xbuild/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/main.o
-x/Users/vietlq/projects/viet-github-cpp/WordPath/main.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/vietlq/projects/viet-github-cpp/WordPath/main.cppcf9fae359863b741^b40491369863b741^---0#0#0#-19%DVTDocumentLocation2@72"file://localhost/Users/vietlq/projects/viet-github-cpp/WordPath/main.cpp0000000000000000^2107"CompileC build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/main.o main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vietlq/projects/viet-github-cpp/WordPath    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions "-DCMAKE_INTDIR=\"Debug\"" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/vietlq/projects/viet-github-cpp/WordPath/build/Debug/include -I/usr/local/include -I/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/DerivedSources/x86_64 -I/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/vietlq/projects/viet-github-cpp/WordPath/build/Debug -MMD -MT dependencies -MF /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/main.dia -c /Users/vietlq/projects/viet-github-cpp/WordPath/main.cpp -o /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/main.o36"C8F0EF89-ADF1-415E-A276-50C45F9B53E7-
-
-CLd /Users/vietlq/projects/viet-github-cpp/WordPath/build/Debug/word_path normal x86_64
-s392402998.573276
-e392402998.630391
-r1
-xLd
-x/Users/vietlq/projects/viet-github-cpp/WordPath/build/Debug/word_path
-xnormal
-xx86_64
-old: warning: directory not found for option '-L/usr/local/lib/Debug'
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Link /Users/vietlq/projects/viet-github-cpp/WordPath/build/Debug/word_path44de92369863b741^1b65a1369863b741^-69"ld: warning: directory not found for option '-L/usr/local/lib/Debug'1(21%IDEActivityLogMessage2@55"Directory not found for option '-L/usr/local/lib/Debug'-392402998#0#69#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#32"Apple Mach-O Linker (ld) Warning--0#0#0#--830"Ld build/Debug/word_path normal x86_64    cd /Users/vietlq/projects/viet-github-cpp/WordPath    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/vietlq/projects/viet-github-cpp/WordPath/build/Debug -L/usr/local/lib/Debug -L/usr/local/lib -F/Users/vietlq/projects/viet-github-cpp/WordPath/build/Debug -filelist /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Objects-normal/x86_64/word_path.LinkFileList -mmacosx-version-min=10.8 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -lgtest -o /Users/vietlq/projects/viet-github-cpp/WordPath/build/Debug/word_path36"56A2A82B-852C-4AC5-8211-750ACB8C4BB4-
-
-CPhaseScriptExecution "CMake PostBuild Rules" /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Script-DB19E21F6E644CF180F986E0.sh
-s392402998.638537
-e392402998.670769
-r1
-xPhaseScriptExecution
-xCMake PostBuild Rules
-x/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Script-DB19E21F6E644CF180F986E0.sh
-oecho "Depend check for xcode"
-oDepend check for xcode
-ocd /Users/vietlq/projects/viet-github-cpp/WordPath/build && make -C /Users/vietlq/projects/viet-github-cpp/WordPath/build -f /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.word_path.Debug
-omake[1]: Nothing to be done for `PostBuild.word_path.Debug'.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Run custom shell script 'CMake PostBuild Rules'23d9a3369863b741^0fb7ab369863b741^-357"echo "Depend check for xcode"Depend check for xcodecd /Users/vietlq/projects/viet-github-cpp/WordPath/build && make -C /Users/vietlq/projects/viet-github-cpp/WordPath/build -f /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.word_path.Debugmake[1]: Nothing to be done for `PostBuild.word_path.Debug'.4(21%IDEActivityLogMessage2@30"echo "Depend check for xcode"-392402998#0#30#-0#-----2@23"Depend check for xcode-392402998#30#23#-0#-----2@243"cd /Users/vietlq/projects/viet-github-cpp/WordPath/build && make -C /Users/vietlq/projects/viet-github-cpp/WordPath/build -f /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.word_path.Debug-392402998#53#243#-0#-----2@61"make[1]: Nothing to be done for `PostBuild.word_path.Debug'.-392402998#296#61#-0#-----0#0#0#--319"PhaseScriptExecution "CMake PostBuild Rules" build/WordPath.build/Debug/word_path.build/Script-DB19E21F6E644CF180F986E0.sh    cd /Users/vietlq/projects/viet-github-cpp/WordPath    /bin/sh -c /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/word_path.build/Script-DB19E21F6E644CF180F986E0.sh36"183F4A88-B883-47BF-830E-6738D5DFC9C9-
-

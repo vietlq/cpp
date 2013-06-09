@@ -76,3 +76,56 @@ TEST_F(TestDictionary, DictionaryWithTwoEqualItemsHasSizeOfOne)
     dict.add("piano");
     EXPECT_EQ(1, dict.size());
 }
+
+TEST_F(TestDictionary, EmptyDictionaryContainsNoMatch)
+{
+    Dictionary dict;
+    EXPECT_EQ(0, dict.size());
+    EXPECT_FALSE(dict.contains("piano"));
+    EXPECT_FALSE(dict.contains("clarinet"));
+    EXPECT_FALSE(dict.contains("harmonica"));
+    EXPECT_FALSE(dict.contains("violin"));
+}
+
+TEST_F(TestDictionary, DictionaryWithOneItemContainsMatch)
+{
+    Dictionary dict;
+    EXPECT_EQ(0, dict.size());
+    dict.add("piano");
+    EXPECT_TRUE(dict.contains("piano"));
+    EXPECT_FALSE(dict.contains("clarinet"));
+    EXPECT_FALSE(dict.contains("harmonica"));
+    EXPECT_FALSE(dict.contains("violin"));
+}
+
+TEST_F(TestDictionary, DictionaryContainsNoMatchAfterRemoving_1)
+{
+    Dictionary dict;
+    EXPECT_EQ(0, dict.size());
+    dict.add("piano");
+    EXPECT_TRUE(dict.contains("piano"));
+    dict.remove("piano");
+    EXPECT_FALSE(dict.contains("piano"));
+    EXPECT_FALSE(dict.contains("clarinet"));
+    EXPECT_FALSE(dict.contains("harmonica"));
+    EXPECT_FALSE(dict.contains("violin"));
+}
+
+TEST_F(TestDictionary, DictionaryContainsNoMatchAfterRemoving_2)
+{
+    Dictionary dict;
+    EXPECT_EQ(0, dict.size());
+    dict.add("piano");
+    dict.add("clarinet");
+    dict.add("harmonica");
+    dict.add("violin");
+    EXPECT_TRUE(dict.contains("piano"));
+    EXPECT_TRUE(dict.contains("clarinet"));
+    EXPECT_TRUE(dict.contains("harmonica"));
+    EXPECT_TRUE(dict.contains("violin"));
+    dict.remove("piano");
+    EXPECT_FALSE(dict.contains("piano"));
+    EXPECT_TRUE(dict.contains("clarinet"));
+    EXPECT_TRUE(dict.contains("harmonica"));
+    EXPECT_TRUE(dict.contains("violin"));
+}

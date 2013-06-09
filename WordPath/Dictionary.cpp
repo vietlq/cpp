@@ -8,7 +8,7 @@
 
 #include "Dictionary.h"
 
-Dictionary::Dictionary(): _empty(true), _size(0)
+Dictionary::Dictionary()
 {
     
 }
@@ -31,4 +31,19 @@ void Dictionary::add(const std::string & word)
 size_t Dictionary::size() const
 {
     return _words.size();
+}
+
+bool Dictionary::contains(const std::string & word) const
+{
+    return (_words.end() != _words.find(word));
+}
+
+void Dictionary::remove(const std::string & word)
+{
+    word_iterator_t it = _words.find(word);
+    
+    if(_words.end() != it)
+    {
+        _words.erase(word);
+    }
 }

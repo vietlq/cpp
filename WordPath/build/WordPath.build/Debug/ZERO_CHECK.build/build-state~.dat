@@ -1,28 +1,0 @@
-TZERO_CHECK
-v5
-r1
-cCheck dependencies
-cPhaseScriptExecution "CMake Rules" /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ZERO_CHECK.build/Script-D0B74A1B9B9E4B0BB54B5FBA.sh
-
-N/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ZERO_CHECK.build/Script-D0B74A1B9B9E4B0BB54B5FBA.sh
-c0000000051B360B500000000000000C5
-t1370710197
-s197
-
-CCheck dependencies
-r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies3e4097359863b741^d31598359863b741^---0#1#0#--18"Check dependencies36"9C983C23-A0EE-4801-AFD9-AA19CE073026-
-
-CPhaseScriptExecution "CMake Rules" /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ZERO_CHECK.build/Script-D0B74A1B9B9E4B0BB54B5FBA.sh
-s392402997.597722
-e392402997.662249
-r1
-xPhaseScriptExecution
-xCMake Rules
-x/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ZERO_CHECK.build/Script-D0B74A1B9B9E4B0BB54B5FBA.sh
-oecho ""
-o
-omake -f /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeScripts/ReRunCMake.make
-omake[1]: `CMakeFiles/cmake.check_cache' is up to date.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'33df99359863b741^2789a9359863b741^-155"echo ""make -f /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeScripts/ReRunCMake.makemake[1]: `CMakeFiles/cmake.check_cache' is up to date.3(21%IDEActivityLogMessage2@8"echo ""-392402997#0#8#-0#-----2@91"make -f /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeScripts/ReRunCMake.make-392402997#9#91#-0#-----2@55"make[1]: `CMakeFiles/cmake.check_cache' is up to date.-392402997#100#55#-0#-----0#0#0#--311"PhaseScriptExecution "CMake Rules" build/WordPath.build/Debug/ZERO_CHECK.build/Script-D0B74A1B9B9E4B0BB54B5FBA.sh    cd /Users/vietlq/projects/viet-github-cpp/WordPath    /bin/sh -c /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ZERO_CHECK.build/Script-D0B74A1B9B9E4B0BB54B5FBA.sh36"969030CC-2A98-4F85-9511-0C6660288B40-
-
