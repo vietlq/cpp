@@ -4,6 +4,29 @@
 CMakeFiles/word_path.dir/Dictionary.cpp.o: ../Dictionary.cpp
 CMakeFiles/word_path.dir/Dictionary.cpp.o: ../Dictionary.h
 
+CMakeFiles/word_path.dir/TestDictionary.cpp.o: ../Dictionary.h
+CMakeFiles/word_path.dir/TestDictionary.cpp.o: ../TestDictionary.cpp
+CMakeFiles/word_path.dir/TestDictionary.cpp.o: ../TestDictionary.h
+CMakeFiles/word_path.dir/TestDictionary.cpp.o: /usr/local/include/gtest/gtest-death-test.h
+CMakeFiles/word_path.dir/TestDictionary.cpp.o: /usr/local/include/gtest/gtest-message.h
+CMakeFiles/word_path.dir/TestDictionary.cpp.o: /usr/local/include/gtest/gtest-param-test.h
+CMakeFiles/word_path.dir/TestDictionary.cpp.o: /usr/local/include/gtest/gtest-printers.h
+CMakeFiles/word_path.dir/TestDictionary.cpp.o: /usr/local/include/gtest/gtest-test-part.h
+CMakeFiles/word_path.dir/TestDictionary.cpp.o: /usr/local/include/gtest/gtest-typed-test.h
+CMakeFiles/word_path.dir/TestDictionary.cpp.o: /usr/local/include/gtest/gtest.h
+CMakeFiles/word_path.dir/TestDictionary.cpp.o: /usr/local/include/gtest/gtest_pred_impl.h
+CMakeFiles/word_path.dir/TestDictionary.cpp.o: /usr/local/include/gtest/gtest_prod.h
+CMakeFiles/word_path.dir/TestDictionary.cpp.o: /usr/local/include/gtest/internal/gtest-death-test-internal.h
+CMakeFiles/word_path.dir/TestDictionary.cpp.o: /usr/local/include/gtest/internal/gtest-filepath.h
+CMakeFiles/word_path.dir/TestDictionary.cpp.o: /usr/local/include/gtest/internal/gtest-internal.h
+CMakeFiles/word_path.dir/TestDictionary.cpp.o: /usr/local/include/gtest/internal/gtest-linked_ptr.h
+CMakeFiles/word_path.dir/TestDictionary.cpp.o: /usr/local/include/gtest/internal/gtest-param-util-generated.h
+CMakeFiles/word_path.dir/TestDictionary.cpp.o: /usr/local/include/gtest/internal/gtest-param-util.h
+CMakeFiles/word_path.dir/TestDictionary.cpp.o: /usr/local/include/gtest/internal/gtest-port.h
+CMakeFiles/word_path.dir/TestDictionary.cpp.o: /usr/local/include/gtest/internal/gtest-string.h
+CMakeFiles/word_path.dir/TestDictionary.cpp.o: /usr/local/include/gtest/internal/gtest-tuple.h
+CMakeFiles/word_path.dir/TestDictionary.cpp.o: /usr/local/include/gtest/internal/gtest-type-util.h
+
 CMakeFiles/word_path.dir/main.cpp.o: ../main.cpp
 CMakeFiles/word_path.dir/main.cpp.o: /usr/local/include/gtest/gtest-death-test.h
 CMakeFiles/word_path.dir/main.cpp.o: /usr/local/include/gtest/gtest-message.h

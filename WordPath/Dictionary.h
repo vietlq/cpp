@@ -10,6 +10,8 @@
 #define __WordPath__Dictionary__
 
 #include <iostream>
+#include <string>
+#include <set>
 
 class Dictionary
 {
@@ -18,10 +20,15 @@ public:
     
     ~Dictionary();
     
-    bool empty();
+    bool empty() const;
+    
+    void add(const std::string & word);
+    
+    size_t size() const;
     
 private:
-    
+    bool _empty;
+    size_t _size;
 };
 
 #endif /* defined(__WordPath__Dictionary__) */

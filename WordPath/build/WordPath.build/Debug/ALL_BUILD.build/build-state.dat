@@ -2,16 +2,21 @@ TALL_BUILD
 v5
 r1
 cCheck dependencies
-cPhaseScriptExecution "CMake Rules" /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ALL_BUILD.build/Script-AC226DCE40ED495A9B6177DD.sh
+cPhaseScriptExecution "CMake Rules" /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ALL_BUILD.build/Script-B67D40EF4D884ECBA7DDC90D.sh
 
 N/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ALL_BUILD.build/Script-AC226DCE40ED495A9B6177DD.sh
 c0000000051B360B600000000000000C4
 t1370710198
 s196
 
+N/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ALL_BUILD.build/Script-B67D40EF4D884ECBA7DDC90D.sh
+c0000000051B3C32B00000000000000C4
+t1370735403
+s196
+
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies37ffaf369863b741^2b4bb0369863b741^---0#1#0#--18"Check dependencies36"0D644191-B391-4FFF-AD27-4CFC91B6E770-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesb62b7039fb63b741^83c27039fb63b741^---0#1#0#--18"Check dependencies36"22291E01-CF50-4D6C-A869-F720C2ED5424-
 
 CPhaseScriptExecution "CMake Rules" /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ALL_BUILD.build/Script-AC226DCE40ED495A9B6177DD.sh
 s392402998.690070
@@ -25,4 +30,17 @@ o
 oecho Build\ all\ projects
 oBuild all projects
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'df4fb1369863b741^ecdab6369863b741^-54"echo ""echo Build\ all\ projectsBuild all projects3(21%IDEActivityLogMessage2@8"echo ""-392402998#0#8#-0#-----2@26"echo Build\ all\ projects-392402998#9#26#-0#-----2@19"Build all projects-392402998#35#19#-0#-----0#0#0#--309"PhaseScriptExecution "CMake Rules" build/WordPath.build/Debug/ALL_BUILD.build/Script-AC226DCE40ED495A9B6177DD.sh    cd /Users/vietlq/projects/viet-github-cpp/WordPath    /bin/sh -c /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ALL_BUILD.build/Script-AC226DCE40ED495A9B6177DD.sh36"ED32421F-4ABD-47D8-8F9A-A31DD3AC5004-
+
+CPhaseScriptExecution "CMake Rules" /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ALL_BUILD.build/Script-B67D40EF4D884ECBA7DDC90D.sh
+s392428345.441824
+e392428345.472157
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ALL_BUILD.build/Script-B67D40EF4D884ECBA7DDC90D.sh
+oecho ""
+o
+oecho Build\ all\ projects
+oBuild all projects
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'66c07139fb63b741^f4de7839fb63b741^-54"echo ""echo Build\ all\ projectsBuild all projects3(21%IDEActivityLogMessage2@8"echo ""-392428345#0#8#-0#-----2@26"echo Build\ all\ projects-392428345#9#26#-0#-----2@19"Build all projects-392428345#35#19#-0#-----0#0#0#--309"PhaseScriptExecution "CMake Rules" build/WordPath.build/Debug/ALL_BUILD.build/Script-B67D40EF4D884ECBA7DDC90D.sh    cd /Users/vietlq/projects/viet-github-cpp/WordPath    /bin/sh -c /Users/vietlq/projects/viet-github-cpp/WordPath/build/WordPath.build/Debug/ALL_BUILD.build/Script-B67D40EF4D884ECBA7DDC90D.sh36"4488F95E-12F1-4C4E-88D8-1095B7403CEB-
 
