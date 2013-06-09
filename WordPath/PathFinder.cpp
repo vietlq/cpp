@@ -8,7 +8,7 @@
 
 #include "PathFinder.h"
 
-PathFinder::PathFinder(): _pNode(0)
+PathFinder::PathFinder(): _pRoot(0)
 {
     
 }
@@ -48,7 +48,7 @@ void PathFinder::add(const std::string & word)
     pNode->_value = newWord;
     _bstNodes.insert(pNode);
     
-    _pNode = (NULL == _pNode) ? pNode : _pNode;
+    _pRoot = (NULL == _pRoot) ? pNode : _pRoot;
 }
 
 void PathFinder::remove(const std::string & word)

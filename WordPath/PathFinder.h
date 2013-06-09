@@ -73,7 +73,7 @@ private:
     typedef bst_t::iterator bst_iterator_t;
     typedef bst_t::const_iterator bst_const_iterator_t;
     //
-    NodePtr _pNode;
+    NodePtr _pRoot;
     bst_t _bstNodes;
 };
 
