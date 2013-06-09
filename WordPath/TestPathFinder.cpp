@@ -7,6 +7,7 @@
 //
 
 #include "TestPathFinder.h"
+#include "PathFinder.h"
 
 TestPathFinder::TestPathFinder()
 {
