@@ -1,0 +1,68 @@
+TCompilerIdC
+v5
+r1
+cCheck dependencies
+cCompileC ./CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CMakeCCompilerId.o /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/CMakeCCompilerId.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/./CompilerIdC normal i386
+cPhaseScriptExecution "Run Script" /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/./CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+
+N/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/./CompilerIdC
+t2
+s0
+
+N/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/./CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CMakeCCompilerId.o
+t2
+s0
+
+N/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/./CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CompilerIdC.LinkFileList
+c0000000051B35F2800000000000000A9
+t1370709800
+s169
+
+N/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/./CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+c0000000051B35F28000000000000002A
+t1370709800
+s42
+
+N/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/CMakeCCompilerId.c
+c0000000051B35F280000000000002F20
+t1370709800
+s12064
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies86927da89663b741^728987a89663b741^---0#1#0#--18"Check dependencies36"13EC141D-EABA-4F3A-9E72-6757F8C11346-
+
+CCompileC ./CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CMakeCCompilerId.o /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/CMakeCCompilerId.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+s392402600.534676
+e392402600.585750
+r1
+xCompileC
+x./CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CMakeCCompilerId.o
+x/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/CMakeCCompilerId.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Compile /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/CMakeCCompilerId.cf51489a89663b741^0af495a89663b741^---0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/CMakeCCompilerId.c0000000000000000^2594"CompileC ./CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CMakeCCompilerId.o CMakeCCompilerId.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -I/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/./CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.hmap -I/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/./CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources/i386 -I/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/./CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources -F/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC -MMD -MT dependencies -MF /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/./CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CMakeCCompilerId.d --serialize-diagnostics /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/./CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CMakeCCompilerId.dia -c /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/CMakeCCompilerId.c -o /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/./CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CMakeCCompilerId.o36"27FE732D-877C-48FC-B827-D1FE6A528BC5-
+
+CLd /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/./CompilerIdC normal i386
+s392402600.592278
+e392402600.622294
+r1
+xLd
+x/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/./CompilerIdC
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Link /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/./CompilerIdC57b297a89663b741^ca4e9fa89663b741^---0#0#0#--694"Ld ./CompilerIdC normal i386    cd /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -L/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC -F/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC -filelist /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/./CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CompilerIdC.LinkFileList -o /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/./CompilerIdC36"559C9755-FD0F-48E4-85B6-6B136C01CA67-
+
+CPhaseScriptExecution "Run Script" /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/./CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+s392402600.630463
+e392402600.650719
+r1
+xPhaseScriptExecution
+xRun Script
+x/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/./CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+oGCC_VERSION=com.apple.compilers.llvm.clang.1_0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Run custom shell script 'Run Script'6ccea1a89663b741^4299a6a89663b741^-47"GCC_VERSION=com.apple.compilers.llvm.clang.1_01(21%IDEActivityLogMessage2@47"GCC_VERSION=com.apple.compilers.llvm.clang.1_0-392402600#0#47#-0#-----0#0#0#--386"PhaseScriptExecution "Run Script" ./CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh    cd /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC    /bin/sh -c /Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/2.8.10.2/CompilerIdC/./CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh36"A2191036-7599-4015-83B2-C4F789F5A42A-
+

@@ -1,0 +1,1 @@
+/Users/vietlq/projects/viet-github-cpp/WordPath/qtcreator-build/CMakeFiles/word_path.dir

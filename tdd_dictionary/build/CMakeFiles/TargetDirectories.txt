@@ -1,0 +1,3 @@
+/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/ALL_BUILD.dir
+/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/ZERO_CHECK.dir
+/Users/vietlq/projects/viet-github-cpp/WordPath/build/CMakeFiles/word_path.dir
