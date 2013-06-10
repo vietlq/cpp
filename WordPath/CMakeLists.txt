@@ -8,15 +8,11 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 SET(SOURCE_FILES
 	main.cpp
-	Dictionary.cpp
-	TestDictionary.cpp
 	PathFinder.cpp
 	TestPathFinder.cpp
 )
 
 SET(HEADER_FILES
-	Dictionary.h
-	TestDictionary.h
 	PathFinder.h
 	TestPathFinder.h
 )

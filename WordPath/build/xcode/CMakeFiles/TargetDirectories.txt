@@ -1,0 +1,3 @@
+/Users/vietlq/projects/viet-github-cpp/WordPath/build/xcode/CMakeFiles/ALL_BUILD.dir
+/Users/vietlq/projects/viet-github-cpp/WordPath/build/xcode/CMakeFiles/ZERO_CHECK.dir
+/Users/vietlq/projects/viet-github-cpp/WordPath/build/xcode/CMakeFiles/word_path.dir

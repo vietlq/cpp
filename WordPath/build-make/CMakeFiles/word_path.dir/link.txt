@@ -1,1 +1,0 @@
-/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/word_path.dir/main.cpp.o CMakeFiles/word_path.dir/Dictionary.cpp.o CMakeFiles/word_path.dir/TestDictionary.cpp.o CMakeFiles/word_path.dir/PathFinder.cpp.o CMakeFiles/word_path.dir/TestPathFinder.cpp.o  -o word_path  -L/usr/local/lib  -lgtest 
