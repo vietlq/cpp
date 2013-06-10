@@ -1,0 +1,68 @@
+TCompilerIdCXX
+v5
+r1
+cCheck dependencies
+cCompileC ./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX normal i386
+cPhaseScriptExecution "Run Script" /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+
+N/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX
+t2
+s0
+
+N/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o
+t2
+s0
+
+N/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CompilerIdCXX.LinkFileList
+c0000000051B5D8C700000000000000BD
+t1370872007
+s189
+
+N/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+c0000000051B5D8C7000000000000002A
+t1370872007
+s42
+
+N/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp
+c0000000051B5D8C60000000000002E22
+t1370872006
+s11810
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesfe63f9461066b741^ee5e06471066b741^---0#1#0#--18"Check dependencies36"E3AE0191-471E-4E0F-A78A-D56E446C1D75-
+
+CCompileC ./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s392564807.030079
+e392564807.056154
+r1
+xCompileC
+x./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o
+x/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection130"Compile /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp62da07471066b741^965f0e471066b741^---0#0#0#-19%DVTDocumentLocation2@138"file://localhost/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp0000000000000000^2911"CompileC ./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o CMakeCXXCompilerId.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.hmap -I/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources/i386 -I/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources -F/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX -MMD -MT dependencies -MF /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.d --serialize-diagnostics /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.dia -c /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp -o /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o36"7E628CB7-6D79-4259-AE2F-D3A897E78997-
+
+CLd /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX normal i386
+s392564807.063172
+e392564807.085106
+r1
+xLd
+x/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection120"Link /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXXe14010471066b741^fcc815471066b741^---0#0#0#--776"Ld ./CompilerIdCXX normal i386    cd /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -L/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX -F/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX -filelist /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CompilerIdCXX.LinkFileList -o /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX36"88C38F05-24BA-4826-B1AC-9E5F3F279D9A-
+
+CPhaseScriptExecution "Run Script" /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+s392564807.093470
+e392564807.115950
+r1
+xPhaseScriptExecution
+xRun Script
+x/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+oGCC_VERSION=com.apple.compilers.llvm.clang.1_0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Run custom shell script 'Run Script'c78418471066b741^69ac1d471066b741^-47"GCC_VERSION=com.apple.compilers.llvm.clang.1_01(21%IDEActivityLogMessage2@47"GCC_VERSION=com.apple.compilers.llvm.clang.1_0-392564807#0#47#-0#-----0#0#0#--422"PhaseScriptExecution "Run Script" ./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh    cd /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX    /bin/sh -c /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh36"7AAD13DE-110F-465E-AAD0-69C2D9A592F7-
+

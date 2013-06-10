@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              8BCC38A1A622436386A22705 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 710E032AF67C4B5C8E90FC36 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            7608ED08DF4245E3BCD6F2B5 /* CMake Rules */,
+                     );
+                     dependencies = (
+                            9C79C650027C452690116007 /* PBXTargetDependency */,
+                            56CA1426F39641CCA25B2CA8 /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              AE50AA2241104E0AB0AEE58A /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 88D5F01E81604DB4B5A19A4C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            EB5FA5BC935641749148A0C1 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+E817B31749AF4F09938C8935 /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/main.cpp */ = {isa = PBXBuildFile; fileRef = 978571977DE943F18582A657 /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/main.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+BA53F9853A564CBB92633AF4 /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/Dictionary.cpp */ = {isa = PBXBuildFile; fileRef = C057826D071E44948AB91B55 /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/Dictionary.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+7C29724553DA4306983EFD03 /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/TestDictionary.cpp */ = {isa = PBXBuildFile; fileRef = F1785F43BCC44314A641903B /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/TestDictionary.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+B464080CE3B3486EA649095C /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/Dictionary.h */ = {isa = PBXBuildFile; fileRef = 88F3B192A4224460B9792206 /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/Dictionary.h */; settings = { COMPILER_FLAGS = ""; }; };
+01028BDB90844801BCFE9FF5 /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/TestDictionary.h */ = {isa = PBXBuildFile; fileRef = B3C80849D2AD408D9F135966 /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/TestDictionary.h */; settings = { COMPILER_FLAGS = ""; }; };
+9EAD65818AB745E59C7F9B87 /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 967A9C8BB9FC4F5EAF0DB1FD /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              662D66803A80482994FE37F3 /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              40DFD5B6A3F84F90872D40EE /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              AA72C0EFB03040CA8BD5F0E8 /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+              6D7B4A85E2A04646A1A3116F /* MinSizeRel */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = MinSizeRel;
+              };
+              AE6EA757F5EE4D74805F07A0 /* RelWithDebInfo */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = RelWithDebInfo;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              FE421214EE734BD2B5BEFAFC /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = D352369FDBE549458D1333B4 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 367DE76D7BE94A828C37E290;
+                     remoteInfo = tdd_dictionary;
+              };
+              CDC1F0FD93064C08942548C7 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = D352369FDBE549458D1333B4 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = AE50AA2241104E0AB0AEE58A;
+                     remoteInfo = ZERO_CHECK;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+967A9C8BB9FC4F5EAF0DB1FD /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text"; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+978571977DE943F18582A657 /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.cpp.cpp"; name = "main.cpp"; path = "main.cpp"; sourceTree = SOURCE_ROOT; };
+C057826D071E44948AB91B55 /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/Dictionary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.cpp.cpp"; name = "Dictionary.cpp"; path = "Dictionary.cpp"; sourceTree = SOURCE_ROOT; };
+F1785F43BCC44314A641903B /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/TestDictionary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.cpp.cpp"; name = "TestDictionary.cpp"; path = "TestDictionary.cpp"; sourceTree = SOURCE_ROOT; };
+88F3B192A4224460B9792206 /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/Dictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.h"; name = "Dictionary.h"; path = "Dictionary.h"; sourceTree = SOURCE_ROOT; };
+B3C80849D2AD408D9F135966 /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/TestDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.h"; name = "TestDictionary.h"; path = "TestDictionary.h"; sourceTree = SOURCE_ROOT; };
+420C538DBD7E47A2863CEA2C /* tdd_dictionary */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = tdd_dictionary; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              880EAC88B81B422FB9D84145  = {
+                     isa = PBXGroup;
+                     children = (
+                            1F04EFD120B14E9FB6DD16B2 /* Sources */,
+                            FF3D7E820B7549069BC29308 /* Resources */,
+                            56B101C6559E4B5889620559 /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              1F04EFD120B14E9FB6DD16B2 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            E2B280DBE78D4816ACBDF932 /* ALL_BUILD */,
+                            603B9020419340C2BCE8B5DF /* ZERO_CHECK */,
+                            A56002C1BA42442B8E113021 /* tdd_dictionary */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              FF3D7E820B7549069BC29308 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              E2B280DBE78D4816ACBDF932 /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            84F7C92D70D14FA49EF6AD7F /* CMake Rules */,
+                            967A9C8BB9FC4F5EAF0DB1FD /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              84F7C92D70D14FA49EF6AD7F /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              603B9020419340C2BCE8B5DF /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            2C8A4F560C4746EB826A2E82 /* CMake Rules */,
+                            967A9C8BB9FC4F5EAF0DB1FD /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              2C8A4F560C4746EB826A2E82 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              A56002C1BA42442B8E113021 /* tdd_dictionary */ = {
+                     isa = PBXGroup;
+                     children = (
+                            CCC433F6A2BD4330B686D250 /* Source Files */,
+                            49BC6F0241E14003A85F17E2 /* Headers Files */,
+                            967A9C8BB9FC4F5EAF0DB1FD /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/CMakeLists.txt */,
+                     );
+                     name = tdd_dictionary;
+                     sourceTree = "<group>";
+              };
+              CCC433F6A2BD4330B686D250 /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            978571977DE943F18582A657 /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/main.cpp */,
+                            C057826D071E44948AB91B55 /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/Dictionary.cpp */,
+                            F1785F43BCC44314A641903B /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/TestDictionary.cpp */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              49BC6F0241E14003A85F17E2 /* Headers Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            88F3B192A4224460B9792206 /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/Dictionary.h */,
+                            B3C80849D2AD408D9F135966 /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/TestDictionary.h */,
+                     );
+                     name = "Headers Files";
+                     sourceTree = "<group>";
+              };
+              56B101C6559E4B5889620559 /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            420C538DBD7E47A2863CEA2C /* tdd_dictionary */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              367DE76D7BE94A828C37E290 /* tdd_dictionary */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = BD3A5FB7142E49C88F31C17F /* Build configuration list for PBXNativeTarget "tdd_dictionary" */;
+                     buildPhases = (
+                            713BCD821FFA419986833901 /* Sources */,
+                            B1A1EB4D713544168CB8684C /* CMake PostBuild Rules */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            56CA1426F39641CCA25B2CA8 /* PBXTargetDependency */,
+                     );
+                     name = tdd_dictionary;
+                     productName = tdd_dictionary;
+                     productReference = 420C538DBD7E47A2863CEA2C /* tdd_dictionary */;
+                     productType = "com.apple.product-type.tool";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              D352369FDBE549458D1333B4 /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = 87061E2DB4784C9A9F8A973B /* Build configuration list for PBXProject  "TDD_Dictionary" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            40DFD5B6A3F84F90872D40EE /* Debug */,
+                            AA72C0EFB03040CA8BD5F0E8 /* Release */,
+                            6D7B4A85E2A04646A1A3116F /* MinSizeRel */,
+                            AE6EA757F5EE4D74805F07A0 /* RelWithDebInfo */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = 880EAC88B81B422FB9D84145;
+                     projectDirPath = "../..";
+                     projectRoot = "";
+                     targets = (
+                            8BCC38A1A622436386A22705 /* ALL_BUILD */,
+                            AE50AA2241104E0AB0AEE58A /* ZERO_CHECK */,
+                            367DE76D7BE94A828C37E290 /* tdd_dictionary */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              87CF97FA21D842258C27D07E /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              7608ED08DF4245E3BCD6F2B5 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode -f /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              C84FFFD6695B43C980501216 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              EB5FA5BC935641749148A0C1 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode -f /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              B1A1EB4D713544168CB8684C /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode -f /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeScripts/tdd_dictionary_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              713BCD821FFA419986833901 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            E817B31749AF4F09938C8935 /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/main.cpp */,
+                            BA53F9853A564CBB92633AF4 /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/Dictionary.cpp */,
+                            7C29724553DA4306983EFD03 /* /Users/vietlq/projects/viet-github-cpp/tdd_dictionary/TestDictionary.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              9C79C650027C452690116007 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 367DE76D7BE94A828C37E290 /* tdd_dictionary */;
+                     targetProxy = FE421214EE734BD2B5BEFAFC /* PBXContainerItemProxy */;
+              };
+              56CA1426F39641CCA25B2CA8 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = AE50AA2241104E0AB0AEE58A /* ZERO_CHECK */;
+                     targetProxy = CDC1F0FD93064C08942548C7 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              FCC7E7365D594A2096897D91 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/build";
+                     };
+                     name = Debug;
+              };
+              43C5E4FE9C1840FCA6748317 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/build";
+                     };
+                     name = Release;
+              };
+              C0844CB31AE64C79802B14BC /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/build";
+                     };
+                     name = MinSizeRel;
+              };
+              A65FEC4801914AD583BA6898 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/build";
+                     };
+                     name = RelWithDebInfo;
+              };
+              08EB8BB8E3D5498CBC5F2D42 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode", "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary", /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              8AB302AE95C94877B6E0B82E /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode", "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary", /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              086D3E3DCE1F463C898EED75 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode", "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary", /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              4905CA0E7319463EA9A5CA69 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode", "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary", /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              3E79640FD8C14AFF9EC2FD55 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode", "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary", /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              C197B1C01E6641F796389A2C /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode", "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary", /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              564D060F94F04098A3215AB6 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode", "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary", /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              25A78490388E462DAEF491C1 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode", "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary", /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              321CCED9028446EA829C190E /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode", "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary", /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
+                            OTHER_CFLAGS = "    ";
+                            OTHER_CPLUSPLUSFLAGS = "    ";
+                            OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names -lgtest";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = tdd_dictionary;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              D9650ECB6FDC4FC2902B4C61 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode", "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary", /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
+                            OTHER_CFLAGS = "    -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+                            OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names -lgtest";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = tdd_dictionary;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              58E611B6EC3D40CCBC5AF462 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode", "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary", /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
+                            OTHER_CFLAGS = "    -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+                            OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names -lgtest";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = tdd_dictionary;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              50CC720234C14321AC36F947 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode", "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary", /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
+                            OTHER_CFLAGS = "       -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+                            OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names -lgtest";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = tdd_dictionary;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              87061E2DB4784C9A9F8A973B /* Build configuration list for PBXProject  "TDD_Dictionary" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            FCC7E7365D594A2096897D91 /* Debug */,
+                            43C5E4FE9C1840FCA6748317 /* Release */,
+                            C0844CB31AE64C79802B14BC /* MinSizeRel */,
+                            A65FEC4801914AD583BA6898 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              710E032AF67C4B5C8E90FC36 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            08EB8BB8E3D5498CBC5F2D42 /* Debug */,
+                            8AB302AE95C94877B6E0B82E /* Release */,
+                            086D3E3DCE1F463C898EED75 /* MinSizeRel */,
+                            4905CA0E7319463EA9A5CA69 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              88D5F01E81604DB4B5A19A4C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            3E79640FD8C14AFF9EC2FD55 /* Debug */,
+                            C197B1C01E6641F796389A2C /* Release */,
+                            564D060F94F04098A3215AB6 /* MinSizeRel */,
+                            25A78490388E462DAEF491C1 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              BD3A5FB7142E49C88F31C17F /* Build configuration list for PBXNativeTarget "tdd_dictionary" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            321CCED9028446EA829C190E /* Debug */,
+                            D9650ECB6FDC4FC2902B4C61 /* Release */,
+                            58E611B6EC3D40CCBC5AF462 /* MinSizeRel */,
+                            50CC720234C14321AC36F947 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = D352369FDBE549458D1333B4;
+}

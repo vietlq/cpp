@@ -1,0 +1,3 @@
+/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/ALL_BUILD.dir
+/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/ZERO_CHECK.dir
+/Users/vietlq/projects/viet-github-cpp/tdd_dictionary/build/xcode/CMakeFiles/tdd_dictionary.dir
