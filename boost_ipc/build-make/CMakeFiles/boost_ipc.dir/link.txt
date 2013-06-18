@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/boost_ipc.dir/main.cpp.o  -o boost_ipc  -L/usr/local/lib  
