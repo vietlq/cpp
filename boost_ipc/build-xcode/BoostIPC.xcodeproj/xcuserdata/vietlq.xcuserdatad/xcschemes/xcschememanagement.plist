@@ -19,6 +19,16 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>boost_ipc_inspector.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>boost_ipc_modifier.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -33,6 +43,16 @@
 			<true/>
 		</dict>
 		<key>9BBF6743EAF340A7A63BD071</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A81FA1FA932240F5A1C185DF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E31EC46ED21244438AAB82F5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

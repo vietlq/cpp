@@ -6,9 +6,13 @@ include_directories("/usr/local/include")
 include_directories("/Users/vietlq/Downloads/boost_1_51_0")
 link_directories("/usr/local/lib")
 
-SET(SOURCE_FILES
-	main.cpp
+SET(MOD_SRC_FILES
+	modifier.cpp
 )
 
-add_executable(boost_ipc ${SOURCE_FILES})
+SET(INSPECT_SRC_FILES
+	inspector.cpp
+)
 
+add_executable(boost_ipc_modifier ${MOD_SRC_FILES})
+add_executable(boost_ipc_inspector ${INSPECT_SRC_FILES})

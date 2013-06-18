@@ -56,38 +56,73 @@ CMAKE_SOURCE_DIR = /Users/vietlq/projects/viet-github-cpp/boost_ipc
 CMAKE_BINARY_DIR = /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-make
 
 #=============================================================================
-# Target rules for target CMakeFiles/boost_ipc.dir
+# Target rules for target CMakeFiles/boost_ipc_inspector.dir
 
 # All Build rule for target.
-CMakeFiles/boost_ipc.dir/all:
-	$(MAKE) -f CMakeFiles/boost_ipc.dir/build.make CMakeFiles/boost_ipc.dir/depend
-	$(MAKE) -f CMakeFiles/boost_ipc.dir/build.make CMakeFiles/boost_ipc.dir/build
+CMakeFiles/boost_ipc_inspector.dir/all:
+	$(MAKE) -f CMakeFiles/boost_ipc_inspector.dir/build.make CMakeFiles/boost_ipc_inspector.dir/depend
+	$(MAKE) -f CMakeFiles/boost_ipc_inspector.dir/build.make CMakeFiles/boost_ipc_inspector.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-make/CMakeFiles  1
-	@echo "Built target boost_ipc"
-.PHONY : CMakeFiles/boost_ipc.dir/all
+	@echo "Built target boost_ipc_inspector"
+.PHONY : CMakeFiles/boost_ipc_inspector.dir/all
 
 # Include target in all.
-all: CMakeFiles/boost_ipc.dir/all
+all: CMakeFiles/boost_ipc_inspector.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/boost_ipc.dir/rule: cmake_check_build_system
+CMakeFiles/boost_ipc_inspector.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-make/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/boost_ipc.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/boost_ipc_inspector.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-make/CMakeFiles 0
-.PHONY : CMakeFiles/boost_ipc.dir/rule
+.PHONY : CMakeFiles/boost_ipc_inspector.dir/rule
 
 # Convenience name for target.
-boost_ipc: CMakeFiles/boost_ipc.dir/rule
-.PHONY : boost_ipc
+boost_ipc_inspector: CMakeFiles/boost_ipc_inspector.dir/rule
+.PHONY : boost_ipc_inspector
 
 # clean rule for target.
-CMakeFiles/boost_ipc.dir/clean:
-	$(MAKE) -f CMakeFiles/boost_ipc.dir/build.make CMakeFiles/boost_ipc.dir/clean
-.PHONY : CMakeFiles/boost_ipc.dir/clean
+CMakeFiles/boost_ipc_inspector.dir/clean:
+	$(MAKE) -f CMakeFiles/boost_ipc_inspector.dir/build.make CMakeFiles/boost_ipc_inspector.dir/clean
+.PHONY : CMakeFiles/boost_ipc_inspector.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/boost_ipc.dir/clean
+clean: CMakeFiles/boost_ipc_inspector.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/boost_ipc_modifier.dir
+
+# All Build rule for target.
+CMakeFiles/boost_ipc_modifier.dir/all:
+	$(MAKE) -f CMakeFiles/boost_ipc_modifier.dir/build.make CMakeFiles/boost_ipc_modifier.dir/depend
+	$(MAKE) -f CMakeFiles/boost_ipc_modifier.dir/build.make CMakeFiles/boost_ipc_modifier.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-make/CMakeFiles  2
+	@echo "Built target boost_ipc_modifier"
+.PHONY : CMakeFiles/boost_ipc_modifier.dir/all
+
+# Include target in all.
+all: CMakeFiles/boost_ipc_modifier.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/boost_ipc_modifier.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-make/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/boost_ipc_modifier.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-make/CMakeFiles 0
+.PHONY : CMakeFiles/boost_ipc_modifier.dir/rule
+
+# Convenience name for target.
+boost_ipc_modifier: CMakeFiles/boost_ipc_modifier.dir/rule
+.PHONY : boost_ipc_modifier
+
+# clean rule for target.
+CMakeFiles/boost_ipc_modifier.dir/clean:
+	$(MAKE) -f CMakeFiles/boost_ipc_modifier.dir/build.make CMakeFiles/boost_ipc_modifier.dir/clean
+.PHONY : CMakeFiles/boost_ipc_modifier.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/boost_ipc_modifier.dir/clean
 .PHONY : clean
 
 #=============================================================================

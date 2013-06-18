@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/boost_ipc_inspector.dir/inspector.cpp.o  -o boost_ipc_inspector  -L/usr/local/lib  

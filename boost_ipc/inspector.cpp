@@ -32,22 +32,7 @@ int main(int argc, char * argv[])
     
     myShmVector->reserve(256);
     
-    if(myShmVector->empty())
-    {
-        myShmVector->push_back(27);
-        myShmVector->push_back(9);
-        myShmVector->push_back(1985);
-    }
-    else
-    {
-        ShmUInt32Vector::iterator it = myShmVector->begin();
-        const ShmUInt32Vector::iterator end = myShmVector->end();
-        while(end != it)
-        {
-            *it = (*it) * 2 + 1;
-            ++it;
-        }
-    }
+    std::cout << "==== I AM THE MODIFIER ====" << std::endl;
     
     // http://stackoverflow.com/questions/4153110/how-do-i-use-for-each-to-output-to-cout
     std::copy(myShmVector->begin(), myShmVector->end(), std::ostream_iterator<uint32_t>(std::cout, "\n"));

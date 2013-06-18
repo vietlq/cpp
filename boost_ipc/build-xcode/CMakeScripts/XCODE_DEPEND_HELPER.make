@@ -10,23 +10,43 @@ default:
 # Rules to remove targets that are older than anything to which they
 # link.  This forces Xcode to relink the targets from scratch.  It
 # does not seem to check these dependencies itself.
-PostBuild.boost_ipc.Debug:
-/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug/boost_ipc:
-	/bin/rm -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug/boost_ipc
+PostBuild.boost_ipc_inspector.Debug:
+/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug/boost_ipc_inspector:
+	/bin/rm -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug/boost_ipc_inspector
 
 
-PostBuild.boost_ipc.Release:
-/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Release/boost_ipc:
-	/bin/rm -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Release/boost_ipc
+PostBuild.boost_ipc_modifier.Debug:
+/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug/boost_ipc_modifier:
+	/bin/rm -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug/boost_ipc_modifier
 
 
-PostBuild.boost_ipc.MinSizeRel:
-/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/MinSizeRel/boost_ipc:
-	/bin/rm -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/MinSizeRel/boost_ipc
+PostBuild.boost_ipc_inspector.Release:
+/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Release/boost_ipc_inspector:
+	/bin/rm -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Release/boost_ipc_inspector
 
 
-PostBuild.boost_ipc.RelWithDebInfo:
-/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/RelWithDebInfo/boost_ipc:
-	/bin/rm -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/RelWithDebInfo/boost_ipc
+PostBuild.boost_ipc_modifier.Release:
+/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Release/boost_ipc_modifier:
+	/bin/rm -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Release/boost_ipc_modifier
+
+
+PostBuild.boost_ipc_inspector.MinSizeRel:
+/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/MinSizeRel/boost_ipc_inspector:
+	/bin/rm -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/MinSizeRel/boost_ipc_inspector
+
+
+PostBuild.boost_ipc_modifier.MinSizeRel:
+/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/MinSizeRel/boost_ipc_modifier:
+	/bin/rm -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/MinSizeRel/boost_ipc_modifier
+
+
+PostBuild.boost_ipc_inspector.RelWithDebInfo:
+/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/RelWithDebInfo/boost_ipc_inspector:
+	/bin/rm -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/RelWithDebInfo/boost_ipc_inspector
+
+
+PostBuild.boost_ipc_modifier.RelWithDebInfo:
+/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/RelWithDebInfo/boost_ipc_modifier:
+	/bin/rm -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/RelWithDebInfo/boost_ipc_modifier
 
 

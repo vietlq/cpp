@@ -102,41 +102,78 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named boost_ipc
+# Target rules for targets named boost_ipc_inspector
 
 # Build rule for target.
-boost_ipc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 boost_ipc
-.PHONY : boost_ipc
+boost_ipc_inspector: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 boost_ipc_inspector
+.PHONY : boost_ipc_inspector
 
 # fast build rule for target.
-boost_ipc/fast:
-	$(MAKE) -f CMakeFiles/boost_ipc.dir/build.make CMakeFiles/boost_ipc.dir/build
-.PHONY : boost_ipc/fast
+boost_ipc_inspector/fast:
+	$(MAKE) -f CMakeFiles/boost_ipc_inspector.dir/build.make CMakeFiles/boost_ipc_inspector.dir/build
+.PHONY : boost_ipc_inspector/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+#=============================================================================
+# Target rules for targets named boost_ipc_modifier
+
+# Build rule for target.
+boost_ipc_modifier: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 boost_ipc_modifier
+.PHONY : boost_ipc_modifier
+
+# fast build rule for target.
+boost_ipc_modifier/fast:
+	$(MAKE) -f CMakeFiles/boost_ipc_modifier.dir/build.make CMakeFiles/boost_ipc_modifier.dir/build
+.PHONY : boost_ipc_modifier/fast
+
+inspector.o: inspector.cpp.o
+.PHONY : inspector.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/boost_ipc.dir/build.make CMakeFiles/boost_ipc.dir/main.cpp.o
-.PHONY : main.cpp.o
+inspector.cpp.o:
+	$(MAKE) -f CMakeFiles/boost_ipc_inspector.dir/build.make CMakeFiles/boost_ipc_inspector.dir/inspector.cpp.o
+.PHONY : inspector.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+inspector.i: inspector.cpp.i
+.PHONY : inspector.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/boost_ipc.dir/build.make CMakeFiles/boost_ipc.dir/main.cpp.i
-.PHONY : main.cpp.i
+inspector.cpp.i:
+	$(MAKE) -f CMakeFiles/boost_ipc_inspector.dir/build.make CMakeFiles/boost_ipc_inspector.dir/inspector.cpp.i
+.PHONY : inspector.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+inspector.s: inspector.cpp.s
+.PHONY : inspector.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/boost_ipc.dir/build.make CMakeFiles/boost_ipc.dir/main.cpp.s
-.PHONY : main.cpp.s
+inspector.cpp.s:
+	$(MAKE) -f CMakeFiles/boost_ipc_inspector.dir/build.make CMakeFiles/boost_ipc_inspector.dir/inspector.cpp.s
+.PHONY : inspector.cpp.s
+
+modifier.o: modifier.cpp.o
+.PHONY : modifier.o
+
+# target to build an object file
+modifier.cpp.o:
+	$(MAKE) -f CMakeFiles/boost_ipc_modifier.dir/build.make CMakeFiles/boost_ipc_modifier.dir/modifier.cpp.o
+.PHONY : modifier.cpp.o
+
+modifier.i: modifier.cpp.i
+.PHONY : modifier.i
+
+# target to preprocess a source file
+modifier.cpp.i:
+	$(MAKE) -f CMakeFiles/boost_ipc_modifier.dir/build.make CMakeFiles/boost_ipc_modifier.dir/modifier.cpp.i
+.PHONY : modifier.cpp.i
+
+modifier.s: modifier.cpp.s
+.PHONY : modifier.s
+
+# target to generate assembly for a file
+modifier.cpp.s:
+	$(MAKE) -f CMakeFiles/boost_ipc_modifier.dir/build.make CMakeFiles/boost_ipc_modifier.dir/modifier.cpp.s
+.PHONY : modifier.cpp.s
 
 # Help Target
 help:
@@ -144,12 +181,16 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... boost_ipc"
+	@echo "... boost_ipc_inspector"
+	@echo "... boost_ipc_modifier"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... inspector.o"
+	@echo "... inspector.i"
+	@echo "... inspector.s"
+	@echo "... modifier.o"
+	@echo "... modifier.i"
+	@echo "... modifier.s"
 .PHONY : help
 
 
