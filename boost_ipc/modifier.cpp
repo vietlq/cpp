@@ -50,7 +50,7 @@ int main(int argc, char * argv[])
             const ShmUInt32Vector::iterator end = myShmVector->end();
             while(end != it)
             {
-                *it = (*it) + rand() + 1;
+                *it += (*it) + rand() + 1;
                 ++it;
             }
         }
