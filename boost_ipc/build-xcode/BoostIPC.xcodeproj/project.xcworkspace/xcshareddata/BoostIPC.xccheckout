@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>844B60C8-010A-4903-959A-FEFCE86ED13D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BoostIPC</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DABA40EE-0969-4CE2-8065-E217AED79FE4</key>
+		<string>https://github.com/vietlq/cpp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>boost_ipc/build-xcode/BoostIPC.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DABA40EE-0969-4CE2-8065-E217AED79FE4</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/vietlq/cpp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DABA40EE-0969-4CE2-8065-E217AED79FE4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DABA40EE-0969-4CE2-8065-E217AED79FE4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>viet-github-cpp</string>
+		</dict>
+	</array>
+</dict>
+</plist>

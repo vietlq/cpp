@@ -7,6 +7,8 @@
 #include <boost/interprocess/allocators/cached_node_allocator.hpp>
 #include <boost/interprocess/containers/vector.hpp>
 
+#include "utils.h"
+
 using namespace boost::interprocess;
 
 int main(int argc, char * argv[])
@@ -20,7 +22,7 @@ int main(int argc, char * argv[])
     typedef vector<uint32_t, UInt32Allocator> ShmUInt32Vector;
     typedef vector<uint32_t, UInt32CachedNodeAllocator> ShmUInt32CachedNodeVector;
     
-    managed_mapped_file segment(open_or_create, "NeoMMapFile", 1024*1024);
+    managed_mapped_file segment(open_or_create, create_mmap_name().c_str(), 1024*1024);
     cached_adaptive_pool_t allocator_instance(segment.get_segment_manager());
     UInt32Allocator uint32Allocator(segment.get_segment_manager());
     UInt32CachedNodeAllocator uint32CachedNodeAllocator(segment.get_segment_manager());

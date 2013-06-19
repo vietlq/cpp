@@ -6,13 +6,21 @@ include_directories("/usr/local/include")
 include_directories("/Users/vietlq/Downloads/boost_1_51_0")
 link_directories("/usr/local/lib")
 
+SET(UTILS_HDR_FILES
+	utils.h
+)
+
 SET(MOD_SRC_FILES
 	modifier.cpp
+	utils.cpp
 )
 
 SET(INSPECT_SRC_FILES
 	inspector.cpp
+	utils.cpp
 )
 
-add_executable(boost_ipc_modifier ${MOD_SRC_FILES})
-add_executable(boost_ipc_inspector ${INSPECT_SRC_FILES})
+source_group("Header Files" FILES ${UTILS_HDR_FILES})
+
+add_executable(boost_ipc_modifier ${MOD_SRC_FILES} ${UTILS_HDR_FILES})
+add_executable(boost_ipc_inspector ${INSPECT_SRC_FILES} ${UTILS_HDR_FILES})

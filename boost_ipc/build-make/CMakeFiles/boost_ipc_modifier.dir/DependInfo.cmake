@@ -5,6 +5,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
   "/Users/vietlq/projects/viet-github-cpp/boost_ipc/modifier.cpp" "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-make/CMakeFiles/boost_ipc_modifier.dir/modifier.cpp.o"
+  "/Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp" "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-make/CMakeFiles/boost_ipc_modifier.dir/utils.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "Clang")
 

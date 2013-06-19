@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "22AF5A38A896433185F0DE5B"
+               BlueprintIdentifier = "38C9BEB484B8412F994C32F3"
                BuildableName = "ALL_BUILD"
                BlueprintName = "ALL_BUILD"
                ReferencedContainer = "container:build-xcode/BoostIPC.xcodeproj">

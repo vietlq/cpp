@@ -1,123 +1,0 @@
-Tboost_ipc
-v6
-r1
-cCheck dependencies
-cCompileC build-xcode/BoostIPC.build/Debug/boost_ipc.build/Objects-normal/x86_64/main.o /Users/vietlq/projects/viet-github-cpp/boost_ipc/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug/boost_ipc normal x86_64
-cPhaseScriptExecution CMake\ PostBuild\ Rules /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc.build/Script-EDAB535EC8E34BA4A83673C0.sh
-
-N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
-c000000005123172D00000000000000AA
-t1361254189
-s170
-
-N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/SDKSettings.plist
-c000000005123171600000000000004B3
-t1361254166
-s1203
-
-N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/CoreServices/SystemVersion.plist
-c000000005122F3D400000000000001DE
-t1361245140
-s478
-
-N/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc.build/Objects-normal/x86_64/boost_ipc.LinkFileList
-c0000000051C05F37000000000000007F
-t1371561783
-s127
-
-N/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc.build/Objects-normal/x86_64/main.o
-t1371561783
-s28464
-
-N/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc.build/Script-EDAB535EC8E34BA4A83673C0.sh
-c0000000051C05F3700000000000000CC
-t1371561783
-s204
-
-N/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug/boost_ipc
-t2
-s0
-
-N/Users/vietlq/projects/viet-github-cpp/boost_ipc/main.cpp
-c0000000051C05F330000000000000032
-t1371561779
-s50
-
-CBuild AST from /Users/vietlq/projects/viet-github-cpp/boost_ipc/main.cpp
-r0
-
-CCheck dependencies
-r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesc36698b79670b741^26e398b79670b741^---0#1#1#--18"Check dependencies36"509B2FE1-CF9E-4A7E-913A-8F1AE4B4B35A-
-
-CCompileC build-xcode/BoostIPC.build/Debug/boost_ipc.build/Objects-normal/x86_64/main.o /Users/vietlq/projects/viet-github-cpp/boost_ipc/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s393254583.599406
-e393254583.899830
-r1
-xCompileC
-xbuild-xcode/BoostIPC.build/Debug/boost_ipc.build/Objects-normal/x86_64/main.o
-x/Users/vietlq/projects/viet-github-cpp/boost_ipc/main.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/vietlq/projects/viet-github-cpp/boost_ipc/main.cpp
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile /Users/vietlq/projects/viet-github-cpp/boost_ipc/main.cpp157"CompileC build-xcode/BoostIPC.build/Debug/boost_ipc.build/Objects-normal/x86_64/main.o main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler9a9999b79670b741^f359e6b79670b741^---0#0#1#-19%DVTDocumentLocation2@73"file://localhost/Users/vietlq/projects/viet-github-cpp/boost_ipc/main.cpp0000000000000000^2399"CompileC build-xcode/BoostIPC.build/Debug/boost_ipc.build/Objects-normal/x86_64/main.o main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vietlq/projects/viet-github-cpp/boost_ipc    setenv LANG en_US.US-ASCII    /Applications/Xcode5-DP.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug/include -I/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -I/Users/vietlq/projects/viet-github-cpp/boost_ipc -I/usr/local/include -I/Users/vietlq/Downloads/boost_1_51_0 -I/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc.build/DerivedSources/x86_64 -I/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug -MMD -MT dependencies -MF /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc.build/Objects-normal/x86_64/main.dia -c /Users/vietlq/projects/viet-github-cpp/boost_ipc/main.cpp -o /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc.build/Objects-normal/x86_64/main.o36"AD15A8F0-FEB4-4DDB-BC0F-550E07D3EE12-
-bBD0F23F8-4A38-4567-B964-50745BDC9151
-
-CLd /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug/boost_ipc normal x86_64
-s393254583.908665
-e393254583.937895
-r1
-xLd
-x/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug/boost_ipc
-xnormal
-xx86_64
-d/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc.build/Objects-normal/x86_64/boost_ipc.LinkFileList
-d/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc.build/Objects-normal/x86_64/main.o
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libstdc++.6.0.9.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libSystem.B.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.osx.a
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libcache.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libcommonCrypto.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libcompiler_rt.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libcopyfile.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libdispatch.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libdnsinfo.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libdyld.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libkeymgr.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/liblaunch.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libmacho.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libquarantine.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libremovefile.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_blocks.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_c.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_dnssd.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_info.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_kernel.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_m.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_network.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_notify.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_sandbox.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libunc.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libunwind.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libxpc.dylib
-old: warning: directory not found for option '-L/usr/local/lib/Debug'
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Link /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug/boost_ipc44"Ld build-xcode/Debug/boost_ipc normal x86_6496b2e8b79670b741^ac1ef0b79670b741^-69"ld: warning: directory not found for option '-L/usr/local/lib/Debug'1(21%IDEActivityLogMessage2@55"Directory not found for option '-L/usr/local/lib/Debug'-393254583#0#69#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#32"Apple Mach-O Linker (ld) Warning--0#0#1#--1050"Ld build-xcode/Debug/boost_ipc normal x86_64    cd /Users/vietlq/projects/viet-github-cpp/boost_ipc    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode5-DP.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug -L/usr/local/lib/Debug -L/usr/local/lib -F/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug -filelist /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc.build/Objects-normal/x86_64/boost_ipc.LinkFileList -mmacosx-version-min=10.8 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc.build/Objects-normal/x86_64/boost_ipc_dependency_info.dat -o /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug/boost_ipc36"79CB87F5-4C1F-43CA-A0AD-753CECE8F634-
-bBD0F23F8-4A38-4567-B964-50745BDC9151
-
-CPhaseScriptExecution CMake\ PostBuild\ Rules /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc.build/Script-EDAB535EC8E34BA4A83673C0.sh
-s393254583.950812
-e393254583.994592
-r1
-xPhaseScriptExecution
-xCMake PostBuild Rules
-x/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc.build/Script-EDAB535EC8E34BA4A83673C0.sh
-oecho "Depend check for xcode"
-oDepend check for xcode
-ocd /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode && make -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.boost_ipc.Debug
-omake[1]: Nothing to be done for `PostBuild.boost_ipc.Debug'.
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Run custom shell script 'CMake PostBuild Rules'128"PhaseScriptExecution CMake\ PostBuild\ Rules build-xcode/BoostIPC.build/Debug/boost_ipc.build/Script-EDAB535EC8E34BA4A83673C0.sh08ccf3b79670b741^774effb79670b741^-378"echo "Depend check for xcode"Depend check for xcodecd /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode && make -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.boost_ipc.Debugmake[1]: Nothing to be done for `PostBuild.boost_ipc.Debug'.4(21%IDEActivityLogMessage2@30"echo "Depend check for xcode"-393254583#0#30#-0#-----2@23"Depend check for xcode-393254583#30#23#-0#-----2@264"cd /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode && make -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.boost_ipc.Debug-393254583#53#264#-0#-----2@61"make[1]: Nothing to be done for `PostBuild.boost_ipc.Debug'.-393254583#317#61#-0#-----0#0#1#--542"PhaseScriptExecution CMake\ PostBuild\ Rules build-xcode/BoostIPC.build/Debug/boost_ipc.build/Script-EDAB535EC8E34BA4A83673C0.sh    cd /Users/vietlq/projects/viet-github-cpp/boost_ipc    #!/bin/shmake -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/boost_ipc_postBuildPhase.make$CONFIGURATION all    /bin/sh -c /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc.build/Script-EDAB535EC8E34BA4A83673C0.sh36"ABDE00F8-71FE-4297-B21C-139BD35565EA-
-bBD0F23F8-4A38-4567-B964-50745BDC9151
-

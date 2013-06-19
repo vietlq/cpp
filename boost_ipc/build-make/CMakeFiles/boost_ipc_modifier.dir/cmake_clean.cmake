@@ -1,5 +1,6 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/boost_ipc_modifier.dir/modifier.cpp.o"
+  "CMakeFiles/boost_ipc_modifier.dir/utils.cpp.o"
   "boost_ipc_modifier.pdb"
   "boost_ipc_modifier"
 )

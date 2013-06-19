@@ -175,6 +175,33 @@ modifier.cpp.s:
 	$(MAKE) -f CMakeFiles/boost_ipc_modifier.dir/build.make CMakeFiles/boost_ipc_modifier.dir/modifier.cpp.s
 .PHONY : modifier.cpp.s
 
+utils.o: utils.cpp.o
+.PHONY : utils.o
+
+# target to build an object file
+utils.cpp.o:
+	$(MAKE) -f CMakeFiles/boost_ipc_inspector.dir/build.make CMakeFiles/boost_ipc_inspector.dir/utils.cpp.o
+	$(MAKE) -f CMakeFiles/boost_ipc_modifier.dir/build.make CMakeFiles/boost_ipc_modifier.dir/utils.cpp.o
+.PHONY : utils.cpp.o
+
+utils.i: utils.cpp.i
+.PHONY : utils.i
+
+# target to preprocess a source file
+utils.cpp.i:
+	$(MAKE) -f CMakeFiles/boost_ipc_inspector.dir/build.make CMakeFiles/boost_ipc_inspector.dir/utils.cpp.i
+	$(MAKE) -f CMakeFiles/boost_ipc_modifier.dir/build.make CMakeFiles/boost_ipc_modifier.dir/utils.cpp.i
+.PHONY : utils.cpp.i
+
+utils.s: utils.cpp.s
+.PHONY : utils.s
+
+# target to generate assembly for a file
+utils.cpp.s:
+	$(MAKE) -f CMakeFiles/boost_ipc_inspector.dir/build.make CMakeFiles/boost_ipc_inspector.dir/utils.cpp.s
+	$(MAKE) -f CMakeFiles/boost_ipc_modifier.dir/build.make CMakeFiles/boost_ipc_modifier.dir/utils.cpp.s
+.PHONY : utils.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -191,6 +218,9 @@ help:
 	@echo "... modifier.o"
 	@echo "... modifier.i"
 	@echo "... modifier.s"
+	@echo "... utils.o"
+	@echo "... utils.i"
+	@echo "... utils.s"
 .PHONY : help
 
 

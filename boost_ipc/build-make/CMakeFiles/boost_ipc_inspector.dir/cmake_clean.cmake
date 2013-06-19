@@ -1,5 +1,6 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/boost_ipc_inspector.dir/inspector.cpp.o"
+  "CMakeFiles/boost_ipc_inspector.dir/utils.cpp.o"
   "boost_ipc_inspector.pdb"
   "boost_ipc_inspector"
 )

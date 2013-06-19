@@ -3,6 +3,7 @@
 
 CMakeFiles/boost_ipc_inspector.dir/inspector.cpp.o
  /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp
+ /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h
  /usr/local/include/boost/aligned_storage.hpp
  /usr/local/include/boost/assert.hpp
  /usr/local/include/boost/checked_delete.hpp
@@ -798,3 +799,6 @@ CMakeFiles/boost_ipc_inspector.dir/inspector.cpp.o
  /usr/local/include/boost/utility/enable_if.hpp
  /usr/local/include/boost/utility/swap.hpp
  /usr/local/include/boost/version.hpp
+CMakeFiles/boost_ipc_inspector.dir/utils.cpp.o
+ /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp
+ /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h

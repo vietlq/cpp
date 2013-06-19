@@ -75,14 +75,39 @@ CMakeFiles/boost_ipc_modifier.dir/modifier.cpp.o.provides: CMakeFiles/boost_ipc_
 
 CMakeFiles/boost_ipc_modifier.dir/modifier.cpp.o.provides.build: CMakeFiles/boost_ipc_modifier.dir/modifier.cpp.o
 
+CMakeFiles/boost_ipc_modifier.dir/utils.cpp.o: CMakeFiles/boost_ipc_modifier.dir/flags.make
+CMakeFiles/boost_ipc_modifier.dir/utils.cpp.o: ../utils.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-make/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/boost_ipc_modifier.dir/utils.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/boost_ipc_modifier.dir/utils.cpp.o -c /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp
+
+CMakeFiles/boost_ipc_modifier.dir/utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/boost_ipc_modifier.dir/utils.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp > CMakeFiles/boost_ipc_modifier.dir/utils.cpp.i
+
+CMakeFiles/boost_ipc_modifier.dir/utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/boost_ipc_modifier.dir/utils.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp -o CMakeFiles/boost_ipc_modifier.dir/utils.cpp.s
+
+CMakeFiles/boost_ipc_modifier.dir/utils.cpp.o.requires:
+.PHONY : CMakeFiles/boost_ipc_modifier.dir/utils.cpp.o.requires
+
+CMakeFiles/boost_ipc_modifier.dir/utils.cpp.o.provides: CMakeFiles/boost_ipc_modifier.dir/utils.cpp.o.requires
+	$(MAKE) -f CMakeFiles/boost_ipc_modifier.dir/build.make CMakeFiles/boost_ipc_modifier.dir/utils.cpp.o.provides.build
+.PHONY : CMakeFiles/boost_ipc_modifier.dir/utils.cpp.o.provides
+
+CMakeFiles/boost_ipc_modifier.dir/utils.cpp.o.provides.build: CMakeFiles/boost_ipc_modifier.dir/utils.cpp.o
+
 # Object files for target boost_ipc_modifier
 boost_ipc_modifier_OBJECTS = \
-"CMakeFiles/boost_ipc_modifier.dir/modifier.cpp.o"
+"CMakeFiles/boost_ipc_modifier.dir/modifier.cpp.o" \
+"CMakeFiles/boost_ipc_modifier.dir/utils.cpp.o"
 
 # External object files for target boost_ipc_modifier
 boost_ipc_modifier_EXTERNAL_OBJECTS =
 
 boost_ipc_modifier: CMakeFiles/boost_ipc_modifier.dir/modifier.cpp.o
+boost_ipc_modifier: CMakeFiles/boost_ipc_modifier.dir/utils.cpp.o
 boost_ipc_modifier: CMakeFiles/boost_ipc_modifier.dir/build.make
 boost_ipc_modifier: CMakeFiles/boost_ipc_modifier.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable boost_ipc_modifier"
@@ -93,6 +118,7 @@ CMakeFiles/boost_ipc_modifier.dir/build: boost_ipc_modifier
 .PHONY : CMakeFiles/boost_ipc_modifier.dir/build
 
 CMakeFiles/boost_ipc_modifier.dir/requires: CMakeFiles/boost_ipc_modifier.dir/modifier.cpp.o.requires
+CMakeFiles/boost_ipc_modifier.dir/requires: CMakeFiles/boost_ipc_modifier.dir/utils.cpp.o.requires
 .PHONY : CMakeFiles/boost_ipc_modifier.dir/requires
 
 CMakeFiles/boost_ipc_modifier.dir/clean:

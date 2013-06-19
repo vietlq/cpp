@@ -75,14 +75,39 @@ CMakeFiles/boost_ipc_inspector.dir/inspector.cpp.o.provides: CMakeFiles/boost_ip
 
 CMakeFiles/boost_ipc_inspector.dir/inspector.cpp.o.provides.build: CMakeFiles/boost_ipc_inspector.dir/inspector.cpp.o
 
+CMakeFiles/boost_ipc_inspector.dir/utils.cpp.o: CMakeFiles/boost_ipc_inspector.dir/flags.make
+CMakeFiles/boost_ipc_inspector.dir/utils.cpp.o: ../utils.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-make/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/boost_ipc_inspector.dir/utils.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/boost_ipc_inspector.dir/utils.cpp.o -c /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp
+
+CMakeFiles/boost_ipc_inspector.dir/utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/boost_ipc_inspector.dir/utils.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp > CMakeFiles/boost_ipc_inspector.dir/utils.cpp.i
+
+CMakeFiles/boost_ipc_inspector.dir/utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/boost_ipc_inspector.dir/utils.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp -o CMakeFiles/boost_ipc_inspector.dir/utils.cpp.s
+
+CMakeFiles/boost_ipc_inspector.dir/utils.cpp.o.requires:
+.PHONY : CMakeFiles/boost_ipc_inspector.dir/utils.cpp.o.requires
+
+CMakeFiles/boost_ipc_inspector.dir/utils.cpp.o.provides: CMakeFiles/boost_ipc_inspector.dir/utils.cpp.o.requires
+	$(MAKE) -f CMakeFiles/boost_ipc_inspector.dir/build.make CMakeFiles/boost_ipc_inspector.dir/utils.cpp.o.provides.build
+.PHONY : CMakeFiles/boost_ipc_inspector.dir/utils.cpp.o.provides
+
+CMakeFiles/boost_ipc_inspector.dir/utils.cpp.o.provides.build: CMakeFiles/boost_ipc_inspector.dir/utils.cpp.o
+
 # Object files for target boost_ipc_inspector
 boost_ipc_inspector_OBJECTS = \
-"CMakeFiles/boost_ipc_inspector.dir/inspector.cpp.o"
+"CMakeFiles/boost_ipc_inspector.dir/inspector.cpp.o" \
+"CMakeFiles/boost_ipc_inspector.dir/utils.cpp.o"
 
 # External object files for target boost_ipc_inspector
 boost_ipc_inspector_EXTERNAL_OBJECTS =
 
 boost_ipc_inspector: CMakeFiles/boost_ipc_inspector.dir/inspector.cpp.o
+boost_ipc_inspector: CMakeFiles/boost_ipc_inspector.dir/utils.cpp.o
 boost_ipc_inspector: CMakeFiles/boost_ipc_inspector.dir/build.make
 boost_ipc_inspector: CMakeFiles/boost_ipc_inspector.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable boost_ipc_inspector"
@@ -93,6 +118,7 @@ CMakeFiles/boost_ipc_inspector.dir/build: boost_ipc_inspector
 .PHONY : CMakeFiles/boost_ipc_inspector.dir/build
 
 CMakeFiles/boost_ipc_inspector.dir/requires: CMakeFiles/boost_ipc_inspector.dir/inspector.cpp.o.requires
+CMakeFiles/boost_ipc_inspector.dir/requires: CMakeFiles/boost_ipc_inspector.dir/utils.cpp.o.requires
 .PHONY : CMakeFiles/boost_ipc_inspector.dir/requires
 
 CMakeFiles/boost_ipc_inspector.dir/clean:

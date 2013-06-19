@@ -1,4 +1,5 @@
-dependencies: /Users/vietlq/projects/viet-github-cpp/boost_ipc/main.cpp \
+dependencies: \
+  /Users/vietlq/projects/viet-github-cpp/boost_ipc/modifier.cpp \
   /usr/local/include/boost/interprocess/managed_mapped_file.hpp \
   /usr/local/include/boost/interprocess/detail/config_begin.hpp \
   /usr/local/include/boost/config.hpp \
@@ -473,4 +474,5 @@ dependencies: /Users/vietlq/projects/viet-github-cpp/boost_ipc/main.cpp \
   /usr/local/include/boost/move/move_helpers.hpp \
   /usr/local/include/boost/container/detail/advanced_insert_int.hpp \
   /usr/local/include/boost/container/detail/value_init.hpp \
-  /usr/local/include/boost/interprocess/containers/containers_fwd.hpp
+  /usr/local/include/boost/interprocess/containers/containers_fwd.hpp \
+  /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h
