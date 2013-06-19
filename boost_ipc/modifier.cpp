@@ -33,7 +33,7 @@ int main(int argc, char * argv[])
     std::cout << "---- Before: The Count = " << itCount->second << " ----" << std::endl;
     
     myShmVector->reserve(256);
-    for(int i = 0; i < 10000000; ++i)
+    for(int i = 0; i < 100000; ++i)
     {
         if(myShmVector->empty())
         {
@@ -52,6 +52,12 @@ int main(int argc, char * argv[])
             }
         }
         ++(itCount->second);
+    }
+    
+    // Fill with 0
+    while(myShmVector->size() < 256)
+    {
+        myShmVector->push_back(0);
     }
     
     std::cout << "---- After: The Count = " << itCount->second << " ----" << std::endl;
