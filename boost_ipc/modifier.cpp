@@ -1,6 +1,7 @@
 #include <iostream>
 #include <algorithm>
 #include <iterator>
+#include <cmath>
 
 #include "utils.h"
 
@@ -32,8 +33,10 @@ int main(int argc, char * argv[])
     std::cout << "==== I AM THE MODIFIER ====" << std::endl;
     std::cout << "---- Before: The Count = " << itCount->second << " ----" << std::endl;
     
+    ::srand(time(NULL));
+    
     myShmVector->reserve(256);
-    for(int i = 0; i < 100000; ++i)
+    for(int i = 0; i < 500000; ++i)
     {
         if(myShmVector->empty())
         {
@@ -47,7 +50,7 @@ int main(int argc, char * argv[])
             const ShmUInt32Vector::iterator end = myShmVector->end();
             while(end != it)
             {
-                *it = (*it) + time(NULL) + 1;
+                *it = (*it) + rand() + 1;
                 ++it;
             }
         }
