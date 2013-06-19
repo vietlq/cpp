@@ -1,5 +1,6 @@
 dependencies: \
   /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp \
+  /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h \
   /usr/local/include/boost/interprocess/managed_mapped_file.hpp \
   /usr/local/include/boost/interprocess/detail/config_begin.hpp \
   /usr/local/include/boost/config.hpp \
@@ -475,4 +476,23 @@ dependencies: \
   /usr/local/include/boost/container/detail/advanced_insert_int.hpp \
   /usr/local/include/boost/container/detail/value_init.hpp \
   /usr/local/include/boost/interprocess/containers/containers_fwd.hpp \
-  /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h
+  /usr/local/include/boost/interprocess/containers/map.hpp \
+  /usr/local/include/boost/container/map.hpp \
+  /usr/local/include/boost/container/detail/tree.hpp \
+  /usr/local/include/boost/container/detail/node_alloc_holder.hpp \
+  /usr/local/include/boost/container/detail/pair.hpp \
+  /usr/local/include/boost/interprocess/containers/string.hpp \
+  /usr/local/include/boost/container/string.hpp \
+  /usr/local/include/boost/functional/hash.hpp \
+  /usr/local/include/boost/functional/hash/hash.hpp \
+  /usr/local/include/boost/functional/hash/hash_fwd.hpp \
+  /usr/local/include/boost/functional/hash/detail/hash_float.hpp \
+  /usr/local/include/boost/functional/hash/detail/float_functions.hpp \
+  /usr/local/include/boost/functional/hash/detail/limits.hpp \
+  /usr/local/include/boost/integer/static_log2.hpp \
+  /usr/local/include/boost/integer_fwd.hpp \
+  /usr/local/include/boost/functional/hash/detail/hash_float_generic.hpp \
+  /usr/local/include/boost/functional/hash/extensions.hpp \
+  /usr/local/include/boost/functional/hash/detail/container_fwd_0x.hpp \
+  /usr/local/include/boost/detail/container_fwd.hpp \
+  /usr/local/include/boost/preprocessor/repetition/repeat_from_to.hpp

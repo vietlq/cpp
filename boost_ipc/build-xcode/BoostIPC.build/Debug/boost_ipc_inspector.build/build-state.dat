@@ -2,8 +2,8 @@ Tboost_ipc_inspector
 v6
 r1
 cCheck dependencies
-cCompileC build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/inspector.o /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/utils.o /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/inspector.o /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
 cLd /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug/boost_ipc_inspector normal x86_64
 cPhaseScriptExecution CMake\ PostBuild\ Rules /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Script-60CFFA753EFF48AC841C9E8A.sh
 
@@ -158,46 +158,41 @@ t1370062023
 s5968
 
 N/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/boost_ipc_inspector.LinkFileList
-c0000000051C106F60000000000000118
-t1371604726
+c0000000051C179C80000000000000118
+t1371634120
 s280
 
 N/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/inspector.o
-t1371604729
-s2278420
+t1371635410
+s2278468
 
 N/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/utils.o
-t1371604727
-s17724
-
-N/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Script-524A2936EDD746C3A5B3C636.sh
-c0000000051C106F600000000000000D6
-t1371604726
-s214
+t1371635285
+s33684
 
 N/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Script-60CFFA753EFF48AC841C9E8A.sh
-c0000000051C1071200000000000000D6
-t1371604754
+c0000000051C179C800000000000000D6
+t1371634120
 s214
 
 N/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug/boost_ipc_inspector
-t1371604730
-s1267936
+t1371635286
+s1268528
 
 N/Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp
-c0000000051C105CA000000000000075E
-t1371604426
-s1886
+c0000000051C17ECE0000000000000449
+t1371635406
+s1097
 
 N/Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp
-c0000000051C1058600000000000001A8
-t1371604358
-s424
+c0000000051C108EC000000000000020B
+t1371605228
+s523
 
 N/Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h
-c0000000051C105B40000000000000085
-t1371604404
-s133
+c0000000051C17E4F00000000000005F6
+t1371635279
+s1526
 
 N/usr/local/include/boost/aligned_storage.hpp
 c0000000051C062C700000000000010C9
@@ -354,10 +349,20 @@ c0000000051C062DB0000000000001F45
 t1371562715
 s8005
 
+N/usr/local/include/boost/container/detail/node_alloc_holder.hpp
+c0000000051C062DB0000000000004104
+t1371562715
+s16644
+
 N/usr/local/include/boost/container/detail/node_pool_impl.hpp
 c0000000051C062DB00000000000032E8
 t1371562715
 s13032
+
+N/usr/local/include/boost/container/detail/pair.hpp
+c0000000051C062DB0000000000002807
+t1371562715
+s10247
 
 N/usr/local/include/boost/container/detail/pool_common.hpp
 c0000000051C062DB00000000000005E5
@@ -373,6 +378,11 @@ N/usr/local/include/boost/container/detail/transform_iterator.hpp
 c0000000051C062DB0000000000001464
 t1371562715
 s5220
+
+N/usr/local/include/boost/container/detail/tree.hpp
+c0000000051C062DB00000000000097D2
+t1371562715
+s38866
 
 N/usr/local/include/boost/container/detail/type_traits.hpp
 c0000000051C062DB0000000000000ECF
@@ -398,6 +408,16 @@ N/usr/local/include/boost/container/detail/workaround.hpp
 c0000000051C062DB0000000000000537
 t1371562715
 s1335
+
+N/usr/local/include/boost/container/map.hpp
+c0000000051C062C9000000000000D518
+t1371562697
+s54552
+
+N/usr/local/include/boost/container/string.hpp
+c0000000051C062C9000000000001999B
+t1371562697
+s104859
 
 N/usr/local/include/boost/container/vector.hpp
 c0000000051C062C90000000000015F50
@@ -664,6 +684,11 @@ c0000000051C062CA000000000000051F
 t1371562698
 s1311
 
+N/usr/local/include/boost/detail/container_fwd.hpp
+c0000000051C062CA00000000000014E0
+t1371562698
+s5344
+
 N/usr/local/include/boost/detail/no_exceptions_support.hpp
 c0000000051C062CA00000000000007CD
 t1371562698
@@ -673,6 +698,61 @@ N/usr/local/include/boost/detail/sp_typeinfo.hpp
 c0000000051C062CA0000000000000977
 t1371562698
 s2423
+
+N/usr/local/include/boost/functional/hash.hpp
+c0000000051C062CB00000000000000EB
+t1371562699
+s235
+
+N/usr/local/include/boost/functional/hash/detail/container_fwd_0x.hpp
+c0000000051C062F30000000000000255
+t1371562739
+s597
+
+N/usr/local/include/boost/functional/hash/detail/float_functions.hpp
+c0000000051C062F30000000000002A9D
+t1371562739
+s10909
+
+N/usr/local/include/boost/functional/hash/detail/hash_float.hpp
+c0000000051C062F30000000000000BA9
+t1371562739
+s2985
+
+N/usr/local/include/boost/functional/hash/detail/hash_float_generic.hpp
+c0000000051C062F30000000000000AC0
+t1371562739
+s2752
+
+N/usr/local/include/boost/functional/hash/detail/limits.hpp
+c0000000051C062F30000000000000689
+t1371562739
+s1673
+
+N/usr/local/include/boost/functional/hash/extensions.hpp
+c0000000051C062DC00000000000029A5
+t1371562716
+s10661
+
+N/usr/local/include/boost/functional/hash/hash.hpp
+c0000000051C062DC000000000000390D
+t1371562716
+s14605
+
+N/usr/local/include/boost/functional/hash/hash_fwd.hpp
+c0000000051C062DC0000000000000469
+t1371562716
+s1129
+
+N/usr/local/include/boost/integer/static_log2.hpp
+c0000000051C062CD0000000000000DD4
+t1371562701
+s3540
+
+N/usr/local/include/boost/integer_fwd.hpp
+c0000000051C062C70000000000001209
+t1371562695
+s4617
 
 N/usr/local/include/boost/interprocess/allocators/allocator.hpp
 c0000000051C062E10000000000002B7D
@@ -718,6 +798,16 @@ N/usr/local/include/boost/interprocess/containers/containers_fwd.hpp
 c0000000051C062E100000000000004E0
 t1371562721
 s1248
+
+N/usr/local/include/boost/interprocess/containers/map.hpp
+c0000000051C062E100000000000003F5
+t1371562721
+s1013
+
+N/usr/local/include/boost/interprocess/containers/string.hpp
+c0000000051C062E10000000000000408
+t1371562721
+s1032
 
 N/usr/local/include/boost/interprocess/containers/vector.hpp
 c0000000051C062E100000000000003E3
@@ -1719,6 +1809,11 @@ c0000000051C062E8000000000000ED92
 t1371562728
 s60818
 
+N/usr/local/include/boost/preprocessor/repetition/repeat_from_to.hpp
+c0000000051C062E8000000000000148A
+t1371562728
+s5258
+
 N/usr/local/include/boost/preprocessor/slot/detail/def.hpp
 c0000000051C062FA0000000000000B1F
 t1371562746
@@ -2582,11 +2677,11 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies5e64e2923e71b741^b724e3923e71b741^---0#1#1#--18"Check dependencies36"143BF289-6CBD-4FA4-929D-4FF50D89284D-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies075fc04fb671b741^d89bc04fb671b741^---0#1#1#--18"Check dependencies36"C8D73207-9D72-4B79-83A5-2953CE1F0DF7-
 
 CCompileC build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/inspector.o /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s393297526.841643
-e393297529.929744
+s393328207.765652
+e393328210.523614
 r1
 xCompileC
 xbuild-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/inspector.o
@@ -2596,6 +2691,7 @@ xx86_64
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp
+d/Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h
 d/usr/local/include/boost/interprocess/managed_mapped_file.hpp
 d/usr/local/include/boost/interprocess/detail/config_begin.hpp
 d/usr/local/include/boost/config.hpp
@@ -3071,8 +3167,28 @@ d/usr/local/include/boost/move/move_helpers.hpp
 d/usr/local/include/boost/container/detail/advanced_insert_int.hpp
 d/usr/local/include/boost/container/detail/value_init.hpp
 d/usr/local/include/boost/interprocess/containers/containers_fwd.hpp
-d/Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h
-oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:7:
+d/usr/local/include/boost/interprocess/containers/map.hpp
+d/usr/local/include/boost/container/map.hpp
+d/usr/local/include/boost/container/detail/tree.hpp
+d/usr/local/include/boost/container/detail/node_alloc_holder.hpp
+d/usr/local/include/boost/container/detail/pair.hpp
+d/usr/local/include/boost/interprocess/containers/string.hpp
+d/usr/local/include/boost/container/string.hpp
+d/usr/local/include/boost/functional/hash.hpp
+d/usr/local/include/boost/functional/hash/hash.hpp
+d/usr/local/include/boost/functional/hash/hash_fwd.hpp
+d/usr/local/include/boost/functional/hash/detail/hash_float.hpp
+d/usr/local/include/boost/functional/hash/detail/float_functions.hpp
+d/usr/local/include/boost/functional/hash/detail/limits.hpp
+d/usr/local/include/boost/integer/static_log2.hpp
+d/usr/local/include/boost/integer_fwd.hpp
+d/usr/local/include/boost/functional/hash/detail/hash_float_generic.hpp
+d/usr/local/include/boost/functional/hash/extensions.hpp
+d/usr/local/include/boost/functional/hash/detail/container_fwd_0x.hpp
+d/usr/local/include/boost/detail/container_fwd.hpp
+d/usr/local/include/boost/preprocessor/repetition/repeat_from_to.hpp
+oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:5:
+oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h:7:
 oIn file included from /usr/local/include/boost/interprocess/allocators/cached_node_allocator.hpp:22:
 oIn file included from /usr/local/include/boost/interprocess/allocators/detail/node_pool.hpp:26:
 o/usr/local/include/boost/container/detail/node_pool_impl.hpp:212:10: warning: unused variable 'it' [-Wunused-variable]
@@ -3081,7 +3197,8 @@ o         ^
 o/usr/local/include/boost/container/detail/node_pool_impl.hpp:78:13: note: in instantiation of member function 'boost::container::container_detail::private_node_pool_impl<boost::interprocess::segment_manager_base<boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0> > >::purge_blocks' requested here
 o   {  this->purge_blocks();  }
 o            ^
-oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:7:
+oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:5:
+oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h:7:
 oIn file included from /usr/local/include/boost/interprocess/allocators/cached_node_allocator.hpp:22:
 o/usr/local/include/boost/interprocess/allocators/detail/node_pool.hpp:44:7: note: in instantiation of member function 'boost::container::container_detail::private_node_pool_impl<boost::interprocess::segment_manager_base<boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0> > >::~private_node_pool_impl' requested here
 oclass private_node_pool
@@ -3089,7 +3206,8 @@ o      ^
 o/usr/local/include/boost/interprocess/allocators/detail/node_pool.hpp:99:9: note: in instantiation of member function 'boost::interprocess::ipcdetail::shared_pool_impl<boost::interprocess::ipcdetail::private_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64> >::shared_pool_impl' requested here
 o      : base_t(segment_mgnr)
 o        ^
-oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:4:
+oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:5:
+oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h:4:
 oIn file included from /usr/local/include/boost/interprocess/managed_mapped_file.hpp:21:
 oIn file included from /usr/local/include/boost/interprocess/detail/managed_memory_impl.hpp:26:
 oIn file included from /usr/local/include/boost/interprocess/segment_manager.hpp:28:
@@ -3097,14 +3215,16 @@ oIn file included from /usr/local/include/boost/interprocess/detail/named_proxy.
 o/usr/local/include/boost/preprocessor/iteration/detail/local.hpp:37:9: note: in instantiation of member function 'boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64>::shared_node_pool' requested here
 o        BOOST_PP_LOCAL_MACRO(1)
 o        ^
-oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:4:
+oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:5:
+oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h:4:
 oIn file included from /usr/local/include/boost/interprocess/managed_mapped_file.hpp:21:
 oIn file included from /usr/local/include/boost/interprocess/detail/managed_memory_impl.hpp:26:
 oIn file included from /usr/local/include/boost/interprocess/segment_manager.hpp:28:
 o/usr/local/include/boost/interprocess/detail/named_proxy.hpp:261:26: note: expanded from macro 'BOOST_PP_LOCAL_MACRO'
 o         new((void*)mem) T                                                 \
 o                         ^
-oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:4:
+oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:5:
+oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h:4:
 oIn file included from /usr/local/include/boost/interprocess/managed_mapped_file.hpp:21:
 oIn file included from /usr/local/include/boost/interprocess/detail/managed_memory_impl.hpp:26:
 oIn file included from /usr/local/include/boost/interprocess/segment_manager.hpp:28:
@@ -3112,14 +3232,16 @@ oIn file included from /usr/local/include/boost/interprocess/detail/named_proxy.
 o/usr/local/include/boost/preprocessor/iteration/detail/local.hpp:37:9: note: in instantiation of member function 'boost::interprocess::ipcdetail::Ctor1Arg<boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64>, false, boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index> *>::construct' requested here
 o        BOOST_PP_LOCAL_MACRO(1)
 o        ^
-oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:4:
+oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:5:
+oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h:4:
 oIn file included from /usr/local/include/boost/interprocess/managed_mapped_file.hpp:21:
 oIn file included from /usr/local/include/boost/interprocess/detail/managed_memory_impl.hpp:26:
 oIn file included from /usr/local/include/boost/interprocess/segment_manager.hpp:28:
 o/usr/local/include/boost/interprocess/detail/named_proxy.hpp:247:19: note: expanded from macro 'BOOST_PP_LOCAL_MACRO'
 o            this->construct(memory++, IsIterator());                       \
 o                  ^
-oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:4:
+oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:5:
+oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h:4:
 oIn file included from /usr/local/include/boost/interprocess/managed_mapped_file.hpp:21:
 oIn file included from /usr/local/include/boost/interprocess/detail/managed_memory_impl.hpp:26:
 oIn file included from /usr/local/include/boost/interprocess/segment_manager.hpp:28:
@@ -3127,14 +3249,16 @@ oIn file included from /usr/local/include/boost/interprocess/detail/named_proxy.
 o/usr/local/include/boost/preprocessor/iteration/detail/local.hpp:37:9: note: (skipping 3 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
 o        BOOST_PP_LOCAL_MACRO(1)
 o        ^
-oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:4:
+oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:5:
+oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h:4:
 oIn file included from /usr/local/include/boost/interprocess/managed_mapped_file.hpp:21:
 oIn file included from /usr/local/include/boost/interprocess/detail/managed_memory_impl.hpp:26:
 oIn file included from /usr/local/include/boost/interprocess/segment_manager.hpp:28:
 o/usr/local/include/boost/interprocess/detail/named_proxy.hpp:310:21: note: expanded from macro 'BOOST_PP_LOCAL_MACRO'
 o         ctor_obj_t ctor_obj                                                     \
 o                    ^
-oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:4:
+oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:5:
+oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h:4:
 oIn file included from /usr/local/include/boost/interprocess/managed_mapped_file.hpp:21:
 oIn file included from /usr/local/include/boost/interprocess/detail/managed_memory_impl.hpp:26:
 oIn file included from /usr/local/include/boost/interprocess/segment_manager.hpp:33:
@@ -3148,26 +3272,28 @@ o                     ^
 o/usr/local/include/boost/interprocess/allocators/detail/allocator_common.hpp:565:9: note: in instantiation of member function 'boost::interprocess::ipcdetail::cache_impl<boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64> >::cache_impl' requested here
 o      : m_cache(segment_mngr, max_cached_nodes)
 o        ^
-oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:7:
+oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:5:
+oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h:7:
 o/usr/local/include/boost/interprocess/allocators/cached_node_allocator.hpp:131:9: note: in instantiation of member function 'boost::interprocess::ipcdetail::cached_allocator_impl<unsigned int, boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64>, 2>::cached_allocator_impl' requested here
 o      : base_t(segment_mngr, max_cached_nodes)
 o        ^
-o/Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:28:31: note: in instantiation of member function 'boost::interprocess::cached_node_allocator<unsigned int, boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 64>::cached_node_allocator' requested here
+o/Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:12:31: note: in instantiation of member function 'boost::interprocess::cached_node_allocator<unsigned int, boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 64>::cached_node_allocator' requested here
 o    UInt32CachedNodeAllocator uint32CachedNodeAllocator(segment.get_segment_manager());
 o                              ^
-oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:7:
+oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:5:
+oIn file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h:7:
 oIn file included from /usr/local/include/boost/interprocess/allocators/cached_node_allocator.hpp:22:
 oIn file included from /usr/local/include/boost/interprocess/allocators/detail/node_pool.hpp:26:
 o/usr/local/include/boost/container/detail/node_pool_impl.hpp:212:35: warning: unused variable 'itend' [-Wunused-variable]
 o         it(m_blocklist.begin()), itend(m_blocklist.end()), aux;
 o                                  ^
 o2 warnings generated.
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp177"CompileC build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/inspector.o inspector.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler8195d7763e71b741^fb02ee793e71b741^-10331"In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:7:In file included from /usr/local/include/boost/interprocess/allocators/cached_node_allocator.hpp:22:In file included from /usr/local/include/boost/interprocess/allocators/detail/node_pool.hpp:26:/usr/local/include/boost/container/detail/node_pool_impl.hpp:212:10: warning: unused variable 'it' [-Wunused-variable]         it(m_blocklist.begin()), itend(m_blocklist.end()), aux;         ^/usr/local/include/boost/container/detail/node_pool_impl.hpp:78:13: note: in instantiation of member function 'boost::container::container_detail::private_node_pool_impl<boost::interprocess::segment_manager_base<boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0> > >::purge_blocks' requested here   {  this->purge_blocks();  }            ^In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:7:In file included from /usr/local/include/boost/interprocess/allocators/cached_node_allocator.hpp:22:/usr/local/include/boost/interprocess/allocators/detail/node_pool.hpp:44:7: note: in instantiation of member function 'boost::container::container_detail::private_node_pool_impl<boost::interprocess::segment_manager_base<boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0> > >::~private_node_pool_impl' requested hereclass private_node_pool      ^/usr/local/include/boost/interprocess/allocators/detail/node_pool.hpp:99:9: note: in instantiation of member function 'boost::interprocess::ipcdetail::shared_pool_impl<boost::interprocess::ipcdetail::private_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64> >::shared_pool_impl' requested here      : base_t(segment_mgnr)        ^In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:4:In file included from /usr/local/include/boost/interprocess/managed_mapped_file.hpp:21:In file included from /usr/local/include/boost/interprocess/detail/managed_memory_impl.hpp:26:In file included from /usr/local/include/boost/interprocess/segment_manager.hpp:28:In file included from /usr/local/include/boost/interprocess/detail/named_proxy.hpp:269:/usr/local/include/boost/preprocessor/iteration/detail/local.hpp:37:9: note: in instantiation of member function 'boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64>::shared_node_pool' requested here        BOOST_PP_LOCAL_MACRO(1)        ^In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:4:In file included from /usr/local/include/boost/interprocess/managed_mapped_file.hpp:21:In file included from /usr/local/include/boost/interprocess/detail/managed_memory_impl.hpp:26:In file included from /usr/local/include/boost/interprocess/segment_manager.hpp:28:/usr/local/include/boost/interprocess/detail/named_proxy.hpp:261:26: note: expanded from macro 'BOOST_PP_LOCAL_MACRO'         new((void*)mem) T                                                 \                         ^In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:4:In file included from /usr/local/include/boost/interprocess/managed_mapped_file.hpp:21:In file included from /usr/local/include/boost/interprocess/detail/managed_memory_impl.hpp:26:In file included from /usr/local/include/boost/interprocess/segment_manager.hpp:28:In file included from /usr/local/include/boost/interprocess/detail/named_proxy.hpp:269:/usr/local/include/boost/preprocessor/iteration/detail/local.hpp:37:9: note: in instantiation of member function 'boost::interprocess::ipcdetail::Ctor1Arg<boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64>, false, boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index> *>::construct' requested here        BOOST_PP_LOCAL_MACRO(1)        ^In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:4:In file included from /usr/local/include/boost/interprocess/managed_mapped_file.hpp:21:In file included from /usr/local/include/boost/interprocess/detail/managed_memory_impl.hpp:26:In file included from /usr/local/include/boost/interprocess/segment_manager.hpp:28:/usr/local/include/boost/interprocess/detail/named_proxy.hpp:247:19: note: expanded from macro 'BOOST_PP_LOCAL_MACRO'            this->construct(memory++, IsIterator());                       \                  ^In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:4:In file included from /usr/local/include/boost/interprocess/managed_mapped_file.hpp:21:In file included from /usr/local/include/boost/interprocess/detail/managed_memory_impl.hpp:26:In file included from /usr/local/include/boost/interprocess/segment_manager.hpp:28:In file included from /usr/local/include/boost/interprocess/detail/named_proxy.hpp:318:/usr/local/include/boost/preprocessor/iteration/detail/local.hpp:37:9: note: (skipping 3 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)        BOOST_PP_LOCAL_MACRO(1)        ^In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:4:In file included from /usr/local/include/boost/interprocess/managed_mapped_file.hpp:21:In file included from /usr/local/include/boost/interprocess/detail/managed_memory_impl.hpp:26:In file included from /usr/local/include/boost/interprocess/segment_manager.hpp:28:/usr/local/include/boost/interprocess/detail/named_proxy.hpp:310:21: note: expanded from macro 'BOOST_PP_LOCAL_MACRO'         ctor_obj_t ctor_obj                                                     \                    ^In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:4:In file included from /usr/local/include/boost/interprocess/managed_mapped_file.hpp:21:In file included from /usr/local/include/boost/interprocess/detail/managed_memory_impl.hpp:26:In file included from /usr/local/include/boost/interprocess/segment_manager.hpp:33:In file included from /usr/local/include/boost/interprocess/allocators/allocator.hpp:26:/usr/local/include/boost/interprocess/allocators/detail/allocator_common.hpp:102:10: note: in instantiation of function template specialization 'boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>::atomic_func<boost::interprocess::ipcdetail::get_or_create_node_pool_func<boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64> > >' requested here   mgnr->atomic_func(func);         ^/usr/local/include/boost/interprocess/allocators/detail/allocator_common.hpp:162:22: note: in instantiation of function template specialization 'boost::interprocess::ipcdetail::get_or_create_node_pool<boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64> >' requested here      : mp_node_pool(get_or_create_node_pool<NodePool>(segment_mngr))                     ^/usr/local/include/boost/interprocess/allocators/detail/allocator_common.hpp:565:9: note: in instantiation of member function 'boost::interprocess::ipcdetail::cache_impl<boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64> >::cache_impl' requested here      : m_cache(segment_mngr, max_cached_nodes)        ^In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:7:/usr/local/include/boost/interprocess/allocators/cached_node_allocator.hpp:131:9: note: in instantiation of member function 'boost::interprocess::ipcdetail::cached_allocator_impl<unsigned int, boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64>, 2>::cached_allocator_impl' requested here      : base_t(segment_mngr, max_cached_nodes)        ^/Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:28:31: note: in instantiation of member function 'boost::interprocess::cached_node_allocator<unsigned int, boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 64>::cached_node_allocator' requested here    UInt32CachedNodeAllocator uint32CachedNodeAllocator(segment.get_segment_manager());                              ^In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:7:In file included from /usr/local/include/boost/interprocess/allocators/cached_node_allocator.hpp:22:In file included from /usr/local/include/boost/interprocess/allocators/detail/node_pool.hpp:26:/usr/local/include/boost/container/detail/node_pool_impl.hpp:212:35: warning: unused variable 'itend' [-Wunused-variable]         it(m_blocklist.begin()), itend(m_blocklist.end()), aux;                                  ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@20"Unused variable 'it'-393297529#18446744073709551615#0#14(2@87"In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:7:-393297529#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@78"file://localhost/Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp0000000000000000^6#9#6#9#245#0#21"Apple LLVM 5.0 Notice--2@100"In file included from /usr/local/include/boost/interprocess/allocators/cached_node_allocator.hpp:22:-393297529#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@90"file://localhost/usr/local/include/boost/interprocess/allocators/cached_node_allocator.hpp0000000000000000^21#9#21#9#770#0#21"Apple LLVM 5.0 Notice--2@95"In file included from /usr/local/include/boost/interprocess/allocators/detail/node_pool.hpp:26:-393297529#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@85"file://localhost/usr/local/include/boost/interprocess/allocators/detail/node_pool.hpp0000000000000000^25#9#25#9#910#0#21"Apple LLVM 5.0 Notice--2@309"In instantiation of member function 'boost::container::container_detail::private_node_pool_impl<boost::interprocess::segment_manager_base<boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0> > >::purge_blocks' requested here-393297529#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file://localhost/usr/local/include/boost/container/detail/node_pool_impl.hpp0000000000000000^77#12#77#12#2890#0#14"Semantic Issue--2@320"In instantiation of member function 'boost::container::container_detail::private_node_pool_impl<boost::interprocess::segment_manager_base<boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0> > >::~private_node_pool_impl' requested here-393297529#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@85"file://localhost/usr/local/include/boost/interprocess/allocators/detail/node_pool.hpp0000000000000000^43#6#43#6#1519#0#14"Semantic Issue--2@373"In instantiation of member function 'boost::interprocess::ipcdetail::shared_pool_impl<boost::interprocess::ipcdetail::private_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64> >::shared_pool_impl' requested here-393297529#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@85"file://localhost/usr/local/include/boost/interprocess/allocators/detail/node_pool.hpp0000000000000000^98#8#98#8#3675#0#14"Semantic Issue--2@321"In instantiation of member function 'boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64>::shared_node_pool' requested here-393297529#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@80"file://localhost/usr/local/include/boost/preprocessor/iteration/detail/local.hpp0000000000000000^36#8#36#8#1697#0#14"Semantic Issue--2@560"In instantiation of member function 'boost::interprocess::ipcdetail::Ctor1Arg<boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64>, false, boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index> *>::construct' requested here-393297529#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@80"file://localhost/usr/local/include/boost/preprocessor/iteration/detail/local.hpp0000000000000000^36#8#36#8#1697#0#14"Semantic Issue--2@79"(skipping 3 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)-393297529#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@80"file://localhost/usr/local/include/boost/preprocessor/iteration/detail/local.hpp0000000000000000^36#8#36#8#1697#0#14"Semantic Issue--2@592"In instantiation of function template specialization 'boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>::atomic_func<boost::interprocess::ipcdetail::get_or_create_node_pool_func<boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64> > >' requested here-393297529#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@92"file://localhost/usr/local/include/boost/interprocess/allocators/detail/allocator_common.hpp0000000000000000^101#9#101#9#3262#0#14"Semantic Issue--2@378"In instantiation of function template specialization 'boost::interprocess::ipcdetail::get_or_create_node_pool<boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64> >' requested here-393297529#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@92"file://localhost/usr/local/include/boost/interprocess/allocators/detail/allocator_common.hpp0000000000000000^161#21#161#21#5335#0#14"Semantic Issue--2@360"In instantiation of member function 'boost::interprocess::ipcdetail::cache_impl<boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64> >::cache_impl' requested here-393297529#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@92"file://localhost/usr/local/include/boost/interprocess/allocators/detail/allocator_common.hpp0000000000000000^564#8#564#8#21344#0#14"Semantic Issue--2@398"In instantiation of member function 'boost::interprocess::ipcdetail::cached_allocator_impl<unsigned int, boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64>, 2>::cached_allocator_impl' requested here-393297529#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@90"file://localhost/usr/local/include/boost/interprocess/allocators/cached_node_allocator.hpp0000000000000000^130#8#130#8#3604#0#14"Semantic Issue--2@331"In instantiation of member function 'boost::interprocess::cached_node_allocator<unsigned int, boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 64>::cached_node_allocator' requested here-393297529#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@78"file://localhost/Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp0000000000000000^27#30#27#30#1186#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@76"file://localhost/usr/local/include/boost/container/detail/node_pool_impl.hpp0000000000000000^211#9#211#9#7954#0#19"Unused Entity Issue--2@23"Unused variable 'itend'-393297529#18446744073709551615#0#3(2@87"In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:7:-393297529#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@78"file://localhost/Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp0000000000000000^6#9#6#9#245#0#21"Apple LLVM 5.0 Notice--2@100"In file included from /usr/local/include/boost/interprocess/allocators/cached_node_allocator.hpp:22:-393297529#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@90"file://localhost/usr/local/include/boost/interprocess/allocators/cached_node_allocator.hpp0000000000000000^21#9#21#9#770#0#21"Apple LLVM 5.0 Notice--2@95"In file included from /usr/local/include/boost/interprocess/allocators/detail/node_pool.hpp:26:-393297529#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@85"file://localhost/usr/local/include/boost/interprocess/allocators/detail/node_pool.hpp0000000000000000^25#9#25#9#910#0#21"Apple LLVM 5.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@76"file://localhost/usr/local/include/boost/container/detail/node_pool_impl.hpp0000000000000000^211#34#211#34#7979#0#19"Unused Entity Issue--0#0#1#-19%DVTDocumentLocation4@78"file://localhost/Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp0000000000000000^2489"CompileC build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/inspector.o inspector.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vietlq/projects/viet-github-cpp/boost_ipc    setenv LANG en_US.US-ASCII    /Applications/Xcode5-DP.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug/include -I/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -I/Users/vietlq/projects/viet-github-cpp/boost_ipc -I/usr/local/include -I/Users/vietlq/Downloads/boost_1_51_0 -I/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/DerivedSources/x86_64 -I/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug -MMD -MT dependencies -MF /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/inspector.d --serialize-diagnostics /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/inspector.dia -c /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp -o /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/inspector.o36"6B698ECD-49CF-4FA2-BFE6-6ACD9928C713-
-b000DAAF9-66E7-4AF3-B146-9F926633D9CB
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp177"CompileC build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/inspector.o inspector.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler101fc44fb671b741^3d0b8652b671b741^-11233"In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:5:In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h:7:In file included from /usr/local/include/boost/interprocess/allocators/cached_node_allocator.hpp:22:In file included from /usr/local/include/boost/interprocess/allocators/detail/node_pool.hpp:26:/usr/local/include/boost/container/detail/node_pool_impl.hpp:212:10: warning: unused variable 'it' [-Wunused-variable]         it(m_blocklist.begin()), itend(m_blocklist.end()), aux;         ^/usr/local/include/boost/container/detail/node_pool_impl.hpp:78:13: note: in instantiation of member function 'boost::container::container_detail::private_node_pool_impl<boost::interprocess::segment_manager_base<boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0> > >::purge_blocks' requested here   {  this->purge_blocks();  }            ^In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:5:In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h:7:In file included from /usr/local/include/boost/interprocess/allocators/cached_node_allocator.hpp:22:/usr/local/include/boost/interprocess/allocators/detail/node_pool.hpp:44:7: note: in instantiation of member function 'boost::container::container_detail::private_node_pool_impl<boost::interprocess::segment_manager_base<boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0> > >::~private_node_pool_impl' requested hereclass private_node_pool      ^/usr/local/include/boost/interprocess/allocators/detail/node_pool.hpp:99:9: note: in instantiation of member function 'boost::interprocess::ipcdetail::shared_pool_impl<boost::interprocess::ipcdetail::private_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64> >::shared_pool_impl' requested here      : base_t(segment_mgnr)        ^In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:5:In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h:4:In file included from /usr/local/include/boost/interprocess/managed_mapped_file.hpp:21:In file included from /usr/local/include/boost/interprocess/detail/managed_memory_impl.hpp:26:In file included from /usr/local/include/boost/interprocess/segment_manager.hpp:28:In file included from /usr/local/include/boost/interprocess/detail/named_proxy.hpp:269:/usr/local/include/boost/preprocessor/iteration/detail/local.hpp:37:9: note: in instantiation of member function 'boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64>::shared_node_pool' requested here        BOOST_PP_LOCAL_MACRO(1)        ^In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:5:In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h:4:In file included from /usr/local/include/boost/interprocess/managed_mapped_file.hpp:21:In file included from /usr/local/include/boost/interprocess/detail/managed_memory_impl.hpp:26:In file included from /usr/local/include/boost/interprocess/segment_manager.hpp:28:/usr/local/include/boost/interprocess/detail/named_proxy.hpp:261:26: note: expanded from macro 'BOOST_PP_LOCAL_MACRO'         new((void*)mem) T                                                 \                         ^In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:5:In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h:4:In file included from /usr/local/include/boost/interprocess/managed_mapped_file.hpp:21:In file included from /usr/local/include/boost/interprocess/detail/managed_memory_impl.hpp:26:In file included from /usr/local/include/boost/interprocess/segment_manager.hpp:28:In file included from /usr/local/include/boost/interprocess/detail/named_proxy.hpp:269:/usr/local/include/boost/preprocessor/iteration/detail/local.hpp:37:9: note: in instantiation of member function 'boost::interprocess::ipcdetail::Ctor1Arg<boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64>, false, boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index> *>::construct' requested here        BOOST_PP_LOCAL_MACRO(1)        ^In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:5:In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h:4:In file included from /usr/local/include/boost/interprocess/managed_mapped_file.hpp:21:In file included from /usr/local/include/boost/interprocess/detail/managed_memory_impl.hpp:26:In file included from /usr/local/include/boost/interprocess/segment_manager.hpp:28:/usr/local/include/boost/interprocess/detail/named_proxy.hpp:247:19: note: expanded from macro 'BOOST_PP_LOCAL_MACRO'            this->construct(memory++, IsIterator());                       \                  ^In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:5:In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h:4:In file included from /usr/local/include/boost/interprocess/managed_mapped_file.hpp:21:In file included from /usr/local/include/boost/interprocess/detail/managed_memory_impl.hpp:26:In file included from /usr/local/include/boost/interprocess/segment_manager.hpp:28:In file included from /usr/local/include/boost/interprocess/detail/named_proxy.hpp:318:/usr/local/include/boost/preprocessor/iteration/detail/local.hpp:37:9: note: (skipping 3 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)        BOOST_PP_LOCAL_MACRO(1)        ^In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:5:In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h:4:In file included from /usr/local/include/boost/interprocess/managed_mapped_file.hpp:21:In file included from /usr/local/include/boost/interprocess/detail/managed_memory_impl.hpp:26:In file included from /usr/local/include/boost/interprocess/segment_manager.hpp:28:/usr/local/include/boost/interprocess/detail/named_proxy.hpp:310:21: note: expanded from macro 'BOOST_PP_LOCAL_MACRO'         ctor_obj_t ctor_obj                                                     \                    ^In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:5:In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h:4:In file included from /usr/local/include/boost/interprocess/managed_mapped_file.hpp:21:In file included from /usr/local/include/boost/interprocess/detail/managed_memory_impl.hpp:26:In file included from /usr/local/include/boost/interprocess/segment_manager.hpp:33:In file included from /usr/local/include/boost/interprocess/allocators/allocator.hpp:26:/usr/local/include/boost/interprocess/allocators/detail/allocator_common.hpp:102:10: note: in instantiation of function template specialization 'boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>::atomic_func<boost::interprocess::ipcdetail::get_or_create_node_pool_func<boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64> > >' requested here   mgnr->atomic_func(func);         ^/usr/local/include/boost/interprocess/allocators/detail/allocator_common.hpp:162:22: note: in instantiation of function template specialization 'boost::interprocess::ipcdetail::get_or_create_node_pool<boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64> >' requested here      : mp_node_pool(get_or_create_node_pool<NodePool>(segment_mngr))                     ^/usr/local/include/boost/interprocess/allocators/detail/allocator_common.hpp:565:9: note: in instantiation of member function 'boost::interprocess::ipcdetail::cache_impl<boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64> >::cache_impl' requested here      : m_cache(segment_mngr, max_cached_nodes)        ^In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:5:In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h:7:/usr/local/include/boost/interprocess/allocators/cached_node_allocator.hpp:131:9: note: in instantiation of member function 'boost::interprocess::ipcdetail::cached_allocator_impl<unsigned int, boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64>, 2>::cached_allocator_impl' requested here      : base_t(segment_mngr, max_cached_nodes)        ^/Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:12:31: note: in instantiation of member function 'boost::interprocess::cached_node_allocator<unsigned int, boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 64>::cached_node_allocator' requested here    UInt32CachedNodeAllocator uint32CachedNodeAllocator(segment.get_segment_manager());                              ^In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:5:In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h:7:In file included from /usr/local/include/boost/interprocess/allocators/cached_node_allocator.hpp:22:In file included from /usr/local/include/boost/interprocess/allocators/detail/node_pool.hpp:26:/usr/local/include/boost/container/detail/node_pool_impl.hpp:212:35: warning: unused variable 'itend' [-Wunused-variable]         it(m_blocklist.begin()), itend(m_blocklist.end()), aux;                                  ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@20"Unused variable 'it'-393328210#18446744073709551615#0#15(2@87"In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:5:-393328210#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@78"file://localhost/Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp0000000000000000^4#9#4#9#71#0#21"Apple LLVM 5.0 Notice--2@81"In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h:7:-393328210#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@72"file://localhost/Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h0000000000000000^6#9#6#9#237#0#21"Apple LLVM 5.0 Notice--2@100"In file included from /usr/local/include/boost/interprocess/allocators/cached_node_allocator.hpp:22:-393328210#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@90"file://localhost/usr/local/include/boost/interprocess/allocators/cached_node_allocator.hpp0000000000000000^21#9#21#9#770#0#21"Apple LLVM 5.0 Notice--2@95"In file included from /usr/local/include/boost/interprocess/allocators/detail/node_pool.hpp:26:-393328210#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@85"file://localhost/usr/local/include/boost/interprocess/allocators/detail/node_pool.hpp0000000000000000^25#9#25#9#910#0#21"Apple LLVM 5.0 Notice--2@309"In instantiation of member function 'boost::container::container_detail::private_node_pool_impl<boost::interprocess::segment_manager_base<boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0> > >::purge_blocks' requested here-393328210#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file://localhost/usr/local/include/boost/container/detail/node_pool_impl.hpp0000000000000000^77#12#77#12#2890#0#14"Semantic Issue--2@320"In instantiation of member function 'boost::container::container_detail::private_node_pool_impl<boost::interprocess::segment_manager_base<boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0> > >::~private_node_pool_impl' requested here-393328210#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@85"file://localhost/usr/local/include/boost/interprocess/allocators/detail/node_pool.hpp0000000000000000^43#6#43#6#1519#0#14"Semantic Issue--2@373"In instantiation of member function 'boost::interprocess::ipcdetail::shared_pool_impl<boost::interprocess::ipcdetail::private_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64> >::shared_pool_impl' requested here-393328210#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@85"file://localhost/usr/local/include/boost/interprocess/allocators/detail/node_pool.hpp0000000000000000^98#8#98#8#3675#0#14"Semantic Issue--2@321"In instantiation of member function 'boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64>::shared_node_pool' requested here-393328210#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@80"file://localhost/usr/local/include/boost/preprocessor/iteration/detail/local.hpp0000000000000000^36#8#36#8#1697#0#14"Semantic Issue--2@560"In instantiation of member function 'boost::interprocess::ipcdetail::Ctor1Arg<boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64>, false, boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index> *>::construct' requested here-393328210#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@80"file://localhost/usr/local/include/boost/preprocessor/iteration/detail/local.hpp0000000000000000^36#8#36#8#1697#0#14"Semantic Issue--2@79"(skipping 3 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)-393328210#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@80"file://localhost/usr/local/include/boost/preprocessor/iteration/detail/local.hpp0000000000000000^36#8#36#8#1697#0#14"Semantic Issue--2@592"In instantiation of function template specialization 'boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>::atomic_func<boost::interprocess::ipcdetail::get_or_create_node_pool_func<boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64> > >' requested here-393328210#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@92"file://localhost/usr/local/include/boost/interprocess/allocators/detail/allocator_common.hpp0000000000000000^101#9#101#9#3262#0#14"Semantic Issue--2@378"In instantiation of function template specialization 'boost::interprocess::ipcdetail::get_or_create_node_pool<boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64> >' requested here-393328210#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@92"file://localhost/usr/local/include/boost/interprocess/allocators/detail/allocator_common.hpp0000000000000000^161#21#161#21#5335#0#14"Semantic Issue--2@360"In instantiation of member function 'boost::interprocess::ipcdetail::cache_impl<boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64> >::cache_impl' requested here-393328210#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@92"file://localhost/usr/local/include/boost/interprocess/allocators/detail/allocator_common.hpp0000000000000000^564#8#564#8#21344#0#14"Semantic Issue--2@398"In instantiation of member function 'boost::interprocess::ipcdetail::cached_allocator_impl<unsigned int, boost::interprocess::ipcdetail::shared_node_pool<boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 4, 64>, 2>::cached_allocator_impl' requested here-393328210#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@90"file://localhost/usr/local/include/boost/interprocess/allocators/cached_node_allocator.hpp0000000000000000^130#8#130#8#3604#0#14"Semantic Issue--2@331"In instantiation of member function 'boost::interprocess::cached_node_allocator<unsigned int, boost::interprocess::segment_manager<char, boost::interprocess::rbtree_best_fit<boost::interprocess::mutex_family, boost::interprocess::offset_ptr<void, long, unsigned long, 0>, 0>, iset_index>, 64>::cached_node_allocator' requested here-393328210#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@78"file://localhost/Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp0000000000000000^11#30#11#30#397#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@76"file://localhost/usr/local/include/boost/container/detail/node_pool_impl.hpp0000000000000000^211#9#211#9#7954#0#19"Unused Entity Issue--2@23"Unused variable 'itend'-393328210#18446744073709551615#0#4(2@87"In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp:5:-393328210#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@78"file://localhost/Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp0000000000000000^4#9#4#9#71#0#21"Apple LLVM 5.0 Notice--2@81"In file included from /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h:7:-393328210#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@72"file://localhost/Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h0000000000000000^6#9#6#9#237#0#21"Apple LLVM 5.0 Notice--2@100"In file included from /usr/local/include/boost/interprocess/allocators/cached_node_allocator.hpp:22:-393328210#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@90"file://localhost/usr/local/include/boost/interprocess/allocators/cached_node_allocator.hpp0000000000000000^21#9#21#9#770#0#21"Apple LLVM 5.0 Notice--2@95"In file included from /usr/local/include/boost/interprocess/allocators/detail/node_pool.hpp:26:-393328210#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@85"file://localhost/usr/local/include/boost/interprocess/allocators/detail/node_pool.hpp0000000000000000^25#9#25#9#910#0#21"Apple LLVM 5.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@76"file://localhost/usr/local/include/boost/container/detail/node_pool_impl.hpp0000000000000000^211#34#211#34#7979#0#19"Unused Entity Issue--0#0#1#-19%DVTDocumentLocation4@78"file://localhost/Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp0000000000000000^2489"CompileC build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/inspector.o inspector.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vietlq/projects/viet-github-cpp/boost_ipc    setenv LANG en_US.US-ASCII    /Applications/Xcode5-DP.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug/include -I/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -I/Users/vietlq/projects/viet-github-cpp/boost_ipc -I/usr/local/include -I/Users/vietlq/Downloads/boost_1_51_0 -I/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/DerivedSources/x86_64 -I/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug -MMD -MT dependencies -MF /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/inspector.d --serialize-diagnostics /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/inspector.dia -c /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp -o /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/inspector.o36"EE89DF26-CB3A-42AE-A603-3B0D1746E373-
+b0019B2BB-5808-468E-AD6D-F1581D4A1AFF
 
 CCompileC build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/utils.o /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s393297526.841679
-e393297527.091111
+s393328081.212682
+e393328085.213978
 r1
 xCompileC
 xbuild-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/utils.o
@@ -3178,12 +3304,507 @@ xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp
 d/Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp169"CompileC build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/utils.o utils.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler4a96d7763e71b741^615317773e71b741^---0#0#1#-19%DVTDocumentLocation2@74"file://localhost/Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp0000000000000000^2465"CompileC build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/utils.o utils.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vietlq/projects/viet-github-cpp/boost_ipc    setenv LANG en_US.US-ASCII    /Applications/Xcode5-DP.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug/include -I/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -I/Users/vietlq/projects/viet-github-cpp/boost_ipc -I/usr/local/include -I/Users/vietlq/Downloads/boost_1_51_0 -I/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/DerivedSources/x86_64 -I/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug -MMD -MT dependencies -MF /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/utils.d --serialize-diagnostics /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/utils.dia -c /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp -o /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/utils.o36"D227BE15-8D90-4940-8498-491CC63DE8F6-
-b000DAAF9-66E7-4AF3-B146-9F926633D9CB
+d/usr/local/include/boost/interprocess/managed_mapped_file.hpp
+d/usr/local/include/boost/interprocess/detail/config_begin.hpp
+d/usr/local/include/boost/config.hpp
+d/usr/local/include/boost/config/user.hpp
+d/usr/local/include/boost/config/select_compiler_config.hpp
+d/usr/local/include/boost/config/compiler/clang.hpp
+d/usr/local/include/boost/config/select_stdlib_config.hpp
+d/usr/local/include/boost/config/no_tr1/utility.hpp
+d/usr/local/include/boost/config/stdlib/libstdcpp3.hpp
+d/usr/local/include/boost/config/select_platform_config.hpp
+d/usr/local/include/boost/config/platform/macos.hpp
+d/usr/local/include/boost/config/posix_features.hpp
+d/usr/local/include/boost/config/suffix.hpp
+d/usr/local/include/boost/interprocess/detail/workaround.hpp
+d/usr/local/include/boost/interprocess/detail/config_end.hpp
+d/usr/local/include/boost/interprocess/detail/managed_open_or_create_impl.hpp
+d/usr/local/include/boost/interprocess/detail/os_thread_functions.hpp
+d/usr/local/include/boost/interprocess/streams/bufferstream.hpp
+d/usr/local/include/boost/assert.hpp
+d/usr/local/include/boost/current_function.hpp
+d/usr/local/include/boost/interprocess/interprocess_fwd.hpp
+d/usr/local/include/boost/interprocess/detail/posix_time_types_wrk.hpp
+d/usr/local/include/boost/date_time/posix_time/posix_time_types.hpp
+d/usr/local/include/boost/date_time/time_clock.hpp
+d/usr/local/include/boost/date_time/c_time.hpp
+d/usr/local/include/boost/throw_exception.hpp
+d/usr/local/include/boost/date_time/compiler_config.hpp
+d/usr/local/include/boost/date_time/locale_config.hpp
+d/usr/local/include/boost/cstdint.hpp
+d/usr/local/include/boost/config/auto_link.hpp
+d/usr/local/include/boost/shared_ptr.hpp
+d/usr/local/include/boost/smart_ptr/shared_ptr.hpp
+d/usr/local/include/boost/config/no_tr1/memory.hpp
+d/usr/local/include/boost/checked_delete.hpp
+d/usr/local/include/boost/smart_ptr/detail/shared_count.hpp
+d/usr/local/include/boost/smart_ptr/bad_weak_ptr.hpp
+d/usr/local/include/boost/smart_ptr/detail/sp_counted_base.hpp
+d/usr/local/include/boost/smart_ptr/detail/sp_has_sync.hpp
+d/usr/local/include/boost/smart_ptr/detail/sp_counted_base_gcc_x86.hpp
+d/usr/local/include/boost/detail/sp_typeinfo.hpp
+d/usr/local/include/boost/smart_ptr/detail/sp_counted_impl.hpp
+d/usr/local/include/boost/smart_ptr/detail/sp_convertible.hpp
+d/usr/local/include/boost/smart_ptr/detail/spinlock_pool.hpp
+d/usr/local/include/boost/smart_ptr/detail/spinlock.hpp
+d/usr/local/include/boost/smart_ptr/detail/spinlock_sync.hpp
+d/usr/local/include/boost/smart_ptr/detail/yield_k.hpp
+d/usr/local/include/boost/memory_order.hpp
+d/usr/local/include/boost/smart_ptr/detail/operator_bool.hpp
+d/usr/local/include/boost/date_time/microsec_time_clock.hpp
+d/usr/local/include/boost/date_time/filetime_functions.hpp
+d/usr/local/include/boost/date_time/posix_time/ptime.hpp
+d/usr/local/include/boost/date_time/posix_time/posix_time_system.hpp
+d/usr/local/include/boost/date_time/posix_time/posix_time_config.hpp
+d/usr/local/include/boost/limits.hpp
+d/usr/local/include/boost/config/no_tr1/cmath.hpp
+d/usr/local/include/boost/date_time/time_duration.hpp
+d/usr/local/include/boost/operators.hpp
+d/usr/local/include/boost/iterator.hpp
+d/usr/local/include/boost/date_time/time_defs.hpp
+d/usr/local/include/boost/date_time/special_defs.hpp
+d/usr/local/include/boost/date_time/time_resolution_traits.hpp
+d/usr/local/include/boost/date_time/int_adapter.hpp
+d/usr/local/include/boost/date_time/gregorian/gregorian_types.hpp
+d/usr/local/include/boost/date_time/date.hpp
+d/usr/local/include/boost/date_time/year_month_day.hpp
+d/usr/local/include/boost/date_time/period.hpp
+d/usr/local/include/boost/date_time/gregorian/greg_calendar.hpp
+d/usr/local/include/boost/date_time/gregorian/greg_weekday.hpp
+d/usr/local/include/boost/date_time/constrained_value.hpp
+d/usr/local/include/boost/mpl/if.hpp
+d/usr/local/include/boost/mpl/aux_/value_wknd.hpp
+d/usr/local/include/boost/mpl/aux_/static_cast.hpp
+d/usr/local/include/boost/mpl/aux_/config/workaround.hpp
+d/usr/local/include/boost/mpl/aux_/config/integral.hpp
+d/usr/local/include/boost/mpl/aux_/config/msvc.hpp
+d/usr/local/include/boost/mpl/aux_/config/eti.hpp
+d/usr/local/include/boost/mpl/aux_/na_spec.hpp
+d/usr/local/include/boost/mpl/lambda_fwd.hpp
+d/usr/local/include/boost/mpl/void_fwd.hpp
+d/usr/local/include/boost/mpl/aux_/adl_barrier.hpp
+d/usr/local/include/boost/mpl/aux_/config/adl.hpp
+d/usr/local/include/boost/mpl/aux_/config/intel.hpp
+d/usr/local/include/boost/mpl/aux_/config/gcc.hpp
+d/usr/local/include/boost/mpl/aux_/na.hpp
+d/usr/local/include/boost/mpl/bool.hpp
+d/usr/local/include/boost/mpl/bool_fwd.hpp
+d/usr/local/include/boost/mpl/integral_c_tag.hpp
+d/usr/local/include/boost/mpl/aux_/config/static_constant.hpp
+d/usr/local/include/boost/mpl/aux_/na_fwd.hpp
+d/usr/local/include/boost/mpl/aux_/config/ctps.hpp
+d/usr/local/include/boost/mpl/aux_/config/lambda.hpp
+d/usr/local/include/boost/mpl/aux_/config/ttp.hpp
+d/usr/local/include/boost/mpl/int.hpp
+d/usr/local/include/boost/mpl/int_fwd.hpp
+d/usr/local/include/boost/mpl/aux_/nttp_decl.hpp
+d/usr/local/include/boost/mpl/aux_/config/nttp.hpp
+d/usr/local/include/boost/mpl/aux_/integral_wrapper.hpp
+d/usr/local/include/boost/preprocessor/cat.hpp
+d/usr/local/include/boost/preprocessor/config/config.hpp
+d/usr/local/include/boost/mpl/aux_/lambda_arity_param.hpp
+d/usr/local/include/boost/mpl/aux_/template_arity_fwd.hpp
+d/usr/local/include/boost/mpl/aux_/arity.hpp
+d/usr/local/include/boost/mpl/aux_/config/dtp.hpp
+d/usr/local/include/boost/mpl/aux_/preprocessor/params.hpp
+d/usr/local/include/boost/mpl/aux_/config/preprocessor.hpp
+d/usr/local/include/boost/preprocessor/comma_if.hpp
+d/usr/local/include/boost/preprocessor/punctuation/comma_if.hpp
+d/usr/local/include/boost/preprocessor/control/if.hpp
+d/usr/local/include/boost/preprocessor/control/iif.hpp
+d/usr/local/include/boost/preprocessor/logical/bool.hpp
+d/usr/local/include/boost/preprocessor/facilities/empty.hpp
+d/usr/local/include/boost/preprocessor/punctuation/comma.hpp
+d/usr/local/include/boost/preprocessor/repeat.hpp
+d/usr/local/include/boost/preprocessor/repetition/repeat.hpp
+d/usr/local/include/boost/preprocessor/debug/error.hpp
+d/usr/local/include/boost/preprocessor/detail/auto_rec.hpp
+d/usr/local/include/boost/preprocessor/tuple/eat.hpp
+d/usr/local/include/boost/preprocessor/inc.hpp
+d/usr/local/include/boost/preprocessor/arithmetic/inc.hpp
+d/usr/local/include/boost/mpl/aux_/preprocessor/enum.hpp
+d/usr/local/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp
+d/usr/local/include/boost/mpl/limits/arity.hpp
+d/usr/local/include/boost/preprocessor/logical/and.hpp
+d/usr/local/include/boost/preprocessor/logical/bitand.hpp
+d/usr/local/include/boost/preprocessor/identity.hpp
+d/usr/local/include/boost/preprocessor/facilities/identity.hpp
+d/usr/local/include/boost/preprocessor/empty.hpp
+d/usr/local/include/boost/preprocessor/arithmetic/add.hpp
+d/usr/local/include/boost/preprocessor/arithmetic/dec.hpp
+d/usr/local/include/boost/preprocessor/control/while.hpp
+d/usr/local/include/boost/preprocessor/list/fold_left.hpp
+d/usr/local/include/boost/preprocessor/list/detail/fold_left.hpp
+d/usr/local/include/boost/preprocessor/control/expr_iif.hpp
+d/usr/local/include/boost/preprocessor/list/adt.hpp
+d/usr/local/include/boost/preprocessor/detail/is_binary.hpp
+d/usr/local/include/boost/preprocessor/detail/check.hpp
+d/usr/local/include/boost/preprocessor/logical/compl.hpp
+d/usr/local/include/boost/preprocessor/list/fold_right.hpp
+d/usr/local/include/boost/preprocessor/list/detail/fold_right.hpp
+d/usr/local/include/boost/preprocessor/list/reverse.hpp
+d/usr/local/include/boost/preprocessor/control/detail/while.hpp
+d/usr/local/include/boost/preprocessor/tuple/elem.hpp
+d/usr/local/include/boost/preprocessor/facilities/overload.hpp
+d/usr/local/include/boost/preprocessor/variadic/size.hpp
+d/usr/local/include/boost/preprocessor/tuple/rem.hpp
+d/usr/local/include/boost/preprocessor/variadic/elem.hpp
+d/usr/local/include/boost/preprocessor/arithmetic/sub.hpp
+d/usr/local/include/boost/mpl/aux_/config/overload_resolution.hpp
+d/usr/local/include/boost/mpl/aux_/lambda_support.hpp
+d/usr/local/include/boost/type_traits/is_base_of.hpp
+d/usr/local/include/boost/type_traits/is_base_and_derived.hpp
+d/usr/local/include/boost/type_traits/intrinsics.hpp
+d/usr/local/include/boost/type_traits/config.hpp
+d/usr/local/include/boost/type_traits/is_same.hpp
+d/usr/local/include/boost/type_traits/detail/bool_trait_def.hpp
+d/usr/local/include/boost/type_traits/detail/template_arity_spec.hpp
+d/usr/local/include/boost/type_traits/integral_constant.hpp
+d/usr/local/include/boost/mpl/integral_c.hpp
+d/usr/local/include/boost/mpl/integral_c_fwd.hpp
+d/usr/local/include/boost/type_traits/detail/bool_trait_undef.hpp
+d/usr/local/include/boost/type_traits/is_reference.hpp
+d/usr/local/include/boost/type_traits/is_lvalue_reference.hpp
+d/usr/local/include/boost/type_traits/is_rvalue_reference.hpp
+d/usr/local/include/boost/type_traits/ice.hpp
+d/usr/local/include/boost/type_traits/detail/yes_no_type.hpp
+d/usr/local/include/boost/type_traits/detail/ice_or.hpp
+d/usr/local/include/boost/type_traits/detail/ice_and.hpp
+d/usr/local/include/boost/type_traits/detail/ice_not.hpp
+d/usr/local/include/boost/type_traits/detail/ice_eq.hpp
+d/usr/local/include/boost/type_traits/is_volatile.hpp
+d/usr/local/include/boost/type_traits/detail/cv_traits_impl.hpp
+d/usr/local/include/boost/type_traits/is_abstract.hpp
+d/usr/local/include/boost/type_traits/remove_cv.hpp
+d/usr/local/include/boost/type_traits/broken_compiler_spec.hpp
+d/usr/local/include/boost/type_traits/detail/type_trait_def.hpp
+d/usr/local/include/boost/type_traits/detail/type_trait_undef.hpp
+d/usr/local/include/boost/type_traits/is_class.hpp
+d/usr/local/include/boost/date_time/date_defs.hpp
+d/usr/local/include/boost/date_time/gregorian/greg_day_of_year.hpp
+d/usr/local/include/boost/date_time/gregorian_calendar.hpp
+d/usr/local/include/boost/date_time/gregorian_calendar.ipp
+d/usr/local/include/boost/date_time/gregorian/greg_ymd.hpp
+d/usr/local/include/boost/date_time/gregorian/greg_day.hpp
+d/usr/local/include/boost/date_time/gregorian/greg_year.hpp
+d/usr/local/include/boost/date_time/gregorian/greg_month.hpp
+d/usr/local/include/boost/date_time/gregorian/greg_duration.hpp
+d/usr/local/include/boost/date_time/date_duration.hpp
+d/usr/local/include/boost/date_time/date_duration_types.hpp
+d/usr/local/include/boost/date_time/gregorian/greg_duration_types.hpp
+d/usr/local/include/boost/date_time/gregorian/greg_date.hpp
+d/usr/local/include/boost/date_time/adjust_functors.hpp
+d/usr/local/include/boost/date_time/wrapping_int.hpp
+d/usr/local/include/boost/date_time/date_generators.hpp
+d/usr/local/include/boost/date_time/date_clock_device.hpp
+d/usr/local/include/boost/date_time/date_iterator.hpp
+d/usr/local/include/boost/date_time/time_system_split.hpp
+d/usr/local/include/boost/date_time/time_system_counted.hpp
+d/usr/local/include/boost/date_time/time.hpp
+d/usr/local/include/boost/date_time/posix_time/date_duration_operators.hpp
+d/usr/local/include/boost/date_time/posix_time/posix_time_duration.hpp
+d/usr/local/include/boost/date_time/posix_time/time_period.hpp
+d/usr/local/include/boost/date_time/time_iterator.hpp
+d/usr/local/include/boost/date_time/dst_rules.hpp
+d/usr/local/include/boost/date_time/posix_time/conversion.hpp
+d/usr/local/include/boost/date_time/gregorian/conversion.hpp
+d/usr/local/include/boost/interprocess/detail/os_file_functions.hpp
+d/usr/local/include/boost/interprocess/errors.hpp
+d/usr/local/include/boost/interprocess/permissions.hpp
+d/usr/local/include/boost/interprocess/creation_tags.hpp
+d/usr/local/include/boost/interprocess/mapped_region.hpp
+d/usr/local/include/boost/interprocess/exceptions.hpp
+d/usr/local/include/boost/move/move.hpp
+d/usr/local/include/boost/interprocess/detail/utilities.hpp
+d/usr/local/include/boost/type_traits/has_trivial_destructor.hpp
+d/usr/local/include/boost/type_traits/is_pod.hpp
+d/usr/local/include/boost/type_traits/is_void.hpp
+d/usr/local/include/boost/type_traits/is_scalar.hpp
+d/usr/local/include/boost/type_traits/is_arithmetic.hpp
+d/usr/local/include/boost/type_traits/is_integral.hpp
+d/usr/local/include/boost/type_traits/is_float.hpp
+d/usr/local/include/boost/type_traits/is_enum.hpp
+d/usr/local/include/boost/type_traits/is_pointer.hpp
+d/usr/local/include/boost/type_traits/is_member_pointer.hpp
+d/usr/local/include/boost/type_traits/is_member_function_pointer.hpp
+d/usr/local/include/boost/type_traits/detail/is_mem_fun_pointer_impl.hpp
+d/usr/local/include/boost/interprocess/detail/min_max.hpp
+d/usr/local/include/boost/interprocess/detail/type_traits.hpp
+d/usr/local/include/boost/interprocess/detail/transform_iterator.hpp
+d/usr/local/include/boost/interprocess/detail/mpl.hpp
+d/usr/local/include/boost/interprocess/containers/version_type.hpp
+d/usr/local/include/boost/container/detail/version_type.hpp
+d/usr/local/include/boost/container/detail/config_begin.hpp
+d/usr/local/include/boost/container/detail/mpl.hpp
+d/usr/local/include/boost/container/detail/type_traits.hpp
+d/usr/local/include/boost/container/detail/config_end.hpp
+d/usr/local/include/boost/intrusive/pointer_traits.hpp
+d/usr/local/include/boost/intrusive/detail/config_begin.hpp
+d/usr/local/include/boost/intrusive/detail/workaround.hpp
+d/usr/local/include/boost/intrusive/detail/config_end.hpp
+d/usr/local/include/boost/intrusive/detail/memory_util.hpp
+d/usr/local/include/boost/intrusive/detail/mpl.hpp
+d/usr/local/include/boost/intrusive/detail/preprocessor.hpp
+d/usr/local/include/boost/preprocessor/iteration/local.hpp
+d/usr/local/include/boost/preprocessor/slot/slot.hpp
+d/usr/local/include/boost/preprocessor/slot/detail/def.hpp
+d/usr/local/include/boost/preprocessor/punctuation/paren_if.hpp
+d/usr/local/include/boost/preprocessor/punctuation/paren.hpp
+d/usr/local/include/boost/preprocessor/control/expr_if.hpp
+d/usr/local/include/boost/preprocessor/repetition/enum.hpp
+d/usr/local/include/boost/preprocessor/repetition/enum_params.hpp
+d/usr/local/include/boost/preprocessor/repetition/enum_trailing_params.hpp
+d/usr/local/include/boost/preprocessor/repetition/enum_trailing.hpp
+d/usr/local/include/boost/preprocessor/repetition/enum_shifted_params.hpp
+d/usr/local/include/boost/preprocessor/repetition/enum_shifted.hpp
+d/usr/local/include/boost/preprocessor/logical/not.hpp
+d/usr/local/include/boost/preprocessor/iteration/iterate.hpp
+d/usr/local/include/boost/preprocessor/array/elem.hpp
+d/usr/local/include/boost/preprocessor/array/data.hpp
+d/usr/local/include/boost/preprocessor/array/size.hpp
+d/usr/local/include/boost/intrusive/detail/has_member_function_callable_with.hpp
+d/usr/local/include/boost/static_assert.hpp
+d/usr/local/include/boost/preprocessor/iteration/detail/iter/forward1.hpp
+d/usr/local/include/boost/preprocessor/iteration/detail/bounds/lower1.hpp
+d/usr/local/include/boost/preprocessor/slot/detail/shared.hpp
+d/usr/local/include/boost/preprocessor/iteration/detail/bounds/upper1.hpp
+d/usr/local/include/boost/preprocessor/iteration/detail/local.hpp
+d/usr/local/include/boost/interprocess/detail/atomic.hpp
+d/usr/local/include/boost/interprocess/detail/interprocess_tester.hpp
+d/usr/local/include/boost/type_traits/alignment_of.hpp
+d/usr/local/include/boost/type_traits/detail/size_t_trait_def.hpp
+d/usr/local/include/boost/mpl/size_t.hpp
+d/usr/local/include/boost/mpl/size_t_fwd.hpp
+d/usr/local/include/boost/type_traits/detail/size_t_trait_undef.hpp
+d/usr/local/include/boost/type_traits/type_with_alignment.hpp
+d/usr/local/include/boost/preprocessor/list/for_each_i.hpp
+d/usr/local/include/boost/preprocessor/repetition/for.hpp
+d/usr/local/include/boost/preprocessor/repetition/detail/for.hpp
+d/usr/local/include/boost/preprocessor/tuple/to_list.hpp
+d/usr/local/include/boost/preprocessor/list/transform.hpp
+d/usr/local/include/boost/preprocessor/list/append.hpp
+d/usr/local/include/boost/interprocess/detail/managed_memory_impl.hpp
+d/usr/local/include/boost/interprocess/segment_manager.hpp
+d/usr/local/include/boost/detail/no_exceptions_support.hpp
+d/usr/local/include/boost/interprocess/detail/segment_manager_helper.hpp
+d/usr/local/include/boost/interprocess/detail/in_place_interface.hpp
+d/usr/local/include/boost/type_traits/make_unsigned.hpp
+d/usr/local/include/boost/type_traits/is_signed.hpp
+d/usr/local/include/boost/type_traits/is_unsigned.hpp
+d/usr/local/include/boost/type_traits/is_const.hpp
+d/usr/local/include/boost/type_traits/add_const.hpp
+d/usr/local/include/boost/type_traits/add_volatile.hpp
+d/usr/local/include/boost/interprocess/detail/named_proxy.hpp
+d/usr/local/include/boost/interprocess/detail/preprocessor.hpp
+d/usr/local/include/boost/interprocess/offset_ptr.hpp
+d/usr/local/include/boost/interprocess/detail/cast_tags.hpp
+d/usr/local/include/boost/aligned_storage.hpp
+d/usr/local/include/boost/mpl/eval_if.hpp
+d/usr/local/include/boost/mpl/identity.hpp
+d/usr/local/include/boost/interprocess/indexes/iset_index.hpp
+d/usr/local/include/boost/intrusive/set.hpp
+d/usr/local/include/boost/intrusive/intrusive_fwd.hpp
+d/usr/local/include/boost/intrusive/link_mode.hpp
+d/usr/local/include/boost/intrusive/rbtree.hpp
+d/usr/local/include/boost/intrusive/detail/assert.hpp
+d/usr/local/include/boost/intrusive/set_hook.hpp
+d/usr/local/include/boost/intrusive/detail/utilities.hpp
+d/usr/local/include/boost/intrusive/detail/parent_from_member.hpp
+d/usr/local/include/boost/intrusive/detail/ebo_functor_holder.hpp
+d/usr/local/include/boost/intrusive/detail/is_stateful_value_traits.hpp
+d/usr/local/include/boost/intrusive/detail/function_detector.hpp
+d/usr/local/include/boost/intrusive/detail/rbtree_node.hpp
+d/usr/local/include/boost/intrusive/rbtree_algorithms.hpp
+d/usr/local/include/boost/intrusive/detail/tree_algorithms.hpp
+d/usr/local/include/boost/intrusive/pointer_plus_bits.hpp
+d/usr/local/include/boost/intrusive/options.hpp
+d/usr/local/include/boost/intrusive/detail/generic_hook.hpp
+d/usr/local/include/boost/intrusive/detail/tree_node.hpp
+d/usr/local/include/boost/intrusive/detail/clear_on_destructor_base.hpp
+d/usr/local/include/boost/interprocess/allocators/allocator.hpp
+d/usr/local/include/boost/interprocess/containers/allocation_type.hpp
+d/usr/local/include/boost/container/detail/allocation_type.hpp
+d/usr/local/include/boost/container/detail/workaround.hpp
+d/usr/local/include/boost/container/detail/multiallocation_chain.hpp
+d/usr/local/include/boost/container/container_fwd.hpp
+d/usr/local/include/boost/container/detail/utilities.hpp
+d/usr/local/include/boost/type_traits/is_fundamental.hpp
+d/usr/local/include/boost/container/allocator_traits.hpp
+d/usr/local/include/boost/container/detail/memory_util.hpp
+d/usr/local/include/boost/container/detail/preprocessor.hpp
+d/usr/local/include/boost/container/detail/transform_iterator.hpp
+d/usr/local/include/boost/intrusive/slist.hpp
+d/usr/local/include/boost/intrusive/slist_hook.hpp
+d/usr/local/include/boost/intrusive/detail/slist_node.hpp
+d/usr/local/include/boost/intrusive/circular_slist_algorithms.hpp
+d/usr/local/include/boost/intrusive/detail/common_slist_algorithms.hpp
+d/usr/local/include/boost/intrusive/linear_slist_algorithms.hpp
+d/usr/local/include/boost/interprocess/allocators/detail/allocator_common.hpp
+d/usr/local/include/boost/utility/addressof.hpp
+d/usr/local/include/boost/interprocess/sync/scoped_lock.hpp
+d/usr/local/include/boost/interprocess/sync/lock_options.hpp
+d/usr/local/include/boost/interprocess/mem_algo/detail/mem_algo_common.hpp
+d/usr/local/include/boost/interprocess/detail/math_functions.hpp
+d/usr/local/include/boost/interprocess/smart_ptr/deleter.hpp
+d/usr/local/include/boost/interprocess/detail/file_wrapper.hpp
+d/usr/local/include/boost/interprocess/file_mapping.hpp
+d/usr/local/include/boost/interprocess/mem_algo/rbtree_best_fit.hpp
+d/usr/local/include/boost/type_traits.hpp
+d/usr/local/include/boost/type_traits/add_cv.hpp
+d/usr/local/include/boost/type_traits/add_lvalue_reference.hpp
+d/usr/local/include/boost/type_traits/add_reference.hpp
+d/usr/local/include/boost/type_traits/add_pointer.hpp
+d/usr/local/include/boost/type_traits/remove_reference.hpp
+d/usr/local/include/boost/type_traits/add_rvalue_reference.hpp
+d/usr/local/include/boost/type_traits/aligned_storage.hpp
+d/usr/local/include/boost/type_traits/common_type.hpp
+d/usr/local/include/boost/typeof/typeof.hpp
+d/usr/local/include/boost/typeof/message.hpp
+d/usr/local/include/boost/typeof/native.hpp
+d/usr/local/include/boost/type_traits/is_function.hpp
+d/usr/local/include/boost/type_traits/detail/false_result.hpp
+d/usr/local/include/boost/type_traits/detail/is_function_ptr_helper.hpp
+d/usr/local/include/boost/utility/enable_if.hpp
+d/usr/local/include/boost/utility/declval.hpp
+d/usr/local/include/boost/type_traits/conditional.hpp
+d/usr/local/include/boost/type_traits/decay.hpp
+d/usr/local/include/boost/type_traits/is_array.hpp
+d/usr/local/include/boost/type_traits/remove_bounds.hpp
+d/usr/local/include/boost/type_traits/extent.hpp
+d/usr/local/include/boost/type_traits/floating_point_promotion.hpp
+d/usr/local/include/boost/type_traits/function_traits.hpp
+d/usr/local/include/boost/type_traits/has_new_operator.hpp
+d/usr/local/include/boost/type_traits/has_nothrow_assign.hpp
+d/usr/local/include/boost/type_traits/has_trivial_assign.hpp
+d/usr/local/include/boost/type_traits/has_nothrow_constructor.hpp
+d/usr/local/include/boost/type_traits/has_trivial_constructor.hpp
+d/usr/local/include/boost/type_traits/has_nothrow_copy.hpp
+d/usr/local/include/boost/type_traits/has_trivial_copy.hpp
+d/usr/local/include/boost/type_traits/has_nothrow_destructor.hpp
+d/usr/local/include/boost/type_traits/has_operator.hpp
+d/usr/local/include/boost/type_traits/has_bit_and.hpp
+d/usr/local/include/boost/type_traits/detail/has_binary_operator.hpp
+d/usr/local/include/boost/type_traits/is_convertible.hpp
+d/usr/local/include/boost/type_traits/remove_pointer.hpp
+d/usr/local/include/boost/type_traits/has_bit_and_assign.hpp
+d/usr/local/include/boost/type_traits/has_bit_or.hpp
+d/usr/local/include/boost/type_traits/has_bit_or_assign.hpp
+d/usr/local/include/boost/type_traits/has_bit_xor.hpp
+d/usr/local/include/boost/type_traits/has_bit_xor_assign.hpp
+d/usr/local/include/boost/type_traits/has_complement.hpp
+d/usr/local/include/boost/type_traits/detail/has_prefix_operator.hpp
+d/usr/local/include/boost/type_traits/has_dereference.hpp
+d/usr/local/include/boost/type_traits/has_divides.hpp
+d/usr/local/include/boost/type_traits/has_divides_assign.hpp
+d/usr/local/include/boost/type_traits/has_equal_to.hpp
+d/usr/local/include/boost/type_traits/has_greater.hpp
+d/usr/local/include/boost/type_traits/has_greater_equal.hpp
+d/usr/local/include/boost/type_traits/has_left_shift.hpp
+d/usr/local/include/boost/type_traits/has_left_shift_assign.hpp
+d/usr/local/include/boost/type_traits/has_less.hpp
+d/usr/local/include/boost/type_traits/has_less_equal.hpp
+d/usr/local/include/boost/type_traits/has_logical_and.hpp
+d/usr/local/include/boost/type_traits/has_logical_not.hpp
+d/usr/local/include/boost/type_traits/has_logical_or.hpp
+d/usr/local/include/boost/type_traits/has_minus.hpp
+d/usr/local/include/boost/type_traits/has_minus_assign.hpp
+d/usr/local/include/boost/type_traits/has_modulus.hpp
+d/usr/local/include/boost/type_traits/has_modulus_assign.hpp
+d/usr/local/include/boost/type_traits/has_multiplies.hpp
+d/usr/local/include/boost/type_traits/has_multiplies_assign.hpp
+d/usr/local/include/boost/type_traits/has_negate.hpp
+d/usr/local/include/boost/type_traits/has_not_equal_to.hpp
+d/usr/local/include/boost/type_traits/has_plus.hpp
+d/usr/local/include/boost/type_traits/has_plus_assign.hpp
+d/usr/local/include/boost/type_traits/has_post_decrement.hpp
+d/usr/local/include/boost/type_traits/detail/has_postfix_operator.hpp
+d/usr/local/include/boost/type_traits/has_post_increment.hpp
+d/usr/local/include/boost/type_traits/has_pre_decrement.hpp
+d/usr/local/include/boost/type_traits/has_pre_increment.hpp
+d/usr/local/include/boost/type_traits/has_right_shift.hpp
+d/usr/local/include/boost/type_traits/has_right_shift_assign.hpp
+d/usr/local/include/boost/type_traits/has_unary_minus.hpp
+d/usr/local/include/boost/type_traits/has_unary_plus.hpp
+d/usr/local/include/boost/type_traits/has_virtual_destructor.hpp
+d/usr/local/include/boost/type_traits/is_complex.hpp
+d/usr/local/include/boost/type_traits/is_compound.hpp
+d/usr/local/include/boost/type_traits/is_empty.hpp
+d/usr/local/include/boost/type_traits/is_floating_point.hpp
+d/usr/local/include/boost/type_traits/is_member_object_pointer.hpp
+d/usr/local/include/boost/type_traits/is_object.hpp
+d/usr/local/include/boost/type_traits/is_polymorphic.hpp
+d/usr/local/include/boost/type_traits/is_stateless.hpp
+d/usr/local/include/boost/type_traits/is_union.hpp
+d/usr/local/include/boost/type_traits/is_virtual_base_of.hpp
+d/usr/local/include/boost/mpl/and.hpp
+d/usr/local/include/boost/mpl/aux_/config/use_preprocessed.hpp
+d/usr/local/include/boost/mpl/aux_/nested_type_wknd.hpp
+d/usr/local/include/boost/mpl/aux_/include_preprocessed.hpp
+d/usr/local/include/boost/mpl/aux_/config/compiler.hpp
+d/usr/local/include/boost/preprocessor/stringize.hpp
+d/usr/local/include/boost/mpl/aux_/preprocessed/gcc/and.hpp
+d/usr/local/include/boost/mpl/not.hpp
+d/usr/local/include/boost/type_traits/make_signed.hpp
+d/usr/local/include/boost/type_traits/rank.hpp
+d/usr/local/include/boost/type_traits/remove_extent.hpp
+d/usr/local/include/boost/type_traits/remove_all_extents.hpp
+d/usr/local/include/boost/type_traits/remove_const.hpp
+d/usr/local/include/boost/type_traits/remove_volatile.hpp
+d/usr/local/include/boost/type_traits/integral_promotion.hpp
+d/usr/local/include/boost/type_traits/promote.hpp
+d/usr/local/include/boost/interprocess/sync/mutex_family.hpp
+d/usr/local/include/boost/interprocess/sync/interprocess_mutex.hpp
+d/usr/local/include/boost/interprocess/sync/spin/mutex.hpp
+d/usr/local/include/boost/interprocess/sync/interprocess_recursive_mutex.hpp
+d/usr/local/include/boost/interprocess/sync/spin/recursive_mutex.hpp
+d/usr/local/include/boost/interprocess/sync/null_mutex.hpp
+d/usr/local/include/boost/interprocess/allocators/cached_adaptive_pool.hpp
+d/usr/local/include/boost/interprocess/allocators/detail/adaptive_node_pool.hpp
+d/usr/local/include/boost/interprocess/allocators/detail/node_tools.hpp
+d/usr/local/include/boost/container/detail/adaptive_node_pool_impl.hpp
+d/usr/local/include/boost/container/detail/math_functions.hpp
+d/usr/local/include/boost/container/detail/pool_common.hpp
+d/usr/local/include/boost/interprocess/allocators/cached_node_allocator.hpp
+d/usr/local/include/boost/interprocess/allocators/detail/node_pool.hpp
+d/usr/local/include/boost/math/common_factor_ct.hpp
+d/usr/local/include/boost/math_fwd.hpp
+d/usr/local/include/boost/container/detail/node_pool_impl.hpp
+d/usr/local/include/boost/interprocess/containers/vector.hpp
+d/usr/local/include/boost/container/vector.hpp
+d/usr/local/include/boost/container/detail/iterators.hpp
+d/usr/local/include/boost/container/detail/algorithms.hpp
+d/usr/local/include/boost/container/detail/destroyers.hpp
+d/usr/local/include/boost/move/move_helpers.hpp
+d/usr/local/include/boost/container/detail/advanced_insert_int.hpp
+d/usr/local/include/boost/container/detail/value_init.hpp
+d/usr/local/include/boost/interprocess/containers/containers_fwd.hpp
+d/usr/local/include/boost/interprocess/containers/map.hpp
+d/usr/local/include/boost/container/map.hpp
+d/usr/local/include/boost/container/detail/tree.hpp
+d/usr/local/include/boost/container/detail/node_alloc_holder.hpp
+d/usr/local/include/boost/container/detail/pair.hpp
+d/usr/local/include/boost/interprocess/containers/string.hpp
+d/usr/local/include/boost/container/string.hpp
+d/usr/local/include/boost/functional/hash.hpp
+d/usr/local/include/boost/functional/hash/hash.hpp
+d/usr/local/include/boost/functional/hash/hash_fwd.hpp
+d/usr/local/include/boost/functional/hash/detail/hash_float.hpp
+d/usr/local/include/boost/functional/hash/detail/float_functions.hpp
+d/usr/local/include/boost/functional/hash/detail/limits.hpp
+d/usr/local/include/boost/integer/static_log2.hpp
+d/usr/local/include/boost/integer_fwd.hpp
+d/usr/local/include/boost/functional/hash/detail/hash_float_generic.hpp
+d/usr/local/include/boost/functional/hash/extensions.hpp
+d/usr/local/include/boost/functional/hash/detail/container_fwd_0x.hpp
+d/usr/local/include/boost/detail/container_fwd.hpp
+d/usr/local/include/boost/preprocessor/repetition/repeat_from_to.hpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp169"CompileC build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/utils.o utils.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerdf8c36d1b571b741^c9c736d5b571b741^---0#0#1#-19%DVTDocumentLocation2@74"file://localhost/Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp0000000000000000^2465"CompileC build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/utils.o utils.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vietlq/projects/viet-github-cpp/boost_ipc    setenv LANG en_US.US-ASCII    /Applications/Xcode5-DP.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug/include -I/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -I/Users/vietlq/projects/viet-github-cpp/boost_ipc -I/usr/local/include -I/Users/vietlq/Downloads/boost_1_51_0 -I/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/DerivedSources/x86_64 -I/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug -MMD -MT dependencies -MF /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/utils.d --serialize-diagnostics /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/utils.dia -c /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp -o /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/utils.o36"CDAA6280-5877-4576-9EA5-F2BB6091441F-
+b68E876ED-28F5-45C1-AB6D-D3AD8439DB77
 
 CLd /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug/boost_ipc_inspector normal x86_64
-s393297529.939124
-e393297530.016166
+s393328210.533101
+e393328210.592116
 r1
 xLd
 x/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug/boost_ipc_inspector
@@ -3220,26 +3841,12 @@ d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Develo
 d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libunwind.dylib
 d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libxpc.dylib
 old: warning: directory not found for option '-L/usr/local/lib/Debug'
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Link /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug/boost_ipc_inspector54"Ld build-xcode/Debug/boost_ipc_inspector normal x86_641782f0793e71b741^fe26047a3e71b741^-69"ld: warning: directory not found for option '-L/usr/local/lib/Debug'1(21%IDEActivityLogMessage2@55"Directory not found for option '-L/usr/local/lib/Debug'-393297529#0#69#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#32"Apple Mach-O Linker (ld) Warning--0#0#1#--1110"Ld build-xcode/Debug/boost_ipc_inspector normal x86_64    cd /Users/vietlq/projects/viet-github-cpp/boost_ipc    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode5-DP.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug -L/usr/local/lib/Debug -L/usr/local/lib -F/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug -filelist /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/boost_ipc_inspector.LinkFileList -mmacosx-version-min=10.8 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/boost_ipc_inspector_dependency_info.dat -o /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug/boost_ipc_inspector36"A31B9031-642E-42AF-8932-210A69A329FF-
-b000DAAF9-66E7-4AF3-B146-9F926633D9CB
-
-CPhaseScriptExecution CMake\ PostBuild\ Rules /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Script-524A2936EDD746C3A5B3C636.sh
-s393297530.028524
-e393297530.067995
-r1
-xPhaseScriptExecution
-xCMake PostBuild Rules
-x/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Script-524A2936EDD746C3A5B3C636.sh
-oecho "Depend check for xcode"
-oDepend check for xcode
-ocd /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode && make -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.boost_ipc_inspector.Debug
-omake[1]: Nothing to be done for `PostBuild.boost_ipc_inspector.Debug'.
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Run custom shell script 'CMake PostBuild Rules'138"PhaseScriptExecution CMake\ PostBuild\ Rules build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Script-524A2936EDD746C3A5B3C636.sha2b4077a3e71b741^6268117a3e71b741^-398"echo "Depend check for xcode"Depend check for xcodecd /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode && make -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.boost_ipc_inspector.Debugmake[1]: Nothing to be done for `PostBuild.boost_ipc_inspector.Debug'.4(21%IDEActivityLogMessage2@30"echo "Depend check for xcode"-393297530#0#30#-0#-----2@23"Depend check for xcode-393297530#30#23#-0#-----2@274"cd /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode && make -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.boost_ipc_inspector.Debug-393297530#53#274#-0#-----2@71"make[1]: Nothing to be done for `PostBuild.boost_ipc_inspector.Debug'.-393297530#327#71#-0#-----0#0#1#--572"PhaseScriptExecution CMake\ PostBuild\ Rules build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Script-524A2936EDD746C3A5B3C636.sh    cd /Users/vietlq/projects/viet-github-cpp/boost_ipc    #!/bin/shmake -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/boost_ipc_inspector_postBuildPhase.make$CONFIGURATION all    /bin/sh -c /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Script-524A2936EDD746C3A5B3C636.sh36"EAA2C0FC-9AE6-4F29-8608-53D553818873-
-b000DAAF9-66E7-4AF3-B146-9F926633D9CB
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Link /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug/boost_ipc_inspector54"Ld build-xcode/Debug/boost_ipc_inspector normal x86_64a48c8852b671b741^e6959752b671b741^-69"ld: warning: directory not found for option '-L/usr/local/lib/Debug'1(21%IDEActivityLogMessage2@55"Directory not found for option '-L/usr/local/lib/Debug'-393328210#0#69#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#32"Apple Mach-O Linker (ld) Warning--0#0#1#--1110"Ld build-xcode/Debug/boost_ipc_inspector normal x86_64    cd /Users/vietlq/projects/viet-github-cpp/boost_ipc    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode5-DP.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug -L/usr/local/lib/Debug -L/usr/local/lib -F/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug -filelist /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/boost_ipc_inspector.LinkFileList -mmacosx-version-min=10.8 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Objects-normal/x86_64/boost_ipc_inspector_dependency_info.dat -o /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/Debug/boost_ipc_inspector36"50DC5E1B-1523-48FC-B165-18D81D2348C8-
+b0019B2BB-5808-468E-AD6D-F1581D4A1AFF
 
 CPhaseScriptExecution CMake\ PostBuild\ Rules /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Script-60CFFA753EFF48AC841C9E8A.sh
-s393297554.907828
-e393297554.956155
+s393328210.603211
+e393328210.636087
 r1
 xPhaseScriptExecution
 xCMake PostBuild Rules
@@ -3248,6 +3855,6 @@ oecho "Depend check for xcode"
 oDepend check for xcode
 ocd /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode && make -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.boost_ipc_inspector.Debug
 omake[1]: Nothing to be done for `PostBuild.boost_ipc_inspector.Debug'.
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Run custom shell script 'CMake PostBuild Rules'138"PhaseScriptExecution CMake\ PostBuild\ Rules build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Script-60CFFA753EFF48AC841C9E8A.sh39eee8923e71b741^c1c7f4923e71b741^-398"echo "Depend check for xcode"Depend check for xcodecd /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode && make -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.boost_ipc_inspector.Debugmake[1]: Nothing to be done for `PostBuild.boost_ipc_inspector.Debug'.4(21%IDEActivityLogMessage2@30"echo "Depend check for xcode"-393297554#0#30#-0#-----2@23"Depend check for xcode-393297554#30#23#-0#-----2@274"cd /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode && make -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.boost_ipc_inspector.Debug-393297554#53#274#-0#-----2@71"make[1]: Nothing to be done for `PostBuild.boost_ipc_inspector.Debug'.-393297554#327#71#-0#-----0#0#1#--572"PhaseScriptExecution CMake\ PostBuild\ Rules build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Script-60CFFA753EFF48AC841C9E8A.sh    cd /Users/vietlq/projects/viet-github-cpp/boost_ipc    #!/bin/shmake -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/boost_ipc_inspector_postBuildPhase.make$CONFIGURATION all    /bin/sh -c /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Script-60CFFA753EFF48AC841C9E8A.sh36"50761DBE-E4FD-44F2-9F2D-9B01488BC6C2-
-b59E24795-C8B0-4A69-B508-4A55E10AF5C7
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Run custom shell script 'CMake PostBuild Rules'138"PhaseScriptExecution CMake\ PostBuild\ Rules build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Script-60CFFA753EFF48AC841C9E8A.shf4c59a52b671b741^1fd7a252b671b741^-398"echo "Depend check for xcode"Depend check for xcodecd /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode && make -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.boost_ipc_inspector.Debugmake[1]: Nothing to be done for `PostBuild.boost_ipc_inspector.Debug'.4(21%IDEActivityLogMessage2@30"echo "Depend check for xcode"-393328210#0#30#-0#-----2@23"Depend check for xcode-393328210#30#23#-0#-----2@274"cd /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode && make -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.boost_ipc_inspector.Debug-393328210#53#274#-0#-----2@71"make[1]: Nothing to be done for `PostBuild.boost_ipc_inspector.Debug'.-393328210#327#71#-0#-----0#0#1#--572"PhaseScriptExecution CMake\ PostBuild\ Rules build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Script-60CFFA753EFF48AC841C9E8A.sh    cd /Users/vietlq/projects/viet-github-cpp/boost_ipc    #!/bin/shmake -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/boost_ipc_inspector_postBuildPhase.make$CONFIGURATION all    /bin/sh -c /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/boost_ipc_inspector.build/Script-60CFFA753EFF48AC841C9E8A.sh36"D3903A88-B4FB-4500-AE7D-AAD7FE9B741D-
+b0019B2BB-5808-468E-AD6D-F1581D4A1AFF
 
