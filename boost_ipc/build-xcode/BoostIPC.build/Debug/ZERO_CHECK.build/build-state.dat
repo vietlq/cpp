@@ -11,11 +11,11 @@ s211
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesd00db14fb671b741^147ab14fb671b741^---0#1#1#--18"Check dependencies36"2452123C-D34D-4CB5-BCE1-B53E9F03BA43-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesaa0a7115bc71b741^5d8c7115bc71b741^---0#1#1#--18"Check dependencies36"592311A0-5BE4-43D2-B33B-CE4CDF863CCC-
 
 CPhaseScriptExecution CMake\ Rules /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/ZERO_CHECK.build/Script-471975238D9A4D11BC6F8789.sh
-s393328207.693705
-e393328207.735494
+s393329685.443871
+e393329685.491095
 r1
 xPhaseScriptExecution
 xCMake Rules
@@ -24,6 +24,6 @@ oecho ""
 o
 omake -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/ReRunCMake.make
 omake[1]: `CMakeFiles/cmake.check_cache' is up to date.
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'118"PhaseScriptExecution CMake\ Rules build-xcode/BoostIPC.build/Debug/ZERO_CHECK.build/Script-471975238D9A4D11BC6F8789.sh7bf5b14fb671b741^0e4abc4fb671b741^-162"echo ""make -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/ReRunCMake.makemake[1]: `CMakeFiles/cmake.check_cache' is up to date.3(21%IDEActivityLogMessage2@8"echo ""-393328207#0#8#-0#-----2@98"make -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/ReRunCMake.make-393328207#9#98#-0#-----2@55"make[1]: `CMakeFiles/cmake.check_cache' is up to date.-393328207#107#55#-0#-----0#0#1#--540"PhaseScriptExecution CMake\ Rules build-xcode/BoostIPC.build/Debug/ZERO_CHECK.build/Script-471975238D9A4D11BC6F8789.sh    cd /Users/vietlq/projects/viet-github-cpp/boost_ipc    #!/bin/shmake -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all    /bin/sh -c /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/ZERO_CHECK.build/Script-471975238D9A4D11BC6F8789.sh36"DD0F9FE5-EBC2-4C23-924D-50B6ED690C94-
-b038905EB-EEE0-4648-982F-7064C079541C
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'118"PhaseScriptExecution CMake\ Rules build-xcode/BoostIPC.build/Debug/ZERO_CHECK.build/Script-471975238D9A4D11BC6F8789.shb4227215bc71b741^bbb87d15bc71b741^-162"echo ""make -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/ReRunCMake.makemake[1]: `CMakeFiles/cmake.check_cache' is up to date.3(21%IDEActivityLogMessage2@8"echo ""-393329685#0#8#-0#-----2@98"make -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/ReRunCMake.make-393329685#9#98#-0#-----2@55"make[1]: `CMakeFiles/cmake.check_cache' is up to date.-393329685#107#55#-0#-----0#0#1#--540"PhaseScriptExecution CMake\ Rules build-xcode/BoostIPC.build/Debug/ZERO_CHECK.build/Script-471975238D9A4D11BC6F8789.sh    cd /Users/vietlq/projects/viet-github-cpp/boost_ipc    #!/bin/shmake -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all    /bin/sh -c /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/ZERO_CHECK.build/Script-471975238D9A4D11BC6F8789.sh36"C557B6E6-1B68-467A-8AE6-8ADC3E2DC924-
+b57E170B0-7139-4CC3-BC93-548E9117F6F2
 

@@ -1,893 +1,1010 @@
 // !$*UTF8*$!
 {
-       archiveVersion = 1;
-       classes = {
-       };
-       objectVersion = 46;
-       objects = {
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
 
 /* Begin PBXAggregateTarget section */
-              38C9BEB484B8412F994C32F3 /* ALL_BUILD */ = {
-                     isa = PBXAggregateTarget;
-                     buildConfigurationList = 9383E019908A49A79340AD24 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
-                     buildPhases = (
-                            FE7DDFA81A3F42BAB99D3970 /* CMake Rules */,
-                     );
-                     dependencies = (
-                            59B18549FECA426E97C8970A /* PBXTargetDependency */,
-                            AC011327493948B0AB05CB95 /* PBXTargetDependency */,
-                            2CB197CA14E3408EA54017A0 /* PBXTargetDependency */,
-                     );
-                     name = ALL_BUILD;
-                     productName = ALL_BUILD;
-              };
-              A93E49E547F2498B8B3D85E2 /* ZERO_CHECK */ = {
-                     isa = PBXAggregateTarget;
-                     buildConfigurationList = 28C8D3B260D54FE98D49940F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
-                     buildPhases = (
-                            471975238D9A4D11BC6F8789 /* CMake Rules */,
-                     );
-                     dependencies = (
-                     );
-                     name = ZERO_CHECK;
-                     productName = ZERO_CHECK;
-              };
+		38C9BEB484B8412F994C32F3 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9383E019908A49A79340AD24 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				FE7DDFA81A3F42BAB99D3970 /* CMake Rules */,
+			);
+			dependencies = (
+				59B18549FECA426E97C8970A /* PBXTargetDependency */,
+				AC011327493948B0AB05CB95 /* PBXTargetDependency */,
+				2CB197CA14E3408EA54017A0 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		A93E49E547F2498B8B3D85E2 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 28C8D3B260D54FE98D49940F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				471975238D9A4D11BC6F8789 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-F72FF68AB61A4824A3E7E875 /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp */ = {isa = PBXBuildFile; fileRef = F6DCF5E58DEC4FD99FD1F59A /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp */; settings = { COMPILER_FLAGS = ""; }; };
-6A981EB482504725B852722D /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp */ = {isa = PBXBuildFile; fileRef = E369973A79ED401CB0901F63 /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp */; settings = { COMPILER_FLAGS = ""; }; };
-3E148AB9202649BEBF2E58F4 /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h */ = {isa = PBXBuildFile; fileRef = 64A83939011446EDA295F1DC /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h */; settings = { COMPILER_FLAGS = ""; }; };
-EAA07FDCF80747DD8E0FF8D3 /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = CF65E15657644B4EBA51D7A8 /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
-4BFB07D590C74DE08CD93F7B /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/modifier.cpp */ = {isa = PBXBuildFile; fileRef = 868C8ED23C0743CE8ADE2A4B /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/modifier.cpp */; settings = { COMPILER_FLAGS = ""; }; };
-474132EF6D9E48BCA8B82EE5 /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp */ = {isa = PBXBuildFile; fileRef = E369973A79ED401CB0901F63 /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp */; settings = { COMPILER_FLAGS = ""; }; };
-7A7D9E086BF04BB99F20D75F /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h */ = {isa = PBXBuildFile; fileRef = 64A83939011446EDA295F1DC /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h */; settings = { COMPILER_FLAGS = ""; }; };
-C7BCD88A18EF4A3AA7978B22 /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = CF65E15657644B4EBA51D7A8 /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+		474132EF6D9E48BCA8B82EE5 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E369973A79ED401CB0901F63 /* utils.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4BFB07D590C74DE08CD93F7B /* modifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 868C8ED23C0743CE8ADE2A4B /* modifier.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6A981EB482504725B852722D /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E369973A79ED401CB0901F63 /* utils.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F72FF68AB61A4824A3E7E875 /* inspector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6DCF5E58DEC4FD99FD1F59A /* inspector.cpp */; settings = {COMPILER_FLAGS = ""; }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXBuildStyle section */
-              4E25DFD541784627BD695B9C /*  */ = {
-                     isa = PBXBuildStyle;
-              };
-              5B052D96000C4AEDBCFC2FB7 /* Debug */ = {
-                     isa = PBXBuildStyle;
-                     buildSettings = {
-                            COPY_PHASE_STRIP = NO;
-                     };
-                     name = Debug;
-              };
-              A59ACF27CA2D4346BA6FA1EC /* Release */ = {
-                     isa = PBXBuildStyle;
-                     buildSettings = {
-                            COPY_PHASE_STRIP = NO;
-                     };
-                     name = Release;
-              };
-              53B0A51F59C144AFBBA25F8A /* MinSizeRel */ = {
-                     isa = PBXBuildStyle;
-                     buildSettings = {
-                            COPY_PHASE_STRIP = NO;
-                     };
-                     name = MinSizeRel;
-              };
-              BFBFCE3FDE3D455F952EFDF4 /* RelWithDebInfo */ = {
-                     isa = PBXBuildStyle;
-                     buildSettings = {
-                            COPY_PHASE_STRIP = NO;
-                     };
-                     name = RelWithDebInfo;
-              };
-/* End PBXBuildStyle section */
-
 /* Begin PBXContainerItemProxy section */
-              20E63B12AA43474592CFB8F9 /* PBXContainerItemProxy */ = {
-                     isa = PBXContainerItemProxy;
-                     containerPortal = 372D628AFEC94031A1D14D90 /* Project object */;
-                     proxyType = 1;
-                     remoteGlobalIDString = 71E6501C37FF4B3A8B0D2BA1;
-                     remoteInfo = boost_ipc_modifier;
-              };
-              447FED453EE14345AEE73D53 /* PBXContainerItemProxy */ = {
-                     isa = PBXContainerItemProxy;
-                     containerPortal = 372D628AFEC94031A1D14D90 /* Project object */;
-                     proxyType = 1;
-                     remoteGlobalIDString = 897639E69E784301ADCBAD0C;
-                     remoteInfo = boost_ipc_inspector;
-              };
-              2CDF522B1D4B4C33B513B76B /* PBXContainerItemProxy */ = {
-                     isa = PBXContainerItemProxy;
-                     containerPortal = 372D628AFEC94031A1D14D90 /* Project object */;
-                     proxyType = 1;
-                     remoteGlobalIDString = A93E49E547F2498B8B3D85E2;
-                     remoteInfo = ZERO_CHECK;
-              };
+		20E63B12AA43474592CFB8F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 372D628AFEC94031A1D14D90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71E6501C37FF4B3A8B0D2BA1;
+			remoteInfo = boost_ipc_modifier;
+		};
+		2CDF522B1D4B4C33B513B76B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 372D628AFEC94031A1D14D90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A93E49E547F2498B8B3D85E2;
+			remoteInfo = ZERO_CHECK;
+		};
+		447FED453EE14345AEE73D53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 372D628AFEC94031A1D14D90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 897639E69E784301ADCBAD0C;
+			remoteInfo = boost_ipc_inspector;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-CF65E15657644B4EBA51D7A8 /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text"; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
-F6DCF5E58DEC4FD99FD1F59A /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.cpp.cpp"; name = "inspector.cpp"; path = "inspector.cpp"; sourceTree = SOURCE_ROOT; };
-E369973A79ED401CB0901F63 /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.cpp.cpp"; name = "utils.cpp"; path = "utils.cpp"; sourceTree = SOURCE_ROOT; };
-64A83939011446EDA295F1DC /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.c.h"; name = "utils.h"; path = "utils.h"; sourceTree = SOURCE_ROOT; };
-A9F83FC97C6E4225A71CB4EA /* boost_ipc_inspector */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = boost_ipc_inspector; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
-868C8ED23C0743CE8ADE2A4B /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/modifier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.cpp.cpp"; name = "modifier.cpp"; path = "modifier.cpp"; sourceTree = SOURCE_ROOT; };
-FC139AC1E2354A42A45D48F1 /* boost_ipc_modifier */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = boost_ipc_modifier; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+		64A83939011446EDA295F1DC /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = SOURCE_ROOT; };
+		868C8ED23C0743CE8ADE2A4B /* modifier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = modifier.cpp; sourceTree = SOURCE_ROOT; };
+		A9F83FC97C6E4225A71CB4EA /* boost_ipc_inspector */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = boost_ipc_inspector; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF65E15657644B4EBA51D7A8 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E369973A79ED401CB0901F63 /* utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cpp; sourceTree = SOURCE_ROOT; };
+		F6DCF5E58DEC4FD99FD1F59A /* inspector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inspector.cpp; sourceTree = SOURCE_ROOT; };
+		FC139AC1E2354A42A45D48F1 /* boost_ipc_modifier */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = boost_ipc_modifier; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-              C39F2BA684274952B2D5436D  = {
-                     isa = PBXGroup;
-                     children = (
-                            D98161FB8DF641D2BFE53804 /* Sources */,
-                            61A8244D23E0422BA548AECF /* Resources */,
-                            2ADBC68D964947FFB15481BA /* Products */,
-                     );
-                     sourceTree = "<group>";
-              };
-              D98161FB8DF641D2BFE53804 /* Sources */ = {
-                     isa = PBXGroup;
-                     children = (
-                            7E98BD5A33B14C089C06FDC8 /* ALL_BUILD */,
-                            925926351B424B378DBAD175 /* ZERO_CHECK */,
-                            ADE912708C654C19AE0AEC37 /* boost_ipc_inspector */,
-                            7E71920573F14C879E96C116 /* boost_ipc_modifier */,
-                     );
-                     name = Sources;
-                     sourceTree = "<group>";
-              };
-              61A8244D23E0422BA548AECF /* Resources */ = {
-                     isa = PBXGroup;
-                     children = (
-                     );
-                     name = Resources;
-                     sourceTree = "<group>";
-              };
-              7E98BD5A33B14C089C06FDC8 /* ALL_BUILD */ = {
-                     isa = PBXGroup;
-                     children = (
-                            D6653475F9AA41B3B2E968CF /* CMake Rules */,
-                            CF65E15657644B4EBA51D7A8 /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/CMakeLists.txt */,
-                     );
-                     name = ALL_BUILD;
-                     sourceTree = "<group>";
-              };
-              D6653475F9AA41B3B2E968CF /* CMake Rules */ = {
-                     isa = PBXGroup;
-                     children = (
-                     );
-                     name = "CMake Rules";
-                     sourceTree = "<group>";
-              };
-              925926351B424B378DBAD175 /* ZERO_CHECK */ = {
-                     isa = PBXGroup;
-                     children = (
-                            6498C4868DE04D698137E562 /* CMake Rules */,
-                            CF65E15657644B4EBA51D7A8 /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/CMakeLists.txt */,
-                     );
-                     name = ZERO_CHECK;
-                     sourceTree = "<group>";
-              };
-              6498C4868DE04D698137E562 /* CMake Rules */ = {
-                     isa = PBXGroup;
-                     children = (
-                     );
-                     name = "CMake Rules";
-                     sourceTree = "<group>";
-              };
-              ADE912708C654C19AE0AEC37 /* boost_ipc_inspector */ = {
-                     isa = PBXGroup;
-                     children = (
-                            E6EBC006B39F4B768D39768F /* Source Files */,
-                            4AF1189615CD4AD6ACACF7F9 /* Header Files */,
-                            CF65E15657644B4EBA51D7A8 /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/CMakeLists.txt */,
-                     );
-                     name = boost_ipc_inspector;
-                     sourceTree = "<group>";
-              };
-              E6EBC006B39F4B768D39768F /* Source Files */ = {
-                     isa = PBXGroup;
-                     children = (
-                            F6DCF5E58DEC4FD99FD1F59A /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp */,
-                            E369973A79ED401CB0901F63 /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp */,
-                     );
-                     name = "Source Files";
-                     sourceTree = "<group>";
-              };
-              4AF1189615CD4AD6ACACF7F9 /* Header Files */ = {
-                     isa = PBXGroup;
-                     children = (
-                            64A83939011446EDA295F1DC /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h */,
-                     );
-                     name = "Header Files";
-                     sourceTree = "<group>";
-              };
-              7E71920573F14C879E96C116 /* boost_ipc_modifier */ = {
-                     isa = PBXGroup;
-                     children = (
-                            0CF13FBE0A5E4523954615F3 /* Source Files */,
-                            AED9283A1E9241F0BD562042 /* Header Files */,
-                            CF65E15657644B4EBA51D7A8 /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/CMakeLists.txt */,
-                     );
-                     name = boost_ipc_modifier;
-                     sourceTree = "<group>";
-              };
-              0CF13FBE0A5E4523954615F3 /* Source Files */ = {
-                     isa = PBXGroup;
-                     children = (
-                            868C8ED23C0743CE8ADE2A4B /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/modifier.cpp */,
-                            E369973A79ED401CB0901F63 /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp */,
-                     );
-                     name = "Source Files";
-                     sourceTree = "<group>";
-              };
-              AED9283A1E9241F0BD562042 /* Header Files */ = {
-                     isa = PBXGroup;
-                     children = (
-                            64A83939011446EDA295F1DC /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h */,
-                     );
-                     name = "Header Files";
-                     sourceTree = "<group>";
-              };
-              2ADBC68D964947FFB15481BA /* Products */ = {
-                     isa = PBXGroup;
-                     children = (
-                            A9F83FC97C6E4225A71CB4EA /* boost_ipc_inspector */,
-                            FC139AC1E2354A42A45D48F1 /* boost_ipc_modifier */,
-                     );
-                     name = Products;
-                     sourceTree = "<group>";
-              };
+		0CF13FBE0A5E4523954615F3 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				868C8ED23C0743CE8ADE2A4B /* modifier.cpp */,
+				E369973A79ED401CB0901F63 /* utils.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		2ADBC68D964947FFB15481BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9F83FC97C6E4225A71CB4EA /* boost_ipc_inspector */,
+				FC139AC1E2354A42A45D48F1 /* boost_ipc_modifier */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AF1189615CD4AD6ACACF7F9 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				64A83939011446EDA295F1DC /* utils.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		61A8244D23E0422BA548AECF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6498C4868DE04D698137E562 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		7E71920573F14C879E96C116 /* boost_ipc_modifier */ = {
+			isa = PBXGroup;
+			children = (
+				0CF13FBE0A5E4523954615F3 /* Source Files */,
+				AED9283A1E9241F0BD562042 /* Header Files */,
+				CF65E15657644B4EBA51D7A8 /* CMakeLists.txt */,
+			);
+			name = boost_ipc_modifier;
+			sourceTree = "<group>";
+		};
+		7E98BD5A33B14C089C06FDC8 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				D6653475F9AA41B3B2E968CF /* CMake Rules */,
+				CF65E15657644B4EBA51D7A8 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		925926351B424B378DBAD175 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				6498C4868DE04D698137E562 /* CMake Rules */,
+				CF65E15657644B4EBA51D7A8 /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		ADE912708C654C19AE0AEC37 /* boost_ipc_inspector */ = {
+			isa = PBXGroup;
+			children = (
+				E6EBC006B39F4B768D39768F /* Source Files */,
+				4AF1189615CD4AD6ACACF7F9 /* Header Files */,
+				CF65E15657644B4EBA51D7A8 /* CMakeLists.txt */,
+			);
+			name = boost_ipc_inspector;
+			sourceTree = "<group>";
+		};
+		AED9283A1E9241F0BD562042 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				64A83939011446EDA295F1DC /* utils.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		C39F2BA684274952B2D5436D = {
+			isa = PBXGroup;
+			children = (
+				D98161FB8DF641D2BFE53804 /* Sources */,
+				61A8244D23E0422BA548AECF /* Resources */,
+				2ADBC68D964947FFB15481BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6653475F9AA41B3B2E968CF /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		D98161FB8DF641D2BFE53804 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7E98BD5A33B14C089C06FDC8 /* ALL_BUILD */,
+				925926351B424B378DBAD175 /* ZERO_CHECK */,
+				ADE912708C654C19AE0AEC37 /* boost_ipc_inspector */,
+				7E71920573F14C879E96C116 /* boost_ipc_modifier */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		E6EBC006B39F4B768D39768F /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6DCF5E58DEC4FD99FD1F59A /* inspector.cpp */,
+				E369973A79ED401CB0901F63 /* utils.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-              897639E69E784301ADCBAD0C /* boost_ipc_inspector */ = {
-                     isa = PBXNativeTarget;
-                     buildConfigurationList = 04CF77548FA544F7A60D36F2 /* Build configuration list for PBXNativeTarget "boost_ipc_inspector" */;
-                     buildPhases = (
-                            972218F8E55F41BDA72B3F21 /* Sources */,
-                            60CFFA753EFF48AC841C9E8A /* CMake PostBuild Rules */,
-                     );
-                     buildRules = (
-                     );
-                     dependencies = (
-                            2CB197CA14E3408EA54017A0 /* PBXTargetDependency */,
-                     );
-                     name = boost_ipc_inspector;
-                     productName = boost_ipc_inspector;
-                     productReference = A9F83FC97C6E4225A71CB4EA /* boost_ipc_inspector */;
-                     productType = "com.apple.product-type.tool";
-              };
-              71E6501C37FF4B3A8B0D2BA1 /* boost_ipc_modifier */ = {
-                     isa = PBXNativeTarget;
-                     buildConfigurationList = DAD21E7825314D0C9C3F3D5A /* Build configuration list for PBXNativeTarget "boost_ipc_modifier" */;
-                     buildPhases = (
-                            F7DBFAEB4E9B4912A3EA71B9 /* Sources */,
-                            99FAC469D32B4F14B7624998 /* CMake PostBuild Rules */,
-                     );
-                     buildRules = (
-                     );
-                     dependencies = (
-                            2CB197CA14E3408EA54017A0 /* PBXTargetDependency */,
-                     );
-                     name = boost_ipc_modifier;
-                     productName = boost_ipc_modifier;
-                     productReference = FC139AC1E2354A42A45D48F1 /* boost_ipc_modifier */;
-                     productType = "com.apple.product-type.tool";
-              };
+		71E6501C37FF4B3A8B0D2BA1 /* boost_ipc_modifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAD21E7825314D0C9C3F3D5A /* Build configuration list for PBXNativeTarget "boost_ipc_modifier" */;
+			buildPhases = (
+				F7DBFAEB4E9B4912A3EA71B9 /* Sources */,
+				99FAC469D32B4F14B7624998 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CB197CA14E3408EA54017A0 /* PBXTargetDependency */,
+			);
+			name = boost_ipc_modifier;
+			productName = boost_ipc_modifier;
+			productReference = FC139AC1E2354A42A45D48F1 /* boost_ipc_modifier */;
+			productType = "com.apple.product-type.tool";
+		};
+		897639E69E784301ADCBAD0C /* boost_ipc_inspector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04CF77548FA544F7A60D36F2 /* Build configuration list for PBXNativeTarget "boost_ipc_inspector" */;
+			buildPhases = (
+				972218F8E55F41BDA72B3F21 /* Sources */,
+				60CFFA753EFF48AC841C9E8A /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CB197CA14E3408EA54017A0 /* PBXTargetDependency */,
+			);
+			name = boost_ipc_inspector;
+			productName = boost_ipc_inspector;
+			productReference = A9F83FC97C6E4225A71CB4EA /* boost_ipc_inspector */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-              372D628AFEC94031A1D14D90 /* Project object */ = {
-                     isa = PBXProject;
-                     attributes = {
-                            BuildIndependentTargetsInParallel = YES;
-                     };
-                     buildConfigurationList = 69DD4E6654FB4095AE0DEFD0 /* Build configuration list for PBXProject  "BoostIPC" */;
-                     buildSettings = {
-                     };
-                     buildStyles = (
-                            5B052D96000C4AEDBCFC2FB7 /* Debug */,
-                            A59ACF27CA2D4346BA6FA1EC /* Release */,
-                            53B0A51F59C144AFBBA25F8A /* MinSizeRel */,
-                            BFBFCE3FDE3D455F952EFDF4 /* RelWithDebInfo */,
-                     );
-                     compatibilityVersion = "Xcode 3.2";
-                     hasScannedForEncodings = 0;
-                     mainGroup = C39F2BA684274952B2D5436D;
-                     projectDirPath = "..";
-                     projectRoot = "";
-                     targets = (
-                            38C9BEB484B8412F994C32F3 /* ALL_BUILD */,
-                            A93E49E547F2498B8B3D85E2 /* ZERO_CHECK */,
-                            897639E69E784301ADCBAD0C /* boost_ipc_inspector */,
-                            71E6501C37FF4B3A8B0D2BA1 /* boost_ipc_modifier */,
-                     );
-              };
+		372D628AFEC94031A1D14D90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = 69DD4E6654FB4095AE0DEFD0 /* Build configuration list for PBXProject "BoostIPC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C39F2BA684274952B2D5436D;
+			projectDirPath = ..;
+			projectRoot = "";
+			targets = (
+				38C9BEB484B8412F994C32F3 /* ALL_BUILD */,
+				A93E49E547F2498B8B3D85E2 /* ZERO_CHECK */,
+				897639E69E784301ADCBAD0C /* boost_ipc_inspector */,
+				71E6501C37FF4B3A8B0D2BA1 /* boost_ipc_modifier */,
+			);
+		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-              D7EC4B08309D44F1A236FCED /*  */ = {
-                     isa = PBXShellScriptBuildPhase;
-                     buildActionMask = 2147483647;
-                     files = (
-                     );
-                     inputPaths = (
-                     );
-                     outputPaths = (
-                     );
-                     runOnlyForDeploymentPostprocessing = 0;
-                     shellPath = /bin/sh;
-                     shellScript = "# shell script goes here
-exit 0";
-                     showEnvVarsInLog = 0;
-              };
-              FE7DDFA81A3F42BAB99D3970 /* CMake Rules */ = {
-                     isa = PBXShellScriptBuildPhase;
-                     buildActionMask = 2147483647;
-                     files = (
-                     );
-                     name = "CMake Rules";
-                     runOnlyForDeploymentPostprocessing = 0;
-                     shellPath = /bin/sh;
-                     shellScript = "make -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
-                     showEnvVarsInLog = 0;
-              };
-              6F37E1A54FF94DFA8F935BBD /*  */ = {
-                     isa = PBXShellScriptBuildPhase;
-                     buildActionMask = 2147483647;
-                     files = (
-                     );
-                     inputPaths = (
-                     );
-                     outputPaths = (
-                     );
-                     runOnlyForDeploymentPostprocessing = 0;
-                     shellPath = /bin/sh;
-                     shellScript = "# shell script goes here
-exit 0";
-                     showEnvVarsInLog = 0;
-              };
-              471975238D9A4D11BC6F8789 /* CMake Rules */ = {
-                     isa = PBXShellScriptBuildPhase;
-                     buildActionMask = 2147483647;
-                     files = (
-                     );
-                     name = "CMake Rules";
-                     runOnlyForDeploymentPostprocessing = 0;
-                     shellPath = /bin/sh;
-                     shellScript = "make -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
-                     showEnvVarsInLog = 0;
-              };
-              60CFFA753EFF48AC841C9E8A /* CMake PostBuild Rules */ = {
-                     isa = PBXShellScriptBuildPhase;
-                     buildActionMask = 2147483647;
-                     files = (
-                     );
-                     name = "CMake PostBuild Rules";
-                     runOnlyForDeploymentPostprocessing = 0;
-                     shellPath = /bin/sh;
-                     shellScript = "make -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/boost_ipc_inspector_postBuildPhase.make$CONFIGURATION all";
-                     showEnvVarsInLog = 0;
-              };
-              99FAC469D32B4F14B7624998 /* CMake PostBuild Rules */ = {
-                     isa = PBXShellScriptBuildPhase;
-                     buildActionMask = 2147483647;
-                     files = (
-                     );
-                     name = "CMake PostBuild Rules";
-                     runOnlyForDeploymentPostprocessing = 0;
-                     shellPath = /bin/sh;
-                     shellScript = "make -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/boost_ipc_modifier_postBuildPhase.make$CONFIGURATION all";
-                     showEnvVarsInLog = 0;
-              };
+		471975238D9A4D11BC6F8789 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		60CFFA753EFF48AC841C9E8A /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/boost_ipc_inspector_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		99FAC469D32B4F14B7624998 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/boost_ipc_modifier_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		FE7DDFA81A3F42BAB99D3970 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-              972218F8E55F41BDA72B3F21 /* Sources */ = {
-                     isa = PBXSourcesBuildPhase;
-                     buildActionMask = 2147483647;
-                     files = (
-                            F72FF68AB61A4824A3E7E875 /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/inspector.cpp */,
-                            6A981EB482504725B852722D /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp */,
-                     );
-                     runOnlyForDeploymentPostprocessing = 0;
-              };
-              F7DBFAEB4E9B4912A3EA71B9 /* Sources */ = {
-                     isa = PBXSourcesBuildPhase;
-                     buildActionMask = 2147483647;
-                     files = (
-                            4BFB07D590C74DE08CD93F7B /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/modifier.cpp */,
-                            474132EF6D9E48BCA8B82EE5 /* /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.cpp */,
-                     );
-                     runOnlyForDeploymentPostprocessing = 0;
-              };
+		972218F8E55F41BDA72B3F21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F72FF68AB61A4824A3E7E875 /* inspector.cpp in Sources */,
+				6A981EB482504725B852722D /* utils.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DBFAEB4E9B4912A3EA71B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BFB07D590C74DE08CD93F7B /* modifier.cpp in Sources */,
+				474132EF6D9E48BCA8B82EE5 /* utils.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-              59B18549FECA426E97C8970A /* PBXTargetDependency */ = {
-                     isa = PBXTargetDependency;
-                     target = 71E6501C37FF4B3A8B0D2BA1 /* boost_ipc_modifier */;
-                     targetProxy = 20E63B12AA43474592CFB8F9 /* PBXContainerItemProxy */;
-              };
-              AC011327493948B0AB05CB95 /* PBXTargetDependency */ = {
-                     isa = PBXTargetDependency;
-                     target = 897639E69E784301ADCBAD0C /* boost_ipc_inspector */;
-                     targetProxy = 447FED453EE14345AEE73D53 /* PBXContainerItemProxy */;
-              };
-              2CB197CA14E3408EA54017A0 /* PBXTargetDependency */ = {
-                     isa = PBXTargetDependency;
-                     target = A93E49E547F2498B8B3D85E2 /* ZERO_CHECK */;
-                     targetProxy = 2CDF522B1D4B4C33B513B76B /* PBXContainerItemProxy */;
-              };
+		2CB197CA14E3408EA54017A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A93E49E547F2498B8B3D85E2 /* ZERO_CHECK */;
+			targetProxy = 2CDF522B1D4B4C33B513B76B /* PBXContainerItemProxy */;
+		};
+		59B18549FECA426E97C8970A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71E6501C37FF4B3A8B0D2BA1 /* boost_ipc_modifier */;
+			targetProxy = 20E63B12AA43474592CFB8F9 /* PBXContainerItemProxy */;
+		};
+		AC011327493948B0AB05CB95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 897639E69E784301ADCBAD0C /* boost_ipc_inspector */;
+			targetProxy = 447FED453EE14345AEE73D53 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-              87D488EB268D4AA59418F688 /* Debug */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-                            ONLY_ACTIVE_ARCH = YES;
-                            SDKROOT = "/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/build";
-                     };
-                     name = Debug;
-              };
-              521B042182E84003A2156EA6 /* Release */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-                            ONLY_ACTIVE_ARCH = YES;
-                            SDKROOT = "/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/build";
-                     };
-                     name = Release;
-              };
-              3A9756706BB34876BA9C7CA7 /* MinSizeRel */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-                            ONLY_ACTIVE_ARCH = YES;
-                            SDKROOT = "/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/build";
-                     };
-                     name = MinSizeRel;
-              };
-              E5E0CEBC836A4EC083EFD440 /* RelWithDebInfo */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-                            ONLY_ACTIVE_ARCH = YES;
-                            SDKROOT = "/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/build";
-                     };
-                     name = RelWithDebInfo;
-              };
-              4895347F09694CE6BA8430B7 /* Debug */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = 0;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode", "/Users/vietlq/projects/viet-github-cpp/boost_ipc", /usr/local/include, /Users/vietlq/Downloads/boost_1_51_0, );
-                            INSTALL_PATH = "";
-                            OTHER_CFLAGS = "  ";
-                            OTHER_LDFLAGS = "";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = ALL_BUILD;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = Debug;
-              };
-              9E661C7BC2984A9786FD586F /* Release */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = 0;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode", "/Users/vietlq/projects/viet-github-cpp/boost_ipc", /usr/local/include, /Users/vietlq/Downloads/boost_1_51_0, );
-                            INSTALL_PATH = "";
-                            OTHER_CFLAGS = "  ";
-                            OTHER_LDFLAGS = "";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = ALL_BUILD;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = Release;
-              };
-              2B57198FB0284CEAA0AC993A /* MinSizeRel */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = 0;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode", "/Users/vietlq/projects/viet-github-cpp/boost_ipc", /usr/local/include, /Users/vietlq/Downloads/boost_1_51_0, );
-                            INSTALL_PATH = "";
-                            OTHER_CFLAGS = "  ";
-                            OTHER_LDFLAGS = "";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = ALL_BUILD;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = MinSizeRel;
-              };
-              B7EF66902E894F6D8CF82C4D /* RelWithDebInfo */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = 0;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode", "/Users/vietlq/projects/viet-github-cpp/boost_ipc", /usr/local/include, /Users/vietlq/Downloads/boost_1_51_0, );
-                            INSTALL_PATH = "";
-                            OTHER_CFLAGS = "  ";
-                            OTHER_LDFLAGS = "";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = ALL_BUILD;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = RelWithDebInfo;
-              };
-              8FB4E8470B4944288A470CC5 /* Debug */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = 0;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode", "/Users/vietlq/projects/viet-github-cpp/boost_ipc", /usr/local/include, /Users/vietlq/Downloads/boost_1_51_0, );
-                            INSTALL_PATH = "";
-                            OTHER_CFLAGS = "  ";
-                            OTHER_LDFLAGS = "";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = ZERO_CHECK;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = Debug;
-              };
-              45CAC9B7CBCA49E691FB83A3 /* Release */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = 0;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode", "/Users/vietlq/projects/viet-github-cpp/boost_ipc", /usr/local/include, /Users/vietlq/Downloads/boost_1_51_0, );
-                            INSTALL_PATH = "";
-                            OTHER_CFLAGS = "  ";
-                            OTHER_LDFLAGS = "";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = ZERO_CHECK;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = Release;
-              };
-              13816E6D9D854FEEA08FA2B7 /* MinSizeRel */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = 0;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode", "/Users/vietlq/projects/viet-github-cpp/boost_ipc", /usr/local/include, /Users/vietlq/Downloads/boost_1_51_0, );
-                            INSTALL_PATH = "";
-                            OTHER_CFLAGS = "  ";
-                            OTHER_LDFLAGS = "";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = ZERO_CHECK;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = MinSizeRel;
-              };
-              97A2514740824DEE93736837 /* RelWithDebInfo */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = 0;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode", "/Users/vietlq/projects/viet-github-cpp/boost_ipc", /usr/local/include, /Users/vietlq/Downloads/boost_1_51_0, );
-                            INSTALL_PATH = "";
-                            OTHER_CFLAGS = "  ";
-                            OTHER_LDFLAGS = "";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = ZERO_CHECK;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = RelWithDebInfo;
-              };
-              9C05EEEDDDFD46B4B859183D /* Debug */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            EXECUTABLE_PREFIX = "";
-                            EXECUTABLE_SUFFIX = "";
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = 0;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode", "/Users/vietlq/projects/viet-github-cpp/boost_ipc", /usr/local/include, /Users/vietlq/Downloads/boost_1_51_0, );
-                            INSTALL_PATH = "";
-                            LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
-                            OTHER_CFLAGS = "    ";
-                            OTHER_CPLUSPLUSFLAGS = "    ";
-                            OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names ";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = boost_ipc_inspector;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = Debug;
-              };
-              47B6728AA96449E68B1224B7 /* Release */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            EXECUTABLE_PREFIX = "";
-                            EXECUTABLE_SUFFIX = "";
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = 3;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode", "/Users/vietlq/projects/viet-github-cpp/boost_ipc", /usr/local/include, /Users/vietlq/Downloads/boost_1_51_0, );
-                            INSTALL_PATH = "";
-                            LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
-                            OTHER_CFLAGS = "    -DNDEBUG  ";
-                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
-                            OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names ";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = boost_ipc_inspector;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = Release;
-              };
-              828F21B7E4DD41598FE34752 /* MinSizeRel */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            EXECUTABLE_PREFIX = "";
-                            EXECUTABLE_SUFFIX = "";
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = s;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode", "/Users/vietlq/projects/viet-github-cpp/boost_ipc", /usr/local/include, /Users/vietlq/Downloads/boost_1_51_0, );
-                            INSTALL_PATH = "";
-                            LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
-                            OTHER_CFLAGS = "    -DNDEBUG  ";
-                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
-                            OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names ";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = boost_ipc_inspector;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = MinSizeRel;
-              };
-              37C9B2AC22EC48A988DBFF54 /* RelWithDebInfo */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            EXECUTABLE_PREFIX = "";
-                            EXECUTABLE_SUFFIX = "";
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = 2;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode", "/Users/vietlq/projects/viet-github-cpp/boost_ipc", /usr/local/include, /Users/vietlq/Downloads/boost_1_51_0, );
-                            INSTALL_PATH = "";
-                            LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
-                            OTHER_CFLAGS = "       -DNDEBUG  ";
-                            OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
-                            OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names ";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = boost_ipc_inspector;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = RelWithDebInfo;
-              };
-              D81C975762884089B4409ED7 /* Debug */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            EXECUTABLE_PREFIX = "";
-                            EXECUTABLE_SUFFIX = "";
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = 0;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode", "/Users/vietlq/projects/viet-github-cpp/boost_ipc", /usr/local/include, /Users/vietlq/Downloads/boost_1_51_0, );
-                            INSTALL_PATH = "";
-                            LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
-                            OTHER_CFLAGS = "    ";
-                            OTHER_CPLUSPLUSFLAGS = "    ";
-                            OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names ";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = boost_ipc_modifier;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = Debug;
-              };
-              A42F9CD590664B90B3C8DCB9 /* Release */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            EXECUTABLE_PREFIX = "";
-                            EXECUTABLE_SUFFIX = "";
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = 3;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode", "/Users/vietlq/projects/viet-github-cpp/boost_ipc", /usr/local/include, /Users/vietlq/Downloads/boost_1_51_0, );
-                            INSTALL_PATH = "";
-                            LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
-                            OTHER_CFLAGS = "    -DNDEBUG  ";
-                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
-                            OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names ";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = boost_ipc_modifier;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = Release;
-              };
-              A62DD3AD07304D41919108A9 /* MinSizeRel */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            EXECUTABLE_PREFIX = "";
-                            EXECUTABLE_SUFFIX = "";
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = s;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode", "/Users/vietlq/projects/viet-github-cpp/boost_ipc", /usr/local/include, /Users/vietlq/Downloads/boost_1_51_0, );
-                            INSTALL_PATH = "";
-                            LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
-                            OTHER_CFLAGS = "    -DNDEBUG  ";
-                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
-                            OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names ";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = boost_ipc_modifier;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = MinSizeRel;
-              };
-              94402F22F34D481C9901D33C /* RelWithDebInfo */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            EXECUTABLE_PREFIX = "";
-                            EXECUTABLE_SUFFIX = "";
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = 2;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode", "/Users/vietlq/projects/viet-github-cpp/boost_ipc", /usr/local/include, /Users/vietlq/Downloads/boost_1_51_0, );
-                            INSTALL_PATH = "";
-                            LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
-                            OTHER_CFLAGS = "       -DNDEBUG  ";
-                            OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
-                            OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names ";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = boost_ipc_modifier;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = RelWithDebInfo;
-              };
+		13816E6D9D854FEEA08FA2B7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode",
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc",
+					/usr/local/include,
+					/Users/vietlq/Downloads/boost_1_51_0,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		2B57198FB0284CEAA0AC993A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode",
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc",
+					/usr/local/include,
+					/Users/vietlq/Downloads/boost_1_51_0,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		37C9B2AC22EC48A988DBFF54 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode",
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc",
+					/usr/local/include,
+					/Users/vietlq/Downloads/boost_1_51_0,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/lib,
+				);
+				OTHER_CFLAGS = "       -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = boost_ipc_inspector;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		3A9756706BB34876BA9C7CA7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/build";
+			};
+			name = MinSizeRel;
+		};
+		45CAC9B7CBCA49E691FB83A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode",
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc",
+					/usr/local/include,
+					/Users/vietlq/Downloads/boost_1_51_0,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		47B6728AA96449E68B1224B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode",
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc",
+					/usr/local/include,
+					/Users/vietlq/Downloads/boost_1_51_0,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/lib,
+				);
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = boost_ipc_inspector;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		4895347F09694CE6BA8430B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode",
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc",
+					/usr/local/include,
+					/Users/vietlq/Downloads/boost_1_51_0,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		521B042182E84003A2156EA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/build";
+			};
+			name = Release;
+		};
+		828F21B7E4DD41598FE34752 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode",
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc",
+					/usr/local/include,
+					/Users/vietlq/Downloads/boost_1_51_0,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/lib,
+				);
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = boost_ipc_inspector;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		87D488EB268D4AA59418F688 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/build";
+			};
+			name = Debug;
+		};
+		8FB4E8470B4944288A470CC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode",
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc",
+					/usr/local/include,
+					/Users/vietlq/Downloads/boost_1_51_0,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		94402F22F34D481C9901D33C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode",
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc",
+					/usr/local/include,
+					/Users/vietlq/Downloads/boost_1_51_0,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/lib,
+				);
+				OTHER_CFLAGS = "       -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = boost_ipc_modifier;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		97A2514740824DEE93736837 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode",
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc",
+					/usr/local/include,
+					/Users/vietlq/Downloads/boost_1_51_0,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		9C05EEEDDDFD46B4B859183D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode",
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc",
+					/usr/local/include,
+					/Users/vietlq/Downloads/boost_1_51_0,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/lib,
+				);
+				OTHER_CFLAGS = "    ";
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = boost_ipc_inspector;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		9E661C7BC2984A9786FD586F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode",
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc",
+					/usr/local/include,
+					/Users/vietlq/Downloads/boost_1_51_0,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		A42F9CD590664B90B3C8DCB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode",
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc",
+					/usr/local/include,
+					/Users/vietlq/Downloads/boost_1_51_0,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/lib,
+				);
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = boost_ipc_modifier;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		A62DD3AD07304D41919108A9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode",
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc",
+					/usr/local/include,
+					/Users/vietlq/Downloads/boost_1_51_0,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/lib,
+				);
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = boost_ipc_modifier;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		B7EF66902E894F6D8CF82C4D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode",
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc",
+					/usr/local/include,
+					/Users/vietlq/Downloads/boost_1_51_0,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		D81C975762884089B4409ED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode",
+					"/Users/vietlq/projects/viet-github-cpp/boost_ipc",
+					/usr/local/include,
+					/Users/vietlq/Downloads/boost_1_51_0,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/lib,
+				);
+				OTHER_CFLAGS = "    ";
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = boost_ipc_modifier;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		E5E0CEBC836A4EC083EFD440 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/build";
+			};
+			name = RelWithDebInfo;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-              69DD4E6654FB4095AE0DEFD0 /* Build configuration list for PBXProject  "BoostIPC" */ = {
-                     isa = XCConfigurationList;
-                     buildConfigurations = (
-                            87D488EB268D4AA59418F688 /* Debug */,
-                            521B042182E84003A2156EA6 /* Release */,
-                            3A9756706BB34876BA9C7CA7 /* MinSizeRel */,
-                            E5E0CEBC836A4EC083EFD440 /* RelWithDebInfo */,
-                     );
-                     defaultConfigurationIsVisible = 0;
-                     defaultConfigurationName = Debug;
-              };
-              9383E019908A49A79340AD24 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
-                     isa = XCConfigurationList;
-                     buildConfigurations = (
-                            4895347F09694CE6BA8430B7 /* Debug */,
-                            9E661C7BC2984A9786FD586F /* Release */,
-                            2B57198FB0284CEAA0AC993A /* MinSizeRel */,
-                            B7EF66902E894F6D8CF82C4D /* RelWithDebInfo */,
-                     );
-                     defaultConfigurationIsVisible = 0;
-                     defaultConfigurationName = Debug;
-              };
-              28C8D3B260D54FE98D49940F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
-                     isa = XCConfigurationList;
-                     buildConfigurations = (
-                            8FB4E8470B4944288A470CC5 /* Debug */,
-                            45CAC9B7CBCA49E691FB83A3 /* Release */,
-                            13816E6D9D854FEEA08FA2B7 /* MinSizeRel */,
-                            97A2514740824DEE93736837 /* RelWithDebInfo */,
-                     );
-                     defaultConfigurationIsVisible = 0;
-                     defaultConfigurationName = Debug;
-              };
-              04CF77548FA544F7A60D36F2 /* Build configuration list for PBXNativeTarget "boost_ipc_inspector" */ = {
-                     isa = XCConfigurationList;
-                     buildConfigurations = (
-                            9C05EEEDDDFD46B4B859183D /* Debug */,
-                            47B6728AA96449E68B1224B7 /* Release */,
-                            828F21B7E4DD41598FE34752 /* MinSizeRel */,
-                            37C9B2AC22EC48A988DBFF54 /* RelWithDebInfo */,
-                     );
-                     defaultConfigurationIsVisible = 0;
-                     defaultConfigurationName = Debug;
-              };
-              DAD21E7825314D0C9C3F3D5A /* Build configuration list for PBXNativeTarget "boost_ipc_modifier" */ = {
-                     isa = XCConfigurationList;
-                     buildConfigurations = (
-                            D81C975762884089B4409ED7 /* Debug */,
-                            A42F9CD590664B90B3C8DCB9 /* Release */,
-                            A62DD3AD07304D41919108A9 /* MinSizeRel */,
-                            94402F22F34D481C9901D33C /* RelWithDebInfo */,
-                     );
-                     defaultConfigurationIsVisible = 0;
-                     defaultConfigurationName = Debug;
-              };
+		04CF77548FA544F7A60D36F2 /* Build configuration list for PBXNativeTarget "boost_ipc_inspector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C05EEEDDDFD46B4B859183D /* Debug */,
+				47B6728AA96449E68B1224B7 /* Release */,
+				828F21B7E4DD41598FE34752 /* MinSizeRel */,
+				37C9B2AC22EC48A988DBFF54 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		28C8D3B260D54FE98D49940F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FB4E8470B4944288A470CC5 /* Debug */,
+				45CAC9B7CBCA49E691FB83A3 /* Release */,
+				13816E6D9D854FEEA08FA2B7 /* MinSizeRel */,
+				97A2514740824DEE93736837 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		69DD4E6654FB4095AE0DEFD0 /* Build configuration list for PBXProject "BoostIPC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87D488EB268D4AA59418F688 /* Debug */,
+				521B042182E84003A2156EA6 /* Release */,
+				3A9756706BB34876BA9C7CA7 /* MinSizeRel */,
+				E5E0CEBC836A4EC083EFD440 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9383E019908A49A79340AD24 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4895347F09694CE6BA8430B7 /* Debug */,
+				9E661C7BC2984A9786FD586F /* Release */,
+				2B57198FB0284CEAA0AC993A /* MinSizeRel */,
+				B7EF66902E894F6D8CF82C4D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DAD21E7825314D0C9C3F3D5A /* Build configuration list for PBXNativeTarget "boost_ipc_modifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D81C975762884089B4409ED7 /* Debug */,
+				A42F9CD590664B90B3C8DCB9 /* Release */,
+				A62DD3AD07304D41919108A9 /* MinSizeRel */,
+				94402F22F34D481C9901D33C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 /* End XCConfigurationList section */
-       };
-       rootObject = 372D628AFEC94031A1D14D90;
+	};
+	rootObject = 372D628AFEC94031A1D14D90 /* Project object */;
 }

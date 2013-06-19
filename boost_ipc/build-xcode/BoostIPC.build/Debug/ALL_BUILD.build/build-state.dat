@@ -11,11 +11,11 @@ s210
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies0989a852b671b741^55bda852b671b741^---0#1#1#--18"Check dependencies36"5141DCEE-E60C-4DF0-AA4A-142FC3470D2F-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies973a8c19bc71b741^ec688c19bc71b741^---0#1#1#--18"Check dependencies36"830337DB-D69D-4C5E-80EC-AC263B1FA9B0-
 
 CPhaseScriptExecution CMake\ Rules /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/ALL_BUILD.build/Script-FE7DDFA81A3F42BAB99D3970.sh
-s393328210.660692
-e393328210.685947
+s393329689.550072
+e393329689.575118
 r1
 xPhaseScriptExecution
 xCMake Rules
@@ -24,6 +24,6 @@ oecho ""
 o
 oecho Build\ all\ projects
 oBuild all projects
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'117"PhaseScriptExecution CMake\ Rules build-xcode/BoostIPC.build/Debug/ALL_BUILD.build/Script-FE7DDFA81A3F42BAB99D3970.sha27ca952b671b741^bf9aaf52b671b741^-54"echo ""echo Build\ all\ projectsBuild all projects3(21%IDEActivityLogMessage2@8"echo ""-393328210#0#8#-0#-----2@26"echo Build\ all\ projects-393328210#9#26#-0#-----2@19"Build all projects-393328210#35#19#-0#-----0#0#1#--537"PhaseScriptExecution CMake\ Rules build-xcode/BoostIPC.build/Debug/ALL_BUILD.build/Script-FE7DDFA81A3F42BAB99D3970.sh    cd /Users/vietlq/projects/viet-github-cpp/boost_ipc    #!/bin/shmake -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all    /bin/sh -c /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/ALL_BUILD.build/Script-FE7DDFA81A3F42BAB99D3970.sh36"77CB000C-B807-45FD-BFDB-3FAD8120D103-
-b9628637A-E8C9-40B0-84A0-AF56788986E9
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'117"PhaseScriptExecution CMake\ Rules build-xcode/BoostIPC.build/Debug/ALL_BUILD.build/Script-FE7DDFA81A3F42BAB99D3970.sh5f278d19bc71b741^863b9319bc71b741^-54"echo ""echo Build\ all\ projectsBuild all projects3(21%IDEActivityLogMessage2@8"echo ""-393329689#0#8#-0#-----2@26"echo Build\ all\ projects-393329689#9#26#-0#-----2@19"Build all projects-393329689#35#19#-0#-----0#0#1#--537"PhaseScriptExecution CMake\ Rules build-xcode/BoostIPC.build/Debug/ALL_BUILD.build/Script-FE7DDFA81A3F42BAB99D3970.sh    cd /Users/vietlq/projects/viet-github-cpp/boost_ipc    #!/bin/shmake -C /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode -f /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all    /bin/sh -c /Users/vietlq/projects/viet-github-cpp/boost_ipc/build-xcode/BoostIPC.build/Debug/ALL_BUILD.build/Script-FE7DDFA81A3F42BAB99D3970.sh36"138281E5-D582-408C-B7B5-994D84160542-
+bA30DDFAC-349A-4F92-AD8D-1E07D5A36608
 

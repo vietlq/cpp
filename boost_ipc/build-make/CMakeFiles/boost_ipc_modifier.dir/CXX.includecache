@@ -29,6 +29,8 @@ utils.h
 /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h
 
 /Users/vietlq/projects/viet-github-cpp/boost_ipc/utils.h
+string
+-
 boost/interprocess/managed_mapped_file.hpp
 -
 boost/interprocess/allocators/allocator.hpp
@@ -42,8 +44,6 @@ boost/interprocess/containers/vector.hpp
 boost/interprocess/containers/map.hpp
 -
 boost/interprocess/containers/string.hpp
--
-string
 -
 
 /usr/local/include/boost/aligned_storage.hpp
