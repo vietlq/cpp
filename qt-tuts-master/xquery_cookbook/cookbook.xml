@@ -1,0 +1,12 @@
+<cookbook xmlns="http://cookbook/namespace">
+    <recipe xmlns="http://cookbook/namespace">
+        <title xmlns="http://cookbook/namespace">Quick and Easy Mushroom Soup</title>
+    </recipe>
+    <recipe>
+        <title xmlns="http://cookbook/namespace">Cheese on Toast</title>
+    </recipe>
+    <recipe>
+        <title xmlns="http://cookbook/namespace">Hard-Boiled Eggs</title>
+    </recipe>
+</cookbook>
+
