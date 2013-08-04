@@ -10,6 +10,7 @@ struct Node
     int degree;
     Node * parent;
     Node * farAncestor;
+    Node * veryFarAncestor;
 };
 
 typedef std::map<int, Node *> map_nodes_t;
@@ -32,10 +33,12 @@ class NodeProcessor
 {
 public:
     //
-    static const int MIN_LOOKUP_BASE = 32;
+    static const int MIN_LOOKUP_BASE_1 = 32;
+    //
+    static const int MIN_LOOKUP_BASE_2 = 512;
     
     //
-    NodeProcessor(int fastLookUpBase_ = 100);
+    NodeProcessor(int fastLookUpBase_ = 100, int veryFastLookUpBase_ = 1000);
     
     //
     ~NodeProcessor();
@@ -66,6 +69,7 @@ private:
     Node * pRoot;
     int initCount;
     int fastLookUpBase;
+    int veryFastLookUpBase;
 };
 
 void process_input(std::istream & istr, std::ostream & ostr)
@@ -135,12 +139,18 @@ int main()
     return 0;
 }
 
-NodeProcessor::NodeProcessor(int fastLookUpBase_):
-pRoot(NULL), initCount(0), fastLookUpBase(fastLookUpBase_)
+NodeProcessor::NodeProcessor(int fastLookUpBase_, int veryFastLookUpBase_):
+pRoot(NULL), initCount(0),
+fastLookUpBase(fastLookUpBase_), veryFastLookUpBase(veryFastLookUpBase_)
 {
-    if(fastLookUpBase < MIN_LOOKUP_BASE)
+    if(fastLookUpBase < MIN_LOOKUP_BASE_1)
     {
-        fastLookUpBase = MIN_LOOKUP_BASE;
+        fastLookUpBase = MIN_LOOKUP_BASE_1;
+    }
+    
+    if(veryFastLookUpBase < MIN_LOOKUP_BASE_2)
+    {
+        veryFastLookUpBase = MIN_LOOKUP_BASE_2;
     }
 }
 
@@ -188,6 +198,7 @@ void NodeProcessor::setRoot(int nodeValue)
     pRoot = new Node;
     pRoot->parent = NULL;
     pRoot->farAncestor = NULL;
+    pRoot->veryFarAncestor = NULL;
     pRoot->degree = 0;
     pRoot->value = nodeValue;
     
@@ -262,6 +273,21 @@ void NodeProcessor::addLeaf(int parentValue, int nodeValue)
     pNode->parent = it->second;
     pNode->degree = pNode->parent->degree + 1;
     
+    //
+    if(pNode->degree <= veryFastLookUpBase)
+    {
+        pNode->veryFarAncestor = pRoot;
+    }
+    else if(1 == (pNode->degree % veryFastLookUpBase))
+    {
+        pNode->veryFarAncestor = pNode->parent;
+    }
+    else
+    {
+        pNode->veryFarAncestor = pNode->parent->veryFarAncestor;
+    }
+    
+    //
     if(pNode->degree <= fastLookUpBase)
     {
         pNode->farAncestor = pRoot;
@@ -311,7 +337,20 @@ int NodeProcessor::queryAncestor(int nodeValue, int k)
     int temp;
     while(k > 0)
     {
-        if(k >= fastLookUpBase)
+        if(k >= veryFastLookUpBase)
+        {
+            temp = pAncestorNode->degree % veryFastLookUpBase;
+            if(0 != temp)
+            {
+                k -= temp;
+            }
+            else
+            {
+                k -= veryFastLookUpBase;
+            }
+            pAncestorNode = pAncestorNode->veryFarAncestor;
+        }
+        else if(k >= fastLookUpBase)
         {
             temp = pAncestorNode->degree % fastLookUpBase;
             if(0 != temp)
