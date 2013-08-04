@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              3D38293AC84E4CD4AC185E85 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = D1D7E7717B624F27BEC3995E /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            5F5FA5AC3F914CF497474079 /* CMake Rules */,
+                     );
+                     dependencies = (
+                            2CEA9B591A4A42D896EDE5EE /* PBXTargetDependency */,
+                            E3FAC508AD0E4A05847AD495 /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              D8161E9E529B4380AEA5E56E /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 423990FAA76A4662889D75A7 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            31AC652BC8C6440A8B992355 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+8104AC0322E04DA39E27B529 /* /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/03-kth-ancestor.cpp */ = {isa = PBXBuildFile; fileRef = B464678C925844EFB4C1DEA5 /* /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/03-kth-ancestor.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+635E681381884AD383B0E086 /* /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 08537C07D9414DA3BA46C9A8 /* /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              C6610D06F8B742C694EC769F /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              BD187913D3C7442BA773689E /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              C4990F1D392241639E480C8F /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+              E46EC675366C4FB3BD807CCF /* MinSizeRel */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = MinSizeRel;
+              };
+              2557A8F76DCA47358431FBFE /* RelWithDebInfo */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = RelWithDebInfo;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              98A2D1BCC6454C8EA07A167E /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = A3E04C1E95D74C15AFF3EF43 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = D8161E9E529B4380AEA5E56E;
+                     remoteInfo = ZERO_CHECK;
+              };
+              82D2E3CAEB914F2CA5C94E12 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = A3E04C1E95D74C15AFF3EF43 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 668FD4BF83E84049B775A79E;
+                     remoteInfo = kth_ancestor;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+08537C07D9414DA3BA46C9A8 /* /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text"; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+B464678C925844EFB4C1DEA5 /* /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/03-kth-ancestor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.cpp.cpp"; name = "03-kth-ancestor.cpp"; path = "03-kth-ancestor.cpp"; sourceTree = SOURCE_ROOT; };
+A27F5723F6B6407888A5D2DD /* kth_ancestor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = kth_ancestor; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              D048AE5900BD40BE89FBE68F  = {
+                     isa = PBXGroup;
+                     children = (
+                            E92C43AC3F26476F88F761F2 /* Sources */,
+                            F67F5284579247CCAFF39602 /* Resources */,
+                            5078D16D8FEE4C0C93CE1EA9 /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              E92C43AC3F26476F88F761F2 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            1A7ECE0F797C44629AEA3C0E /* ALL_BUILD */,
+                            C21C6D387E86449F8ADE596F /* ZERO_CHECK */,
+                            A6F2676024724F6A8CEBC312 /* kth_ancestor */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              F67F5284579247CCAFF39602 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              1A7ECE0F797C44629AEA3C0E /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            8D81922FBB7746D183C6F2EF /* CMake Rules */,
+                            08537C07D9414DA3BA46C9A8 /* /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              8D81922FBB7746D183C6F2EF /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              C21C6D387E86449F8ADE596F /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            67D6D48BF11E43F88571CDA0 /* CMake Rules */,
+                            08537C07D9414DA3BA46C9A8 /* /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              67D6D48BF11E43F88571CDA0 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              A6F2676024724F6A8CEBC312 /* kth_ancestor */ = {
+                     isa = PBXGroup;
+                     children = (
+                            A92E0550BCD54EE78B880BF8 /* Source Files */,
+                            08537C07D9414DA3BA46C9A8 /* /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/CMakeLists.txt */,
+                     );
+                     name = kth_ancestor;
+                     sourceTree = "<group>";
+              };
+              A92E0550BCD54EE78B880BF8 /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            B464678C925844EFB4C1DEA5 /* /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/03-kth-ancestor.cpp */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              5078D16D8FEE4C0C93CE1EA9 /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            A27F5723F6B6407888A5D2DD /* kth_ancestor */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              668FD4BF83E84049B775A79E /* kth_ancestor */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = FE4211477FB4428C932E9AC9 /* Build configuration list for PBXNativeTarget "kth_ancestor" */;
+                     buildPhases = (
+                            5EF6A9C45BD94AAF85540C43 /* Sources */,
+                            70D3205AF6D442259C192CB9 /* CMake PostBuild Rules */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            2CEA9B591A4A42D896EDE5EE /* PBXTargetDependency */,
+                     );
+                     name = kth_ancestor;
+                     productName = kth_ancestor;
+                     productReference = A27F5723F6B6407888A5D2DD /* kth_ancestor */;
+                     productType = "com.apple.product-type.tool";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              A3E04C1E95D74C15AFF3EF43 /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = D0A8AA45B26249618F015153 /* Build configuration list for PBXProject  "KthAncestor" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            BD187913D3C7442BA773689E /* Debug */,
+                            C4990F1D392241639E480C8F /* Release */,
+                            E46EC675366C4FB3BD807CCF /* MinSizeRel */,
+                            2557A8F76DCA47358431FBFE /* RelWithDebInfo */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = D048AE5900BD40BE89FBE68F;
+                     projectDirPath = "..";
+                     projectRoot = "";
+                     targets = (
+                            3D38293AC84E4CD4AC185E85 /* ALL_BUILD */,
+                            D8161E9E529B4380AEA5E56E /* ZERO_CHECK */,
+                            668FD4BF83E84049B775A79E /* kth_ancestor */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              E3B2F013B48D4641A7E85FB4 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              5F5FA5AC3F914CF497474079 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode -f /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              9E1A3C9BDD3447809ADCC32A /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              31AC652BC8C6440A8B992355 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode -f /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              70D3205AF6D442259C192CB9 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode -f /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode/CMakeScripts/kth_ancestor_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              5EF6A9C45BD94AAF85540C43 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            8104AC0322E04DA39E27B529 /* /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/03-kth-ancestor.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              2CEA9B591A4A42D896EDE5EE /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = D8161E9E529B4380AEA5E56E /* ZERO_CHECK */;
+                     targetProxy = 98A2D1BCC6454C8EA07A167E /* PBXContainerItemProxy */;
+              };
+              E3FAC508AD0E4A05847AD495 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 668FD4BF83E84049B775A79E /* kth_ancestor */;
+                     targetProxy = 82D2E3CAEB914F2CA5C94E12 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              5AF0264B4F204431900B1479 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode/build";
+                     };
+                     name = Debug;
+              };
+              9A5BD3E4FD504B57A0F42977 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode/build";
+                     };
+                     name = Release;
+              };
+              B550C1E92F0B4B80AD7035E8 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode/build";
+                     };
+                     name = MinSizeRel;
+              };
+              AB66745A66B6443C9C5209E4 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+                            ONLY_ACTIVE_ARCH = YES;
+                            SDKROOT = "/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode/build";
+                     };
+                     name = RelWithDebInfo;
+              };
+              EBE4087061B541AFBF483715 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode", "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor", /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              E846A569D0704390B8DA717C /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode", "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor", /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              7C373FCDD4B342F7B5E32771 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode", "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor", /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              8C9A27F3E3704C8F94165423 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode", "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor", /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              10497349D442439C89C6DDED /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode", "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor", /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              B39C541147CA405D85101E08 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode", "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor", /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              4C1DF485B21540139623BF49 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode", "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor", /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              BABABC974E0840268B972F0B /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode", "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor", /usr/local/include, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = "";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              559812ABAED74AA4A94348F5 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode", "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor", /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
+                            OTHER_CFLAGS = "    ";
+                            OTHER_CPLUSPLUSFLAGS = "    ";
+                            OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = kth_ancestor;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              5A35029040074D608F6A7EAF /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode", "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor", /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
+                            OTHER_CFLAGS = "    -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+                            OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = kth_ancestor;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              D7B72C270E6344BB90A2F0E5 /* MinSizeRel */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = s;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode", "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor", /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
+                            OTHER_CFLAGS = "    -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+                            OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = kth_ancestor;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = MinSizeRel;
+              };
+              D7479E195E1E4730A7C7A7E6 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            EXECUTABLE_PREFIX = "";
+                            EXECUTABLE_SUFFIX = "";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 2;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode", "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor", /usr/local/include, );
+                            INSTALL_PATH = "";
+                            LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
+                            OTHER_CFLAGS = "       -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+                            OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = kth_ancestor;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/xcode";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              D0A8AA45B26249618F015153 /* Build configuration list for PBXProject  "KthAncestor" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            5AF0264B4F204431900B1479 /* Debug */,
+                            9A5BD3E4FD504B57A0F42977 /* Release */,
+                            B550C1E92F0B4B80AD7035E8 /* MinSizeRel */,
+                            AB66745A66B6443C9C5209E4 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              D1D7E7717B624F27BEC3995E /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            EBE4087061B541AFBF483715 /* Debug */,
+                            E846A569D0704390B8DA717C /* Release */,
+                            7C373FCDD4B342F7B5E32771 /* MinSizeRel */,
+                            8C9A27F3E3704C8F94165423 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              423990FAA76A4662889D75A7 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            10497349D442439C89C6DDED /* Debug */,
+                            B39C541147CA405D85101E08 /* Release */,
+                            4C1DF485B21540139623BF49 /* MinSizeRel */,
+                            BABABC974E0840268B972F0B /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              FE4211477FB4428C932E9AC9 /* Build configuration list for PBXNativeTarget "kth_ancestor" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            559812ABAED74AA4A94348F5 /* Debug */,
+                            5A35029040074D608F6A7EAF /* Release */,
+                            D7B72C270E6344BB90A2F0E5 /* MinSizeRel */,
+                            D7479E195E1E4730A7C7A7E6 /* RelWithDebInfo */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = A3E04C1E95D74C15AFF3EF43;
+}
