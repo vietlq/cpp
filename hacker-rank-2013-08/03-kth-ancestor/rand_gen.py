@@ -25,6 +25,8 @@ for t in xrange(T):
 	rootValue = get_rand(NODE_RANGE)
 	nodes = {}
 	paths = {}
+	parentOf = {}
+	numChildren = {}
 	print rootValue, 0
 	nodes[rootValue] = 1
 	while len(nodes) < P:
@@ -56,9 +58,11 @@ for t in xrange(T):
 			nodes[child] = 1
 			print action, parent, child
 		elif action == 1:
-			nodeValue = random.choice(list(nodes.keys()))
-			del nodes[nodeValue]
-			print action, nodeValue
+			nodeValue = rootValue
+			while nodeValue == rootValue:
+				nodeValue = random.choice(list(nodes.keys()))
+				del nodes[nodeValue]
+				print action, nodeValue
 		elif action == 2:
 			child = get_rand(RANGE_P)
 			k = get_rand(RANGE_K)

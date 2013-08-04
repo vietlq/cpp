@@ -78,13 +78,13 @@ private:
 
 void process_input(std::istream & istr, std::ostream & ostr)
 {
-    NodeProcessor nodeProcessor;
     int T;
     
     istr >> T;
     
     for(int treeIdx = 0; treeIdx < T; ++treeIdx)
     {
+        NodeProcessor nodeProcessor;
         int P, Q, value1, value2, X, Y, K, C;
         
         istr >> P;
@@ -138,15 +138,15 @@ void process_input(std::istream & istr, std::ostream & ostr)
             //printf("End of a query: %llu\n", mach_absolute_time() - start);
         }
         
-        nodeProcessor.reset();
+        //nodeProcessor.reset();
     }
 }
 
 int main()
 {
-    //process_input(std::cin, std::cout);
-    std::ifstream istr("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/test09.txt");
-    process_input(istr, std::cout);
+    process_input(std::cin, std::cout);
+    //std::ifstream istr("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/test09.txt");
+    //process_input(istr, std::cout);
     
     return 0;
 }

@@ -78,13 +78,13 @@ private:
 
 void process_input(std::istream & istr, std::ostream & ostr)
 {
-    NodeProcessor nodeProcessor;
     int T;
     
     istr >> T;
     
     for(int treeIdx = 0; treeIdx < T; ++treeIdx)
     {
+        NodeProcessor nodeProcessor;
         int P, Q, value1, value2, X, Y, K, C;
         
         istr >> P;
@@ -138,7 +138,7 @@ void process_input(std::istream & istr, std::ostream & ostr)
             //printf("End of a query: %llu\n", mach_absolute_time() - start);
         }
         
-        nodeProcessor.reset();
+        //nodeProcessor.reset();
     }
 }
 
