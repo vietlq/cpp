@@ -1,681 +1,729 @@
 // !$*UTF8*$!
 {
-       archiveVersion = 1;
-       classes = {
-       };
-       objectVersion = 46;
-       objects = {
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
 
 /* Begin PBXAggregateTarget section */
-              E0414B0215234635A0E50BED /* ALL_BUILD */ = {
-                     isa = PBXAggregateTarget;
-                     buildConfigurationList = 516D33C6774B48199EA8188C /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
-                     buildPhases = (
-                            DBB94EECE81B405B91072F23 /* CMake Rules */,
-                     );
-                     dependencies = (
-                            F71316AC75C44734BE0BFC16 /* PBXTargetDependency */,
-                            15C0F217B3BA46E7840BC0A7 /* PBXTargetDependency */,
-                     );
-                     name = ALL_BUILD;
-                     productName = ALL_BUILD;
-              };
-              085DA98DC54F46D8968F55D7 /* ZERO_CHECK */ = {
-                     isa = PBXAggregateTarget;
-                     buildConfigurationList = BD0D79270AC249AB869333AF /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
-                     buildPhases = (
-                            398C97E02B4D4485B0581E39 /* CMake Rules */,
-                     );
-                     dependencies = (
-                     );
-                     name = ZERO_CHECK;
-                     productName = ZERO_CHECK;
-              };
+		085DA98DC54F46D8968F55D7 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BD0D79270AC249AB869333AF /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				398C97E02B4D4485B0581E39 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		E0414B0215234635A0E50BED /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 516D33C6774B48199EA8188C /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				DBB94EECE81B405B91072F23 /* CMake Rules */,
+			);
+			dependencies = (
+				F71316AC75C44734BE0BFC16 /* PBXTargetDependency */,
+				15C0F217B3BA46E7840BC0A7 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-D87F9F1D1B194DA2B24BBD0A /* /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/01-mark-and-toys.cpp */ = {isa = PBXBuildFile; fileRef = 552CB79897044921A1E73CF0 /* /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/01-mark-and-toys.cpp */; settings = { COMPILER_FLAGS = ""; }; };
-325DC768A3C749418612A13F /* /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 52F4858ADE5B4CA988037220 /* /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+		D87F9F1D1B194DA2B24BBD0A /* 01-mark-and-toys.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 552CB79897044921A1E73CF0 /* 01-mark-and-toys.cpp */; settings = {COMPILER_FLAGS = ""; }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXBuildStyle section */
-              F20B263AAE3F4CA1AC2C9B29 /*  */ = {
-                     isa = PBXBuildStyle;
-              };
-              690D7D76B2BE4F519612C59B /* Debug */ = {
-                     isa = PBXBuildStyle;
-                     buildSettings = {
-                            COPY_PHASE_STRIP = NO;
-                     };
-                     name = Debug;
-              };
-              6699D1B846304768B1B649F8 /* Release */ = {
-                     isa = PBXBuildStyle;
-                     buildSettings = {
-                            COPY_PHASE_STRIP = NO;
-                     };
-                     name = Release;
-              };
-              B7767BD6919848F487D9F4C3 /* MinSizeRel */ = {
-                     isa = PBXBuildStyle;
-                     buildSettings = {
-                            COPY_PHASE_STRIP = NO;
-                     };
-                     name = MinSizeRel;
-              };
-              D53550B60A2544FB8ED0F590 /* RelWithDebInfo */ = {
-                     isa = PBXBuildStyle;
-                     buildSettings = {
-                            COPY_PHASE_STRIP = NO;
-                     };
-                     name = RelWithDebInfo;
-              };
-/* End PBXBuildStyle section */
-
 /* Begin PBXContainerItemProxy section */
-              0CB0051CE2EC4EE3946CD845 /* PBXContainerItemProxy */ = {
-                     isa = PBXContainerItemProxy;
-                     containerPortal = 8BC84FFF9C5B48D9B6E03027 /* Project object */;
-                     proxyType = 1;
-                     remoteGlobalIDString = 085DA98DC54F46D8968F55D7;
-                     remoteInfo = ZERO_CHECK;
-              };
-              669EB1C802A24C929950689F /* PBXContainerItemProxy */ = {
-                     isa = PBXContainerItemProxy;
-                     containerPortal = 8BC84FFF9C5B48D9B6E03027 /* Project object */;
-                     proxyType = 1;
-                     remoteGlobalIDString = 40329BF2316148CE96E044BE;
-                     remoteInfo = mark_and_toys;
-              };
+		0CB0051CE2EC4EE3946CD845 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BC84FFF9C5B48D9B6E03027 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 085DA98DC54F46D8968F55D7;
+			remoteInfo = ZERO_CHECK;
+		};
+		669EB1C802A24C929950689F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BC84FFF9C5B48D9B6E03027 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40329BF2316148CE96E044BE;
+			remoteInfo = mark_and_toys;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-52F4858ADE5B4CA988037220 /* /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text"; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
-552CB79897044921A1E73CF0 /* /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/01-mark-and-toys.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.cpp.cpp"; name = "01-mark-and-toys.cpp"; path = "01-mark-and-toys.cpp"; sourceTree = SOURCE_ROOT; };
-C0ED6A5F36A149E3B514F6EB /* mark_and_toys */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = mark_and_toys; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+		52F4858ADE5B4CA988037220 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		552CB79897044921A1E73CF0 /* 01-mark-and-toys.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "01-mark-and-toys.cpp"; sourceTree = SOURCE_ROOT; };
+		C0ED6A5F36A149E3B514F6EB /* mark_and_toys */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = mark_and_toys; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-              214CDD7B0EB0492DAF5F2FFF  = {
-                     isa = PBXGroup;
-                     children = (
-                            B465B5F4CC9C4CCEB85C1727 /* Sources */,
-                            926349DF04254B01BF013BCE /* Resources */,
-                            5A749E18E9AD4BF2B9D7ACD0 /* Products */,
-                     );
-                     sourceTree = "<group>";
-              };
-              B465B5F4CC9C4CCEB85C1727 /* Sources */ = {
-                     isa = PBXGroup;
-                     children = (
-                            5B8856F5EFE8493F9A4F35C9 /* ALL_BUILD */,
-                            0F2A22F8301B4569A019EF96 /* ZERO_CHECK */,
-                            1E7A04FD114B45C3B7F1C4A8 /* mark_and_toys */,
-                     );
-                     name = Sources;
-                     sourceTree = "<group>";
-              };
-              926349DF04254B01BF013BCE /* Resources */ = {
-                     isa = PBXGroup;
-                     children = (
-                     );
-                     name = Resources;
-                     sourceTree = "<group>";
-              };
-              5B8856F5EFE8493F9A4F35C9 /* ALL_BUILD */ = {
-                     isa = PBXGroup;
-                     children = (
-                            A2F3C68F4DB44314BA94FFD0 /* CMake Rules */,
-                            52F4858ADE5B4CA988037220 /* /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/CMakeLists.txt */,
-                     );
-                     name = ALL_BUILD;
-                     sourceTree = "<group>";
-              };
-              A2F3C68F4DB44314BA94FFD0 /* CMake Rules */ = {
-                     isa = PBXGroup;
-                     children = (
-                     );
-                     name = "CMake Rules";
-                     sourceTree = "<group>";
-              };
-              0F2A22F8301B4569A019EF96 /* ZERO_CHECK */ = {
-                     isa = PBXGroup;
-                     children = (
-                            B87BBD3CD76B4472B497A081 /* CMake Rules */,
-                            52F4858ADE5B4CA988037220 /* /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/CMakeLists.txt */,
-                     );
-                     name = ZERO_CHECK;
-                     sourceTree = "<group>";
-              };
-              B87BBD3CD76B4472B497A081 /* CMake Rules */ = {
-                     isa = PBXGroup;
-                     children = (
-                     );
-                     name = "CMake Rules";
-                     sourceTree = "<group>";
-              };
-              1E7A04FD114B45C3B7F1C4A8 /* mark_and_toys */ = {
-                     isa = PBXGroup;
-                     children = (
-                            1E0BC7CE5BA741FEBA550540 /* Source Files */,
-                            52F4858ADE5B4CA988037220 /* /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/CMakeLists.txt */,
-                     );
-                     name = mark_and_toys;
-                     sourceTree = "<group>";
-              };
-              1E0BC7CE5BA741FEBA550540 /* Source Files */ = {
-                     isa = PBXGroup;
-                     children = (
-                            552CB79897044921A1E73CF0 /* /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/01-mark-and-toys.cpp */,
-                     );
-                     name = "Source Files";
-                     sourceTree = "<group>";
-              };
-              5A749E18E9AD4BF2B9D7ACD0 /* Products */ = {
-                     isa = PBXGroup;
-                     children = (
-                            C0ED6A5F36A149E3B514F6EB /* mark_and_toys */,
-                     );
-                     name = Products;
-                     sourceTree = "<group>";
-              };
+		0F2A22F8301B4569A019EF96 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				B87BBD3CD76B4472B497A081 /* CMake Rules */,
+				52F4858ADE5B4CA988037220 /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		1E0BC7CE5BA741FEBA550540 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				552CB79897044921A1E73CF0 /* 01-mark-and-toys.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		1E7A04FD114B45C3B7F1C4A8 /* mark_and_toys */ = {
+			isa = PBXGroup;
+			children = (
+				1E0BC7CE5BA741FEBA550540 /* Source Files */,
+				52F4858ADE5B4CA988037220 /* CMakeLists.txt */,
+			);
+			name = mark_and_toys;
+			sourceTree = "<group>";
+		};
+		214CDD7B0EB0492DAF5F2FFF = {
+			isa = PBXGroup;
+			children = (
+				B465B5F4CC9C4CCEB85C1727 /* Sources */,
+				926349DF04254B01BF013BCE /* Resources */,
+				5A749E18E9AD4BF2B9D7ACD0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A749E18E9AD4BF2B9D7ACD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0ED6A5F36A149E3B514F6EB /* mark_and_toys */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B8856F5EFE8493F9A4F35C9 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				A2F3C68F4DB44314BA94FFD0 /* CMake Rules */,
+				52F4858ADE5B4CA988037220 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		926349DF04254B01BF013BCE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A2F3C68F4DB44314BA94FFD0 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		B465B5F4CC9C4CCEB85C1727 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5B8856F5EFE8493F9A4F35C9 /* ALL_BUILD */,
+				0F2A22F8301B4569A019EF96 /* ZERO_CHECK */,
+				1E7A04FD114B45C3B7F1C4A8 /* mark_and_toys */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		B87BBD3CD76B4472B497A081 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-              40329BF2316148CE96E044BE /* mark_and_toys */ = {
-                     isa = PBXNativeTarget;
-                     buildConfigurationList = D3D457E90F3E4BE28BD17BFD /* Build configuration list for PBXNativeTarget "mark_and_toys" */;
-                     buildPhases = (
-                            7DB7F682FD844A4BB8835806 /* Sources */,
-                            BD7CD0F17EFE40EEB12C925C /* CMake PostBuild Rules */,
-                     );
-                     buildRules = (
-                     );
-                     dependencies = (
-                            F71316AC75C44734BE0BFC16 /* PBXTargetDependency */,
-                     );
-                     name = mark_and_toys;
-                     productName = mark_and_toys;
-                     productReference = C0ED6A5F36A149E3B514F6EB /* mark_and_toys */;
-                     productType = "com.apple.product-type.tool";
-              };
+		40329BF2316148CE96E044BE /* mark_and_toys */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3D457E90F3E4BE28BD17BFD /* Build configuration list for PBXNativeTarget "mark_and_toys" */;
+			buildPhases = (
+				7DB7F682FD844A4BB8835806 /* Sources */,
+				BD7CD0F17EFE40EEB12C925C /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F71316AC75C44734BE0BFC16 /* PBXTargetDependency */,
+			);
+			name = mark_and_toys;
+			productName = mark_and_toys;
+			productReference = C0ED6A5F36A149E3B514F6EB /* mark_and_toys */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-              8BC84FFF9C5B48D9B6E03027 /* Project object */ = {
-                     isa = PBXProject;
-                     attributes = {
-                            BuildIndependentTargetsInParallel = YES;
-                     };
-                     buildConfigurationList = 83BCE1E828424BF6816C57CF /* Build configuration list for PBXProject  "MarkAndToys" */;
-                     buildSettings = {
-                     };
-                     buildStyles = (
-                            690D7D76B2BE4F519612C59B /* Debug */,
-                            6699D1B846304768B1B649F8 /* Release */,
-                            B7767BD6919848F487D9F4C3 /* MinSizeRel */,
-                            D53550B60A2544FB8ED0F590 /* RelWithDebInfo */,
-                     );
-                     compatibilityVersion = "Xcode 3.2";
-                     hasScannedForEncodings = 0;
-                     mainGroup = 214CDD7B0EB0492DAF5F2FFF;
-                     projectDirPath = "..";
-                     projectRoot = "";
-                     targets = (
-                            E0414B0215234635A0E50BED /* ALL_BUILD */,
-                            085DA98DC54F46D8968F55D7 /* ZERO_CHECK */,
-                            40329BF2316148CE96E044BE /* mark_and_toys */,
-                     );
-              };
+		8BC84FFF9C5B48D9B6E03027 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = 83BCE1E828424BF6816C57CF /* Build configuration list for PBXProject "MarkAndToys" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 214CDD7B0EB0492DAF5F2FFF;
+			projectDirPath = ..;
+			projectRoot = "";
+			targets = (
+				E0414B0215234635A0E50BED /* ALL_BUILD */,
+				085DA98DC54F46D8968F55D7 /* ZERO_CHECK */,
+				40329BF2316148CE96E044BE /* mark_and_toys */,
+			);
+		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-              15BF095F7EBE41058D768FAE /*  */ = {
-                     isa = PBXShellScriptBuildPhase;
-                     buildActionMask = 2147483647;
-                     files = (
-                     );
-                     inputPaths = (
-                     );
-                     outputPaths = (
-                     );
-                     runOnlyForDeploymentPostprocessing = 0;
-                     shellPath = /bin/sh;
-                     shellScript = "# shell script goes here
-exit 0";
-                     showEnvVarsInLog = 0;
-              };
-              DBB94EECE81B405B91072F23 /* CMake Rules */ = {
-                     isa = PBXShellScriptBuildPhase;
-                     buildActionMask = 2147483647;
-                     files = (
-                     );
-                     name = "CMake Rules";
-                     runOnlyForDeploymentPostprocessing = 0;
-                     shellPath = /bin/sh;
-                     shellScript = "make -C /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode -f /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
-                     showEnvVarsInLog = 0;
-              };
-              A781FDE607344EA1B194539F /*  */ = {
-                     isa = PBXShellScriptBuildPhase;
-                     buildActionMask = 2147483647;
-                     files = (
-                     );
-                     inputPaths = (
-                     );
-                     outputPaths = (
-                     );
-                     runOnlyForDeploymentPostprocessing = 0;
-                     shellPath = /bin/sh;
-                     shellScript = "# shell script goes here
-exit 0";
-                     showEnvVarsInLog = 0;
-              };
-              398C97E02B4D4485B0581E39 /* CMake Rules */ = {
-                     isa = PBXShellScriptBuildPhase;
-                     buildActionMask = 2147483647;
-                     files = (
-                     );
-                     name = "CMake Rules";
-                     runOnlyForDeploymentPostprocessing = 0;
-                     shellPath = /bin/sh;
-                     shellScript = "make -C /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode -f /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
-                     showEnvVarsInLog = 0;
-              };
-              BD7CD0F17EFE40EEB12C925C /* CMake PostBuild Rules */ = {
-                     isa = PBXShellScriptBuildPhase;
-                     buildActionMask = 2147483647;
-                     files = (
-                     );
-                     name = "CMake PostBuild Rules";
-                     runOnlyForDeploymentPostprocessing = 0;
-                     shellPath = /bin/sh;
-                     shellScript = "make -C /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode -f /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeScripts/mark_and_toys_postBuildPhase.make$CONFIGURATION all";
-                     showEnvVarsInLog = 0;
-              };
+		398C97E02B4D4485B0581E39 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode -f /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		BD7CD0F17EFE40EEB12C925C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode -f /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeScripts/mark_and_toys_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		DBB94EECE81B405B91072F23 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode -f /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-              7DB7F682FD844A4BB8835806 /* Sources */ = {
-                     isa = PBXSourcesBuildPhase;
-                     buildActionMask = 2147483647;
-                     files = (
-                            D87F9F1D1B194DA2B24BBD0A /* /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/01-mark-and-toys.cpp */,
-                     );
-                     runOnlyForDeploymentPostprocessing = 0;
-              };
+		7DB7F682FD844A4BB8835806 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87F9F1D1B194DA2B24BBD0A /* 01-mark-and-toys.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-              F71316AC75C44734BE0BFC16 /* PBXTargetDependency */ = {
-                     isa = PBXTargetDependency;
-                     target = 085DA98DC54F46D8968F55D7 /* ZERO_CHECK */;
-                     targetProxy = 0CB0051CE2EC4EE3946CD845 /* PBXContainerItemProxy */;
-              };
-              15C0F217B3BA46E7840BC0A7 /* PBXTargetDependency */ = {
-                     isa = PBXTargetDependency;
-                     target = 40329BF2316148CE96E044BE /* mark_and_toys */;
-                     targetProxy = 669EB1C802A24C929950689F /* PBXContainerItemProxy */;
-              };
+		15C0F217B3BA46E7840BC0A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40329BF2316148CE96E044BE /* mark_and_toys */;
+			targetProxy = 669EB1C802A24C929950689F /* PBXContainerItemProxy */;
+		};
+		F71316AC75C44734BE0BFC16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 085DA98DC54F46D8968F55D7 /* ZERO_CHECK */;
+			targetProxy = 0CB0051CE2EC4EE3946CD845 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-              928F52D19CE24DB2AD8F41AC /* Debug */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-                            ONLY_ACTIVE_ARCH = YES;
-                            SDKROOT = "/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/build";
-                     };
-                     name = Debug;
-              };
-              284AD3F158D84491854127E2 /* Release */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-                            ONLY_ACTIVE_ARCH = YES;
-                            SDKROOT = "/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/build";
-                     };
-                     name = Release;
-              };
-              829A66E0B8B94F34A9F67A26 /* MinSizeRel */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-                            ONLY_ACTIVE_ARCH = YES;
-                            SDKROOT = "/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/build";
-                     };
-                     name = MinSizeRel;
-              };
-              BE08888A65154D9C81107D2C /* RelWithDebInfo */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-                            ONLY_ACTIVE_ARCH = YES;
-                            SDKROOT = "/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/build";
-                     };
-                     name = RelWithDebInfo;
-              };
-              A550FCBD8A864961AEBE5D00 /* Debug */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = 0;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode", "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys", /usr/local/include, );
-                            INSTALL_PATH = "";
-                            OTHER_CFLAGS = "  ";
-                            OTHER_LDFLAGS = "";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = ALL_BUILD;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = Debug;
-              };
-              E3596EBD40684268BAB9C1E1 /* Release */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = 0;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode", "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys", /usr/local/include, );
-                            INSTALL_PATH = "";
-                            OTHER_CFLAGS = "  ";
-                            OTHER_LDFLAGS = "";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = ALL_BUILD;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = Release;
-              };
-              A24C279A4DD847FF8DDCC3A5 /* MinSizeRel */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = 0;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode", "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys", /usr/local/include, );
-                            INSTALL_PATH = "";
-                            OTHER_CFLAGS = "  ";
-                            OTHER_LDFLAGS = "";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = ALL_BUILD;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = MinSizeRel;
-              };
-              90B8AEEDDA5D4BF6A8C5B5F9 /* RelWithDebInfo */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = 0;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode", "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys", /usr/local/include, );
-                            INSTALL_PATH = "";
-                            OTHER_CFLAGS = "  ";
-                            OTHER_LDFLAGS = "";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = ALL_BUILD;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = RelWithDebInfo;
-              };
-              ABEEE48855BC4364A25AEA69 /* Debug */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = 0;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode", "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys", /usr/local/include, );
-                            INSTALL_PATH = "";
-                            OTHER_CFLAGS = "  ";
-                            OTHER_LDFLAGS = "";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = ZERO_CHECK;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = Debug;
-              };
-              E748EB6EC87B4D249CB93E01 /* Release */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = 0;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode", "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys", /usr/local/include, );
-                            INSTALL_PATH = "";
-                            OTHER_CFLAGS = "  ";
-                            OTHER_LDFLAGS = "";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = ZERO_CHECK;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = Release;
-              };
-              9F37F04A64104B06A8F73C78 /* MinSizeRel */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = 0;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode", "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys", /usr/local/include, );
-                            INSTALL_PATH = "";
-                            OTHER_CFLAGS = "  ";
-                            OTHER_LDFLAGS = "";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = ZERO_CHECK;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = MinSizeRel;
-              };
-              1E7371F0439845EB8F0C1D3F /* RelWithDebInfo */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = 0;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode", "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys", /usr/local/include, );
-                            INSTALL_PATH = "";
-                            OTHER_CFLAGS = "  ";
-                            OTHER_LDFLAGS = "";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = ZERO_CHECK;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = RelWithDebInfo;
-              };
-              180DDEDDE2844260BE934279 /* Debug */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            EXECUTABLE_PREFIX = "";
-                            EXECUTABLE_SUFFIX = "";
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = 0;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode", "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys", /usr/local/include, );
-                            INSTALL_PATH = "";
-                            LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
-                            OTHER_CFLAGS = "    ";
-                            OTHER_CPLUSPLUSFLAGS = "    ";
-                            OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names ";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = mark_and_toys;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = Debug;
-              };
-              9C31EA43923946FAAC0F09CC /* Release */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            EXECUTABLE_PREFIX = "";
-                            EXECUTABLE_SUFFIX = "";
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = 3;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode", "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys", /usr/local/include, );
-                            INSTALL_PATH = "";
-                            LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
-                            OTHER_CFLAGS = "    -DNDEBUG  ";
-                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
-                            OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names ";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = mark_and_toys;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = Release;
-              };
-              84817FD5B4AA40E5978BCA51 /* MinSizeRel */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            EXECUTABLE_PREFIX = "";
-                            EXECUTABLE_SUFFIX = "";
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = s;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode", "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys", /usr/local/include, );
-                            INSTALL_PATH = "";
-                            LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
-                            OTHER_CFLAGS = "    -DNDEBUG  ";
-                            OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
-                            OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names ";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = mark_and_toys;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = MinSizeRel;
-              };
-              EB2B542031BE4F3EA5A63001 /* RelWithDebInfo */ = {
-                     isa = XCBuildConfiguration;
-                     buildSettings = {
-                            EXECUTABLE_PREFIX = "";
-                            EXECUTABLE_SUFFIX = "";
-                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-                            GCC_OPTIMIZATION_LEVEL = 2;
-                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-                            HEADER_SEARCH_PATHS = ("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode", "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys", /usr/local/include, );
-                            INSTALL_PATH = "";
-                            LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib";
-                            OTHER_CFLAGS = "       -DNDEBUG  ";
-                            OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
-                            OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names ";
-                            OTHER_REZFLAGS = "";
-                            PRODUCT_NAME = mark_and_toys;
-                            SECTORDER_FLAGS = "";
-                            SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode";
-                            USE_HEADERMAP = NO;
-                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
-                     };
-                     name = RelWithDebInfo;
-              };
+		180DDEDDE2844260BE934279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode",
+					"/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/lib,
+				);
+				OTHER_CFLAGS = "    ";
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = mark_and_toys;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		1E7371F0439845EB8F0C1D3F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode",
+					"/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		284AD3F158D84491854127E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/build";
+			};
+			name = Release;
+		};
+		829A66E0B8B94F34A9F67A26 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/build";
+			};
+			name = MinSizeRel;
+		};
+		84817FD5B4AA40E5978BCA51 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode",
+					"/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/lib,
+				);
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = mark_and_toys;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		90B8AEEDDA5D4BF6A8C5B5F9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode",
+					"/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		928F52D19CE24DB2AD8F41AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/build";
+			};
+			name = Debug;
+		};
+		9C31EA43923946FAAC0F09CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode",
+					"/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/lib,
+				);
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = mark_and_toys;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		9F37F04A64104B06A8F73C78 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode",
+					"/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		A24C279A4DD847FF8DDCC3A5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode",
+					"/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		A550FCBD8A864961AEBE5D00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode",
+					"/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		ABEEE48855BC4364A25AEA69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode",
+					"/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		BE08888A65154D9C81107D2C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/build";
+			};
+			name = RelWithDebInfo;
+		};
+		E3596EBD40684268BAB9C1E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode",
+					"/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		E748EB6EC87B4D249CB93E01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode",
+					"/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		EB2B542031BE4F3EA5A63001 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode",
+					"/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys",
+					/usr/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/local/lib,
+				);
+				OTHER_CFLAGS = "       -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = mark_and_toys;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-              83BCE1E828424BF6816C57CF /* Build configuration list for PBXProject  "MarkAndToys" */ = {
-                     isa = XCConfigurationList;
-                     buildConfigurations = (
-                            928F52D19CE24DB2AD8F41AC /* Debug */,
-                            284AD3F158D84491854127E2 /* Release */,
-                            829A66E0B8B94F34A9F67A26 /* MinSizeRel */,
-                            BE08888A65154D9C81107D2C /* RelWithDebInfo */,
-                     );
-                     defaultConfigurationIsVisible = 0;
-                     defaultConfigurationName = Debug;
-              };
-              516D33C6774B48199EA8188C /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
-                     isa = XCConfigurationList;
-                     buildConfigurations = (
-                            A550FCBD8A864961AEBE5D00 /* Debug */,
-                            E3596EBD40684268BAB9C1E1 /* Release */,
-                            A24C279A4DD847FF8DDCC3A5 /* MinSizeRel */,
-                            90B8AEEDDA5D4BF6A8C5B5F9 /* RelWithDebInfo */,
-                     );
-                     defaultConfigurationIsVisible = 0;
-                     defaultConfigurationName = Debug;
-              };
-              BD0D79270AC249AB869333AF /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
-                     isa = XCConfigurationList;
-                     buildConfigurations = (
-                            ABEEE48855BC4364A25AEA69 /* Debug */,
-                            E748EB6EC87B4D249CB93E01 /* Release */,
-                            9F37F04A64104B06A8F73C78 /* MinSizeRel */,
-                            1E7371F0439845EB8F0C1D3F /* RelWithDebInfo */,
-                     );
-                     defaultConfigurationIsVisible = 0;
-                     defaultConfigurationName = Debug;
-              };
-              D3D457E90F3E4BE28BD17BFD /* Build configuration list for PBXNativeTarget "mark_and_toys" */ = {
-                     isa = XCConfigurationList;
-                     buildConfigurations = (
-                            180DDEDDE2844260BE934279 /* Debug */,
-                            9C31EA43923946FAAC0F09CC /* Release */,
-                            84817FD5B4AA40E5978BCA51 /* MinSizeRel */,
-                            EB2B542031BE4F3EA5A63001 /* RelWithDebInfo */,
-                     );
-                     defaultConfigurationIsVisible = 0;
-                     defaultConfigurationName = Debug;
-              };
+		516D33C6774B48199EA8188C /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A550FCBD8A864961AEBE5D00 /* Debug */,
+				E3596EBD40684268BAB9C1E1 /* Release */,
+				A24C279A4DD847FF8DDCC3A5 /* MinSizeRel */,
+				90B8AEEDDA5D4BF6A8C5B5F9 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		83BCE1E828424BF6816C57CF /* Build configuration list for PBXProject "MarkAndToys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				928F52D19CE24DB2AD8F41AC /* Debug */,
+				284AD3F158D84491854127E2 /* Release */,
+				829A66E0B8B94F34A9F67A26 /* MinSizeRel */,
+				BE08888A65154D9C81107D2C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BD0D79270AC249AB869333AF /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABEEE48855BC4364A25AEA69 /* Debug */,
+				E748EB6EC87B4D249CB93E01 /* Release */,
+				9F37F04A64104B06A8F73C78 /* MinSizeRel */,
+				1E7371F0439845EB8F0C1D3F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D3D457E90F3E4BE28BD17BFD /* Build configuration list for PBXNativeTarget "mark_and_toys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180DDEDDE2844260BE934279 /* Debug */,
+				9C31EA43923946FAAC0F09CC /* Release */,
+				84817FD5B4AA40E5978BCA51 /* MinSizeRel */,
+				EB2B542031BE4F3EA5A63001 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 /* End XCConfigurationList section */
-       };
-       rootObject = 8BC84FFF9C5B48D9B6E03027;
+	};
+	rootObject = 8BC84FFF9C5B48D9B6E03027 /* Project object */;
 }

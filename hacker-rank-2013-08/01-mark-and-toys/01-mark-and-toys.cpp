@@ -1,56 +1,48 @@
 #include <iostream>
 //#include <fstream>
-#include <queue>
+#include <algorithm>
 
 typedef unsigned long base_type;
-typedef std::priority_queue<base_type, std::vector<base_type>, std::greater<base_type> > toy_pq_t;
 
 base_type most_toys(std::istream & istr)
 {
 	//
-	base_type N, price, tempPrice;
+	base_type N, toys;
 	unsigned long long K, total;
-	toy_pq_t toyPrices;
-    int count = 0;
+	base_type * toyPrices = NULL;
     
 	//
 	istr >> N >> K;
-    
-    total = 0;
-	price = 0;
-	while(count < N)
+    //
+    toyPrices = new base_type[N];
+    //
+    int idx = 0;
+	while(idx < N)
 	{
-		istr >> price;
-        
-		if((price > 0) && (price <= K))
-		{
-			if(total + price <= K)
-			{
-				toyPrices.push(price);
-				total += price;
-			}
-			else if(total + price - toyPrices.top() <= K)
-			{
-				tempPrice = toyPrices.top();
-				toyPrices.pop();
-				toyPrices.push(price);
-				total += price - tempPrice;
-			}
-		}
-        
-		price = 0;
-        ++count;
+		istr >> toyPrices[idx];
+        ++idx;
 	}
     
-	return  toyPrices.size();
+    // Sort
+    std::stable_sort(toyPrices, toyPrices + N);
+    
+    toys = 0;
+    total = 0;
+    while(total + toyPrices[toys] <= K)
+    {
+        total += toyPrices[toys];
+        ++toys;
+    }
+    
+    return toys;
 }
 
 int main()
 {
 	printf("%lu\n", most_toys(std::cin));
-    //std::ifstream istr("/Users/vietlq/projects/hacker-rank-2013-08/01-mark-and-toys/test07.txt");
+    //char theFile[] = "/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/test07.txt";
+    //std::ifstream istr(theFile);
     //printf("%lu\n", most_toys(istr));
     
 	return 0;
 }
-
