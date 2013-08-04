@@ -3,6 +3,7 @@
 #include <map>
 #include <list>
 #include <string.h>
+//#include <mach/mach_time.h>
 
 struct Node
 {
@@ -10,6 +11,7 @@ struct Node
     int degree;
     Node * parent;
     Node * farAncestor;
+    Node * veryFarAncestor;
 };
 
 typedef std::map<int, Node *> map_nodes_t;
@@ -32,10 +34,12 @@ class NodeProcessor
 {
 public:
     //
-    static const int MIN_LOOKUP_BASE = 32;
+    static const int MIN_LOOKUP_BASE_1 = 32;
+    //
+    static const int MIN_LOOKUP_BASE_2 = 512;
     
     //
-    NodeProcessor(int fastLookUpBase_ = 100);
+    NodeProcessor(int fastLookUpBase_ = 100, int veryFastLookUpBase_ = 1000);
     
     //
     ~NodeProcessor();
@@ -53,6 +57,9 @@ public:
     void addPair(int value1, int value2);
     
     //
+    void consolidateNodes();
+    
+    //
     void addLeaf(int parentValue, int nodeValue);
     
     //
@@ -66,6 +73,7 @@ private:
     Node * pRoot;
     int initCount;
     int fastLookUpBase;
+    int veryFastLookUpBase;
 };
 
 void process_input(std::istream & istr, std::ostream & ostr)
@@ -80,6 +88,8 @@ void process_input(std::istream & istr, std::ostream & ostr)
         int P, Q, value1, value2, X, Y, K, C;
         
         istr >> P;
+        
+        //uint64_t start = mach_absolute_time(); 
         
         for(int lineIdx = 0; lineIdx < P; ++lineIdx)
         {
@@ -99,10 +109,15 @@ void process_input(std::istream & istr, std::ostream & ostr)
             }
         }
         
+        nodeProcessor.consolidateNodes();
+        
+        //printf("End of Node input: %llu\n", mach_absolute_time() - start);
+        
         istr >> Q;
         
         for(int queryIdx = 0; queryIdx < Q; ++queryIdx)
         {
+            //start = mach_absolute_time(); 
             istr >> C;
             switch (C) {
                 case ACT_ADD_LEAF:
@@ -120,6 +135,7 @@ void process_input(std::istream & istr, std::ostream & ostr)
                 default:
                     break;
             }
+            //printf("End of a query: %llu\n", mach_absolute_time() - start);
         }
         
         nodeProcessor.reset();
@@ -128,19 +144,25 @@ void process_input(std::istream & istr, std::ostream & ostr)
 
 int main()
 {
-    process_input(std::cin, std::cout);
-    //std::ifstream istr("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/test01.txt");
-    //process_input(istr, std::cout);
+    //process_input(std::cin, std::cout);
+    std::ifstream istr("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/test09.txt");
+    process_input(istr, std::cout);
     
     return 0;
 }
 
-NodeProcessor::NodeProcessor(int fastLookUpBase_):
-pRoot(NULL), initCount(0), fastLookUpBase(fastLookUpBase_)
+NodeProcessor::NodeProcessor(int fastLookUpBase_, int veryFastLookUpBase_):
+pRoot(NULL), initCount(0),
+fastLookUpBase(fastLookUpBase_), veryFastLookUpBase(veryFastLookUpBase_)
 {
-    if(fastLookUpBase < MIN_LOOKUP_BASE)
+    if(fastLookUpBase < MIN_LOOKUP_BASE_1)
     {
-        fastLookUpBase = MIN_LOOKUP_BASE;
+        fastLookUpBase = MIN_LOOKUP_BASE_1;
+    }
+    
+    if(veryFastLookUpBase < MIN_LOOKUP_BASE_2)
+    {
+        veryFastLookUpBase = MIN_LOOKUP_BASE_2;
     }
 }
 
@@ -188,6 +210,7 @@ void NodeProcessor::setRoot(int nodeValue)
     pRoot = new Node;
     pRoot->parent = NULL;
     pRoot->farAncestor = NULL;
+    pRoot->veryFarAncestor = NULL;
     pRoot->degree = 0;
     pRoot->value = nodeValue;
     
@@ -196,60 +219,42 @@ void NodeProcessor::setRoot(int nodeValue)
 
 void NodeProcessor::addPair(int value1, int value2)
 {
-    map_nodes_it it1, it2, it;
-    const map_nodes_it end = mapOfNodes.end();
+    mapUndecidedNodes[value1].push_back(value2);
+    mapUndecidedNodes[value2].push_back(value1);
+}
+
+void join_nodes(int nodeValue, map_paths_t & mapUndecidedNodes,
+                std::map<int, char> & visited, NodeProcessor & processor)
+{
+    if(visited[nodeValue]) return;
+    visited[nodeValue] = 1;
     
-    it1 = mapOfNodes.find(value1);
-    it2 = mapOfNodes.find(value2);
+    const list_values_t & unMappedNodes = mapUndecidedNodes[nodeValue];
+    list_values_t::const_iterator tempIt = unMappedNodes.begin();
+    const list_values_t::const_iterator tempEnd = unMappedNodes.end();
     
-    if((end == it1) && (end == it2))
+    for(; tempIt != tempEnd; ++tempIt)
     {
-        mapUndecidedNodes[value1].push_back(value2);
-        mapUndecidedNodes[value2].push_back(value1);
-        return;
+        int childValue = *tempIt;
+        if(visited[childValue]) continue;
+        processor.addLeaf(nodeValue, childValue);
+        join_nodes(childValue, mapUndecidedNodes, visited, processor);
     }
+}
+
+void NodeProcessor::consolidateNodes()
+{
+    //uint64_t start = mach_absolute_time();
     
-    // Either value1 or value2 is found and the remaining is not
-    int nodeValue;
-    if(end == it1)
-    {
-        // If value1 is not found
-        addLeaf(value2, value1);
-        it = mapOfNodes.find(value1);
-        nodeValue = value1;
-    }
-    else
-    {
-        // If value2 is not found
-        addLeaf(value1, value2);
-        it = mapOfNodes.find(value2);
-        nodeValue = value2;
-    }
-    
-    std::list<int> listOfValues;
     std::map<int, char> visited;
-    listOfValues.push_back(nodeValue);
-    
-    while(listOfValues.size())
+    map_paths_t::iterator it = mapUndecidedNodes.begin();
+    for(; it != mapUndecidedNodes.end(); ++it)
     {
-        int currNodeValue = listOfValues.front();
-        listOfValues.pop_front();
-        
-        if(visited.end() != visited.find(currNodeValue)) return;
-        visited[currNodeValue] = 1;
-        
-        const list_values_t & unMappedNodes = mapUndecidedNodes[nodeValue];
-        list_values_t::const_iterator tempIt = unMappedNodes.begin();
-        const list_values_t::const_iterator tempEnd = unMappedNodes.end();
-        
-        for(; tempIt != tempEnd; ++tempIt)
-        {
-            listOfValues.push_back(*tempIt);
-            addLeaf(currNodeValue, *tempIt);
-        }
-        
-        mapUndecidedNodes.erase(currNodeValue);
+        visited[it->first] = 0;
     }
+    join_nodes(pRoot->value, mapUndecidedNodes, visited, *this);
+    
+    //printf("End of a consolidation: %llu\n", mach_absolute_time() - start);
 }
 
 void NodeProcessor::addLeaf(int parentValue, int nodeValue)
@@ -262,6 +267,21 @@ void NodeProcessor::addLeaf(int parentValue, int nodeValue)
     pNode->parent = it->second;
     pNode->degree = pNode->parent->degree + 1;
     
+    //
+    if(pNode->degree <= veryFastLookUpBase)
+    {
+        pNode->veryFarAncestor = pRoot;
+    }
+    else if(1 == (pNode->degree % veryFastLookUpBase))
+    {
+        pNode->veryFarAncestor = pNode->parent;
+    }
+    else
+    {
+        pNode->veryFarAncestor = pNode->parent->veryFarAncestor;
+    }
+    
+    //
     if(pNode->degree <= fastLookUpBase)
     {
         pNode->farAncestor = pRoot;
@@ -311,7 +331,20 @@ int NodeProcessor::queryAncestor(int nodeValue, int k)
     int temp;
     while(k > 0)
     {
-        if(k >= fastLookUpBase)
+        if(k >= veryFastLookUpBase)
+        {
+            temp = pAncestorNode->degree % veryFastLookUpBase;
+            if(0 != temp)
+            {
+                k -= temp;
+            }
+            else
+            {
+                k -= veryFastLookUpBase;
+            }
+            pAncestorNode = pAncestorNode->veryFarAncestor;
+        }
+        else if(k >= fastLookUpBase)
         {
             temp = pAncestorNode->degree % fastLookUpBase;
             if(0 != temp)

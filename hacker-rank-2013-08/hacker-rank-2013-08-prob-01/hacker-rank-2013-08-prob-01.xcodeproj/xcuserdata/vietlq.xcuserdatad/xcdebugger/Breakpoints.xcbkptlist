@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "hacker-rank-2013-08-prob-01/main.cpp"
-         timestampString = "397314086.383634"
+         timestampString = "397322964.385346"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "294"
-         endingLineNumber = "294"
+         startingLineNumber = "314"
+         endingLineNumber = "314"
          landmarkName = "NodeProcessor::queryAncestor(int nodeValue, int k)"
          landmarkType = "5">
       </FileBreakpoint>
