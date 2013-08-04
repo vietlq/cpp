@@ -9,6 +9,7 @@ struct Node
     int value;
     int degree;
     Node * parent;
+    Node * farAncestor;
 };
 
 typedef std::map<int, Node *> map_nodes_t;
@@ -31,7 +32,10 @@ class NodeProcessor
 {
 public:
     //
-    NodeProcessor();
+    static const int MIN_LOOKUP_BASE = 32;
+    
+    //
+    NodeProcessor(int fastLookUpBase_ = 100);
     
     //
     ~NodeProcessor();
@@ -61,6 +65,7 @@ private:
     map_nodes_t mapOfNodes;
     Node * pRoot;
     int initCount;
+    int fastLookUpBase;
 };
 
 void process_input(std::istream & istr, std::ostream & ostr)
@@ -130,9 +135,13 @@ int main()
     return 0;
 }
 
-NodeProcessor::NodeProcessor():
-    pRoot(NULL), initCount(0)
+NodeProcessor::NodeProcessor(int fastLookUpBase_):
+pRoot(NULL), initCount(0), fastLookUpBase(fastLookUpBase_)
 {
+    if(fastLookUpBase < MIN_LOOKUP_BASE)
+    {
+        fastLookUpBase = MIN_LOOKUP_BASE;
+    }
 }
 
 NodeProcessor::~NodeProcessor()
@@ -178,6 +187,7 @@ void NodeProcessor::setRoot(int nodeValue)
 {
     pRoot = new Node;
     pRoot->parent = NULL;
+    pRoot->farAncestor = NULL;
     pRoot->degree = 0;
     pRoot->value = nodeValue;
     
@@ -217,12 +227,16 @@ void NodeProcessor::addPair(int value1, int value2)
     }
     
     std::list<int> listOfValues;
+    std::map<int, char> visited;
     listOfValues.push_back(nodeValue);
     
     while(listOfValues.size())
     {
         int currNodeValue = listOfValues.front();
         listOfValues.pop_front();
+        
+        if(visited.end() != visited.find(currNodeValue)) return;
+        visited[currNodeValue] = 1;
         
         const list_values_t & unMappedNodes = mapUndecidedNodes[nodeValue];
         list_values_t::const_iterator tempIt = unMappedNodes.begin();
@@ -247,6 +261,19 @@ void NodeProcessor::addLeaf(int parentValue, int nodeValue)
     pNode->value = nodeValue;
     pNode->parent = it->second;
     pNode->degree = pNode->parent->degree + 1;
+    
+    if(pNode->degree <= fastLookUpBase)
+    {
+        pNode->farAncestor = pRoot;
+    }
+    else if(1 == (pNode->degree % fastLookUpBase))
+    {
+        pNode->farAncestor = pNode->parent;
+    }
+    else
+    {
+        pNode->farAncestor = pNode->parent->farAncestor;
+    }
     
     mapOfNodes[nodeValue] = pNode;
 }
@@ -280,9 +307,28 @@ int NodeProcessor::queryAncestor(int nodeValue, int k)
     }
     
     Node * pAncestorNode = pNode->parent;
-    for(int idx = 1; idx < k; ++idx)
+    --k;
+    int temp;
+    while(k > 0)
     {
-        pAncestorNode = pAncestorNode->parent;
+        if(k >= fastLookUpBase)
+        {
+            temp = pAncestorNode->degree % fastLookUpBase;
+            if(0 != temp)
+            {
+                k -= temp;
+            }
+            else
+            {
+                k -= fastLookUpBase;
+            }
+            pAncestorNode = pAncestorNode->farAncestor;
+        }
+        else
+        {
+            pAncestorNode = pAncestorNode->parent;
+            --k;
+        }
     }
     
     return pAncestorNode->value;
