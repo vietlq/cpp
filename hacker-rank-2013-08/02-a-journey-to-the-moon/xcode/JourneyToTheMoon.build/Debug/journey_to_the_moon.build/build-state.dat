@@ -1,0 +1,258 @@
+Tjourney_to_the_moon
+v6
+r1
+cCheck dependencies
+cCompileC xcode/JourneyToTheMoon.build/Debug/journey_to_the_moon.build/Objects-normal/x86_64/02-a-journey-to-the-moon.o /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/02-a-journey-to-the-moon.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/Debug/journey_to_the_moon normal x86_64
+cPhaseScriptExecution CMake\ PostBuild\ Rules /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/JourneyToTheMoon.build/Debug/journey_to_the_moon.build/Script-F3A3026DC64E471FB98EF7DC.sh
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
+c000000005123172D00000000000000AA
+t1361254189
+s170
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/SDKSettings.plist
+c000000005123171600000000000004B3
+t1361254166
+s1203
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/CoreServices/SystemVersion.plist
+c000000005122F3D400000000000001DE
+t1361245140
+s478
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libSystem.B.dylib
+c000000005123174E000000000000654C
+t1361254222
+s25932
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libstdc++.6.0.9.dylib
+c0000000051B0E5B7000000000009E060
+t1370547639
+s647264
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libcache.dylib
+c000000005123174F0000000000004528
+t1361254223
+s17704
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libcommonCrypto.dylib
+c0000000051B0E5BA000000000000EDB8
+t1370547642
+s60856
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libcompiler_rt.dylib
+c000000005123174F000000000000984C
+t1361254223
+s38988
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libcopyfile.dylib
+c0000000051B0E5BA0000000000004FEC
+t1370547642
+s20460
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libdispatch.dylib
+c0000000051B0E5BA0000000000009F64
+t1370547642
+s40804
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libdnsinfo.dylib
+c000000005123174F00000000000031D0
+t1361254223
+s12752
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libdyld.dylib
+c0000000051B0E5BA00000000000052E4
+t1370547642
+s21220
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libkeymgr.dylib
+c000000005123174F0000000000002D34
+t1361254223
+s11572
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/liblaunch.dylib
+c0000000051B0E5BA00000000000084E8
+t1370547642
+s34024
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libmacho.dylib
+c0000000051B0E5BA0000000000004FF4
+t1370547642
+s20468
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libquarantine.dylib
+c000000005123174F00000000000047A4
+t1361254223
+s18340
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libremovefile.dylib
+c000000005123174F0000000000004364
+t1361254223
+s17252
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_blocks.dylib
+c0000000051B0E5BA0000000000002EF0
+t1370547642
+s12016
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_c.dylib
+c0000000051B0E5BA0000000000046BB8
+t1370547642
+s289720
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_dnssd.dylib
+c0000000051B0E5BA00000000000067BC
+t1370547642
+s26556
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_info.dylib
+c0000000051B0E5BA000000000001AD9C
+t1370547642
+s109980
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_kernel.dylib
+c0000000051B0E5BA0000000000016C74
+t1370547642
+s93300
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_m.dylib
+c000000005123174F000000000000F204
+t1361254223
+s61956
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_network.dylib
+c000000005123174F0000000000008EC8
+t1361254223
+s36552
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_notify.dylib
+c000000005123174F0000000000008B14
+t1361254223
+s35604
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_sandbox.dylib
+c000000005123174F00000000000047C0
+t1361254223
+s18368
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libunc.dylib
+c000000005123174F00000000000044D8
+t1361254223
+s17624
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libunwind.dylib
+c000000005123174F00000000000067AC
+t1361254223
+s26540
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libxpc.dylib
+c000000005123174F0000000000011E4C
+t1361254223
+s73292
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.osx.a
+c0000000051A97CC70000000000001750
+t1370062023
+s5968
+
+N/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/02-a-journey-to-the-moon.cpp
+c0000000051FDBE1A0000000000000720
+t1375583770
+s1824
+
+N/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/Debug/journey_to_the_moon
+t1375583849
+s52260
+
+N/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/JourneyToTheMoon.build/Debug/journey_to_the_moon.build/Objects-normal/x86_64/02-a-journey-to-the-moon.o
+t1375583849
+s120240
+
+N/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/JourneyToTheMoon.build/Debug/journey_to_the_moon.build/Objects-normal/x86_64/journey_to_the_moon.LinkFileList
+c0000000051FDBE6800000000000000C2
+t1375583848
+s194
+
+N/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/JourneyToTheMoon.build/Debug/journey_to_the_moon.build/Script-F3A3026DC64E471FB98EF7DC.sh
+c0000000051FDBE680000000000000110
+t1375583848
+s272
+
+CBuild AST from /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/02-a-journey-to-the-moon.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies7e1d381cf6adb741^5378381cf6adb741^---0#1#1#--18"Check dependencies36"CD2DE3AE-AEC3-4D79-BDC9-FA7C924062DC-
+
+CCompileC xcode/JourneyToTheMoon.build/Debug/journey_to_the_moon.build/Objects-normal/x86_64/02-a-journey-to-the-moon.o /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/02-a-journey-to-the-moon.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s397276648.869862
+e397276649.191749
+r1
+xCompileC
+xxcode/JourneyToTheMoon.build/Debug/journey_to_the_moon.build/Objects-normal/x86_64/02-a-journey-to-the-moon.o
+x/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/02-a-journey-to-the-moon.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/02-a-journey-to-the-moon.cpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection120"Compile /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/02-a-journey-to-the-moon.cpp209"CompileC xcode/JourneyToTheMoon.build/Debug/journey_to_the_moon.build/Objects-normal/x86_64/02-a-journey-to-the-moon.o 02-a-journey-to-the-moon.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler9bc6dee8f5adb741^873531e9f5adb741^---0#0#1#-19%DVTDocumentLocation2@128"file://localhost/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/02-a-journey-to-the-moon.cpp0000000000000000^2919"CompileC xcode/JourneyToTheMoon.build/Debug/journey_to_the_moon.build/Objects-normal/x86_64/02-a-journey-to-the-moon.o 02-a-journey-to-the-moon.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon    setenv LANG en_US.US-ASCII    /Applications/Xcode5-DP.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/Debug/include -I/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode -I/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon -I/usr/local/include -I/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/JourneyToTheMoon.build/Debug/journey_to_the_moon.build/DerivedSources/x86_64 -I/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/JourneyToTheMoon.build/Debug/journey_to_the_moon.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/Debug -MMD -MT dependencies -MF /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/JourneyToTheMoon.build/Debug/journey_to_the_moon.build/Objects-normal/x86_64/02-a-journey-to-the-moon.d --serialize-diagnostics /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/JourneyToTheMoon.build/Debug/journey_to_the_moon.build/Objects-normal/x86_64/02-a-journey-to-the-moon.dia -c /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/02-a-journey-to-the-moon.cpp -o /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/JourneyToTheMoon.build/Debug/journey_to_the_moon.build/Objects-normal/x86_64/02-a-journey-to-the-moon.o36"63836946-6BD4-4171-A0DD-BFE6C5139BD2-
+b7E2CCE5E-42A9-49B8-AAE8-94055E08D4CD
+
+CLd /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/Debug/journey_to_the_moon normal x86_64
+s397276649.200211
+e397276649.233905
+r1
+xLd
+x/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/Debug/journey_to_the_moon
+xnormal
+xx86_64
+d/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/JourneyToTheMoon.build/Debug/journey_to_the_moon.build/Objects-normal/x86_64/journey_to_the_moon.LinkFileList
+d/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/JourneyToTheMoon.build/Debug/journey_to_the_moon.build/Objects-normal/x86_64/02-a-journey-to-the-moon.o
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libstdc++.6.0.9.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libSystem.B.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libdnsinfo.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libquarantine.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libunc.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libxpc.dylib
+old: warning: directory not found for option '-L/usr/local/lib/Debug'
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection120"Link /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/Debug/journey_to_the_moon48"Ld xcode/Debug/journey_to_the_moon normal x86_649b5933e9f5adb741^47e43be9f5adb741^-69"ld: warning: directory not found for option '-L/usr/local/lib/Debug'1(21%IDEActivityLogMessage2@55"Directory not found for option '-L/usr/local/lib/Debug'-397276649#0#69#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#32"Apple Mach-O Linker (ld) Warning--0#0#1#--1300"Ld xcode/Debug/journey_to_the_moon normal x86_64    cd /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode5-DP.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/Debug -L/usr/local/lib/Debug -L/usr/local/lib -F/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/Debug -filelist /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/JourneyToTheMoon.build/Debug/journey_to_the_moon.build/Objects-normal/x86_64/journey_to_the_moon.LinkFileList -mmacosx-version-min=10.8 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/JourneyToTheMoon.build/Debug/journey_to_the_moon.build/Objects-normal/x86_64/journey_to_the_moon_dependency_info.dat -o /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/Debug/journey_to_the_moon36"8C3D4B06-45B0-45AA-9787-DBF3F7ABCC8D-
+b7E2CCE5E-42A9-49B8-AAE8-94055E08D4CD
+
+CPhaseScriptExecution CMake\ PostBuild\ Rules /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/JourneyToTheMoon.build/Debug/journey_to_the_moon.build/Script-F3A3026DC64E471FB98EF7DC.sh
+s397276700.227409
+e397276700.264943
+r1
+xPhaseScriptExecution
+xCMake PostBuild Rules
+x/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/JourneyToTheMoon.build/Debug/journey_to_the_moon.build/Script-F3A3026DC64E471FB98EF7DC.sh
+oecho "Depend check for xcode"
+oDepend check for xcode
+ocd /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode && make -C /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode -f /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.journey_to_the_moon.Debug
+omake[1]: Nothing to be done for `PostBuild.journey_to_the_moon.Debug'.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Run custom shell script 'CMake PostBuild Rules'140"PhaseScriptExecution CMake\ PostBuild\ Rules xcode/JourneyToTheMoon.build/Debug/journey_to_the_moon.build/Script-F3A3026DC64E471FB98EF7DC.sh7b9f3a1cf6adb741^d4d3431cf6adb741^-485"echo "Depend check for xcode"Depend check for xcodecd /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode && make -C /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode -f /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.journey_to_the_moon.Debugmake[1]: Nothing to be done for `PostBuild.journey_to_the_moon.Debug'.4(21%IDEActivityLogMessage2@30"echo "Depend check for xcode"-397276700#0#30#-0#-----2@23"Depend check for xcode-397276700#30#23#-0#-----2@361"cd /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode && make -C /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode -f /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.journey_to_the_moon.Debug-397276700#53#361#-0#-----2@71"make[1]: Nothing to be done for `PostBuild.journey_to_the_moon.Debug'.-397276700#414#71#-0#-----0#0#1#--704"PhaseScriptExecution CMake\ PostBuild\ Rules xcode/JourneyToTheMoon.build/Debug/journey_to_the_moon.build/Script-F3A3026DC64E471FB98EF7DC.sh    cd /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon    #!/bin/shmake -C /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode -f /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/CMakeScripts/journey_to_the_moon_postBuildPhase.make$CONFIGURATION all    /bin/sh -c /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/JourneyToTheMoon.build/Debug/journey_to_the_moon.build/Script-F3A3026DC64E471FB98EF7DC.sh36"333A702A-8C62-44FE-B1C2-23815EBAE1C5-
+bFEA790D6-00BE-49D2-A828-D53E131740AB
+

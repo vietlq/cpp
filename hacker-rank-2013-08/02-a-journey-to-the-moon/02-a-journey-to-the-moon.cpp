@@ -2,7 +2,6 @@
 #include <fstream>
 #include <list>
 #include <vector>
-#include <string.h>
 
 typedef unsigned int base_type;
 typedef unsigned long long result_type;
@@ -11,8 +10,8 @@ typedef astronaut_container_t::iterator astronaut_container_it;
 typedef std::vector<base_type> country_astronaut_count_t;
 
 void record_astronauts(
-                       base_type idx, astronaut_container_t * astronauts,
-                       char * visited, base_type & counter)
+    base_type idx, astronaut_container_t * astronauts,
+    char * visited, base_type & counter)
 {
     // Skipe the visited ones
     if(visited[idx]) return;
@@ -21,13 +20,13 @@ void record_astronauts(
     astronaut_container_it it = container.begin();
     const astronaut_container_it end = container.end();
     
-    visited[idx] = 1;
-    ++counter;
-    
     for(; it != end; ++it)
     {
         record_astronauts(*it, astronauts, visited, counter);
     }
+    
+    visited[idx] = 1;
+    ++counter;
 }
 
 result_type number_of_crews(std::istream & istr)
@@ -54,19 +53,15 @@ result_type number_of_crews(std::istream & istr)
     // Group the astronauts into countries
     for(idx = 0; idx < N; ++idx)
     {
-        if(visited[idx]) continue;
         base_type counter = 0;
         record_astronauts(idx, astronauts, visited, counter);
         astronautsByCountries.push_back(counter);
     }
     
     // Group the astronauts into countries
-    for(idx = 0; idx < astronautsByCountries.size() - 1; ++idx)
+    for(idx = 0; idx < astronautsByCountries.size(); ++idx)
     {
-        for(base_type jj = idx + 1; jj < astronautsByCountries.size(); ++jj)
-        {
-            numCrews += astronautsByCountries[idx]*astronautsByCountries[jj];
-        }
+        printf("[%u] => %u\n", idx, astronautsByCountries[idx]);
     }
     
     // Clean up
@@ -78,9 +73,9 @@ result_type number_of_crews(std::istream & istr)
 
 int main()
 {
-    printf("%llu\n", number_of_crews(std::cin));
-    //std::ifstream istr("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/test01.txt");
-    //printf("%llu\n", number_of_crews(istr));
+    //printf("%llu\n", number_of_crews(std::cin));
+    std::ifstream istr("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/test01.txt");
+    printf("%llu\n", number_of_crews(istr));
     
     return 0;
 }

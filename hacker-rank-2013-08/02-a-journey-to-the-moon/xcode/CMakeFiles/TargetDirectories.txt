@@ -1,0 +1,3 @@
+/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/CMakeFiles/ALL_BUILD.dir
+/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/CMakeFiles/ZERO_CHECK.dir
+/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/CMakeFiles/journey_to_the_moon.dir

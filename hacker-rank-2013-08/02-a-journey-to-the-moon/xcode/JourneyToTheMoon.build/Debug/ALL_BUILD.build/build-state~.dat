@@ -1,0 +1,29 @@
+TALL_BUILD
+v6
+r1
+cCheck dependencies
+cPhaseScriptExecution CMake\ Rules /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/JourneyToTheMoon.build/Debug/ALL_BUILD.build/Script-1DB332449EE7427389014CC9.sh
+
+N/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/JourneyToTheMoon.build/Debug/ALL_BUILD.build/Script-1DB332449EE7427389014CC9.sh
+c0000000051FDBE69000000000000010C
+t1375583849
+s268
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesf4184de9f5adb741^0c784de9f5adb741^---0#1#1#--18"Check dependencies36"E182B30F-84D8-4B30-AA14-030E26349EBC-
+
+CPhaseScriptExecution CMake\ Rules /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/JourneyToTheMoon.build/Debug/ALL_BUILD.build/Script-1DB332449EE7427389014CC9.sh
+s397276649.305720
+e397276649.334281
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/JourneyToTheMoon.build/Debug/ALL_BUILD.build/Script-1DB332449EE7427389014CC9.sh
+oecho ""
+o
+oecho Build\ all\ projects
+oBuild all projects
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'119"PhaseScriptExecution CMake\ Rules xcode/JourneyToTheMoon.build/Debug/ALL_BUILD.build/Script-1DB332449EE7427389014CC9.shc4eb4ee9f5adb741^d59355e9f5adb741^-54"echo ""echo Build\ all\ projectsBuild all projects3(21%IDEActivityLogMessage2@8"echo ""-397276649#0#8#-0#-----2@26"echo Build\ all\ projects-397276649#9#26#-0#-----2@19"Build all projects-397276649#35#19#-0#-----0#0#1#--669"PhaseScriptExecution CMake\ Rules xcode/JourneyToTheMoon.build/Debug/ALL_BUILD.build/Script-1DB332449EE7427389014CC9.sh    cd /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon    #!/bin/shmake -C /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode -f /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all    /bin/sh -c /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/xcode/JourneyToTheMoon.build/Debug/ALL_BUILD.build/Script-1DB332449EE7427389014CC9.sh36"24168DE0-196E-4C6F-9AD7-25EA17E40BB8-
+b6872A56A-83E2-4B6A-BC49-B2AD4F542669
+
