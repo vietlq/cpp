@@ -60,18 +60,23 @@ result_type number_of_crews(std::istream & istr)
         astronautsByCountries.push_back(counter);
     }
     
-    // Group the astronauts into countries
-    for(idx = 0; idx < astronautsByCountries.size() - 1; ++idx)
+    // Count the possible cases
+    const base_type NUM_COUNTRIES = base_type(astronautsByCountries.size());
+    result_type * partialSums = new result_type[NUM_COUNTRIES];
+    partialSums[NUM_COUNTRIES - 1] = 0;
+    for(int tempIdx = NUM_COUNTRIES - 2; tempIdx >= 0; --tempIdx)
     {
-        for(base_type jj = idx + 1; jj < astronautsByCountries.size(); ++jj)
-        {
-            numCrews += astronautsByCountries[idx]*astronautsByCountries[jj];
-        }
+        partialSums[tempIdx] = partialSums[tempIdx + 1] + astronautsByCountries[tempIdx + 1];
+    }
+    for(idx = 0; idx < NUM_COUNTRIES - 1; ++idx)
+    {
+        numCrews += astronautsByCountries[idx]*partialSums[idx];
     }
     
     // Clean up
     delete[] astronauts;
     delete[] visited;
+    delete[] partialSums;
     
     return numCrews;
 }

@@ -1,123 +1,0 @@
-Tmark_and_toys
-v6
-r1
-cCheck dependencies
-cCompileC xcode/MarkAndToys.build/Debug/mark_and_toys.build/Objects-normal/x86_64/01-mark-and-toys.o /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/01-mark-and-toys.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/Debug/mark_and_toys normal x86_64
-cPhaseScriptExecution CMake\ PostBuild\ Rules /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/MarkAndToys.build/Debug/mark_and_toys.build/Script-BD7CD0F17EFE40EEB12C925C.sh
-
-N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
-c000000005123172D00000000000000AA
-t1361254189
-s170
-
-N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/SDKSettings.plist
-c000000005123171600000000000004B3
-t1361254166
-s1203
-
-N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/CoreServices/SystemVersion.plist
-c000000005122F3D400000000000001DE
-t1361245140
-s478
-
-N/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/01-mark-and-toys.cpp
-c0000000051FDA14300000000000003DE
-t1375576387
-s990
-
-N/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/Debug/mark_and_toys
-t2
-s0
-
-N/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/MarkAndToys.build/Debug/mark_and_toys.build/Objects-normal/x86_64/01-mark-and-toys.o
-t1375576388
-s108956
-
-N/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/MarkAndToys.build/Debug/mark_and_toys.build/Objects-normal/x86_64/mark_and_toys.LinkFileList
-c0000000051FDA14400000000000000A7
-t1375576388
-s167
-
-N/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/MarkAndToys.build/Debug/mark_and_toys.build/Script-BD7CD0F17EFE40EEB12C925C.sh
-c0000000051FDA14400000000000000FA
-t1375576388
-s250
-
-CBuild AST from /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/01-mark-and-toys.cpp
-r0
-
-CCheck dependencies
-r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies596b84c4d8adb741^680685c4d8adb741^---0#1#1#--18"Check dependencies36"56E6280E-987D-4FFD-9E51-B49CD9502BEC-
-
-CCompileC xcode/MarkAndToys.build/Debug/mark_and_toys.build/Objects-normal/x86_64/01-mark-and-toys.o /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/01-mark-and-toys.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s397269188.521970
-e397269188.817831
-r1
-xCompileC
-xxcode/MarkAndToys.build/Debug/mark_and_toys.build/Objects-normal/x86_64/01-mark-and-toys.o
-x/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/01-mark-and-toys.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/01-mark-and-toys.cpp
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Compile /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/01-mark-and-toys.cpp182"CompileC xcode/MarkAndToys.build/Debug/mark_and_toys.build/Objects-normal/x86_64/01-mark-and-toys.o 01-mark-and-toys.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler61c585c4d8adb741^8a5bd1c4d8adb741^---0#0#1#-19%DVTDocumentLocation2@112"file://localhost/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/01-mark-and-toys.cpp0000000000000000^2717"CompileC xcode/MarkAndToys.build/Debug/mark_and_toys.build/Objects-normal/x86_64/01-mark-and-toys.o 01-mark-and-toys.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys    setenv LANG en_US.US-ASCII    /Applications/Xcode5-DP.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/Debug/include -I/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode -I/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys -I/usr/local/include -I/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/MarkAndToys.build/Debug/mark_and_toys.build/DerivedSources/x86_64 -I/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/MarkAndToys.build/Debug/mark_and_toys.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/Debug -MMD -MT dependencies -MF /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/MarkAndToys.build/Debug/mark_and_toys.build/Objects-normal/x86_64/01-mark-and-toys.d --serialize-diagnostics /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/MarkAndToys.build/Debug/mark_and_toys.build/Objects-normal/x86_64/01-mark-and-toys.dia -c /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/01-mark-and-toys.cpp -o /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/MarkAndToys.build/Debug/mark_and_toys.build/Objects-normal/x86_64/01-mark-and-toys.o36"3E2C92EF-A97B-44F0-A302-B0FDC17B5658-
-b06430546-4CE0-41B4-9B03-ADEDBE25DC84
-
-CLd /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/Debug/mark_and_toys normal x86_64
-s397269188.826736
-e397269188.851475
-r1
-xLd
-x/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/Debug/mark_and_toys
-xnormal
-xx86_64
-d/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/MarkAndToys.build/Debug/mark_and_toys.build/Objects-normal/x86_64/mark_and_toys.LinkFileList
-d/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/MarkAndToys.build/Debug/mark_and_toys.build/Objects-normal/x86_64/01-mark-and-toys.o
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libstdc++.6.0.9.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libSystem.B.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.osx.a
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libcache.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libcommonCrypto.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libcompiler_rt.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libcopyfile.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libdispatch.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libdnsinfo.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libdyld.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libkeymgr.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/liblaunch.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libmacho.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libquarantine.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libremovefile.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_blocks.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_c.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_dnssd.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_info.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_kernel.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_m.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_network.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_notify.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libsystem_sandbox.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libunc.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libunwind.dylib
-d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/system/libxpc.dylib
-old: warning: directory not found for option '-L/usr/local/lib/Debug'
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Link /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/Debug/mark_and_toys42"Ld xcode/Debug/mark_and_toys normal x86_64e9b7d3c4d8adb741^4cfcd9c4d8adb741^-69"ld: warning: directory not found for option '-L/usr/local/lib/Debug'1(21%IDEActivityLogMessage2@55"Directory not found for option '-L/usr/local/lib/Debug'-397269188#0#69#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#32"Apple Mach-O Linker (ld) Warning--0#0#1#--1206"Ld xcode/Debug/mark_and_toys normal x86_64    cd /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode5-DP.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/Debug -L/usr/local/lib/Debug -L/usr/local/lib -F/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/Debug -filelist /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/MarkAndToys.build/Debug/mark_and_toys.build/Objects-normal/x86_64/mark_and_toys.LinkFileList -mmacosx-version-min=10.8 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/MarkAndToys.build/Debug/mark_and_toys.build/Objects-normal/x86_64/mark_and_toys_dependency_info.dat -o /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/Debug/mark_and_toys36"509F12EE-B7CD-4B27-B4C1-D8F0A0EDB7FA-
-b06430546-4CE0-41B4-9B03-ADEDBE25DC84
-
-CPhaseScriptExecution CMake\ PostBuild\ Rules /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/MarkAndToys.build/Debug/mark_and_toys.build/Script-BD7CD0F17EFE40EEB12C925C.sh
-s397269188.863473
-e397269188.899545
-r1
-xPhaseScriptExecution
-xCMake PostBuild Rules
-x/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/MarkAndToys.build/Debug/mark_and_toys.build/Script-BD7CD0F17EFE40EEB12C925C.sh
-oecho "Depend check for xcode"
-oDepend check for xcode
-ocd /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode && make -C /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode -f /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.mark_and_toys.Debug
-omake[1]: Nothing to be done for `PostBuild.mark_and_toys.Debug'.
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Run custom shell script 'CMake PostBuild Rules'129"PhaseScriptExecution CMake\ PostBuild\ Rules xcode/MarkAndToys.build/Debug/mark_and_toys.build/Script-BD7CD0F17EFE40EEB12C925C.she066ddc4d8adb741^1b49e6c4d8adb741^-449"echo "Depend check for xcode"Depend check for xcodecd /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode && make -C /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode -f /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.mark_and_toys.Debugmake[1]: Nothing to be done for `PostBuild.mark_and_toys.Debug'.4(21%IDEActivityLogMessage2@30"echo "Depend check for xcode"-397269188#0#30#-0#-----2@23"Depend check for xcode-397269188#30#23#-0#-----2@331"cd /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode && make -C /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode -f /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeScripts/XCODE_DEPEND_HELPER.make PostBuild.mark_and_toys.Debug-397269188#53#331#-0#-----2@65"make[1]: Nothing to be done for `PostBuild.mark_and_toys.Debug'.-397269188#384#65#-0#-----0#0#1#--644"PhaseScriptExecution CMake\ PostBuild\ Rules xcode/MarkAndToys.build/Debug/mark_and_toys.build/Script-BD7CD0F17EFE40EEB12C925C.sh    cd /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys    #!/bin/shmake -C /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode -f /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeScripts/mark_and_toys_postBuildPhase.make$CONFIGURATION all    /bin/sh -c /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/MarkAndToys.build/Debug/mark_and_toys.build/Script-BD7CD0F17EFE40EEB12C925C.sh36"1D074A09-12B1-4BBC-9414-38A65B00D91A-
-b06430546-4CE0-41B4-9B03-ADEDBE25DC84
-

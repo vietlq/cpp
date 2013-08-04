@@ -1,29 +1,0 @@
-TALL_BUILD
-v6
-r1
-cCheck dependencies
-cPhaseScriptExecution CMake\ Rules /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/MarkAndToys.build/Debug/ALL_BUILD.build/Script-DBB94EECE81B405B91072F23.sh
-
-N/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/MarkAndToys.build/Debug/ALL_BUILD.build/Script-DBB94EECE81B405B91072F23.sh
-c0000000051FDA14400000000000000FC
-t1375576388
-s252
-
-CCheck dependencies
-r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies13463771daadb741^ee783771daadb741^---0#1#1#--18"Check dependencies36"30F6F392-510F-4C88-9918-7516622470EE-
-
-CPhaseScriptExecution CMake\ Rules /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/MarkAndToys.build/Debug/ALL_BUILD.build/Script-DBB94EECE81B405B91072F23.sh
-s397269617.218203
-e397269617.247369
-r1
-xPhaseScriptExecution
-xCMake Rules
-x/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/MarkAndToys.build/Debug/ALL_BUILD.build/Script-DBB94EECE81B405B91072F23.sh
-oecho ""
-o
-oecho Build\ all\ projects
-oBuild all projects
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'114"PhaseScriptExecution CMake\ Rules xcode/MarkAndToys.build/Debug/ALL_BUILD.build/Script-DBB94EECE81B405B91072F23.sh01323871daadb741^f8533f71daadb741^-54"echo ""echo Build\ all\ projectsBuild all projects3(21%IDEActivityLogMessage2@8"echo ""-397269617#0#8#-0#-----2@26"echo Build\ all\ projects-397269617#9#26#-0#-----2@19"Build all projects-397269617#35#19#-0#-----0#0#1#--627"PhaseScriptExecution CMake\ Rules xcode/MarkAndToys.build/Debug/ALL_BUILD.build/Script-DBB94EECE81B405B91072F23.sh    cd /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys    #!/bin/shmake -C /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode -f /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all    /bin/sh -c /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/MarkAndToys.build/Debug/ALL_BUILD.build/Script-DBB94EECE81B405B91072F23.sh36"1D3AB1D3-B25D-41C6-A679-21701FC004EB-
-b05FABC93-81DC-4215-AF87-52C217094576
-

@@ -1,29 +1,0 @@
-TZERO_CHECK
-v6
-r1
-cCheck dependencies
-cPhaseScriptExecution CMake\ Rules /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/MarkAndToys.build/Debug/ZERO_CHECK.build/Script-398C97E02B4D4485B0581E39.sh
-
-N/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/MarkAndToys.build/Debug/ZERO_CHECK.build/Script-398C97E02B4D4485B0581E39.sh
-c0000000051FDA14400000000000000FD
-t1375576388
-s253
-
-CCheck dependencies
-r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies1230be70daadb741^55a4be70daadb741^---0#1#1#--18"Check dependencies36"25F2F194-A1D0-490F-9549-3E5A6C7B350E-
-
-CPhaseScriptExecution CMake\ Rules /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/MarkAndToys.build/Debug/ZERO_CHECK.build/Script-398C97E02B4D4485B0581E39.sh
-s397269616.745441
-e397269616.802893
-r1
-xPhaseScriptExecution
-xCMake Rules
-x/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/MarkAndToys.build/Debug/ZERO_CHECK.build/Script-398C97E02B4D4485B0581E39.sh
-oecho ""
-o
-omake -f /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeScripts/ReRunCMake.make
-omake[1]: `CMakeFiles/cmake.check_cache' is up to date.
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'115"PhaseScriptExecution CMake\ Rules xcode/MarkAndToys.build/Debug/ZERO_CHECK.build/Script-398C97E02B4D4485B0581E39.shb22dbf70daadb741^ec8acd70daadb741^-183"echo ""make -f /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeScripts/ReRunCMake.makemake[1]: `CMakeFiles/cmake.check_cache' is up to date.3(21%IDEActivityLogMessage2@8"echo ""-397269616#0#8#-0#-----2@119"make -f /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeScripts/ReRunCMake.make-397269616#9#119#-0#-----2@55"make[1]: `CMakeFiles/cmake.check_cache' is up to date.-397269616#128#55#-0#-----0#0#1#--630"PhaseScriptExecution CMake\ Rules xcode/MarkAndToys.build/Debug/ZERO_CHECK.build/Script-398C97E02B4D4485B0581E39.sh    cd /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys    #!/bin/shmake -C /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode -f /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all    /bin/sh -c /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/MarkAndToys.build/Debug/ZERO_CHECK.build/Script-398C97E02B4D4485B0581E39.sh36"97FB6212-7782-42AC-9FAC-8B072E010ECE-
-bE7B3A561-9369-4383-9A38-99F571FC8864
-

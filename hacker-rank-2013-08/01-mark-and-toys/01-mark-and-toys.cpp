@@ -34,6 +34,9 @@ base_type most_toys(std::istream & istr)
         ++toys;
     }
     
+    // Clean up
+    delete[] toyPrices;
+    
     return toys;
 }
 
