@@ -8,39 +8,13 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "hacker-rank-2013-08-prob-01/main.cpp"
-         timestampString = "397279203.361725"
+         timestampString = "397306100.310682"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "42"
-         endingLineNumber = "42"
-         landmarkName = "number_of_crews(std::istream &amp; istr)"
-         landmarkType = "7">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "hacker-rank-2013-08-prob-01/main.cpp"
-         timestampString = "397279203.361725"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "43"
-         endingLineNumber = "43"
-         landmarkName = "number_of_crews(std::istream &amp; istr)"
-         landmarkType = "7">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "hacker-rank-2013-08-prob-01/main.cpp"
-         timestampString = "397279203.361725"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "44"
-         endingLineNumber = "44"
-         landmarkName = "number_of_crews(std::istream &amp; istr)"
-         landmarkType = "7">
+         startingLineNumber = "198"
+         endingLineNumber = "198"
+         landmarkName = "NodeProcessor::queryAncestor(int nodeValue, int k)"
+         landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>
