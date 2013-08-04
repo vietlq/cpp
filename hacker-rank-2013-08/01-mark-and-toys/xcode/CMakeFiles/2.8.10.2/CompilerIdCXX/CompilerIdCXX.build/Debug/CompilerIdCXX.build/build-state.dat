@@ -1,0 +1,122 @@
+TCompilerIdCXX
+v6
+r1
+cCheck dependencies
+cCompileC ./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX normal i386
+cPhaseScriptExecution Run\ Script /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
+c0000000051A9F4F800000000000000AA
+t1370092792
+s170
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c0000000051B0E5BB00000000000004B3
+t1370547643
+s1203
+
+N/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000051B0E5BB00000000000001DC
+t1370547643
+s476
+
+N/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp
+c0000000051FD9F560000000000002E22
+t1375575894
+s11810
+
+N/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/CompilerIdCXX
+t2
+s0
+
+N/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o
+t1375575895
+s3684
+
+N/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CompilerIdCXX.LinkFileList
+c0000000051FD9F5700000000000000CB
+t1375575895
+s203
+
+N/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+c0000000051FD9F57000000000000002A
+t1375575895
+s42
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesbea20bd7d6adb741^c0b21ad7d6adb741^---0#1#1#--18"Check dependencies36"64279FA8-1654-4ED6-9953-27D12291F08C-
+
+CCompileC ./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s397268695.109615
+e397268695.139687
+r1
+xCompileC
+x./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o
+x/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection146"Compile /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp180"CompileC ./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o CMakeCXXCompilerId.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler20421cd7d6adb741^44c223d7d6adb741^---0#0#1#-19%DVTDocumentLocation2@154"file://localhost/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp0000000000000000^3110"CompileC ./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o CMakeCXXCompilerId.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX    setenv LANG en_US.US-ASCII    /Applications/Xcode5-DP.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.hmap -I/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./include -I/Applications/Xcode5-DP.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources/i386 -I/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources -F/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/. -MMD -MT dependencies -MF /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.d --serialize-diagnostics /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.dia -c /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp -o /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o36"073195EC-91B2-4DD6-ACFC-49342B0D45C1-
+bC7810710-650A-41AA-B9C1-322A26C69392
+
+CLd /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX normal i386
+s397268695.148310
+e397268695.175422
+r1
+xLd
+x/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX
+xnormal
+xi386
+d/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CompilerIdCXX.LinkFileList
+d/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libc++.1.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.B.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.eprintf.a
+d/Applications/Xcode5-DP.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection136"Link /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX30"Ld ./CompilerIdCXX normal i386a91126d7d6adb741^a7e82cd7d6adb741^---0#0#1#--1297"Ld ./CompilerIdCXX normal i386    cd /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX    setenv MACOSX_DEPLOYMENT_TARGET 10.9    /Applications/Xcode5-DP.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode5-DP.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/. -F/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/. -filelist /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CompilerIdCXX.LinkFileList -mmacosx-version-min=10.9 -Xlinker -dependency_info -Xlinker /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CompilerIdCXX_dependency_info.dat -o /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX36"3F5478D1-AAC1-4672-A8AE-4821BDBC0994-
+bC7810710-650A-41AA-B9C1-322A26C69392
+
+CPhaseScriptExecution Run\ Script /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+s397268695.188218
+e397268695.205427
+r1
+xPhaseScriptExecution
+xRun Script
+x/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+oGCC_VERSION=com.apple.compilers.llvm.clang.1_0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Run custom shell script 'Run Script'115"PhaseScriptExecution Run\ Script ./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh6b8230d7d6adb741^d99734d7d6adb741^-47"GCC_VERSION=com.apple.compilers.llvm.clang.1_01(21%IDEActivityLogMessage2@47"GCC_VERSION=com.apple.compilers.llvm.clang.1_0-397268695#0#47#-0#-----0#0#1#--500"PhaseScriptExecution Run\ Script ./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh    cd /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX    #!/bin/shecho "GCC_VERSION=$GCC_VERSION"    /bin/sh -c /Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/2.8.10.2/CompilerIdCXX/./CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh36"31B345B3-BDA5-43B7-9989-4053D7AAA9BC-
+bC7810710-650A-41AA-B9C1-322A26C69392
+

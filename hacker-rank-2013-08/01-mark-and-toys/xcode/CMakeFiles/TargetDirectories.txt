@@ -1,0 +1,3 @@
+/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/ALL_BUILD.dir
+/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/ZERO_CHECK.dir
+/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/01-mark-and-toys/xcode/CMakeFiles/mark_and_toys.dir
