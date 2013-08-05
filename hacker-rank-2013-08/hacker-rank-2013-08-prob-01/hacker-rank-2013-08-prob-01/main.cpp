@@ -3,15 +3,14 @@
 #include <map>
 #include <list>
 #include <string.h>
-//#include <mach/mach_time.h>
 
 struct Node
 {
-    int value;
-    int degree;
-    Node * parent;
-    Node * farAncestor;
-    Node * veryFarAncestor;
+	int value;
+	int degree;
+	Node * parent;
+	Node * farAncestor;
+	Node * veryFarAncestor;
 };
 
 typedef std::map<int, Node *> map_nodes_t;
@@ -23,12 +22,14 @@ typedef list_values_t::iterator list_values_it;
 
 enum Actions
 {
-    ACT_NONE = -1,
-    ACT_ADD_LEAF = 0,
-    ACT_DEL_LEAF = 1,
-    ACT_QUERY_ANCESTOR = 2,
-    ACT_MAX
+	ACT_NONE = -1,
+	ACT_ADD_LEAF = 0,
+	ACT_DEL_LEAF = 1,
+	ACT_QUERY_ANCESTOR = 2,
+	ACT_MAX
 };
+
+const int MAX_ELEMENTS = 100*1000;
 
 class NodeProcessor
 {
@@ -56,7 +57,6 @@ public:
     //
     void addPair(int value1, int value2);
     
-    //
     void consolidateNodes();
     
     //
@@ -68,7 +68,8 @@ public:
     //
     int queryAncestor(int nodeValue, int k);
 private:
-    map_paths_t mapUndecidedNodes;
+    list_values_t * mapUndecidedNodes[MAX_ELEMENTS + 1];
+    char visited[MAX_ELEMENTS + 1];
     map_nodes_t mapOfNodes;
     Node * pRoot;
     int initCount;
@@ -78,51 +79,53 @@ private:
 
 void process_input(std::istream & istr, std::ostream & ostr)
 {
-    int T;
+	NodeProcessor nodeProcessor;
+	int T;
     
-    istr >> T;
+	istr >> T;
     
-    for(int treeIdx = 0; treeIdx < T; ++treeIdx)
+	for(int treeIdx = 0; treeIdx < T; ++treeIdx)
     {
-        NodeProcessor nodeProcessor;
-        int P, Q, value1, value2, X, Y, K, C;
+		int P, Q, value1, value2, X, Y, K, C;
         
-        istr >> P;
+		istr >> P;
         
-        //uint64_t start = mach_absolute_time(); 
-        
-        for(int lineIdx = 0; lineIdx < P; ++lineIdx)
+		for(int lineIdx = 0; lineIdx < P; ++lineIdx)
         {
-            istr >> value1 >> value2;
+			istr >> value1 >> value2;
             
-            if(0 == value1)
+			if(0 == value1)
             {
-                nodeProcessor.setRoot(value2);
+				nodeProcessor.setRoot(value2);
             }
-            else if(0 == value2)
+			else if(0 == value2)
             {
-                nodeProcessor.setRoot(value1);
+				nodeProcessor.setRoot(value1);
             }
-            else
+			else
             {
-                nodeProcessor.addPair(value1, value2);
+				nodeProcessor.addPair(value1, value2);
             }
         }
         
+        //
         nodeProcessor.consolidateNodes();
+		istr >> Q;
         
-        //printf("End of Node input: %llu\n", mach_absolute_time() - start);
-        
-        istr >> Q;
-        
-        for(int queryIdx = 0; queryIdx < Q; ++queryIdx)
+		for(int queryIdx = 0; queryIdx < Q; ++queryIdx)
         {
-            //start = mach_absolute_time(); 
-            istr >> C;
-            switch (C) {
+			istr >> C;
+			switch (C) {
                 case ACT_ADD_LEAF:
                     istr >> X >> Y;
-                    nodeProcessor.addLeaf(X, Y);
+                    if(0 == X)
+                    {
+                        nodeProcessor.setRoot(Y);
+                    }
+                    else
+                    {
+                        nodeProcessor.addLeaf(X, Y);
+                    }
                     break;
                 case ACT_DEL_LEAF:
                     istr >> X;
@@ -135,20 +138,19 @@ void process_input(std::istream & istr, std::ostream & ostr)
                 default:
                     break;
             }
-            //printf("End of a query: %llu\n", mach_absolute_time() - start);
         }
         
-        //nodeProcessor.reset();
+		nodeProcessor.reset();
     }
 }
 
 int main()
 {
-    process_input(std::cin, std::cout);
-    //std::ifstream istr("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/test09.txt");
-    //process_input(istr, std::cout);
+	process_input(std::cin, std::cout);
+	//std::ifstream istr("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/test01.txt");
+	//process_input(istr, std::cout);
     
-    return 0;
+	return 0;
 }
 
 NodeProcessor::NodeProcessor(int fastLookUpBase_, int veryFastLookUpBase_):
@@ -164,6 +166,8 @@ fastLookUpBase(fastLookUpBase_), veryFastLookUpBase(veryFastLookUpBase_)
     {
         veryFastLookUpBase = MIN_LOOKUP_BASE_2;
     }
+    
+    reset();
 }
 
 NodeProcessor::~NodeProcessor()
@@ -172,9 +176,21 @@ NodeProcessor::~NodeProcessor()
 }
 
 void NodeProcessor::reset()
-{
-    Node * pNode = NULL;
+{   
+    initCount = 0;
     
+    memset(visited, 0, MAX_ELEMENTS + 1);
+    
+    for(int idx = 0; idx <= MAX_ELEMENTS; ++idx)
+    {
+        if(NULL != mapUndecidedNodes[idx])
+        {
+            delete mapUndecidedNodes[idx];
+            mapUndecidedNodes[idx] = NULL;
+        }
+    }
+    
+    Node * pNode = NULL;
     if(mapOfNodes.size())
     {
         for(map_nodes_it it = mapOfNodes.begin(); mapOfNodes.end() != it; ++it)
@@ -189,13 +205,6 @@ void NodeProcessor::reset()
     }
     
     pRoot = NULL;
-    
-    if(mapUndecidedNodes.size())
-    {
-        mapUndecidedNodes.clear();
-        
-        initCount = 0;
-    }
 }
 
 void NodeProcessor::setInitCount(int nodeCount)
@@ -219,42 +228,53 @@ void NodeProcessor::setRoot(int nodeValue)
 
 void NodeProcessor::addPair(int value1, int value2)
 {
-    mapUndecidedNodes[value1].push_back(value2);
-    mapUndecidedNodes[value2].push_back(value1);
-}
-
-void join_nodes(int nodeValue, map_paths_t & mapUndecidedNodes,
-                std::map<int, char> & visited, NodeProcessor & processor)
-{
-    if(visited[nodeValue]) return;
-    visited[nodeValue] = 1;
-    
-    const list_values_t & unMappedNodes = mapUndecidedNodes[nodeValue];
-    list_values_t::const_iterator tempIt = unMappedNodes.begin();
-    const list_values_t::const_iterator tempEnd = unMappedNodes.end();
-    
-    for(; tempIt != tempEnd; ++tempIt)
+    if(NULL == mapUndecidedNodes[value1])
     {
-        int childValue = *tempIt;
-        if(visited[childValue]) continue;
-        processor.addLeaf(nodeValue, childValue);
-        join_nodes(childValue, mapUndecidedNodes, visited, processor);
+        mapUndecidedNodes[value1] = new list_values_t;
     }
+    if(NULL == mapUndecidedNodes[value2])
+    {
+        mapUndecidedNodes[value2] = new list_values_t;
+    }
+    
+    mapUndecidedNodes[value1]->push_back(value2);
+    mapUndecidedNodes[value2]->push_back(value1);
 }
 
 void NodeProcessor::consolidateNodes()
 {
-    //uint64_t start = mach_absolute_time();
+    std::list<int> listOfValues;
+    int currNodeValue, childValue;
+    listOfValues.push_back(pRoot->value);
     
-    std::map<int, char> visited;
-    map_paths_t::iterator it = mapUndecidedNodes.begin();
-    for(; it != mapUndecidedNodes.end(); ++it)
+    while(listOfValues.size())
     {
-        visited[it->first] = 0;
+        currNodeValue = listOfValues.front();
+        listOfValues.pop_front();
+        
+        // Visit each node once
+        if(visited[currNodeValue]) continue;
+        visited[currNodeValue] = 1;
+        
+        // Leave the node alone if it has no neighbours
+        if(NULL == mapUndecidedNodes[currNodeValue]) continue;
+        
+        const list_values_t * unMappedNodes = mapUndecidedNodes[currNodeValue];
+        list_values_t::const_iterator tempIt = unMappedNodes->begin();
+        const list_values_t::const_iterator tempEnd = unMappedNodes->end();
+        
+        for(; tempEnd != tempIt; ++tempIt)
+        {
+            childValue = *tempIt;
+            if(visited[childValue]) continue;
+            addLeaf(currNodeValue, childValue);
+            listOfValues.push_back(childValue);
+        }
+        
+        // Free up nodes as soon as you finish visiting them
+        delete mapUndecidedNodes[currNodeValue];
+        mapUndecidedNodes[currNodeValue] = NULL;
     }
-    join_nodes(pRoot->value, mapUndecidedNodes, visited, *this);
-    
-    //printf("End of a consolidation: %llu\n", mach_absolute_time() - start);
 }
 
 void NodeProcessor::addLeaf(int parentValue, int nodeValue)
