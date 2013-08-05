@@ -6,27 +6,25 @@
 
 struct Node
 {
-	int value;
-	int degree;
-	Node * parent;
-	Node * farAncestor;
-	Node * veryFarAncestor;
+    int value;
+    int degree;
+    Node * parent;
+    Node * farAncestor;
+    Node * veryFarAncestor;
 };
 
 typedef std::map<int, Node *> map_nodes_t;
 typedef map_nodes_t::iterator map_nodes_it;
-typedef std::map<int, std::list<int> > map_paths_t;
-typedef map_paths_t::iterator map_paths_it;
 typedef std::list<int> list_values_t;
 typedef list_values_t::iterator list_values_it;
 
 enum Actions
 {
-	ACT_NONE = -1,
-	ACT_ADD_LEAF = 0,
-	ACT_DEL_LEAF = 1,
-	ACT_QUERY_ANCESTOR = 2,
-	ACT_MAX
+    ACT_NONE = -1,
+    ACT_ADD_LEAF = 0,
+    ACT_DEL_LEAF = 1,
+    ACT_QUERY_ANCESTOR = 2,
+    ACT_MAX
 };
 
 const int MAX_ELEMENTS = 100*1000;
@@ -57,8 +55,6 @@ public:
     //
     void addPair(int value1, int value2);
     
-    void consolidateNodes();
-    
     //
     void addLeaf(int parentValue, int nodeValue);
     
@@ -79,53 +75,44 @@ private:
 
 void process_input(std::istream & istr, std::ostream & ostr)
 {
-	NodeProcessor nodeProcessor;
-	int T;
+    NodeProcessor nodeProcessor;
+    int T;
     
-	istr >> T;
+    istr >> T;
     
-	for(int treeIdx = 0; treeIdx < T; ++treeIdx)
+    for(int treeIdx = 0; treeIdx < T; ++treeIdx)
     {
-		int P, Q, value1, value2, X, Y, K, C;
+        int P, Q, value1, value2, X, Y, K, C;
         
-		istr >> P;
+        istr >> P;
         
-		for(int lineIdx = 0; lineIdx < P; ++lineIdx)
+        for(int lineIdx = 0; lineIdx < P; ++lineIdx)
         {
-			istr >> value1 >> value2;
+            istr >> value1 >> value2;
             
-			if(0 == value1)
+            if(0 == value1)
             {
-				nodeProcessor.setRoot(value2);
+                nodeProcessor.setRoot(value2);
             }
-			else if(0 == value2)
+            else if(0 == value2)
             {
-				nodeProcessor.setRoot(value1);
+                nodeProcessor.setRoot(value1);
             }
-			else
+            else
             {
-				nodeProcessor.addPair(value1, value2);
+                nodeProcessor.addPair(value1, value2);
             }
         }
         
-        //
-        nodeProcessor.consolidateNodes();
-		istr >> Q;
+        istr >> Q;
         
-		for(int queryIdx = 0; queryIdx < Q; ++queryIdx)
+        for(int queryIdx = 0; queryIdx < Q; ++queryIdx)
         {
-			istr >> C;
-			switch (C) {
+            istr >> C;
+            switch (C) {
                 case ACT_ADD_LEAF:
                     istr >> X >> Y;
-                    if(0 == X)
-                    {
-                        nodeProcessor.setRoot(Y);
-                    }
-                    else
-                    {
-                        nodeProcessor.addLeaf(X, Y);
-                    }
+                    nodeProcessor.addLeaf(X, Y);
                     break;
                 case ACT_DEL_LEAF:
                     istr >> X;
@@ -140,17 +127,17 @@ void process_input(std::istream & istr, std::ostream & ostr)
             }
         }
         
-		nodeProcessor.reset();
+        nodeProcessor.reset();
     }
 }
 
 int main()
 {
-	process_input(std::cin, std::cout);
-	//std::ifstream istr("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/test01.txt");
-	//process_input(istr, std::cout);
+    process_input(std::cin, std::cout);
+    //std::ifstream istr("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/test01.txt");
+    //process_input(istr, std::cout);
     
-	return 0;
+    return 0;
 }
 
 NodeProcessor::NodeProcessor(int fastLookUpBase_, int veryFastLookUpBase_):
@@ -176,11 +163,9 @@ NodeProcessor::~NodeProcessor()
 }
 
 void NodeProcessor::reset()
-{   
+{
     initCount = 0;
-    
     memset(visited, 0, MAX_ELEMENTS + 1);
-    
     for(int idx = 0; idx <= MAX_ELEMENTS; ++idx)
     {
         if(NULL != mapUndecidedNodes[idx])
@@ -228,50 +213,70 @@ void NodeProcessor::setRoot(int nodeValue)
 
 void NodeProcessor::addPair(int value1, int value2)
 {
-    if(NULL == mapUndecidedNodes[value1])
+    map_nodes_it it1, it2, it;
+    const map_nodes_it end = mapOfNodes.end();
+    
+    it1 = mapOfNodes.find(value1);
+    it2 = mapOfNodes.find(value2);
+    
+    if((end == it1) && (end == it2))
     {
-        mapUndecidedNodes[value1] = new list_values_t;
-    }
-    if(NULL == mapUndecidedNodes[value2])
-    {
-        mapUndecidedNodes[value2] = new list_values_t;
+        if(NULL == mapUndecidedNodes[value1])
+        {
+            mapUndecidedNodes[value1] = new list_values_t;
+        }
+        if(NULL == mapUndecidedNodes[value2])
+        {
+            mapUndecidedNodes[value2] = new list_values_t;
+        }
+        
+        mapUndecidedNodes[value1]->push_back(value2);
+        mapUndecidedNodes[value2]->push_back(value1);
+        return;
     }
     
-    mapUndecidedNodes[value1]->push_back(value2);
-    mapUndecidedNodes[value2]->push_back(value1);
-}
-
-void NodeProcessor::consolidateNodes()
-{
+    // Either value1 or value2 is found and the remaining is not
+    int nodeValue;
+    if(end == it1)
+    {
+        // If value1 is not found
+        addLeaf(value2, value1);
+        it = mapOfNodes.find(value1);
+        nodeValue = value1;
+    }
+    else
+    {
+        // If value2 is not found
+        addLeaf(value1, value2);
+        it = mapOfNodes.find(value2);
+        nodeValue = value2;
+    }
+    
+    // Consolidation
     std::list<int> listOfValues;
-    int currNodeValue, childValue;
-    listOfValues.push_back(pRoot->value);
+    listOfValues.push_back(nodeValue);
     
     while(listOfValues.size())
     {
-        currNodeValue = listOfValues.front();
+        int currNodeValue = listOfValues.front();
         listOfValues.pop_front();
         
-        // Visit each node once
-        if(visited[currNodeValue]) continue;
+        if(visited[currNodeValue]) return;
         visited[currNodeValue] = 1;
         
-        // Leave the node alone if it has no neighbours
-        if(NULL == mapUndecidedNodes[currNodeValue]) continue;
+        if(NULL == mapUndecidedNodes[nodeValue]) return;
         
-        const list_values_t * unMappedNodes = mapUndecidedNodes[currNodeValue];
+        const list_values_t * unMappedNodes = mapUndecidedNodes[nodeValue];
         list_values_t::const_iterator tempIt = unMappedNodes->begin();
         const list_values_t::const_iterator tempEnd = unMappedNodes->end();
         
-        for(; tempEnd != tempIt; ++tempIt)
+        for(; tempIt != tempEnd; ++tempIt)
         {
-            childValue = *tempIt;
-            if(visited[childValue]) continue;
-            addLeaf(currNodeValue, childValue);
-            listOfValues.push_back(childValue);
+            listOfValues.push_back(*tempIt);
+            addLeaf(currNodeValue, *tempIt);
         }
         
-        // Free up nodes as soon as you finish visiting them
+        // Remove
         delete mapUndecidedNodes[currNodeValue];
         mapUndecidedNodes[currNodeValue] = NULL;
     }
