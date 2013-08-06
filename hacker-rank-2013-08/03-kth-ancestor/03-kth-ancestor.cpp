@@ -66,7 +66,7 @@ public:
 private:
     list_values_t * mapUndecidedNodes[MAX_ELEMENTS + 1];
     char visited[MAX_ELEMENTS + 1];
-    map_nodes_t mapOfNodes;
+    Node * mapOfNodes[MAX_ELEMENTS + 1];
     Node * pRoot;
     int initCount;
     int fastLookUpBase;
@@ -134,7 +134,7 @@ void process_input(std::istream & istr, std::ostream & ostr)
 int main()
 {
     process_input(std::cin, std::cout);
-    //std::ifstream istr("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/02-a-journey-to-the-moon/test01.txt");
+    //std::ifstream istr("/Users/vietlq/projects/viet-github-cpp/hacker-rank-2013-08/03-kth-ancestor/test01.txt");
     //process_input(istr, std::cout);
     
     return 0;
@@ -154,6 +154,13 @@ fastLookUpBase(fastLookUpBase_), veryFastLookUpBase(veryFastLookUpBase_)
         veryFastLookUpBase = MIN_LOOKUP_BASE_2;
     }
     
+    //
+    for(int idx = 0; idx <= MAX_ELEMENTS; ++idx)
+    {
+        mapUndecidedNodes[idx] = NULL;
+        mapOfNodes[idx] = NULL;
+    }
+    
     reset();
 }
 
@@ -164,29 +171,25 @@ NodeProcessor::~NodeProcessor()
 
 void NodeProcessor::reset()
 {
+    //
     initCount = 0;
+    //
     memset(visited, 0, MAX_ELEMENTS + 1);
+    //
     for(int idx = 0; idx <= MAX_ELEMENTS; ++idx)
     {
+        //
         if(NULL != mapUndecidedNodes[idx])
         {
             delete mapUndecidedNodes[idx];
-            mapUndecidedNodes[idx] = NULL;
         }
-    }
-    
-    Node * pNode = NULL;
-    if(mapOfNodes.size())
-    {
-        for(map_nodes_it it = mapOfNodes.begin(); mapOfNodes.end() != it; ++it)
+        mapUndecidedNodes[idx] = NULL;
+        //
+        if(NULL != mapOfNodes[idx])
         {
-            pNode = it->second;
-            if(NULL == pNode) continue;
-            delete pNode;
-            pNode = NULL;
+            delete mapOfNodes[idx];
         }
-        
-        mapOfNodes.clear();
+        mapOfNodes[idx] = NULL;
     }
     
     pRoot = NULL;
@@ -213,13 +216,11 @@ void NodeProcessor::setRoot(int nodeValue)
 
 void NodeProcessor::addPair(int value1, int value2)
 {
-    map_nodes_it it1, it2, it;
-    const map_nodes_it end = mapOfNodes.end();
+    Node * pNode1 = mapOfNodes[value1];
+    Node * pNode2 = mapOfNodes[value2];
+    Node * pNode = NULL;
     
-    it1 = mapOfNodes.find(value1);
-    it2 = mapOfNodes.find(value2);
-    
-    if((end == it1) && (end == it2))
+    if((NULL == pNode1) && (NULL == pNode2))
     {
         if(NULL == mapUndecidedNodes[value1])
         {
@@ -237,18 +238,18 @@ void NodeProcessor::addPair(int value1, int value2)
     
     // Either value1 or value2 is found and the remaining is not
     int nodeValue;
-    if(end == it1)
+    if(NULL == pNode1)
     {
         // If value1 is not found
         addLeaf(value2, value1);
-        it = mapOfNodes.find(value1);
+        pNode = mapOfNodes[value1];
         nodeValue = value1;
     }
     else
     {
         // If value2 is not found
         addLeaf(value1, value2);
-        it = mapOfNodes.find(value2);
+        pNode = mapOfNodes[value2];
         nodeValue = value2;
     }
     
@@ -284,12 +285,12 @@ void NodeProcessor::addPair(int value1, int value2)
 
 void NodeProcessor::addLeaf(int parentValue, int nodeValue)
 {
-    map_nodes_it it = mapOfNodes.find(parentValue);
-    if(mapOfNodes.end() == it) return;
+    Node * pParentNode = mapOfNodes[parentValue];
+    if(NULL == pParentNode) return;
     
     Node * pNode = new Node;
     pNode->value = nodeValue;
-    pNode->parent = it->second;
+    pNode->parent = pParentNode;
     pNode->degree = pNode->parent->degree + 1;
     
     //
@@ -325,22 +326,17 @@ void NodeProcessor::addLeaf(int parentValue, int nodeValue)
 
 void NodeProcessor::deleteLeaf(int nodeValue)
 {
-    map_nodes_it it = mapOfNodes.find(nodeValue);
-    if(mapOfNodes.end() == it) return;
+    if(NULL == mapOfNodes[nodeValue]) return;
     
-    Node * pNode = it->second;
-    mapOfNodes.erase(it);
-    delete pNode;
-    pNode = NULL;
+    delete mapOfNodes[nodeValue];
+    mapOfNodes[nodeValue] = NULL;
 }
 
 int NodeProcessor::queryAncestor(int nodeValue, int k)
 {
-    map_nodes_it it = mapOfNodes.find(nodeValue);
     // If the node does not exist, return 0
-    if(mapOfNodes.end() == it) return 0;
-    
-    Node * pNode = it->second;
+    Node * pNode = mapOfNodes[nodeValue];
+    if(NULL == pNode) return 0;
     
     // If the degree of the node is < k, return 0
     if(pNode->degree < k)return 0;
