@@ -2,7 +2,8 @@
 
 import random
 
-MAX_VAL = 10**2
+MAX_VAL = 10**5
+#MAX_VAL = 50
 
 RANGE_T = (1, 3)
 RANGE_P = (1, MAX_VAL)
@@ -23,6 +24,7 @@ def join_nodes(nodeValue, unmappedNodes, visited, parentOf, numChildren):
 		join_nodes(childValue, unmappedNodes, visited, parentOf, numChildren)
 		parentOf[childValue] = nodeValue
 		numChildren[nodeValue] += 1
+		degreeOf[childValue] = degreeOf[nodeValue] + 1
 
 T = get_rand(RANGE_T)
 print T
@@ -31,36 +33,35 @@ for t in xrange(T):
 	P = get_rand(RANGE_P)
 	print P
 	NODE_RANGE = [1, P]
-	rootValue = get_rand(NODE_RANGE)
 	nodes = {}
-	paths = {}
+	paths = []
 	parentOf = {}
+	degreeOf = {}
 	numChildren = {}
 	unmappedNodes = {}
 	visited = {}
 	leafNodes = {}
+	rootValue = get_rand(NODE_RANGE)
 	print rootValue, 0
 	nodes[rootValue] = 1
+	degreeOf[rootValue] = 0
 	while len(nodes) < P:
-		v1, v2 = get_rand(NODE_RANGE), get_rand(NODE_RANGE)
-		if v1 == v2: continue
-		if v1 > v2: v1, v2 = v2, v1
-		key = (v1, v2)
-		if not paths.has_key(key):
-			if (len(nodes) < P - 1) or ((len(nodes) == P - 1) and (nodes.has_key(v1) != nodes.has_key(v2))):
-				nodes[v1] = 1
-				nodes[v2] = 1
-				print v1, v2
-			else: continue
-			paths[key] = 1
-			if unmappedNodes.has_key(v1):
-				unmappedNodes[v1].append(v2)
-			else:
-				unmappedNodes[v1] = [v2]
-			if unmappedNodes.has_key(v2):
-				unmappedNodes[v2].append(v1)
-			else:
-				unmappedNodes[v2] = [v1]
+		v1 = random.choice(list(nodes.keys()))
+		v2 = v1
+		while v2 in nodes.keys():
+			v2 = get_rand(RANGE_P)
+		if unmappedNodes.has_key(v1):
+			unmappedNodes[v1].append(v2)
+		else:
+			unmappedNodes[v1] = [v2]
+		degreeOf[v2] = degreeOf[v1] + 1
+		unmappedNodes[v2] = [v1]
+		nodes[v2] = 1
+		paths.append((v1, v2))
+	# Shuffle the paths
+	random.shuffle(paths)
+	for v1, v2 in paths:
+		print v1, v2
 	#
 	for v in unmappedNodes.keys(): visited[v], numChildren[v] = 0, 0
 	#
@@ -71,14 +72,17 @@ for t in xrange(T):
 		if value == 0:
 			leafNodes[key] = 1
 	#
-	print 'numChildren = ', numChildren
-	print 'parentOf = ', parentOf
-	print 'leafNodes = ', sorted(leafNodes.keys())
+	#print 'numChildren = ', numChildren
+	#print 'parentOf = ', parentOf
+	#print 'degreeOf = ', degreeOf
+	#print 'leafNodes = ', sorted(leafNodes.keys())
 	# 
 	Q = get_rand(RANGE_Q)
 	print Q
 	for q in xrange(Q):
 		action = random.choice([0, 0, 0, 1, 2, 2, 2, 2])
+		if action == 1 and len(nodes) == 1:
+			action = 0
 		if action == 0:
 			parent = random.choice(list(parentOf.keys()))
 			child = parent
@@ -88,6 +92,7 @@ for t in xrange(T):
 			nodes[child] = 1
 			parentOf[child] = parent
 			leafNodes[child] = 1
+			degreeOf[child] = degreeOf[parent] + 1
 			if numChildren.has_key(parent):
 				numChildren[parent] += 1
 			else:
@@ -98,15 +103,24 @@ for t in xrange(T):
 			nodeValue = rootValue
 			while nodeValue == rootValue:
 				nodeValue = random.choice(list(leafNodes.keys()))
-				print action, nodeValue
-				parentValue = parentOf[nodeValue]
-				numChildren[parentValue] -= 1
-				del nodes[nodeValue]
-				del leafNodes[nodeValue]
-				if numChildren[parentValue] == 0:
-					leafNodes[parentValue] = 1
+			print action, nodeValue
+			parentValue = parentOf[nodeValue]
+			numChildren[parentValue] -= 1
+			del nodes[nodeValue]
+			del leafNodes[nodeValue]
+			del degreeOf[nodeValue]
+			del parentOf[nodeValue]
+			if numChildren[parentValue] == 0:
+				leafNodes[parentValue] = 1
 		elif action == 2:
-			child = get_rand(RANGE_P)
-			k = get_rand(RANGE_K)
+			valid = random.choice([1, 1, 1, 1, 1, 1, 1, 1, 1, 0])
+			if valid:
+				child = random.choice(list(nodes.keys()))
+				k = 1
+				if degreeOf[child] > 1:
+					k = get_rand([1, degreeOf[child]])
+			else:
+				child = get_rand(RANGE_P)
+				k = get_rand(RANGE_K)
 			print action, child, k
 
