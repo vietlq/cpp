@@ -142,7 +142,8 @@ int main()
 
 NodeProcessor::NodeProcessor(int fastLookUpBase_, int veryFastLookUpBase_):
 pRoot(NULL), initCount(0),
-fastLookUpBase(fastLookUpBase_), veryFastLookUpBase(veryFastLookUpBase_)
+fastLookUpBase(fastLookUpBase_),
+veryFastLookUpBase(veryFastLookUpBase_)
 {
     if(fastLookUpBase < MIN_LOOKUP_BASE_1)
     {
@@ -160,8 +161,7 @@ fastLookUpBase(fastLookUpBase_), veryFastLookUpBase(veryFastLookUpBase_)
         mapUndecidedNodes[idx] = NULL;
         mapOfNodes[idx] = NULL;
     }
-    
-    reset();
+    memset(visited, 0, MAX_ELEMENTS + 1);
 }
 
 NodeProcessor::~NodeProcessor()
@@ -182,16 +182,16 @@ void NodeProcessor::reset()
         if(NULL != mapUndecidedNodes[idx])
         {
             delete mapUndecidedNodes[idx];
+            mapUndecidedNodes[idx] = NULL;
         }
-        mapUndecidedNodes[idx] = NULL;
         //
         if(NULL != mapOfNodes[idx])
         {
             delete mapOfNodes[idx];
+            mapOfNodes[idx] = NULL;
         }
-        mapOfNodes[idx] = NULL;
     }
-    
+    //
     pRoot = NULL;
 }
 
