@@ -8,16 +8,16 @@ using namespace std;
 void usage(const char * pAppName)
 {
 	std::cerr << "Usage: " << pAppName
-	<< " <K_LINES> <FILE_NAME>" << std::endl;
+		<< " <K_LINES> <FILE_NAME>" << std::endl;
 }
 
-void slow_print_last_k_lines(int k, std::istream & inStr)
+void slow_print_last_k_lines(int k, std::istream & inStr, const size_t MAX_LINE_LEN = 2048)
 {
-	char tempStr[2048];
+	char tempStr[MAX_LINE_LEN];
 	std::list<std::string> lines;
 	while(inStr.good())
 	{
-		inStr.getline(tempStr, 2047);
+		inStr.getline(tempStr, MAX_LINE_LEN - 1);
 		lines.push_back(tempStr);
 		// Remove extra line from the front
 		if(lines.size() > k)
