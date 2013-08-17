@@ -6,8 +6,16 @@ using namespace std;
 class Person
 {
 public:
-	Person() {}
-	~Person() {}
+	Person()
+	{
+		std::cout << "Initializing an instance of Person" << std::endl;
+	}
+	
+	virtual ~Person()
+	{
+		std::cout << "Deleting an instance of Person" << std::endl;
+	}
+	
 	virtual void aboutMe() const
 	{
 		std::cout << "I am an instance of Person" << std::endl;
@@ -17,8 +25,18 @@ public:
 class Student: public Person
 {
 public:
-	Student() {}
-	~Student() {}
+	Student()
+	{
+		std::cout << "Initializing an instance of Student" << std::endl;
+	}
+	
+	// If virtual is not added, there's slicing & memory leak when deleting dynamically allocated objects of sub-classes of Student
+	virtual ~Student()
+	{
+		std::cout << "Deleting an instance of Student" << std::endl;
+	}
+	
+	// This you don't need to add virtual any more, but recommended
 	void aboutMe() const
 	{
 		std::cout << "I am an instance of Student" << std::endl;
@@ -28,8 +46,16 @@ public:
 class GradStudent: public Student
 {
 public:
-	GradStudent() {}
-	~GradStudent() {}
+	GradStudent()
+	{
+		std::cout << "Initializing an instance of GradStudent" << std::endl;
+	}
+	
+	~GradStudent()
+	{
+		std::cout << "Deleting an instance of GradStudent" << std::endl;
+	}
+	
 	void aboutMe() const
 	{
 		std::cout << "I am an instance of GradStudent" << std::endl;
