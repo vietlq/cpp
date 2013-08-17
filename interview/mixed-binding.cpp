@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+// Once virtual, forever virtual
+
 class Person
 {
 public:
@@ -17,7 +19,7 @@ class Student: public Person
 public:
 	Student() {}
 	~Student() {}
-	void aboutMe() const
+	virtual void aboutMe() const
 	{
 		std::cout << "I am an instance of Student" << std::endl;
 	}
