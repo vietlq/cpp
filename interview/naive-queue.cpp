@@ -5,6 +5,7 @@
 #include <condition_variable> // std::condition_variable
 #include <cmath>
 #include <ctime>
+#include <chrono>
 
 template<typename T, size_t Q_SIZE>
 class NaiveQueue
@@ -62,17 +63,22 @@ public:
     {
         std::unique_lock<std::mutex> lock(mtx);
         
-        condQueueEmpty.wait(lock, [this]() {
+        if(condQueueEmpty.wait_for(lock, std::chrono::milliseconds(3000), [this]() {
             return notEmpty();
-        });
-        
-        T * x = ptrArray[popIdx++ & Q_MASK];
-        
-        printf("pop: popIdx = %lu\n", popIdx);
-        
-        condQueueOverflow.notify_one();
-        
-        return x;
+        }))
+        {
+            T * x = ptrArray[popIdx++ & Q_MASK];
+            
+            printf("pop: popIdx = %lu\n", popIdx);
+            
+            condQueueOverflow.notify_one();
+            
+            return x;   
+        }
+        else
+        {
+            return NULL;
+        }
     }
 };
 
@@ -107,8 +113,13 @@ void consume(QueueType * queue, int consumerId)
         {
             printf("Consumer %d: Consumed %d\n", consumerId, *x);
             
-            delete x;   
-        }   
+            delete x;
+        }
+        else
+        {
+            printf("Timeout! Exiting the Consumer: %d\n", consumerId);
+            break;
+        }
     }
 }
 
@@ -118,7 +129,7 @@ int main ()
 {
     const size_t PRODUCERS = 16;
     const size_t CONSUMERS = 16;
-    const size_t PRODUCT_NUM = 10000;
+    const size_t PRODUCT_NUM = 1000;
     
     ::srand((unsigned int)::time(NULL));
     
