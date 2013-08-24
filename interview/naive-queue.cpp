@@ -125,11 +125,11 @@ void consume(QueueType * queue, int consumerId)
 
 typedef NaiveQueue<int, (1 << 12)> queue_t;
 
-int main ()
+int main (int argc, char* argv[])
 {
     const size_t PRODUCERS = 16;
     const size_t CONSUMERS = 16;
-    const size_t PRODUCT_NUM = 1000;
+    const size_t PRODUCT_NUM = (argc < 2) ? 1000 : atoi(argv[1]);
     
     ::srand((unsigned int)::time(NULL));
     
