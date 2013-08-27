@@ -74,7 +74,7 @@ public:
 
 // Produce
 template <typename QueueType>
-void produce(QueueType * queue, long & backlog, int producerId)
+void produce(QueueType & queue, long & backlog, int producerId)
 {
     printf("Inside produce. The active Producer: %d\n", producerId);
     
@@ -85,19 +85,19 @@ void produce(QueueType * queue, long & backlog, int producerId)
         --backlog;
         printf("Producer %d: Produced %d. Backlog left: %ld\n", producerId, x, backlog);
         
-        queue->push(x);
+        queue.push(x);
     }
 }
 
 // Consume
 template <typename QueueType>
-void consume(QueueType * queue, int consumerId)
+void consume(QueueType & queue, int consumerId)
 {
     printf("Inside consume. The active Consumer: %d\n", consumerId);
     
     while(1)
     {
-        int x = queue->pop();
+        int x = queue.pop();
         
         printf("Consumer %d: Consumed %d\n", consumerId, x);
     }
@@ -121,12 +121,12 @@ int main (int argc, char* argv[])
     for(int i = 0; i < PRODUCERS; ++i)
     {
         backlog[i] = PRODUCT_NUM;
-        producers[i] = std::thread(produce<queue_t>, &queue, std::ref(backlog[i]), i);
+        producers[i] = std::thread(produce<queue_t>, std::ref(queue), std::ref(backlog[i]), i);
     }
     
     for(int i = 0; i < CONSUMERS; ++i)
     {
-        consumers[i] = std::thread(consume<queue_t>, &queue, i);
+        consumers[i] = std::thread(consume<queue_t>, std::ref(queue), i);
     }
     
     for(auto & t: consumers)
