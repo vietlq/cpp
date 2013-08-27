@@ -74,18 +74,18 @@ public:
 
 // Produce
 template <typename QueueType>
-void produce(QueueType * queue, long * backlog, int producerId)
+void produce(QueueType * queue, long & backlog, int producerId)
 {
     printf("Inside produce. The active Producer: %d\n", producerId);
     
-    while(*backlog > 0)
+    while(backlog > 0)
     {
         int x = int(rand() % 123456789);
         
-        --(*backlog);
-        printf("Producer %d: Produced %d. Backlog left: %ld\n", producerId, x, *backlog);
+        --backlog;
+        printf("Producer %d: Produced %d. Backlog left: %ld\n", producerId, x, backlog);
         
-        queue->push(x);   
+        queue->push(x);
     }
 }
 
@@ -121,7 +121,7 @@ int main (int argc, char* argv[])
     for(int i = 0; i < PRODUCERS; ++i)
     {
         backlog[i] = PRODUCT_NUM;
-        producers[i] = std::thread(produce<queue_t>, &queue, &backlog[i], i);
+        producers[i] = std::thread(produce<queue_t>, &queue, std::ref(backlog[i]), i);
     }
     
     for(int i = 0; i < CONSUMERS; ++i)
