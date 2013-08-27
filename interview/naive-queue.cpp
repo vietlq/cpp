@@ -7,11 +7,12 @@
 #include <ctime>
 #include <chrono>
 
-template<typename T, uint64_t Q_SIZE>
+template<typename T>
 class naive_queue
 {
     typedef uint64_t pos_type;
-    T ptrArray[Q_SIZE];
+    uint32_t queueSize;
+    T * ptrArray;
     // Head
     pos_type pushIdx;
     // Tail
@@ -22,7 +23,7 @@ class naive_queue
     
     bool overflow() const
     {
-        return (popIdx + Q_SIZE <= pushIdx);
+        return (popIdx + queueSize <= pushIdx);
     }
     
     bool empty() const
@@ -31,9 +32,21 @@ class naive_queue
     }
 public:
     //
-    naive_queue(): pushIdx(0), popIdx(0)
+    explicit naive_queue(uint32_t queueSize_ = 1024):
+        queueSize(queueSize_), ptrArray(NULL),
+        pushIdx(0), popIdx(0)
     {
-        
+        if(queueSize_ < 64) queueSize = 64;
+        ptrArray = new T[queueSize];
+    }
+    
+    ~naive_queue()
+    {
+        if(NULL != ptrArray)
+        {
+            delete[] ptrArray;
+            ptrArray = NULL;
+        }
     }
     
     //
@@ -45,7 +58,7 @@ public:
             return !overflow();
         });
         
-        ptrArray[(pushIdx++) % Q_SIZE] = x;
+        ptrArray[(pushIdx++) % queueSize] = x;
         
         printf("push: pushIdx = %llu\n", pushIdx);
         
@@ -61,7 +74,7 @@ public:
             return !empty();
         });
         
-        T x = ptrArray[(popIdx++) % Q_SIZE];
+        T x = ptrArray[(popIdx++) % queueSize];
         
         printf("pop: popIdx = %llu\n", popIdx);
         
@@ -102,7 +115,7 @@ void consume(QueueType & queue, int consumerId)
     }
 }
 
-typedef naive_queue<int, 4567> queue_t;
+typedef naive_queue<int> queue_t;
 
 int main (int argc, char* argv[])
 {
@@ -112,7 +125,7 @@ int main (int argc, char* argv[])
     
     ::srand((unsigned int)::time(NULL));
     
-    queue_t queue;
+    queue_t queue(4567);
     std::thread producers[PRODUCERS];
     std::thread consumers[CONSUMERS];
     long backlog[PRODUCERS];
