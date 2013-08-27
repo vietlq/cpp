@@ -11,7 +11,7 @@ template<typename T, uint64_t Q_SIZE>
 class NaiveQueue
 {
     typedef uint64_t pos_type;
-    T * ptrArray[Q_SIZE];
+    T ptrArray[Q_SIZE];
     // Head
     pos_type pushIdx;
     // Tail
@@ -38,13 +38,7 @@ public:
     }
     
     //
-    inline void push(T & obj)
-    {
-        push(&obj);
-    }
-    
-    //
-    void push(T * x)
+    void push(T x)
     {
         std::unique_lock<std::mutex> lock(mtx);
         
@@ -52,7 +46,7 @@ public:
             return !overflow();
         });
         
-        ptrArray[pushIdx++ & Q_MASK] = x;
+        ptrArray[(pushIdx++) % Q_SIZE] = x;
         
         printf("push: pushIdx = %llu\n", pushIdx);
         
@@ -60,26 +54,21 @@ public:
     }
     
     //
-    T * pop()
+    T pop()
     {
         std::unique_lock<std::mutex> lock(mtx);
         
-        if(condQueueHasData.wait_for(lock, std::chrono::milliseconds(3000), [this]() {
+        condQueueHasData.wait(lock, [this]() {
             return !empty();
-        }))
-        {
-            T * x = ptrArray[popIdx++ & Q_MASK];
-            
-            printf("pop: popIdx = %llu\n", popIdx);
-            
-            condQueueNotOverflow.notify_one();
-            
-            return x;   
-        }
-        else
-        {
-            return NULL;
-        }
+        });
+        
+        T x = ptrArray[(popIdx++) % Q_SIZE];
+        
+        printf("pop: popIdx = %llu\n", popIdx);
+        
+        condQueueNotOverflow.notify_one();
+        
+        return x;
     }
 };
 
@@ -91,10 +80,10 @@ void produce(QueueType * queue, long * backlog, int producerId)
     
     while(*backlog > 0)
     {
-        int * x = new int(rand() % 123456789);
+        int x = int(rand() % 123456789);
         
         --(*backlog);
-        printf("Producer %d: Produced %d. Backlog left: %ld\n", producerId, *x, *backlog);
+        printf("Producer %d: Produced %d. Backlog left: %ld\n", producerId, x, *backlog);
         
         queue->push(x);   
     }
@@ -108,28 +97,18 @@ void consume(QueueType * queue, int consumerId)
     
     while(1)
     {
-        int * x = queue->pop();
+        int x = queue->pop();
         
-        if(NULL != x)
-        {
-            printf("Consumer %d: Consumed %d\n", consumerId, *x);
-            
-            delete x;
-        }
-        else
-        {
-            printf("Timeout! Exiting the Consumer: %d\n", consumerId);
-            break;
-        }
+        printf("Consumer %d: Consumed %d\n", consumerId, x);
     }
 }
 
-typedef NaiveQueue<int, (1 << 12)> queue_t;
+typedef NaiveQueue<int, 4567> queue_t;
 
 int main (int argc, char* argv[])
 {
-    const size_t PRODUCERS = 16;
-    const size_t CONSUMERS = 16;
+    const size_t PRODUCERS = 17;
+    const size_t CONSUMERS = 7;
     const size_t PRODUCT_NUM = (argc < 2) ? 1000 : atoi(argv[1]);
     
     ::srand((unsigned int)::time(NULL));
