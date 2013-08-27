@@ -16,7 +16,6 @@ class naive_queue
     pos_type pushIdx;
     // Tail
     pos_type popIdx;
-    static const pos_type Q_MASK = Q_SIZE - 1;
     std::condition_variable condQueueHasData;
     std::condition_variable condQueueNotOverflow;
     std::mutex mtx;
