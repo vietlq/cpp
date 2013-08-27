@@ -8,7 +8,7 @@
 #include <chrono>
 
 template<typename T, uint64_t Q_SIZE>
-class NaiveQueue
+class naive_queue
 {
     typedef uint64_t pos_type;
     T ptrArray[Q_SIZE];
@@ -32,7 +32,7 @@ class NaiveQueue
     }
 public:
     //
-    NaiveQueue(): pushIdx(0), popIdx(0)
+    naive_queue(): pushIdx(0), popIdx(0)
     {
         
     }
@@ -103,7 +103,7 @@ void consume(QueueType * queue, int consumerId)
     }
 }
 
-typedef NaiveQueue<int, 4567> queue_t;
+typedef naive_queue<int, 4567> queue_t;
 
 int main (int argc, char* argv[])
 {
