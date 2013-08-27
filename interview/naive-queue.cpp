@@ -7,27 +7,28 @@
 #include <ctime>
 #include <chrono>
 
-template<typename T, size_t Q_SIZE>
+template<typename T, uint64_t Q_SIZE>
 class NaiveQueue
 {
+    typedef uint64_t pos_type;
     T * ptrArray[Q_SIZE];
     // Head
-    size_t pushIdx;
+    pos_type pushIdx;
     // Tail
-    size_t popIdx;
-    static const size_t Q_MASK = Q_SIZE - 1;
-    std::condition_variable condQueueEmpty;
-    std::condition_variable condQueueOverflow;
+    pos_type popIdx;
+    static const pos_type Q_MASK = Q_SIZE - 1;
+    std::condition_variable condQueueHasData;
+    std::condition_variable condQueueNotOverflow;
     std::mutex mtx;
     
-    bool notOverflow() const
+    bool overflow() const
     {
-        return (popIdx + Q_SIZE > pushIdx);
+        return (popIdx + Q_SIZE <= pushIdx);
     }
     
-    bool notEmpty() const
+    bool empty() const
     {
-        return (popIdx < pushIdx);
+        return (popIdx >= pushIdx);
     }
 public:
     //
@@ -47,15 +48,15 @@ public:
     {
         std::unique_lock<std::mutex> lock(mtx);
         
-        condQueueOverflow.wait(lock, [this]() {
-            return notOverflow();
+        condQueueNotOverflow.wait(lock, [this]() {
+            return !overflow();
         });
         
         ptrArray[pushIdx++ & Q_MASK] = x;
         
-        printf("push: pushIdx = %lu\n", pushIdx);
+        printf("push: pushIdx = %llu\n", pushIdx);
         
-        condQueueEmpty.notify_one();
+        condQueueHasData.notify_one();
     }
     
     //
@@ -63,15 +64,15 @@ public:
     {
         std::unique_lock<std::mutex> lock(mtx);
         
-        if(condQueueEmpty.wait_for(lock, std::chrono::milliseconds(3000), [this]() {
-            return notEmpty();
+        if(condQueueHasData.wait_for(lock, std::chrono::milliseconds(3000), [this]() {
+            return !empty();
         }))
         {
             T * x = ptrArray[popIdx++ & Q_MASK];
             
-            printf("pop: popIdx = %lu\n", popIdx);
+            printf("pop: popIdx = %llu\n", popIdx);
             
-            condQueueOverflow.notify_one();
+            condQueueNotOverflow.notify_one();
             
             return x;   
         }
