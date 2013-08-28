@@ -33,8 +33,8 @@ class lock_circular_buffer
 public:
     //
     explicit lock_circular_buffer(uint32_t queueSize_ = 1024):
-        queueSize(queueSize_), ptrArray(NULL),
-        pushIdx(0), popIdx(0)
+    queueSize(queueSize_), ptrArray(NULL),
+    pushIdx(0), popIdx(0)
     {
         if(queueSize_ < 64) queueSize = 64;
         ptrArray = new T[queueSize];
@@ -58,7 +58,7 @@ public:
             return !overflow();
         });
         
-        ptrArray[(pushIdx++) % queueSize] = x;
+        ptrArray[pushIdx++ % queueSize] = x;
         
         printf("push: pushIdx = %llu\n", pushIdx);
         
@@ -74,7 +74,7 @@ public:
             return !empty();
         });
         
-        T x = ptrArray[(popIdx++) % queueSize];
+        T x = ptrArray[popIdx++ % queueSize];
         
         printf("pop: popIdx = %llu\n", popIdx);
         
