@@ -50,7 +50,7 @@ public:
     }
     
     //
-    void push(T x)
+    void push(const T & x)
     {
         std::unique_lock<std::mutex> lock(mtx);
         
