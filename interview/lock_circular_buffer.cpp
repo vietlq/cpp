@@ -8,7 +8,7 @@
 #include <chrono>
 
 template<typename T>
-class naive_queue
+class lock_circular_buffer
 {
     typedef uint64_t pos_type;
     uint32_t queueSize;
@@ -32,7 +32,7 @@ class naive_queue
     }
 public:
     //
-    explicit naive_queue(uint32_t queueSize_ = 1024):
+    explicit lock_circular_buffer(uint32_t queueSize_ = 1024):
         queueSize(queueSize_), ptrArray(NULL),
         pushIdx(0), popIdx(0)
     {
@@ -40,7 +40,7 @@ public:
         ptrArray = new T[queueSize];
     }
     
-    ~naive_queue()
+    ~lock_circular_buffer()
     {
         if(NULL != ptrArray)
         {
@@ -115,10 +115,9 @@ void consume(QueueType & queue, int consumerId)
     }
 }
 
-typedef naive_queue<int> queue_t;
-
 int main (int argc, char* argv[])
 {
+    typedef lock_circular_buffer<int> queue_t;
     const size_t PRODUCERS = 17;
     const size_t CONSUMERS = 7;
     const size_t PRODUCT_NUM = (argc < 2) ? 1000 : atoi(argv[1]);
