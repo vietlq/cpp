@@ -46,7 +46,9 @@ int main(int argc, char* argv[])
 		for(int c = 0; c < cols; ++c)
 		{
 			int tempMaxSum = currSum[c] + prevSum[c];
-			for(int prevCol = c - 1; (prevCol < cols) && (prevCol >= 0) && (prevCol <= c + 1); ++prevCol)
+			const int minCol = std::max(0, c - 1);
+			const int maxCol = std::min(c + 1, cols - 1);
+			for(int prevCol = minCol; prevCol < maxCol; ++prevCol)
 			{
 				int tempSum = currSum[c] + prevSum[prevCol];
 				tempMaxSum = std::max(tempMaxSum, tempSum);
